@@ -32,15 +32,15 @@ npm run build && npm run test:e2e   # 22 verificações no navegador real (Playw
 
 O HITSTER PARTY é um **app instalável (PWA)**: ganha ícone na tela inicial, abre em tela cheia, funciona sem internet depois da primeira visita e mantém a tela acesa durante o jogo.
 
-**Endereço do app:** https://ceciliacarvalho1707-beep.github.io/hitster/
+**Endereço do app:** https://ceciliacarvalho1707-beep.github.io/Hitster/
 
-**Para ativar o endereço (uma vez só):** abra https://github.com/ceciliacarvalho1707-beep/hitster/settings/pages → em *Build and deployment*, escolha **Source: GitHub Actions**. Depois, em **Actions**, rode de novo o workflow *"Publicar no GitHub Pages"*. Daí em diante, cada push na `main` é publicado sozinho.
+**Para ativar o endereço (uma vez só):** abra https://github.com/ceciliacarvalho1707-beep/Hitster/settings/pages → em *Build and deployment*, escolha **Source: GitHub Actions**. Depois, em **Actions**, rode de novo o workflow *"Publicar no GitHub Pages"*. Daí em diante, cada push na `main` é publicado sozinho.
 
 **Para instalar no celular:**
 - **Android (Chrome):** abra o endereço e toque em **📲 Instalar** na tela inicial do jogo (ou menu ⋮ → *Instalar app*).
 - **iPhone (Safari):** abra o endereço → **Compartilhar** → **Adicionar à Tela de Início**.
 
-Instalado pelo endereço do GitHub Pages (HTTPS), o app também pode usar a conexão direta com o Spotify. Cadastre `https://ceciliacarvalho1707-beep.github.io/hitster/` como *Redirect URI* no app do Spotify.
+Instalado pelo endereço do GitHub Pages (HTTPS), o app também pode usar a conexão direta com o Spotify. Cadastre `https://ceciliacarvalho1707-beep.github.io/Hitster/` como *Redirect URI* no app do Spotify.
 
 ## Como jogar
 
