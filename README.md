@@ -73,6 +73,8 @@ Cada aparelho tem um papel e **lembra dele**: a TV abre sempre direto na tela da
 3. **Equipes:** apontem a câmera do celular para o QR code que aparece na TV. O celular entra direto na sala.
 4. Para um aparelho deixar de ser TV ou equipe: botão **Sair** da própria tela, ou *Configurações → Este aparelho*.
 
+**Smart TV:** o app é gerado para funcionar também em navegadores de TV mais antigos (Chromium 64+, em vez de só navegadores recentes), e a tela da TV tem um botão **⛶ Tela cheia**. Dica: depois de abrir pela primeira vez, salve o endereço nos favoritos do navegador da TV.
+
 **Como funciona por dentro** (`src/lib/sync.ts` e `src/lib/room.ts`):
 - O celular do organizador é a única fonte da verdade. Ele publica para os outros só um **estado público**, sem título, artista nem ano até você liberar.
 - Fora do claude.ai, os aparelhos se falam por um servidor MQTT público (`wss://broker.hivemq.com:8884/mqtt`, trocável em *Configurações → Este aparelho → Avançado*), usando o código da sala. Abas do mesmo navegador também sincronizam entre si.

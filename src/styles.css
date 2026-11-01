@@ -222,7 +222,7 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
   background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); border-left: 5px solid var(--team);
 }
 .team-row__order { width: 26px; text-align: center; font-weight: 800; color: var(--muted); }
-.team-row__avatar { width: 46px; height: 46px; border-radius: 50%; border: 2px solid var(--team); background: color-mix(in srgb, var(--team) 22%, transparent); font-size: 1.4rem; cursor: pointer; }
+.team-row__avatar { width: 46px; height: 46px; border-radius: 50%; border: 2px solid var(--team); background: rgba(255, 255, 255, 0.06); background: color-mix(in srgb, var(--team) 22%, transparent); font-size: 1.4rem; cursor: pointer; }
 .team-row__name { flex: 1 1 160px; min-width: 0; min-height: 46px; padding: 8px 14px; border-radius: 12px; border: 1px solid var(--border); background: rgba(6, 7, 20, 0.5); font-weight: 700; font-size: 1.02rem; }
 .team-row__name:focus { outline: none; border-color: var(--team); }
 .team-row__actions { display: flex; gap: 6px; }
@@ -237,7 +237,7 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .emoji.is-active { border-color: var(--purple); background: rgba(168, 85, 247, 0.22); }
 .emoji-input { width: 56px; height: 40px; border-radius: 10px; border: 1px dashed var(--border-strong); background: transparent; text-align: center; }
 
-.team-chip { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; padding: 4px 12px 4px 4px; border-radius: 999px; background: color-mix(in srgb, var(--team) 18%, transparent); border: 1px solid color-mix(in srgb, var(--team) 55%, transparent); max-width: 100%; }
+.team-chip { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; padding: 4px 12px 4px 4px; border-radius: 999px; background: rgba(255, 255, 255, 0.06); background: color-mix(in srgb, var(--team) 18%, transparent); border: 1px solid var(--team); border: 1px solid color-mix(in srgb, var(--team) 55%, transparent); max-width: 100%; }
 .team-chip__avatar { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--team); flex-shrink: 0; }
 .team-chip__name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .team-chip--sm { font-size: 0.88rem; } .team-chip--sm .team-chip__avatar { width: 24px; height: 24px; font-size: 0.8rem; }
@@ -257,8 +257,8 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
   display: flex; align-items: center; justify-content: center; gap: 12px; text-align: center;
   padding: 16px 20px; border-radius: var(--radius); margin-bottom: 18px;
   font-size: clamp(1.15rem, 4.2vw, 1.7rem); font-weight: 900; letter-spacing: 0.03em;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--team, #a855f7) 55%, #000) 0%, color-mix(in srgb, var(--team, #a855f7) 25%, #0b0d24) 100%);
-  border: 1px solid color-mix(in srgb, var(--team, #a855f7) 70%, transparent);
+  background: linear-gradient(135deg, var(--team, #a855f7) 0%, var(--team, #a855f7) 100%); background: linear-gradient(135deg, color-mix(in srgb, var(--team, #a855f7) 55%, #000) 0%, color-mix(in srgb, var(--team, #a855f7) 25%, #0b0d24) 100%);
+  border: 1px solid var(--team, #a855f7); border: 1px solid color-mix(in srgb, var(--team, #a855f7) 70%, transparent);
   box-shadow: 0 12px 40px -12px var(--team, #a855f7);
   animation: pop 0.45s cubic-bezier(0.2, 1.4, 0.4, 1) both;
 }
@@ -299,7 +299,7 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .guess__form { display: grid; gap: 14px; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .guess__form { grid-template-columns: 160px 1fr 1fr; } .guess__form .btn { grid-column: 1 / -1; } }
 .team-select { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
-.team-select__opt { min-height: 44px; padding: 6px 14px; border-radius: 999px; cursor: pointer; font-weight: 700; border: 2px solid color-mix(in srgb, var(--team) 50%, transparent); background: rgba(255, 255, 255, 0.03); }
+.team-select__opt { min-height: 44px; padding: 6px 14px; border-radius: 999px; cursor: pointer; font-weight: 700; border: 2px solid var(--team); border: 2px solid color-mix(in srgb, var(--team) 50%, transparent); background: rgba(255, 255, 255, 0.03); }
 .team-select__opt.is-active { background: var(--team); color: #fff; box-shadow: 0 6px 22px -6px var(--team); }
 .ok-dot { color: var(--green); font-weight: 900; margin-left: 4px; }
 .team-select__opt.is-active .ok-dot { color: #fff; }
@@ -347,7 +347,7 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 /* Placar */
 .board { display: flex; flex-direction: column; gap: 8px; }
 .board__row { display: grid; grid-template-columns: 44px 40px 1fr auto auto; align-items: center; gap: 10px; padding: 10px 12px; border-radius: var(--radius-sm); background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); border-left: 5px solid var(--team); transition: transform 0.3s, box-shadow 0.3s; animation: fadeUp 0.35s ease both; }
-.board__row.is-leader { background: linear-gradient(90deg, color-mix(in srgb, var(--team) 25%, transparent), rgba(255, 255, 255, 0.02)); box-shadow: 0 10px 34px -14px var(--team); border-color: color-mix(in srgb, var(--team) 60%, transparent); }
+.board__row.is-leader { background: linear-gradient(90deg, var(--team), rgba(255, 255, 255, 0.02)); background: linear-gradient(90deg, color-mix(in srgb, var(--team) 25%, transparent), rgba(255, 255, 255, 0.02)); box-shadow: 0 10px 34px -14px var(--team); border-color: var(--team); border-color: color-mix(in srgb, var(--team) 60%, transparent); }
 .board__pos { font-weight: 900; font-size: 1.1rem; text-align: center; }
 .board__avatar { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--team); font-size: 1.2rem; }
 .board__name { font-weight: 700; display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }
@@ -363,7 +363,7 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 
 /* Classificação / vitória */
 .ranking { position: relative; }
-.winner { text-align: center; margin: 10px auto 26px; padding: 26px 16px; max-width: 560px; border-radius: 28px; background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--team) 45%, transparent), rgba(20, 22, 52, 0.9) 70%); border: 1px solid color-mix(in srgb, var(--team) 60%, transparent); box-shadow: 0 20px 70px -20px var(--team); animation: pop 0.6s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+.winner { text-align: center; margin: 10px auto 26px; padding: 26px 16px; max-width: 560px; border-radius: 28px; background: radial-gradient(circle at 50% 0%, var(--team), rgba(20, 22, 52, 0.9) 70%); background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--team) 45%, transparent), rgba(20, 22, 52, 0.9) 70%); border: 1px solid var(--team); border: 1px solid color-mix(in srgb, var(--team) 60%, transparent); box-shadow: 0 20px 70px -20px var(--team); animation: pop 0.6s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
 .winner__crown { font-size: 2.6rem; display: block; animation: bob 2.4s ease-in-out infinite; }
 .winner__emoji { font-size: 3.4rem; display: block; }
 .winner h2 { font-size: clamp(1.6rem, 6vw, 2.6rem); margin: 6px 0; }
@@ -373,14 +373,14 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .podium__col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; animation: rise 0.7s ease both; min-width: 0; }
 .podium__emoji { font-size: 2rem; }
 .podium__name { font-weight: 700; font-size: 0.9rem; text-align: center; overflow-wrap: anywhere; }
-.podium__block { width: 100%; border-radius: 16px 16px 6px 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(180deg, var(--team), color-mix(in srgb, var(--team) 35%, #0b0d24)); box-shadow: 0 10px 30px -10px var(--team); }
+.podium__block { width: 100%; border-radius: 16px 16px 6px 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(180deg, var(--team), var(--team)); background: linear-gradient(180deg, var(--team), color-mix(in srgb, var(--team) 35%, #0b0d24)); box-shadow: 0 10px 30px -10px var(--team); }
 .podium__block b { font-size: 1.7rem; } .podium__block small { font-weight: 700; }
 .podium__col--1 .podium__block { height: 150px; } .podium__col--2 .podium__block { height: 110px; } .podium__col--3 .podium__block { height: 80px; }
 @keyframes rise { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
 .ranking__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .ranking__list li { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 10px 14px; border-radius: var(--radius-sm); background: rgba(255, 255, 255, 0.03); border-left: 5px solid var(--team); animation: fadeUp 0.4s ease both; }
 .ranking__list li strong { margin-left: auto; font-size: 1.2rem; }
-.ranking__list li.is-first { background: color-mix(in srgb, var(--team) 18%, transparent); }
+.ranking__list li.is-first { background: rgba(255, 255, 255, 0.06); background: color-mix(in srgb, var(--team) 18%, transparent); }
 .ranking__pos { font-weight: 900; min-width: 40px; }
 .confetti { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
 .confetti i { position: absolute; top: -20px; width: 9px; height: 16px; border-radius: 2px; opacity: 0.8; animation: fall 5.5s linear infinite; }
@@ -465,7 +465,7 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .tv__card .vinyl { --size: clamp(120px, 16vw, 220px); }
 .tv__cat { font-size: clamp(1.3rem, 2.6vw, 2.2rem); margin: 14px 0 6px; }
 .tv__status { display: flex; flex-wrap: wrap; gap: 10px; }
-.tv__pill { padding: 10px 18px; border-radius: 999px; font-weight: 800; font-size: 1.1rem; border: 2px solid color-mix(in srgb, var(--team) 60%, transparent); }
+.tv__pill { padding: 10px 18px; border-radius: 999px; font-weight: 800; font-size: 1.1rem; border: 2px solid var(--team); border: 2px solid color-mix(in srgb, var(--team) 60%, transparent); }
 .tv__pill.is-done { background: var(--team); }
 .tv__msg { font-size: clamp(1.3rem, 3vw, 2rem); font-weight: 700; text-align: center; }
 .tv__answer { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 24px; border-radius: 24px; background: rgba(236, 72, 153, 0.12); border: 1px solid rgba(236, 72, 153, 0.5); animation: reveal 0.5s ease both; text-align: center; }
@@ -505,9 +505,9 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .equipe { max-width: 560px; }
 .equipe__top { justify-content: space-between; margin-bottom: 8px; }
 .equipe__pick { display: grid; gap: 12px; }
-.equipe__team { display: flex; align-items: center; gap: 14px; min-height: 68px; padding: 12px 18px; border-radius: var(--radius); font-size: 1.2rem; font-weight: 800; cursor: pointer; border: 2px solid color-mix(in srgb, var(--team) 60%, transparent); background: color-mix(in srgb, var(--team) 16%, transparent); text-align: left; }
+.equipe__team { display: flex; align-items: center; gap: 14px; min-height: 68px; padding: 12px 18px; border-radius: var(--radius); font-size: 1.2rem; font-weight: 800; cursor: pointer; border: 2px solid var(--team); border: 2px solid color-mix(in srgb, var(--team) 60%, transparent); background: rgba(255, 255, 255, 0.06); background: color-mix(in srgb, var(--team) 16%, transparent); text-align: left; }
 .equipe__emoji { font-size: 1.8rem; }
-.equipe__badge { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; border-radius: var(--radius); background: linear-gradient(135deg, color-mix(in srgb, var(--team) 50%, #000), color-mix(in srgb, var(--team) 20%, #0b0d24)); font-size: 1.3rem; margin-bottom: 14px; box-shadow: 0 10px 30px -12px var(--team); }
+.equipe__badge { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; border-radius: var(--radius); background: linear-gradient(135deg, var(--team), var(--team)); background: linear-gradient(135deg, color-mix(in srgb, var(--team) 50%, #000), color-mix(in srgb, var(--team) 20%, #0b0d24)); font-size: 1.3rem; margin-bottom: 14px; box-shadow: 0 10px 30px -12px var(--team); }
 .equipe__round { text-align: center; margin: 0 0 14px; }
 .equipe__form { grid-template-columns: 1fr !important; }
 .equipe .card.center h2 { margin-top: 0; }
@@ -559,3 +559,4 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .tv-join { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .tv-join > .row { align-self: flex-start; }
 .tv__qr { display: flex; align-items: center; gap: 14px; margin-top: 18px; padding: 12px; border-radius: var(--radius-sm); background: rgba(255,255,255,0.04); border: 1px solid var(--border); font-weight: 700; }
+.tv__ctrl { gap: 8px; }

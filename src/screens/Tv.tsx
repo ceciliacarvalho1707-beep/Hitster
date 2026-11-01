@@ -37,6 +37,10 @@ export function Tv() {
   useWakeLock(true);
   const sala = getDeviceConfig().sala;
   const voltar = <button className="btn btn--ghost btn--sm" onClick={() => (getDeviceConfig().papel === 'tv' || sala ? switchDevice({ papel: undefined, sala: undefined }, 'home') : navigate('home'))}>← Sair da TV</button>;
+  const telaCheia = document.fullscreenEnabled && !document.fullscreenElement
+    ? <button className="btn btn--ghost btn--sm" onClick={() => document.documentElement.requestFullscreen().catch(() => undefined)} data-testid="tv-fullscreen">⛶ Tela cheia</button>
+    : null;
+  const controles = <div className="row tv__ctrl">{voltar}{telaCheia}</div>;
   const qrEquipes = sala && kind === 'sala' ? (
     <div className="tv__qr"><QrImage text={teamJoinUrl(sala)} size={150} /><span>📱 Equipes: apontem a câmera<br /><b>Sala {sala}</b></span></div>
   ) : null;
@@ -56,7 +60,7 @@ export function Tv() {
             : 'Esta tela atualiza sozinha assim que o celular do organizador iniciar o jogo.'}
         </p>
         {qrEquipes}
-        {voltar}
+        {controles}
       </main>
     );
   }
@@ -65,7 +69,7 @@ export function Tv() {
     const top = (state.placar ?? []).filter((r) => r.posicao === 1);
     return (
       <main className="tv" data-testid="tv">
-        <div className="tv__top">{voltar}<Logo size="sm" /><span /></div>
+        <div className="tv__top">{controles}<Logo size="sm" /><span /></div>
         <h1 className="tv__title">🏆 {top.length > 1 ? `Empate entre ${top.map((t) => t.nome).join(' e ')}!` : `${top[0]?.emoji ?? ''} ${top[0]?.nome ?? ''} venceu!`}</h1>
         <div className="tv__board"><PublicBoard placar={state.placar ?? []} /></div>
       </main>
@@ -76,7 +80,7 @@ export function Tv() {
   const equipesDoTurno = state.modo === 'turno' ? vez : state.equipes ?? [];
   return (
     <main className="tv" data-testid="tv">
-      <div className="tv__top">{voltar}<Logo size="sm" /><span className="tv__round">RODADA {state.rodada}{state.totalRodadas ? ` / ${state.totalRodadas}` : ''}</span></div>
+      <div className="tv__top">{controles}<Logo size="sm" /><span className="tv__round">RODADA {state.rodada}{state.totalRodadas ? ` / ${state.totalRodadas}` : ''}</span></div>
       <div className="tv__grid">
         <section className="tv__stage">
           {state.modo === 'turno' && vez[0]
