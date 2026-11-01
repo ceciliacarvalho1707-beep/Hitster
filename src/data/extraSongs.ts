@@ -8381,6 +8381,207 @@ const raw: Base[] = [
   "fontes": [
    "https://en.wikipedia.org/w/index.php?search=What%20I%27ve%20Done%20Linkin%20Park"
   ]
+ },
+ {
+  "id": "int-starboy-the-weeknd-fea",
+  "titulo": "Starboy",
+  "artista": "The Weeknd feat. Daft Punk",
+  "ano": 2016,
+  "alternativas": {
+   "artista": [
+    "The Weeknd",
+    "Weeknd"
+   ]
+  },
+  "pais": "Canadá / França",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B / Pop",
+  "dificuldade": "facil",
+  "spotify": "7MXVkk9YMctZqd1Srtv4MB",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Starboy%20The%20Weeknd%20feat.%20Daft%20Punk"
+  ]
+ },
+ {
+  "id": "int-one-dance-drake-feat-wiz",
+  "titulo": "One Dance",
+  "artista": "Drake feat. Wizkid e Kyla",
+  "ano": 2016,
+  "alternativas": {
+   "artista": [
+    "Drake"
+   ]
+  },
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Dancehall / Pop",
+  "dificuldade": "facil",
+  "spotify": "1zi7xx7UVEFkmKfv06H8x0",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=One%20Dance%20Drake%20feat.%20Wizkid%20e%20Kyla"
+  ]
+ },
+ {
+  "id": "int-good-4-u-olivia-rodrigo",
+  "titulo": "good 4 u",
+  "artista": "Olivia Rodrigo",
+  "ano": 2021,
+  "alternativas": {
+   "titulo": [
+    "Good for You"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop punk",
+  "dificuldade": "facil",
+  "spotify": "0OhHCvEAbK2xkoKZmiBWBO",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=good%204%20u%20Olivia%20Rodrigo"
+  ]
+ },
+ {
+  "id": "int-love-story-taylor-swift",
+  "titulo": "Love Story",
+  "artista": "Taylor Swift",
+  "ano": 2008,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Country pop",
+  "dificuldade": "facil",
+  "spotify": "1vrd6UOGamcKNGnSHJQlSt",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Love%20Story%20Taylor%20Swift"
+  ]
+ },
+ {
+  "id": "int-blank-space-taylor-swift",
+  "titulo": "Blank Space",
+  "artista": "Taylor Swift",
+  "ano": 2014,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "1u8c2t2Cy7UBoG4ArRcF5g",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Blank%20Space%20Taylor%20Swift"
+  ]
+ },
+ {
+  "id": "int-god-s-plan-drake",
+  "titulo": "God's Plan",
+  "artista": "Drake",
+  "ano": 2018,
+  "alternativas": {
+   "titulo": [
+    "Gods Plan"
+   ]
+  },
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hip-hop",
+  "dificuldade": "facil",
+  "spotify": "5t9KtCfnu8wQui1G6IqqBR",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=God%27s%20Plan%20Drake"
+  ]
+ },
+ {
+  "id": "int-just-dance-lady-gaga-feat",
+  "titulo": "Just Dance",
+  "artista": "Lady Gaga feat. Colby O'Donis",
+  "ano": 2008,
+  "alternativas": {
+   "artista": [
+    "Lady Gaga"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Electropop",
+  "dificuldade": "facil",
+  "spotify": "2x7MyWybabEz6Y6wvHuwGE",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Just%20Dance%20Lady%20Gaga%20feat.%20Colby%20O%27Donis"
+  ]
+ },
+ {
+  "id": "int-diamonds-rihanna",
+  "titulo": "Diamonds",
+  "artista": "Rihanna",
+  "ano": 2012,
+  "pais": "Barbados",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "1z9kQ14XBSN0r2v6fx4IdG",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Diamonds%20Rihanna"
+  ]
+ },
+ {
+  "id": "int-rocket-man-i-think-it-s--elton-john",
+  "titulo": "Rocket Man (I Think It's Going to Be a Long, Long Time)",
+  "artista": "Elton John",
+  "ano": 1972,
+  "alternativas": {
+   "titulo": [
+    "Rocket Man"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock / Pop",
+  "dificuldade": "media",
+  "spotify": "6Ay5CajB0755WCRFkP7eRQ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Rocket%20Man%20%28I%20Think%20It%27s%20Going%20to%20Be%20a%20Long%2C%20Long%20Time%29%20Elton%20John"
+  ]
+ },
+ {
+  "id": "br-indios-legiao-urbana",
+  "titulo": "Índios",
+  "artista": "Legião Urbana",
+  "ano": 1986,
+  "alternativas": {
+   "titulo": [
+    "Indios"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock nacional",
+  "dificuldade": "media",
+  "spotify": "5Z29IzMEP5TY8HsXWwPYWX",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=%C3%8Dndios%20Legi%C3%A3o%20Urbana"
+  ]
+ },
+ {
+  "id": "br-beija-eu-marisa-monte",
+  "titulo": "Beija Eu",
+  "artista": "Marisa Monte",
+  "ano": 1991,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "7tkka2fYf1erIg8wy8r9Lt",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Beija%20Eu%20Marisa%20Monte"
+  ]
  }
 ];
 
