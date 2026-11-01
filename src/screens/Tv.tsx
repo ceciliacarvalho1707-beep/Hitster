@@ -49,14 +49,17 @@ function TvScreen() {
   const voltar = <button className="btn btn--ghost btn--sm" data-testid="tv-sair" onClick={() => (getDeviceConfig().papel === 'tv' || sala ? switchDevice({ papel: undefined, sala: undefined }, 'home') : navigate('home'))}>← Sair da TV</button>;
   const telaCheia = <FullscreenButton />;
   // Sai do jogo atual e mostra o campo para digitar o código de OUTRA sala (continua como TV).
-  const trocar = sala ? <button className="btn btn--ghost btn--sm" onClick={() => switchDevice({ sala: undefined }, 'tv')} data-testid="tv-trocar">🔄 Entrar em outro jogo</button> : null;
+  const [pedirCodigo, setPedirCodigo] = useState(false);
+  const trocar = <button className="btn btn--ghost btn--sm" onClick={() => (sala ? switchDevice({ sala: undefined }, 'tv') : setPedirCodigo(true))} data-testid="tv-trocar">🔄 Entrar em outro jogo</button>;
   const controles = <div className="row tv__ctrl">{voltar}{trocar}{telaCheia}</div>;
   const qrEquipes = sala && kind === 'sala' ? (
     <div className="tv__qr"><QrImage text={teamJoinUrl(sala)} size={150} /><span>📱 Equipes: apontem a câmera<br /><b>Sala {sala}</b></span></div>
   ) : null;
 
-  if (!state && !sala && kind !== 'nuvem' && !carregando) {
-    return <main className="page tv-join" data-testid="tv"><div className="row">{voltar}</div><Logo size="sm" /><JoinRoomForm papel="tv" /></main>;
+  // Sem sala: pede o código. Só acompanha "deste navegador" se houver um jogo em andamento aqui mesmo.
+  const jogoLocal = kind === 'local' && state?.status === 'em_andamento';
+  if (pedirCodigo || (!sala && kind !== 'nuvem' && !carregando && !jogoLocal)) {
+    return <main className="page tv-join" data-testid="tv"><div className="row">{voltar}{pedirCodigo && <button className="btn btn--ghost btn--sm" onClick={() => setPedirCodigo(false)}>Cancelar</button>}</div><Logo size="sm" /><JoinRoomForm papel="tv" /></main>;
   }
 
   if (!state || state.status === 'sem_partida') {
