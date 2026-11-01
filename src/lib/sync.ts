@@ -33,6 +33,8 @@ export interface PublicState {
   resposta?: { titulo: string; artista: string; musical?: string; ano: number } | null;
   equipes?: PublicTeam[];
   placar?: PublicScore[];
+  /** Som na TV: endereço do trecho de 30 s e o comando atual. */
+  som?: { url: string; acao: 'tocar' | 'parar'; em: string } | null;
   /** Chave pública do organizador: as equipes criptografam os palpites com ela. */
   chave?: JsonWebKey;
 }

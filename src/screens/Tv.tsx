@@ -1,8 +1,11 @@
 import { usePublicState } from '../components/sync';
 import { DIF_LABEL, Equalizer, Logo, Vinyl } from '../components/ui';
-import type { PublicScore } from '../lib/sync';
 import { navigate } from '../router';
 import { useWakeLock } from '../lib/app';
+import { TvAudio } from '../components/preview';
+import { useState } from 'react';
+import { useFeedback } from '../components/feedback';
+import { deviceId, getTransport, type PublicScore, type PublicState, type PublicTeam } from '../lib/sync';
 import { JoinRoomForm, QrImage, switchDevice } from '../components/rooms';
 import { getDeviceConfig, teamJoinUrl } from '../lib/room';
 import type { Dificuldade } from '../types';
@@ -107,9 +110,60 @@ export function Tv() {
               <span>{state.resposta.musical ? `${state.resposta.musical} · ${state.resposta.artista}` : state.resposta.artista} · {state.resposta.ano}</span>
             </div>
           ) : <p className="tv__msg">{state.gabaritoAberto ? '🔐 O organizador está conferindo as respostas…' : '🎧 Ouçam com atenção!'}</p>}
+          <TvAudio som={state.som} />
+          {!state.gabaritoAberto && !state.resposta && <TvGuess state={state} equipes={equipesDoTurno} />}
         </section>
         <aside className="tv__board"><h2>Placar</h2><PublicBoard placar={state.placar ?? []} compact />{qrEquipes}</aside>
       </div>
     </main>
+  );
+}
+
+/** Palpite digitado na própria TV (com o controle remoto ou teclado). */
+function TvGuess({ state, equipes }: { state: PublicState; equipes: PublicTeam[] }) {
+  const { toast } = useFeedback();
+  const pendentes = equipes.filter((t) => !state.respondeu?.includes(t.id));
+  const [aberto, setAberto] = useState(false);
+  const [teamId, setTeamId] = useState('');
+  const [form, setForm] = useState({ ano: '', titulo: '', artista: '' });
+  const [enviando, setEnviando] = useState(false);
+  const team = pendentes.find((t) => t.id === teamId) ?? (pendentes.length === 1 ? pendentes[0] : undefined);
+
+  if (!pendentes.length) return null;
+  if (!aberto) {
+    return <button className="btn btn--ghost tv__guess-open" onClick={() => { setAberto(true); setForm({ ano: '', titulo: '', artista: '' }); }} data-testid="tv-guess-open">✍️ Responder aqui na TV</button>;
+  }
+  const enviar = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!team) { toast('Escolha a equipe que está respondendo.', 'erro'); return; }
+    if (!form.ano && !form.titulo.trim() && !form.artista.trim()) { toast('Escreva pelo menos um palpite.', 'erro'); return; }
+    setEnviando(true);
+    try {
+      const t = await getTransport();
+      await t.sendGuess({ turnId: state.turnId ?? '', teamId: team.id, ano: form.ano, titulo: form.titulo.trim(), artista: form.artista.trim(), em: new Date().toISOString(), aparelho: deviceId() });
+      toast(`Palpite da ${team.nome} enviado!`);
+      setAberto(false); setTeamId(''); setForm({ ano: '', titulo: '', artista: '' });
+    } catch (err) { toast((err as Error).message || 'Não deu para enviar. Tente de novo.', 'erro'); } finally { setEnviando(false); }
+  };
+  return (
+    <form className="tv__guess" onSubmit={enviar} autoComplete="off" data-testid="tv-guess">
+      {pendentes.length > 1 && (
+        <div className="team-select" role="radiogroup" aria-label="Equipe">
+          {pendentes.map((t) => (
+            <button key={t.id} type="button" role="radio" aria-checked={team?.id === t.id} className={`team-select__opt ${team?.id === t.id ? 'is-active' : ''}`} style={{ ['--team' as string]: t.cor }} onClick={() => setTeamId(t.id)}>{t.emoji} {t.nome}</button>
+          ))}
+        </div>
+      )}
+      {state.modo === 'simultaneo' && <p className="muted small" style={{ margin: 0 }}>Atenção: as outras equipes veem o que for digitado aqui. Para responder em segredo, usem o celular.</p>}
+      <div className="tv__guess-fields">
+        <input className="input" inputMode="numeric" maxLength={4} placeholder="Ano" value={form.ano} onChange={(e) => setForm({ ...form, ano: e.target.value.replace(/\D/g, '') })} aria-label="Ano de lançamento" data-testid="tv-ano" />
+        <input className="input" placeholder="Nome da música" value={form.titulo} onChange={(e) => setForm({ ...form, titulo: e.target.value })} aria-label="Nome da música" data-testid="tv-titulo" />
+        <input className="input" placeholder="Quem canta (ou o musical)" value={form.artista} onChange={(e) => setForm({ ...form, artista: e.target.value })} aria-label="Artista" data-testid="tv-artista" />
+      </div>
+      <div className="row">
+        <button className="btn btn--primary" type="submit" disabled={enviando} data-testid="tv-enviar">{enviando ? 'Enviando…' : `ENVIAR${team ? ` (${team.nome})` : ''}`}</button>
+        <button className="btn btn--ghost" type="button" onClick={() => setAberto(false)}>Cancelar</button>
+      </div>
+    </form>
   );
 }

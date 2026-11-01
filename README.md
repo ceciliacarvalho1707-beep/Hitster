@@ -85,6 +85,14 @@ Cada aparelho tem um papel e **lembra dele**: a TV abre sempre direto na tela da
 ### Dá para esconder o nome da música no Spotify?
 Não dentro do Spotify: o app sempre mostra título, artista e capa, e nenhum site consegue mudar isso. A solução prática é dividir as telas. A **TV** mostra o jogo sem spoiler, e o **celular do organizador** toca a música (direto ou por Spotify Connect numa caixa de som) longe da vista dos jogadores. O aviso antes de abrir o Spotify lembra isso.
 
+## 🔊 Som na TV e palpites na TV
+
+- No celular do organizador, **📺 TOCAR NA TV** procura um trecho de 30 s da música (Apple/iTunes; se não achar, Deezer) e manda para a TV **só o endereço do áudio** — sem título nem artista. Na primeira vez a TV pode pedir **"Ativar som"** (regra dos navegadores contra som automático).
+- **📱 Tocar neste celular** toca o mesmo trecho no próprio celular.
+- Na TV, **✍️ Responder aqui na TV** abre um formulário para digitar o palpite com o controle/teclado. Os palpites também podem ser digitados no celular do organizador ou nos celulares das equipes.
+- No modo simultâneo, o que é digitado na TV fica visível para todos.
+- A música inteira continua sendo pelo Spotify; os trechos dependem das APIs públicas da Apple e do Deezer.
+
 ## Sigilo das respostas
 
 - O cartão público não exibe título, artista, ano, capa nem nome de playlist. O botão do Spotify mostra apenas "▶ TOCAR NO SPOTIFY".

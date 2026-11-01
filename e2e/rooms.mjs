@@ -80,9 +80,35 @@ try {
   check(6, 'A TV mostra quem respondeu, mas não o palpite', !tvAfter.includes('Ultra Secreto'));
   await eq.page.screenshot({ path: join(shots, '18-sala-equipe.png') });
 
+  // Som na TV: o organizador procura o trecho (Apple simulada) e a TV toca
+  const esc = (x) => JSON.stringify(x);
+  await org.ctx.route(/itunes\.apple\.com\/search/, (route) => {
+    const cb = new URL(route.request().url()).searchParams.get('callback');
+    route.fulfill({ contentType: 'text/javascript', body: `${cb}({"results":[{"trackName":${esc(song.titulo)},"artistName":${esc(song.artista)},"previewUrl":"https://audio-ssl.itunes.apple.com/teste/trecho.wav"}]})` });
+  });
+  const wav = (() => { const n = 8000, b = Buffer.alloc(44 + n); b.write('RIFF', 0); b.writeUInt32LE(36 + n, 4); b.write('WAVEfmt ', 8); b.writeUInt32LE(16, 16); b.writeUInt16LE(1, 20); b.writeUInt16LE(1, 22); b.writeUInt32LE(8000, 24); b.writeUInt32LE(8000, 28); b.writeUInt16LE(1, 32); b.writeUInt16LE(8, 34); b.write('data', 36); b.writeUInt32LE(n, 40); b.fill(128, 44); return b; })();
+  await tv.ctx.route(/audio-ssl\.itunes\.apple\.com/, (route) => route.fulfill({ contentType: 'audio/wav', body: wav }));
+  await org.page.click('[data-testid=play-tv]');
+  await tv.page.waitForFunction(() => document.querySelector('[data-testid=tv-audio]')?.dataset.tocando === 'sim' || !!document.querySelector('[data-testid=tv-ativar-som]'), null, { timeout: 25000 });
+  if (await tv.page.locator('[data-testid=tv-ativar-som]').count()) await tv.page.click('[data-testid=tv-ativar-som]');
+  await tv.page.waitForFunction(() => document.querySelector('[data-testid=tv-audio]')?.dataset.tocando === 'sim', null, { timeout: 25000 });
+  const tvSom = (await tv.page.textContent('body')).toLowerCase();
+  check('6b', 'A música toca na TV (trecho) sem mostrar o nome', tvSom.includes('tocando') && !tvSom.includes(song.titulo.toLowerCase()));
+
+  // Palpite digitado na própria TV (equipe que ainda não respondeu)
+  await tv.page.click('[data-testid=tv-guess-open]');
+  await tv.page.fill('[data-testid=tv-ano]', '1980');
+  await tv.page.fill('[data-testid=tv-titulo]', 'Palpite da TV');
+  await tv.page.fill('[data-testid=tv-artista]', 'Artista da TV');
+  await tv.page.click('[data-testid=tv-enviar]');
+  await org.page.waitForFunction(() => document.body.textContent.includes('2 de 2 equipes'), null, { timeout: 25000 });
+  const gTv = await org.page.evaluate(() => { const s = JSON.parse(localStorage.getItem('hitster-party:v1')); return Object.values(s.match.rounds[0].turns[0].guesses).map((g) => g.titulo); });
+  check('6c', 'Palpite digitado na TV chega ao organizador', gTv.includes('Palpite da TV') && gTv.includes('Palpite Ultra Secreto'));
+  await tv.page.screenshot({ path: join(shots, '21-tv-som-palpite.png') });
+
   // Organizador revela e libera para a TV
   await org.page.click('[data-testid=secret-toggle]');
-  await org.page.click('[data-testid=confirm-ok]'); // ainda falta 1 equipe: confirma a revelação
+  if (await org.page.locator('[data-testid=confirm-ok]').count()) await org.page.click('[data-testid=confirm-ok]');
   await org.page.click('[data-testid=public-reveal]');
   await tv.page.waitForSelector('[data-testid=tv-answer]', { timeout: 25000 });
   check(7, 'Resposta aparece na TV só quando o organizador libera', (await tv.page.textContent('[data-testid=tv-answer]')).includes(song.titulo));

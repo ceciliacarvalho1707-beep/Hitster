@@ -28,6 +28,7 @@ export function buildPublicState(match: Match | null): PublicState {
     dificuldade: song?.dificuldade,
     respondeu: turn ? Object.keys(turn.guesses) : [],
     gabaritoAberto: !!turn?.revealed,
+    som: turn?.som ?? null,
     resposta: turn?.publicReveal && song ? { titulo: song.titulo, artista: song.artista, musical: song.musical, ano: song.ano } : null,
     equipes,
     placar,

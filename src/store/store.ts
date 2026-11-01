@@ -241,6 +241,11 @@ export const matchActions = {
 
   setPublicReveal(v: boolean) { updateCurrentTurn((t) => ({ ...t, publicReveal: v })); },
 
+  /** Manda a TV tocar (ou parar) o trecho da música do turno atual. */
+  setSom(url: string | null, acao: 'tocar' | 'parar') {
+    updateCurrentTurn((t) => ({ ...t, som: url ? { url, acao, em: new Date().toISOString() } : t.som ? { ...t.som, acao: 'parar', em: new Date().toISOString() } : undefined }));
+  },
+
   setTolerance(tolerancia: Match['config']['tolerancia']) { updateMatch((m) => ({ ...m, config: { ...m.config, tolerancia } })); },
 
   /** Altera um item da avaliação em qualquer turno (correção manual). */

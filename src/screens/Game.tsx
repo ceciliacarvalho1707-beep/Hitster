@@ -5,6 +5,7 @@ import { useTransportKind } from '../components/sync';
 import { PickSongModal, PlayOnDevice, useSpotifyAuth } from '../components/spotify';
 import { useState } from 'react';
 import { useWakeLock } from '../lib/app';
+import { PreviewControls } from '../components/preview';
 import { ConnectDevicesCard } from '../components/rooms';
 import { navigate } from '../router';
 import { currentRound, currentTurn, hasNextTeam, isLastRound, matchActions, songById, turnComplete, useAppState } from '../store/store';
@@ -99,6 +100,7 @@ export function Game() {
               </div>
             </div>
             {song ? (spotifyModo === 'connect' && connected ? <PlayOnDevice url={song.spotifyUrl} /> : <SpotifyButton url={song.spotifyUrl} />) : <p className="warn">Esta música foi removida do banco. Use “Trocar música”.</p>}
+            {song && <PreviewControls song={song} turn={turn} />}
             {!turn.revealed && !Object.keys(turn.evals).length && (
               <button className="link-btn round-card__skip" onClick={async () => {
                 const ok = await confirm({ titulo: 'Trocar a música?', mensagem: 'Use se o link não abrir ou se alguém já reconheceu a música. Uma nova faixa será sorteada para este turno.', confirmar: 'Sortear outra' });
