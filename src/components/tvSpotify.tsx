@@ -24,6 +24,33 @@ export function useTvSpotify() {
   return { info, pareada, ligada, pronta: ligada && connected && info?.status === 'pronta' && !!info.deviceId };
 }
 
+/** Por que a TV ainda não toca a música inteira (null = já pode). Mostrado no cartão da rodada. */
+export function useMotivoTrecho(): string | null {
+  const { info, ligada, pronta } = useTvSpotify();
+  const { clientId, connected } = useSpotifyAuth();
+  if (pronta) return null;
+  if (sp.insideClaudeArtifact()) return 'a música inteira só funciona no app instalado (fora do claude.ai).';
+  if (!connected) return clientId ? 'o Spotify deste celular está desconectado. Conecte de novo em Configurações.' : 'falta conectar seu Spotify Premium (Configurações → Conexão direta com o Spotify).';
+  if (!sp.canStream()) return 'falta reconectar o Spotify uma vez (permissão nova para tocar na TV).';
+  if (!info) return 'a TV não está aberta nesta sala (abra a Tela da TV com o código da sala).';
+  if (!ligada) return `falta confirmar o código da TV (${info.codigo}) no cartão “Música inteira na TV”.`;
+  if (info.status === 'erro') return info.erro || 'o navegador da TV não conseguiu abrir o Spotify.';
+  if (info.status === 'aguardando' || info.status === 'conectando') return 'a TV ainda está ligando o Spotify. Se aparecer “Ativar som do Spotify” na TV, aperte com o controle.';
+  return 'a TV ainda não confirmou que está pronta.';
+}
+
+/** Aviso na rodada: explica por que só sai o trecho e leva ao cartão que resolve. */
+export function MotivoTrecho() {
+  const motivo = useMotivoTrecho();
+  if (!motivo) return null;
+  return (
+    <div className="tvsp-motivo" data-testid="tvsp-motivo">
+      <span>🎵 Na TV sai só o <b>trecho de 30 s</b> porque {motivo}</span>
+      <button className="link-btn" onClick={() => document.getElementById('tvsp-card')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}>Liberar a música inteira</button>
+    </div>
+  );
+}
+
 /** Cartão "Música inteira na TV": parear a TV com o Spotify do organizador. */
 export function TvSpotifyCard() {
   const { info, ligada, pronta } = useTvSpotify();
@@ -53,7 +80,7 @@ export function TvSpotifyCard() {
   </>;
 
   return (
-    <div className="card tvsp" data-testid="tvsp-card">
+    <div className="card tvsp" id="tvsp-card" data-testid="tvsp-card">
       <h3 style={{ margin: 0 }}>📺🎶 Música inteira na TV</h3>
       {corpo}
       {ligada && <button className="btn btn--ghost btn--sm" onClick={async () => { await unpairTv(); toast('Acesso da TV ao Spotify cortado.'); }}>Desligar a TV do Spotify</button>}

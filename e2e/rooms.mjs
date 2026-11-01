@@ -125,6 +125,7 @@ try {
       connect() { this.o.getOAuthToken((t) => { window.__tok = t; setTimeout(() => this.l.ready && this.l.ready({ device_id: 'tv-device-123' }), 50); }); return Promise.resolve(true); }
       disconnect() {} activateElement() { window.__ativado = true; return Promise.resolve(); } } };
     window.onSpotifyWebPlaybackSDKReady && window.onSpotifyWebPlaybackSDKReady();` }));
+  const motivoAntes = (await org.page.textContent('[data-testid=tvsp-motivo]').catch(() => '')) || '';
   await org.page.evaluate(() => localStorage.setItem('hitster-party:spotify', JSON.stringify({ clientId: 'a'.repeat(32), accessToken: 'TOKEN-ORG-SECRETO', refreshToken: 'r', expiresAt: Date.now() + 3600e3, scope: 'user-modify-playback-state streaming user-read-email user-read-private' })));
   await org.page.reload();
   await tv.page.waitForSelector('[data-testid=tvsp-tv-code]', { timeout: 25000 });
@@ -137,6 +138,7 @@ try {
   const tvTok = await tv.page.evaluate(() => window.__tok);
   check('6e', 'A TV recebe o acesso ao Spotify e ele viaja criptografado', tvTok === 'TOKEN-ORG-SECRETO' && allMsgs.some((m) => m.includes('"selado"')) && allMsgs.every((m) => !m.includes('TOKEN-ORG-SECRETO')));
   await org.page.waitForSelector('[data-testid=tvsp-play]', { timeout: 25000 });
+  check('6d2', 'Sem Spotify, a rodada explica por que a TV toca só o trecho; pronta, o aviso some', motivoAntes.includes('trecho de 30 s') && motivoAntes.includes('Spotify') && (await org.page.locator('[data-testid=tvsp-motivo]').count()) === 0, motivoAntes.slice(0, 90));
   await org.page.click('[data-testid=tvsp-play]');
   await org.page.waitForFunction(() => document.body.textContent.includes('Música inteira tocando na TV 📺🎶'), null, { timeout: 15000 });
   const tvSp = (await tv.page.textContent('body')).toLowerCase();

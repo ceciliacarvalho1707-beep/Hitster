@@ -30,7 +30,7 @@ export function PreviewControls({ song, turn }: { song: Song; turn: Turn }) {
         if (naTv) { matchActions.setSom(null, 'parar'); return; }
         setBusy('tv');
         try { const url = await achar(); if (url) { matchActions.setSom(url, 'tocar'); toast('Tocando na TV 📺🔊'); } } finally { setBusy(null); }
-      }}>{busy === 'tv' ? 'Procurando…' : naTv ? '⏹ PARAR NA TV' : '📺 TOCAR NA TV'}</button>
+      }}>{busy === 'tv' ? 'Procurando…' : naTv ? '⏹ PARAR TRECHO NA TV' : '📺 TRECHO NA TV (30 s)'}</button>
       <button className="btn btn--ghost" disabled={busy !== null} data-testid="play-here" onClick={async () => {
         if (tocandoAqui) { audio.current?.pause(); setTocandoAqui(false); return; }
         setBusy('aqui');
@@ -43,8 +43,8 @@ export function PreviewControls({ song, turn }: { song: Song; turn: Turn }) {
             await audio.current.play().then(() => setTocandoAqui(true)).catch(() => toast('O navegador bloqueou o som. Toque de novo.', 'erro'));
           }
         } finally { setBusy(null); }
-      }}>{busy === 'aqui' ? 'Procurando…' : tocandoAqui ? '⏹ Parar aqui' : '📱 Tocar neste celular'}</button>
-      <p className="muted small center" style={{ margin: 0, gridColumn: '1 / -1' }}>Trecho de 30 s, sem mostrar o nome da música. Para a música inteira, use o Spotify.</p>
+      }}>{busy === 'aqui' ? 'Procurando…' : tocandoAqui ? '⏹ Parar aqui' : '📱 Trecho neste celular'}</button>
+      <p className="muted small center" style={{ margin: 0, gridColumn: '1 / -1' }}>Trecho de 30 s, sem mostrar o nome da música. A música inteira na TV usa o Spotify Premium (botão “MÚSICA INTEIRA NA TV”).</p>
     </div>
   );
 }

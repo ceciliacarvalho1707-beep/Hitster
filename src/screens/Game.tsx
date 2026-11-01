@@ -6,7 +6,7 @@ import { PickSongModal, PlayOnDevice, useSpotifyAuth } from '../components/spoti
 import { useState } from 'react';
 import { useWakeLock } from '../lib/app';
 import { PreviewControls } from '../components/preview';
-import { TvFullSongButton, TvSpotifyCard } from '../components/tvSpotify';
+import { MotivoTrecho, TvFullSongButton, TvSpotifyCard } from '../components/tvSpotify';
 import { ConnectDevicesCard } from '../components/rooms';
 import { navigate } from '../router';
 import { currentRound, currentTurn, hasNextTeam, isLastRound, matchActions, settingsActions, songById, turnComplete, useAppState } from '../store/store';
@@ -103,6 +103,7 @@ export function Game() {
             </div>
             {song ? (spotifyModo === 'connect' && connected ? <PlayOnDevice url={song.spotifyUrl} /> : <SpotifyButton url={song.spotifyUrl} />) : <p className="warn">Esta música foi removida do banco. Use “Trocar música”.</p>}
             {song && <TvFullSongButton song={song} turn={turn} />}
+            {song && <MotivoTrecho />}
             {song && <PreviewControls song={song} turn={turn} />}
             {!turn.revealed && !Object.keys(turn.evals).length && (
               <button className="link-btn round-card__skip" onClick={async () => {
