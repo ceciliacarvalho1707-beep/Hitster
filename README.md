@@ -85,6 +85,20 @@ Cada aparelho tem um papel e **lembra dele**: a TV abre sempre direto na tela da
 ### Dá para esconder o nome da música no Spotify?
 Não dentro do Spotify: o app sempre mostra título, artista e capa, e nenhum site consegue mudar isso. A solução prática é dividir as telas. A **TV** mostra o jogo sem spoiler, e o **celular do organizador** toca a música (direto ou por Spotify Connect numa caixa de som) longe da vista dos jogadores. O aviso antes de abrir o Spotify lembra isso.
 
+## 📺🎶 Música inteira na TV (Spotify Premium)
+
+A TV pode virar um aparelho do Spotify **sem mostrar o nome da música**:
+
+1. No celular do organizador, conecte o Spotify em **Configurações** (conta Premium). Se já estava conectado, aperte **Reconectar o Spotify** uma vez (há uma permissão nova: `streaming`).
+2. Abra a tela da TV na mesma sala. No canto da TV aparece um código (ex.: `ABCD-EFGH`).
+3. No celular, no cartão **"Música inteira na TV"**, confira se o código é o mesmo e aperte **Sim, é o mesmo: liberar a TV**.
+4. Na TV, aperte **🔊 Ativar som do Spotify** uma vez.
+5. Em cada rodada, **📺 MÚSICA INTEIRA NA TV** toca a faixa completa na TV.
+
+Como funciona: a TV cria um par de chaves próprio; o celular manda o acesso ao Spotify **criptografado** com a chave da TV (o servidor da sala não consegue ler) e a TV usa o player oficial do Spotify (Web Playback SDK). O código de conferência impede que outro aparelho se passe pela TV.
+
+Limites do próprio Spotify: precisa de **Premium** e de um navegador com suporte a conteúdo protegido (Widevine). Alguns navegadores de Smart TV não têm; nesse caso a TV avisa e você pode usar o trecho de 30 s, um computador/Chromecast ligado na TV, ou AirPlay/Bluetooth do celular. O acesso emprestado vale ~1 hora e o celular do organizador renova sozinho enquanto o app está aberto.
+
 ## 🔊 Som na TV e palpites na TV
 
 - No celular do organizador, **📺 TOCAR NA TV** procura um trecho de 30 s da música (Apple/iTunes; se não achar, Deezer) e manda para a TV **só o endereço do áudio** — sem título nem artista. Na primeira vez a TV pode pedir **"Ativar som"** (regra dos navegadores contra som automático).
@@ -102,7 +116,7 @@ Não dentro do Spotify: o app sempre mostra título, artista e capa, e nenhum si
 
 ## Banco de músicas
 
-O projeto vem com **217 músicas de exemplo** (marcadas como "exemplo"), 92 brasileiras e 125 internacionais, de 1917 a 2024, todas com letra, incluindo musicais e trilhas de filmes:
+O projeto vem com **304 músicas de exemplo** (marcadas como "exemplo"), 121 brasileiras e 183 internacionais, de 1917 a 2024, todas com letra, incluindo musicais e trilhas de filmes:
 - **58 com verificação detalhada** (`src/data/demoSongs.ts`): o link aponta para uma **faixa específica** encontrada em páginas públicas do Spotify cujo título e artista conferem; ano, autoria e curiosidade foram conferidos no verbete da Wikipédia indicado; anos legitimamente divergentes (composição × gravação, single × álbum) estão em `anosAceitos`.
 - **159 do banco ampliado** (`src/data/extraSongs.ts`): o link também foi conferido em páginas públicas do Spotify (título e intérprete). O ano segue o lançamento original conhecido, com anos alternativos quando há divergência. Aqui a fonte é uma busca na Wikipédia que leva ao verbete, e não há curiosidade cadastrada. Algumas faixas são gravações ao vivo, remasterizações ou coletâneas do próprio artista.
 

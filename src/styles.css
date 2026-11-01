@@ -572,3 +572,17 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .tv__guess-fields { display: grid; grid-template-columns: 140px 1fr 1fr; gap: 10px; }
 @media (max-width: 900px) { .tv__guess-fields { grid-template-columns: 1fr; } }
 .tv__guess .input { font-size: 1.2rem; min-height: 56px; }
+
+/* ── Música inteira na TV (Spotify) ── */
+.tvsp { display: grid; gap: 10px; }
+.tvsp-code { font-family: ui-monospace, monospace; font-size: 1.25em; letter-spacing: .08em; color: var(--blue, #38bdf8); }
+.tvsp-play { margin-top: 4px; }
+.tvsp-tv {
+  position: fixed; left: 16px; bottom: 16px; z-index: 40; max-width: min(520px, calc(100vw - 32px));
+  padding: 10px 14px; border-radius: 14px; font-size: 15px;
+  background: rgba(15, 12, 30, .88); border: 1px solid rgba(139, 92, 246, .45); color: #e9e6ff;
+  pointer-events: none; opacity: .92;
+}
+.tvsp-tv .btn { pointer-events: auto; }
+.tvsp-tv b { font-family: ui-monospace, monospace; letter-spacing: .08em; font-size: 1.2em; color: #38bdf8; }
+.tvsp-tv--pronta { border-color: rgba(30, 215, 96, .6); }

@@ -26,8 +26,8 @@ const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--stric
 await new Promise((res) => server.stdout.on('data', (d) => String(d).includes(String(PORT)) && res()));
 
 // "Espião": tudo o que passa pelo servidor nos palpites
-const spy = mqtt.connect(`ws://localhost:${MQ}`); const sniffed = [];
-await new Promise((r) => spy.on('connect', r)); spy.subscribe('hitster-party/v1/#'); spy.on('message', (t, p) => { if (process.env.DEBUG) console.log('MQ', t, String(p).slice(0, 80)); if (t.endsWith('/palpites')) sniffed.push(String(p)); });
+const spy = mqtt.connect(`ws://localhost:${MQ}`); const sniffed = [], allMsgs = [];
+await new Promise((r) => spy.on('connect', r)); spy.subscribe('hitster-party/v1/#'); spy.on('message', (t, p) => { if (process.env.DEBUG) console.log('MQ', t, String(p).slice(0, 80)); if (t.endsWith('/palpites')) sniffed.push(String(p)); allMsgs.push(String(p)); });
 
 const browser = await chromium.launch();
 const device = async (w, h) => {
@@ -105,6 +105,39 @@ try {
   const gTv = await org.page.evaluate(() => { const s = JSON.parse(localStorage.getItem('hitster-party:v1')); return Object.values(s.match.rounds[0].turns[0].guesses).map((g) => g.titulo); });
   check('6c', 'Palpite digitado na TV chega ao organizador', gTv.includes('Palpite da TV') && gTv.includes('Palpite Ultra Secreto'));
   await tv.page.screenshot({ path: join(shots, '21-tv-som-palpite.png') });
+
+  // Música inteira na TV (Spotify simulado): parear a TV, liberar o acesso criptografado e tocar
+  const trackId = song.spotifyUrl.split('/track/')[1].split(/[?#]/)[0];
+  const plays = [];
+  await org.ctx.route(/api\.spotify\.com/, (route) => {
+    const r = route.request();
+    if (r.method() === 'PUT' && r.url().includes('/me/player/play')) plays.push({ url: r.url(), body: r.postData() });
+    route.fulfill({ status: 204, body: '' });
+  });
+  await tv.ctx.route(/sdk\.scdn\.co/, (route) => route.fulfill({ contentType: 'text/javascript', body: `
+    window.Spotify = { Player: class { constructor(o) { this.o = o; this.l = {}; }
+      addListener(e, cb) { this.l[e] = cb; return true; }
+      connect() { this.o.getOAuthToken((t) => { window.__tok = t; setTimeout(() => this.l.ready && this.l.ready({ device_id: 'tv-device-123' }), 50); }); return Promise.resolve(true); }
+      disconnect() {} activateElement() { window.__ativado = true; return Promise.resolve(); } } };
+    window.onSpotifyWebPlaybackSDKReady && window.onSpotifyWebPlaybackSDKReady();` }));
+  await org.page.evaluate(() => localStorage.setItem('hitster-party:spotify', JSON.stringify({ clientId: 'a'.repeat(32), accessToken: 'TOKEN-ORG-SECRETO', refreshToken: 'r', expiresAt: Date.now() + 3600e3, scope: 'user-modify-playback-state streaming user-read-email user-read-private' })));
+  await org.page.reload();
+  await tv.page.waitForSelector('[data-testid=tvsp-tv-code]', { timeout: 25000 });
+  const tvCodeTxt = await tv.page.textContent('[data-testid=tvsp-tv-code]');
+  await org.page.waitForSelector('[data-testid=tvsp-code]', { timeout: 25000 });
+  check('6d', 'Celular do organizador mostra o mesmo código que a TV para parear', (await org.page.textContent('[data-testid=tvsp-code]')) === tvCodeTxt, tvCodeTxt);
+  await org.page.click('[data-testid=tvsp-parear]');
+  await tv.page.waitForSelector('[data-testid=tvsp-tv-ativar]', { timeout: 25000 });
+  await tv.page.click('[data-testid=tvsp-tv-ativar]');
+  const tvTok = await tv.page.evaluate(() => window.__tok);
+  check('6e', 'A TV recebe o acesso ao Spotify e ele viaja criptografado', tvTok === 'TOKEN-ORG-SECRETO' && allMsgs.some((m) => m.includes('"selado"')) && allMsgs.every((m) => !m.includes('TOKEN-ORG-SECRETO')));
+  await org.page.waitForSelector('[data-testid=tvsp-play]', { timeout: 25000 });
+  await org.page.click('[data-testid=tvsp-play]');
+  await org.page.waitForFunction(() => document.body.textContent.includes('Música inteira tocando'), null, { timeout: 15000 });
+  const tvSp = (await tv.page.textContent('body')).toLowerCase();
+  check('6f', 'Música inteira toca no Spotify da TV (a faixa da rodada) sem mostrar o nome', plays.length === 1 && plays[0].url.includes('device_id=tv-device-123') && plays[0].body.includes(`spotify:track:${trackId}`) && tvSp.includes('spotify pronto') && !tvSp.includes(song.titulo.toLowerCase()), JSON.stringify(plays));
+  await tv.page.screenshot({ path: join(shots, '22-tv-spotify.png') });
+  await org.page.screenshot({ path: join(shots, '23-org-spotify-tv.png'), fullPage: true });
 
   // Organizador revela e libera para a TV
   await org.page.click('[data-testid=secret-toggle]');

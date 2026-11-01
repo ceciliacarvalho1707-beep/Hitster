@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useFeedback } from '../components/feedback';
 import { Segmented, Toggle, TopBar } from '../components/ui';
 import { SpotifyConnectCard } from '../components/spotify';
+import { TvSpotifyCard } from '../components/tvSpotify';
 import { switchDevice } from '../components/rooms';
 import { DEFAULT_BROKER, getDeviceConfig, newRoomCode, organizerRoom, setDeviceConfig, setOrganizerRoom } from '../lib/room';
 import { navigate } from '../router';
@@ -35,6 +36,7 @@ export function SettingsScreen() {
         {settings.spotifyModo === 'connect' && <p className="muted small">Neste modo o jogo manda o Spotify tocar no aparelho escolhido, sem abrir o app nesta tela (exige conta Premium conectada). Sem conexão, o botão volta a abrir o link.</p>}
         <h3 className="card__title">🔗 Conexão direta com o Spotify</h3>
         <SpotifyConnectCard />
+        <div style={{ marginTop: 12 }}><TvSpotifyCard /></div>
         <div className="stack" style={{ marginTop: 12 }}>
           <Toggle checked={settings.mostrarAvisoSpotify} onChange={(v) => settingsActions.update({ mostrarAvisoSpotify: v })} label="Avisar o organizador para esconder a tela do Spotify" />
         </div>

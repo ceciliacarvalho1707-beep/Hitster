@@ -60,6 +60,13 @@ export interface Transport {
   subscribePublic(cb: (s: PublicState | null) => void): Unsub;
   sendGuess(g: RemoteGuess): Promise<void>;
   subscribeGuesses(cb: (gs: RemoteGuess[]) => void): Unsub;
+  /** Canal extra entre aparelhos (ex.: parear o Spotify da TV). A última mensagem fica guardada. */
+  channel?(name: string): Channel;
+}
+
+export interface Channel {
+  publish(data: unknown): Promise<void>;
+  subscribe(cb: (data: unknown) => void): Unsub;
 }
 
 /* ───────────────────────── Identidade do aparelho ───────────────────────── */
@@ -111,6 +118,17 @@ function localTransport(): Transport {
       const emit = () => cb(Object.values(readJson<Record<string, RemoteGuess>>(GUESS_KEY, {})));
       emit();
       return listen(GUESS_KEY, emit);
+    },
+    channel(name) {
+      const key = `hitster-party:canal:${name}`;
+      return {
+        async publish(data) { write(key, data); },
+        subscribe(cb) {
+          const emit = () => { const v = readJson<unknown>(key, null); if (v !== null) cb(v); };
+          emit();
+          return listen(key, emit);
+        },
+      };
     },
   };
 }
@@ -181,6 +199,9 @@ function roomTransport(sala: string, broker: string, papel: Papel): Transport {
   const guessSubs = new Set<(gs: RemoteGuess[]) => void>();
   const guesses = new Map<string, RemoteGuess>();
   let lastWritten = '';
+  const chanSubs = new Map<string, Set<(d: unknown) => void>>();
+  const chanLast = new Map<string, unknown>();
+  const T_CANAL = `${base}/canal/`;
 
   const clientPromise = import('mqtt').then(({ default: mqtt }) => {
     const client = mqtt.connect(broker, { clientId: `hp-${papel}-${Math.random().toString(36).slice(2, 10)}`, clean: true, reconnectPeriod: 3000, connectTimeout: 10000 });
@@ -188,11 +209,13 @@ function roomTransport(sala: string, broker: string, papel: Papel): Transport {
     client.on('connect', () => {
       client.subscribe(T_ESTADO, { qos: 1 });
       if (papel === 'organizador') client.subscribe(T_PALPITES, { qos: 1 });
+      for (const name of chanSubs.keys()) client.subscribe(T_CANAL + name, { qos: 1 });
     });
     client.on('message', async (topic, payload) => {
       try {
         const msg = JSON.parse(payload.toString());
-        if (topic === T_ESTADO) { last = msg as PublicState; pubSubs.forEach((f) => f(last)); }
+        if (topic.startsWith(T_CANAL)) { const name = topic.slice(T_CANAL.length); chanLast.set(name, msg); chanSubs.get(name)?.forEach((f) => f(msg)); }
+        else if (topic === T_ESTADO) { last = msg as PublicState; pubSubs.forEach((f) => f(last)); }
         else if (topic === T_PALPITES && papel === 'organizador') {
           const g = await unseal<RemoteGuess>(msg as Sealed);
           if (g && g.turnId && g.teamId) { guesses.set(`${g.aparelho}:${g.teamId}`, g); const all = [...guesses.values()]; guessSubs.forEach((f) => f(all)); }
@@ -221,6 +244,24 @@ function roomTransport(sala: string, broker: string, papel: Papel): Transport {
       await new Promise<void>((res, rej) => client.publish(T_PALPITES, JSON.stringify(sealed), { qos: 1 }, (err) => (err ? rej(new Error('Sem conexão com a sala. Confira a internet.')) : res())));
     },
     subscribeGuesses(cb) { guessSubs.add(cb); cb([...guesses.values()]); return () => { guessSubs.delete(cb); }; },
+    channel(name) {
+      return {
+        async publish(data) {
+          const client = await clientPromise;
+          client.publish(T_CANAL + name, JSON.stringify(data), { qos: 1, retain: true });
+        },
+        subscribe(cb) {
+          let set = chanSubs.get(name);
+          if (!set) {
+            set = new Set(); chanSubs.set(name, set);
+            clientPromise.then((c) => { if (c.connected) c.subscribe(T_CANAL + name, { qos: 1 }); });
+          }
+          set.add(cb);
+          if (chanLast.has(name)) cb(chanLast.get(name));
+          return () => { set!.delete(cb); };
+        },
+      };
+    },
   };
 }
 
@@ -245,6 +286,17 @@ function combine(kind: Transport['kind'], parts: Transport[]): Transport {
       const byPart = parts.map(() => [] as RemoteGuess[]);
       const uns = parts.map((p, i) => p.subscribeGuesses((gs) => { byPart[i] = gs; cb(byPart.flat()); }));
       return () => uns.forEach((u) => u());
+    },
+    channel(name) {
+      const chans = parts.flatMap((p) => (p.channel ? [p.channel(name)] : []));
+      return {
+        async publish(d) { await Promise.all(chans.map((c) => c.publish(d).catch(() => undefined))); },
+        subscribe(cb) {
+          let lastKey = '';
+          const uns = chans.map((c) => c.subscribe((d) => { const k = JSON.stringify(d); if (k !== lastKey) { lastKey = k; cb(d); } }));
+          return () => uns.forEach((u) => u());
+        },
+      };
     },
   };
 }

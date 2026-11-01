@@ -86,7 +86,22 @@ export async function organizerPublicKey(): Promise<JsonWebKey> {
   return (await organizerKeys()).publicJwk;
 }
 
-async function organizerKeys(): Promise<{ privateKey: CryptoKey; publicJwk: JsonWebKey }> {
+const organizerKeys = () => keyPair(KEYPAIR);
+
+/** Par de chaves PRÓPRIO da TV (para receber o acesso ao Spotify sem que mais ninguém leia). */
+const TV_KEYPAIR = 'hitster-party:chaves-tv';
+export async function tvPublicKey(): Promise<JsonWebKey> { return (await keyPair(TV_KEYPAIR)).publicJwk; }
+export async function unsealForTv<T>(s: Sealed): Promise<T | null> { return unsealWith<T>(TV_KEYPAIR, s); }
+
+/** Código curto (XXXX-XXXX) derivado da chave pública: aparece na TV e no celular para conferir o pareamento. */
+export async function keyCode(jwk: JsonWebKey): Promise<string> {
+  const digest = new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${jwk.n}.${jwk.e}`)));
+  const c = Array.from(digest.slice(0, 8), (b) => ALPHABET[b % ALPHABET.length]).join('');
+  return `${c.slice(0, 4)}-${c.slice(4)}`;
+}
+
+async function keyPair(storage: string): Promise<{ privateKey: CryptoKey; publicJwk: JsonWebKey }> {
+  const KEYPAIR = storage;
   const algo = { name: 'RSA-OAEP', hash: 'SHA-256' } as const;
   try {
     const saved = JSON.parse(localStorage.getItem(KEYPAIR) ?? 'null') as { priv: JsonWebKey; pub: JsonWebKey } | null;
@@ -111,9 +126,11 @@ export async function seal(data: unknown, publicJwk: JsonWebKey): Promise<Sealed
   return { k: b64(k), iv: b64(iv.buffer), d: b64(d) };
 }
 
-export async function unseal<T>(s: Sealed): Promise<T | null> {
+export async function unseal<T>(s: Sealed): Promise<T | null> { return unsealWith<T>(KEYPAIR, s); }
+
+async function unsealWith<T>(storage: string, s: Sealed): Promise<T | null> {
   try {
-    const { privateKey } = await organizerKeys();
+    const { privateKey } = await keyPair(storage);
     const raw = await crypto.subtle.decrypt({ name: 'RSA-OAEP' }, privateKey, unb64(s.k));
     const aes = await crypto.subtle.importKey('raw', raw, 'AES-GCM', false, ['decrypt']);
     const d = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: unb64(s.iv) }, aes, unb64(s.d));

@@ -1,3 +1,4 @@
+import { startOrganizerLink } from '../lib/tvSpotify';
 import { useEffect, useRef, useState } from 'react';
 import { computeScores } from '../lib/scoring';
 import { getTransport, type PublicState, type RemoteGuess, type Transport } from '../lib/sync';
@@ -63,6 +64,7 @@ export function OrganizerSyncBridge() {
   useEffect(() => {
     let unsub: (() => void) | undefined;
     let alive = true;
+    void startOrganizerLink(); // mantém o acesso da TV ao Spotify em dia
     getTransport().then((t) => {
       if (!alive) return;
       transport.current = t;

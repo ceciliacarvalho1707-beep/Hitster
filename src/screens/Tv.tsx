@@ -3,6 +3,7 @@ import { DIF_LABEL, Equalizer, Logo, Vinyl } from '../components/ui';
 import { navigate } from '../router';
 import { useWakeLock } from '../lib/app';
 import { TvAudio } from '../components/preview';
+import { TvSpotifyPlayer } from '../components/tvSpotify';
 import { useState } from 'react';
 import { useFeedback } from '../components/feedback';
 import { deviceId, getTransport, type PublicScore, type PublicState, type PublicTeam } from '../lib/sync';
@@ -36,6 +37,12 @@ export function PublicBoard({ placar, compact }: { placar: PublicScore[]; compac
  * não tem acesso ao banco de músicas nem ao gabarito (a resposta só chega quando o organizador libera).
  */
 export function Tv() {
+  const { kind } = usePublicState();
+  const sala = getDeviceConfig().sala;
+  return <>{<TvScreen />}{(kind === 'sala' || kind === 'local') && (sala || kind === 'local') && <TvSpotifyPlayer />}</>;
+}
+
+function TvScreen() {
   const { state, carregando, kind } = usePublicState();
   useWakeLock(true);
   const sala = getDeviceConfig().sala;

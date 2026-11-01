@@ -22,6 +22,10 @@ export const SCOPES = [
   'user-modify-playback-state',
   'playlist-read-private',
   'playlist-read-collaborative',
+  // para a TV virar um aparelho do Spotify (Web Playback SDK) e tocar a música inteira:
+  'streaming',
+  'user-read-email',
+  'user-read-private',
 ].join(' ');
 
 export interface SpotifyAuth {
@@ -32,6 +36,8 @@ export interface SpotifyAuth {
   verifier?: string;
   state?: string;
   redirectUri?: string;
+  /** Permissões que o Spotify concedeu (vem no login). */
+  scope?: string;
 }
 
 type Fetch = typeof fetch;
@@ -113,7 +119,7 @@ export async function handleRedirect(): Promise<{ ok: boolean; erro?: string } |
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.error_description || data.error || `HTTP ${res.status}`);
-    saveAuth({ clientId: a.clientId, accessToken: data.access_token, refreshToken: data.refresh_token, expiresAt: Date.now() + (data.expires_in - 60) * 1000 });
+    saveAuth({ clientId: a.clientId, accessToken: data.access_token, refreshToken: data.refresh_token, expiresAt: Date.now() + (data.expires_in - 60) * 1000, scope: data.scope ?? SCOPES });
     clean();
     return { ok: true };
   } catch (e) {
@@ -133,9 +139,18 @@ async function token(): Promise<string> {
   });
   const data = await res.json();
   if (!res.ok) { disconnect(); throw new SpotifyError('A conexão com o Spotify expirou. Conecte de novo.', 401); }
-  saveAuth({ ...a, accessToken: data.access_token, refreshToken: data.refresh_token ?? a.refreshToken, expiresAt: Date.now() + (data.expires_in - 60) * 1000 });
+  saveAuth({ ...a, accessToken: data.access_token, refreshToken: data.refresh_token ?? a.refreshToken, expiresAt: Date.now() + (data.expires_in - 60) * 1000, scope: data.scope ?? a.scope });
   return data.access_token;
 }
+
+/** Token válido (renova se preciso) e quando ele expira. Usado para emprestar o acesso à TV. */
+export async function accessToken(): Promise<{ token: string; expiresAt: number }> {
+  const t = await token();
+  return { token: t, expiresAt: loadAuth().expiresAt ?? Date.now() + 30 * 60_000 };
+}
+
+/** true se o login atual já inclui a permissão de tocar no navegador (Web Playback SDK). */
+export function canStream(a = loadAuth()): boolean { return (a.scope ?? '').split(' ').includes('streaming'); }
 
 export class SpotifyError extends Error {
   constructor(message: string, public status: number) { super(message); }
