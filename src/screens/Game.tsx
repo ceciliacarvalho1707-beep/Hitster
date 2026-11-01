@@ -16,6 +16,7 @@ export function Game() {
   const kind = useTransportKind();
   const { connected } = useSpotifyAuth();
   const spotifyModo = useAppState((s) => s.settings.spotifyModo);
+  const mostrarCategoria = useAppState((s) => s.settings.mostrarCategoria);
   const [pick, setPick] = useState(false);
   useWakeLock(true);
 
@@ -93,7 +94,7 @@ export function Game() {
             <div className="round-card__center">
               <Vinyl />
               <div>
-                <p className="round-card__cat">Categoria: <strong>{song?.genero ?? '—'}</strong></p>
+                {mostrarCategoria && <p className="round-card__cat">Categoria: <strong>{song?.genero ?? '—'}</strong></p>}
                 <p className="round-card__inst">Ouça o trecho e descubra o <b>ano de lançamento</b>, o <b>nome da música</b> e o <b>artista, banda ou musical</b>. <Equalizer bars={4} /></p>
               </div>
             </div>

@@ -138,6 +138,8 @@ export interface Settings {
   pinHash?: string;
   reduzirAnimacoes: boolean;
   mostrarAvisoSpotify: boolean;
+  /** Mostra o estilo musical (categoria) da rodada. Desligado por padrão: é uma pista. */
+  mostrarCategoria: boolean;
 }
 
 export interface ArchivedMatch {

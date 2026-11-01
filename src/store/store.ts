@@ -25,6 +25,7 @@ const defaultSettings: Settings = {
   spotifyModo: 'web',
   reduzirAnimacoes: false,
   mostrarAvisoSpotify: true,
+  mostrarCategoria: false,
 };
 
 function defaultTeams(): Team[] {

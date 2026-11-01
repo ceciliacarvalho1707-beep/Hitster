@@ -43,6 +43,12 @@ export function SettingsScreen() {
       <DevicesSettings />
 
       <section className="card">
+        <h2 className="card__title">🙊 Pistas</h2>
+        <Toggle checked={settings.mostrarCategoria} onChange={(v) => settingsActions.update({ mostrarCategoria: v })} label="Mostrar a categoria (estilo musical) da rodada" testId="toggle-categoria" />
+        <p className="muted small">Desligado, ninguém vê o estilo da música antes do gabarito: nem a TV, nem as equipes, nem o cartão da rodada.</p>
+      </section>
+
+      <section className="card">
         <h2 className="card__title">✨ Aparência</h2>
         <Toggle checked={settings.reduzirAnimacoes} onChange={(v) => settingsActions.update({ reduzirAnimacoes: v })} label="Reduzir animações" />
       </section>

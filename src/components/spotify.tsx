@@ -276,7 +276,7 @@ export function PickSongModal({ open, onClose }: { open: boolean; onClose: () =>
         <label className="field"><span>Nome da música</span><input value={form.titulo} onChange={(e) => setForm({ ...form, titulo: e.target.value })} data-testid="pick-titulo" /></label>
         <label className="field"><span>Quem canta</span><input value={form.artista} onChange={(e) => setForm({ ...form, artista: e.target.value })} data-testid="pick-artista" /></label>
         <label className="field"><span>Ano de lançamento</span><input inputMode="numeric" value={form.ano} onChange={(e) => setForm({ ...form, ano: e.target.value.replace(/\D/g, '') })} data-testid="pick-ano" /></label>
-        <label className="field"><span>Estilo (aparece como categoria)</span><input value={form.genero} onChange={(e) => setForm({ ...form, genero: e.target.value })} placeholder="Ex.: Samba, Rock, Pop…" /></label>
+        <label className="field"><span>Estilo musical</span><input value={form.genero} onChange={(e) => setForm({ ...form, genero: e.target.value })} placeholder="Ex.: Samba, Rock, Pop…" /></label>
         <div className="field field--full"><Segmented name="Origem" value={form.origem} onChange={(v) => setForm({ ...form, origem: v })} options={[{ value: 'br', label: '🇧🇷 Brasileira' }, { value: 'intl', label: '🌍 Internacional' }]} /></div>
         <div className="row row--end field--full">
           <button type="button" className="btn btn--ghost" onClick={onClose}>Cancelar</button>

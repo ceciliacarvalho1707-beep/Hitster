@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { computeScores } from '../lib/scoring';
 import { getTransport, type PublicState, type RemoteGuess, type Transport } from '../lib/sync';
-import { currentRound, currentTurn, matchActions, songById, useAppState } from '../store/store';
+import { currentRound, currentTurn, matchActions, songById, useAppState, getState } from '../store/store';
 import type { Match } from '../types';
 
 /** Monta o estado público a partir da partida. NUNCA inclui título/artista/ano, exceto se liberado para a TV. */
@@ -24,7 +24,7 @@ export function buildPublicState(match: Match | null): PublicState {
     modo: match.config.modo,
     turnId: turn?.id,
     vez: (turn?.teamIds ?? []).map(team).filter(Boolean) as PublicState['vez'],
-    categoria: song?.genero,
+    categoria: getState().settings.mostrarCategoria ? song?.genero : undefined,
     dificuldade: song?.dificuldade,
     respondeu: turn ? Object.keys(turn.guesses) : [],
     gabaritoAberto: !!turn?.revealed,

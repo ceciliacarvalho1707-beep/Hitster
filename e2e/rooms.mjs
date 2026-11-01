@@ -55,6 +55,7 @@ try {
   await tv.page.waitForSelector('text=TODAS AS EQUIPES RESPONDEM', { timeout: 25000 });
   const tvText = (await tv.page.textContent('body')).toLowerCase();
   check(2, 'TV em outro aparelho recebe a rodada pela sala (sem a resposta)', tvText.includes('rodada 1') && !tvText.includes(song.titulo.toLowerCase()));
+  check('2b', 'TV e organizador não mostram a categoria (estilo musical)', !tvText.includes('categoria') && !tvText.includes(song.genero.toLowerCase()) && !(await org.page.textContent('[data-testid=round-card]')).toLowerCase().includes('categoria'));
 
   // Reabrir a TV pelo início: deve ir direto para a tela da TV
   await tv.page.goto(BASE);
@@ -72,6 +73,7 @@ try {
   await org.page.waitForFunction(() => document.body.textContent.includes('1 de 2 equipes'), null, { timeout: 25000 });
   const g = await org.page.evaluate(() => { const s = JSON.parse(localStorage.getItem('hitster-party:v1')); return Object.values(s.match.rounds[0].turns[0].guesses)[0]; });
   check(4, 'Palpite do celular de equipe chega ao organizador em outro aparelho', g?.titulo === 'Palpite Ultra Secreto');
+  check('4b', 'Celular de equipe não mostra a categoria', !(await eq.page.textContent('body')).toLowerCase().includes('categoria'));
   check(5, 'No caminho, o palpite vai criptografado (o servidor não consegue ler)', sniffed.length > 0 && sniffed.every((m) => !m.includes('Ultra Secreto') && !m.includes('Misteriosa')));
   await tv.page.waitForSelector('text=✔ respondeu', { timeout: 25000 });
   const tvAfter = await tv.page.textContent('body');

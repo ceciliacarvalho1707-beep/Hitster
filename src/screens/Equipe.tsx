@@ -104,7 +104,7 @@ export function Equipe() {
         <section className="card"><h2 className="card__title">🏁 Fim de jogo!</h2><PublicBoard placar={state.placar ?? []} compact /></section>
       ) : (
         <>
-          <p className="equipe__round">Rodada {state.rodada}{state.totalRodadas ? ` de ${state.totalRodadas}` : ''} · Categoria: <strong>{state.categoria}</strong></p>
+          <p className="equipe__round">Rodada {state.rodada}{state.totalRodadas ? ` de ${state.totalRodadas}` : ''}{state.categoria ? <> · Categoria: <strong>{state.categoria}</strong></> : null}</p>
           {state.resposta && (
             <div className="tv__answer"><span className="muted">A música era…</span><strong>{state.resposta.titulo}</strong><span>{state.resposta.musical ? `${state.resposta.musical} · ` : ''}{state.resposta.artista} · {state.resposta.ano}</span></div>
           )}

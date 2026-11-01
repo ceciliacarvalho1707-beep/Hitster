@@ -90,7 +90,7 @@ export function Tv() {
             <Vinyl />
             <div>
               {state.dificuldade && <span className={`dif dif--${state.dificuldade}`}>{DIF_LABEL[state.dificuldade as Dificuldade]}</span>}
-              <p className="tv__cat">Categoria: <strong>{state.categoria}</strong></p>
+              {state.categoria ? <p className="tv__cat">Categoria: <strong>{state.categoria}</strong></p> : <p className="tv__cat">🎵 Que música é essa?</p>}
               <p className="muted">Valendo: ano · nome da música · artista (ou musical)</p>
             </div>
           </div>
