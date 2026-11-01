@@ -45,11 +45,13 @@ export function SpotifyConnectCard() {
       ) : (
         <>
           <ol className="list small">
-            <li>Entre em <a href="https://developer.spotify.com/dashboard" target="_blank" rel="noopener noreferrer">developer.spotify.com/dashboard</a> com a sua conta (no modo de desenvolvimento, a conta dona do app precisa ser <strong>Premium</strong>).</li>
-            <li>Crie um app e marque <em>Web API</em>.</li>
-            <li>Em <em>Redirect URIs</em>, cadastre exatamente: <code className="sp-copy">{redirect}</code>{redirect.includes('localhost') && <span className="neg"> (troque “localhost” por 127.0.0.1)</span>}</li>
-            <li>Em <em>User Management</em>, adicione o e-mail de quem vai entrar (até 5 pessoas).</li>
-            <li>Copie o <strong>Client ID</strong> e cole abaixo. Ele não é uma senha; o jogo não usa “client secret”.</li>
+            <li>Abra <a href="https://developer.spotify.com/dashboard" target="_blank" rel="noopener noreferrer">developer.spotify.com/dashboard</a> e entre com a sua conta do Spotify (precisa ser <strong>Premium</strong>). Na primeira vez, aceite os termos e confirme o e-mail.</li>
+            <li>Toque em <em>Create app</em>. Preencha <em>App name</em> (ex.: Hitster) e <em>App description</em> (ex.: jogo de festa). <em>Website</em> pode ficar vazio.</li>
+            <li>Em <em>Redirect URIs</em>, cole exatamente <code className="sp-copy">{redirect}</code>{redirect.includes('localhost') && <span className="neg"> (troque “localhost” por 127.0.0.1)</span>} e toque em <em>Add</em>.</li>
+            <li>Em “Which API/SDKs…”, marque <strong>Web API</strong> e <strong>Web Playback SDK</strong> (para a música inteira na TV). Aceite os termos e toque em <em>Save</em>.</li>
+            <li>No app criado, abra <em>Settings</em> e copie o <strong>Client ID</strong> (32 letras e números). Ele não é uma senha; o jogo não usa “client secret”.</li>
+            <li>Se outra pessoa for organizar, adicione o e-mail do Spotify dela em <em>User Management</em> (até 5 pessoas).</li>
+            <li>Cole o Client ID abaixo e toque em <strong>Conectar com o Spotify</strong>. Faça isso no mesmo lugar onde você joga (o app na tela de início).</li>
           </ol>
           <form className="row" onSubmit={async (e) => {
             e.preventDefault();
