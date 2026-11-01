@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { extractTrackId } from '../lib/spotify';
 import * as sp from '../lib/spotifyApi';
 import {
-  keyCodeMatches, loadSdk, onTvChange, pairTv, pairedCode, pauseOnTv, playOnTv, publishTvInfo, startOrganizerLink,
+  keyCodeMatches, loadSdk, waitTvPlaying, onTvChange, pairTv, pairedCode, pauseOnTv, playOnTv, publishTvInfo, startOrganizerLink,
   subscribeTvToken, tvCode, tvInfo, unpairTv, type SdkPlayer, type TvInfo, type TvToken,
 } from '../lib/tvSpotify';
 import { matchActions } from '../store/store';
@@ -47,7 +47,10 @@ export function TvSpotifyCard() {
   );
   else if (info.status === 'erro') corpo = <><p className="neg small" data-testid="tvsp-erro">{info.erro}</p><p className="muted small">Enquanto isso, use o trecho de 30 s na TV ou ligue o celular na TV por AirPlay/Bluetooth.</p></>;
   else if (!pronta) corpo = <p className="small muted" data-testid="tvsp-conectando">Ligando o Spotify na TV… Se aparecer “Ativar som” na TV, aperte com o controle.</p>;
-  else corpo = <p className="small pos" data-testid="tvsp-pronta">✅ TV pronta: o botão “Música inteira na TV” toca a faixa completa lá.</p>;
+  else corpo = <>
+    <p className="small pos" data-testid="tvsp-pronta">✅ TV pronta: o botão “Música inteira na TV” toca a faixa completa lá.{info.tocando ? ' 🎶 Tocando agora.' : ''}</p>
+    {info.problema && <p className="neg small" data-testid="tvsp-problema">{info.problema}</p>}
+  </>;
 
   return (
     <div className="card tvsp" data-testid="tvsp-card">
@@ -73,7 +76,12 @@ export function TvFullSongButton({ song, turn }: { song: Song; turn: Turn }) {
         setBusy(true);
         try {
           if (turn.som?.acao === 'tocar') matchActions.setSom(null, 'parar');
-          await playOnTv(trackId); setTocando(true); toast('Música inteira tocando na TV 📺🎶');
+          await playOnTv(trackId); setTocando(true);
+          toast('Mandei tocar na TV… conferindo 📺');
+          const r = await waitTvPlaying();
+          if (r === 'ok') toast('Música inteira tocando na TV 📺🎶');
+          else if (r === 'silencio') toast('A TV recebeu a música mas não confirmou que começou. Se estiver sem som, aperte “Ativar som do Spotify” na TV e toque de novo. Se continuar, o navegador da TV não toca o Spotify: use o trecho de 30 s.', 'erro');
+          else toast(r.problema, 'erro');
         } catch (e) { toast((e as Error).message, 'erro'); } finally { setBusy(false); }
       }}>{busy ? 'Conectando…' : tocando ? '↺ TOCAR DE NOVO NA TV' : '📺 MÚSICA INTEIRA NA TV'}</button>
       <button className="btn btn--ghost" disabled={busy || !tocando} data-testid="tvsp-pause" onClick={async () => {
@@ -91,6 +99,9 @@ const ERROS: Record<string, string> = {
   account_error: 'Tocar a música inteira na TV exige Spotify Premium.',
 };
 
+const PROB_AUTOPLAY = 'A TV bloqueou o som. Aperte “Ativar som do Spotify” com o controle.';
+const PROB_PLAYBACK = 'A música chegou, mas o navegador desta TV não conseguiu tocá-la. Use o trecho de 30 s, AirPlay/Bluetooth ou um notebook ligado na TV';
+
 /** Fica num cantinho da TV: transforma esta tela num aparelho do Spotify. Nunca mostra o nome da faixa. */
 export function TvSpotifyPlayer() {
   const [codigo, setCodigo] = useState('');
@@ -101,10 +112,12 @@ export function TvSpotifyPlayer() {
   const [erro, setErro] = useState('');
   const [ativado, setAtivado] = useState(false);
   const [tocando, setTocando] = useState(false);
+  const [problema, setProblema] = useState('');
+  const deviceRef = useRef<string | undefined>(undefined);
 
   const publicar = (s: TvInfo['status'], extra: Partial<TvInfo> = {}) => {
     setStatus(s);
-    void publishTvInfo({ status: s, ...extra }).catch(() => undefined);
+    void publishTvInfo({ status: s, deviceId: deviceRef.current, ...extra }).catch(() => undefined);
   };
 
   useEffect(() => {
@@ -128,10 +141,19 @@ export function TvSpotifyPlayer() {
       if (player.current) return;
       const p = new Spotify.Player({ name: 'HITSTER PARTY · TV', getOAuthToken: (cb) => cb(tokRef.current?.token ?? ''), volume: 0.9 });
       player.current = p;
-      p.addListener('ready', (d) => { setErro(''); publicar('pronta', { deviceId: d?.device_id }); });
+      p.addListener('ready', (d) => { setErro(''); deviceRef.current = d?.device_id; publicar('pronta'); });
+      // O navegador bloqueou o som automático: precisa de um clique na TV.
+      p.addListener('autoplay_failed', () => { setAtivado(false); setProblema(PROB_AUTOPLAY); publicar('pronta', { problema: PROB_AUTOPLAY }); });
+      // A música chegou, mas o navegador não consegue tocá-la (comum em navegadores de Smart TV).
+      p.addListener('playback_error', (d) => { const m = `${PROB_PLAYBACK}${d?.message ? ` (${d.message})` : ''}`; setProblema(m); publicar('pronta', { problema: m }); });
       p.addListener('not_ready', () => publicar('conectando'));
       for (const ev of Object.keys(ERROS)) p.addListener(ev, () => { setErro(ERROS[ev]); publicar('erro', { erro: ERROS[ev] }); });
-      p.addListener('player_state_changed', (s) => setTocando(!!s && !s.paused));
+      p.addListener('player_state_changed', (s) => {
+        const t = !!s && !s.paused;
+        setTocando(t);
+        if (t) setProblema('');
+        publicar('pronta', { tocando: t });
+      });
       p.connect().then((ok) => { if (!ok) { setErro(ERROS.initialization_error); publicar('erro', { erro: ERROS.initialization_error }); } });
     }).catch((e: Error) => { setErro(e.message); publicar('erro', { erro: e.message }); });
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -143,9 +165,14 @@ export function TvSpotifyPlayer() {
       {status === 'aguardando' && <span>🎶 Música inteira pelo Spotify: no celular do organizador, confirme o código <b data-testid="tvsp-tv-code">{codigo}</b></span>}
       {status === 'conectando' && <span>🎶 Ligando o Spotify…</span>}
       {status === 'erro' && <span className="neg">{erro}</span>}
+      {status === 'pronta' && problema && <span className="neg" data-testid="tvsp-tv-problema">{problema}</span>}
       {status === 'pronta' && (ativado
-        ? <span data-testid="tvsp-tv-ok">🟢 Spotify pronto{tocando ? ' · 🎶 tocando' : ''}</span>
-        : <button className="btn btn--primary btn--sm" data-testid="tvsp-tv-ativar" onClick={() => { void player.current?.activateElement?.(); setAtivado(true); }}>🔊 Ativar som do Spotify</button>)}
+        ? !problema && <span data-testid="tvsp-tv-ok">🟢 Spotify pronto{tocando ? ' · 🎶 tocando' : ''}</span>
+        : <button className="btn btn--primary btn--sm" data-testid="tvsp-tv-ativar" onClick={() => {
+            const p = player.current;
+            void p?.activateElement?.()?.then(() => p?.resume?.()).catch(() => undefined);
+            setAtivado(true); setProblema('');
+          }}>🔊 Ativar som do Spotify</button>)}
     </div>
   );
 }

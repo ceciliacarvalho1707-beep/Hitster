@@ -23,6 +23,10 @@ export interface TvInfo {
   status: 'aguardando' | 'conectando' | 'pronta' | 'erro';
   deviceId?: string;
   erro?: string;
+  /** A TV confirma quando a música começou de verdade. */
+  tocando?: boolean;
+  /** Problema ao tocar (ex.: navegador bloqueou o som ou não toca conteúdo protegido). */
+  problema?: string;
   em: string;
 }
 interface TokenMsg { para: string | null; selado?: Sealed; em: string }
@@ -41,6 +45,7 @@ function setPaired(code: string | null) {
 }
 
 let info: TvInfo | null = null;
+let infoRecebidaEm = 0;
 const listeners = new Set<() => void>();
 function emit() { listeners.forEach((l) => l()); }
 export function onTvChange(l: () => void) { listeners.add(l); return () => { listeners.delete(l); }; }
@@ -59,7 +64,7 @@ export async function startOrganizerLink(): Promise<void> {
   t.channel(CH_INFO).subscribe((d) => {
     const v = d as TvInfo;
     if (!v || typeof v.codigo !== 'string' || !v.pub) return;
-    info = v; emit();
+    info = v; infoRecebidaEm = Date.now(); emit();
     void sendToken();
   });
   sp.onAuthChange(() => { void sendToken(); });
@@ -101,6 +106,23 @@ export async function playOnTv(trackId: string) {
   await sendToken();
   await sp.playOnDevice(trackId, i.deviceId);
 }
+
+/** Espera a TV confirmar que começou a tocar. Retorna 'ok', o problema informado pela TV, ou 'silencio'. */
+export function waitTvPlaying(ms = 8000): Promise<'ok' | 'silencio' | { problema: string }> {
+  return new Promise((resolve) => {
+    const desde = Date.now();
+    const check = () => {
+      const i = info;
+      if (i && infoRecebidaEm >= desde) {
+        if (i.problema) { done({ problema: i.problema }); return; }
+        if (i.tocando) { done('ok'); return; }
+      }
+    };
+    const off = onTvChange(check);
+    const t = setTimeout(() => done('silencio'), ms);
+    function done(r: 'ok' | 'silencio' | { problema: string }) { clearTimeout(t); off(); resolve(r); }
+  });
+}
 export async function pauseOnTv() {
   if (info?.deviceId) await sp.pausePlayback(info.deviceId);
 }
@@ -137,9 +159,10 @@ export async function subscribeTvToken(cb: (t: TvToken | null) => void): Promise
 
 interface SdkPlayer {
   connect(): Promise<boolean>;
+  resume?(): Promise<void>;
   disconnect(): void;
   activateElement?(): Promise<void>;
-  addListener(ev: string, cb: (d: { device_id?: string; message?: string; paused?: boolean } | null) => void): boolean;
+  addListener(ev: string, cb: (d: { device_id?: string; message?: string; paused?: boolean; position?: number } | null) => void): boolean;
 }
 interface SdkWindow { Spotify?: { Player: new (o: { name: string; getOAuthToken: (cb: (t: string) => void) => void; volume?: number }) => SdkPlayer }; onSpotifyWebPlaybackSDKReady?: () => void }
 

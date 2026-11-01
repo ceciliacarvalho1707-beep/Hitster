@@ -111,11 +111,16 @@ try {
   const plays = [];
   await org.ctx.route(/api\.spotify\.com/, (route) => {
     const r = route.request();
-    if (r.method() === 'PUT' && r.url().includes('/me/player/play')) plays.push({ url: r.url(), body: r.postData() });
+    if (r.method() === 'PUT' && r.url().includes('/me/player/play')) {
+      plays.push({ url: r.url(), body: r.postData() });
+      // o "Spotify" da TV começa a tocar (1ª vez) ou falha (2ª vez, como num navegador de TV sem suporte)
+      const n = plays.length;
+      setTimeout(() => tv.page.evaluate((n) => n === 1 ? window.__player.l.player_state_changed({ paused: false }) : window.__player.l.playback_error({ message: 'Failed to play' }), n).catch(() => undefined), 300);
+    }
     route.fulfill({ status: 204, body: '' });
   });
   await tv.ctx.route(/sdk\.scdn\.co/, (route) => route.fulfill({ contentType: 'text/javascript', body: `
-    window.Spotify = { Player: class { constructor(o) { this.o = o; this.l = {}; }
+    window.Spotify = { Player: class { constructor(o) { this.o = o; this.l = {}; window.__player = this; }
       addListener(e, cb) { this.l[e] = cb; return true; }
       connect() { this.o.getOAuthToken((t) => { window.__tok = t; setTimeout(() => this.l.ready && this.l.ready({ device_id: 'tv-device-123' }), 50); }); return Promise.resolve(true); }
       disconnect() {} activateElement() { window.__ativado = true; return Promise.resolve(); } } };
@@ -133,10 +138,16 @@ try {
   check('6e', 'A TV recebe o acesso ao Spotify e ele viaja criptografado', tvTok === 'TOKEN-ORG-SECRETO' && allMsgs.some((m) => m.includes('"selado"')) && allMsgs.every((m) => !m.includes('TOKEN-ORG-SECRETO')));
   await org.page.waitForSelector('[data-testid=tvsp-play]', { timeout: 25000 });
   await org.page.click('[data-testid=tvsp-play]');
-  await org.page.waitForFunction(() => document.body.textContent.includes('Música inteira tocando'), null, { timeout: 15000 });
+  await org.page.waitForFunction(() => document.body.textContent.includes('Música inteira tocando na TV 📺🎶'), null, { timeout: 15000 });
   const tvSp = (await tv.page.textContent('body')).toLowerCase();
   check('6f', 'Música inteira toca no Spotify da TV (a faixa da rodada) sem mostrar o nome', plays.length === 1 && plays[0].url.includes('device_id=tv-device-123') && plays[0].body.includes(`spotify:track:${trackId}`) && tvSp.includes('spotify pronto') && !tvSp.includes(song.titulo.toLowerCase()), JSON.stringify(plays));
   await tv.page.screenshot({ path: join(shots, '22-tv-spotify.png') });
+  check('6g', 'O celular confirma que a TV começou a tocar de verdade', (await tv.page.textContent('[data-testid=tvsp-tv]')).includes('tocando'));
+  await org.page.click('[data-testid=tvsp-play]');
+  await tv.page.waitForSelector('[data-testid=tvsp-tv-problema]', { timeout: 15000 });
+  await org.page.waitForSelector('[data-testid=tvsp-problema]', { timeout: 15000 });
+  check('6h', 'Se a TV não consegue tocar, a TV e o celular avisam (em vez de ficar em silêncio)', (await org.page.textContent('[data-testid=tvsp-problema]')).includes('não conseguiu tocá-la'));
+
   await org.page.screenshot({ path: join(shots, '23-org-spotify-tv.png'), fullPage: true });
 
   // Organizador revela e libera para a TV
