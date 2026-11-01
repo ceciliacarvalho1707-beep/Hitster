@@ -592,3 +592,13 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .tvsp-tv .btn { pointer-events: auto; }
 .tvsp-tv b { font-family: ui-monospace, monospace; letter-spacing: .08em; font-size: 1.2em; color: #38bdf8; }
 .tvsp-tv--pronta { border-color: rgba(30, 215, 96, .6); }
+
+/* ── Pontuação rápida ── */
+.modo-pontos { display: flex; justify-content: center; }
+.quick__list { display: grid; gap: 12px; }
+.quick__team { border: 1px solid var(--team, #8b5cf6); border-left-width: 5px; border-radius: 14px; padding: 12px; display: grid; gap: 10px; }
+.quick__head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.quick__pts { font-weight: 900; font-size: 1.15rem; }
+.quick__checks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.quick__fast { display: flex; justify-content: space-between; }
+.quick__go { width: 100%; margin-top: 14px; }

@@ -110,6 +110,8 @@ export function Equipe() {
           )}
           {!minhaVez ? (
             <section className="card center"><h2>Agora é a vez da {state.vez?.[0]?.nome ?? 'outra equipe'} {state.vez?.[0]?.emoji}</h2><p className="muted">Fiquem de olho na TV. Quando chegar a vez de vocês, o formulário aparece aqui. <Equalizer /></p></section>
+          ) : state.rapido && !travado ? (
+            <section className="card center" data-testid="equipe-voz-alta"><h2>🗣️ É a vez de vocês!</h2><p className="muted">Nesta partida ninguém precisa escrever: falem a resposta em voz alta para o organizador (ano, música e artista).</p></section>
           ) : travado ? (
             <section className="card center"><h2>🔐 Palpites encerrados</h2><p className="muted">O organizador já abriu o gabarito desta música.</p></section>
           ) : jaEnviou ? (

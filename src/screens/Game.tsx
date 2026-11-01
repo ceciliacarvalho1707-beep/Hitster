@@ -1,6 +1,6 @@
 import { useFeedback } from '../components/feedback';
-import { EvaluationPanel, GuessPanel, Scoreboard, SecretAnswerCard, SpotifyButton } from '../components/game';
-import { DifficultyBadge, Equalizer, Redirect, TopBar, Vinyl } from '../components/ui';
+import { EvaluationPanel, GuessPanel, QuickScorePanel, Scoreboard, SecretAnswerCard, SpotifyButton } from '../components/game';
+import { DifficultyBadge, Equalizer, Redirect, Segmented, TopBar, Vinyl } from '../components/ui';
 import { useTransportKind } from '../components/sync';
 import { PickSongModal, PlayOnDevice, useSpotifyAuth } from '../components/spotify';
 import { useState } from 'react';
@@ -9,7 +9,7 @@ import { PreviewControls } from '../components/preview';
 import { TvFullSongButton, TvSpotifyCard } from '../components/tvSpotify';
 import { ConnectDevicesCard } from '../components/rooms';
 import { navigate } from '../router';
-import { currentRound, currentTurn, hasNextTeam, isLastRound, matchActions, songById, turnComplete, useAppState } from '../store/store';
+import { currentRound, currentTurn, hasNextTeam, isLastRound, matchActions, settingsActions, songById, turnComplete, useAppState } from '../store/store';
 
 export function Game() {
   const match = useAppState((s) => s.match);
@@ -19,6 +19,7 @@ export function Game() {
   const { connected } = useSpotifyAuth();
   const spotifyModo = useAppState((s) => s.settings.spotifyModo);
   const mostrarCategoria = useAppState((s) => s.settings.mostrarCategoria);
+  const rapido = useAppState((s) => s.settings.pontuacaoRapida);
   const [pick, setPick] = useState(false);
   useWakeLock(true);
 
@@ -114,15 +115,23 @@ export function Game() {
             )}
           </article>
 
-          <GuessPanel turn={turn} match={match} />
+          <div className="modo-pontos">
+            <Segmented name="Como pontuar" value={rapido ? 'rapido' : 'escrito'} onChange={(v) => settingsActions.update({ pontuacaoRapida: v === 'rapido' })} options={[
+              { value: 'escrito', label: '✍️ Escrevendo os palpites' },
+              { value: 'rapido', label: '⚡ Só dar os pontos' },
+            ]} />
+          </div>
+          {!rapido && <GuessPanel turn={turn} match={match} />}
           {song && <SecretAnswerCard turn={turn} song={song} match={match} />}
-          <EvaluationPanel turn={turn} match={match} />
+          {rapido
+            ? <QuickScorePanel turn={turn} match={match} onAvancar={avancar} nextLabel={nextLabel} />
+            : <EvaluationPanel turn={turn} match={match} />}
 
           <nav className="turn-nav">
             <button className="btn btn--ghost" onClick={() => { const r = matchActions.previous(); if (!r.ok) toast(r.erro, 'info'); }} disabled={isFirst} data-testid="btn-anterior">◀ Anterior</button>
-            <button className="btn btn--primary btn--xl" onClick={avancar} disabled={!complete} data-testid="btn-proximo">{nextLabel}</button>
+            {(!rapido || complete) && <button className="btn btn--primary btn--xl" onClick={avancar} disabled={!complete} data-testid="btn-proximo">{nextLabel}</button>}
           </nav>
-          {!complete && (
+          {!complete && !rapido && (
             <p className="muted small center">
               {!turn.revealed && !Object.keys(turn.evals).length
                 ? 'Registre os palpites, revele o gabarito e conclua a avaliação para avançar.'

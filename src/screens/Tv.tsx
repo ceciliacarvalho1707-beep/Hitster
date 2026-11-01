@@ -121,7 +121,9 @@ function TvScreen() {
             </div>
           ) : <p className="tv__msg">{state.gabaritoAberto ? '🔐 O organizador está conferindo as respostas…' : '🎧 Ouçam com atenção!'}</p>}
           <TvAudio som={state.som} />
-          {!state.gabaritoAberto && !state.resposta && <TvGuess state={state} equipes={equipesDoTurno} />}
+          {!state.gabaritoAberto && !state.resposta && (state.rapido
+            ? <p className="tv__msg" data-testid="tv-voz-alta">🗣️ Falem a resposta em voz alta!</p>
+            : <TvGuess state={state} equipes={equipesDoTurno} />)}
         </section>
         <aside className="tv__board"><h2>Placar</h2><PublicBoard placar={state.placar ?? []} compact />{qrEquipes}</aside>
       </div>

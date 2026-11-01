@@ -293,3 +293,61 @@ export function Scoreboard({ match, compact, showRound = true }: { match: Match;
 }
 
 export function turnPoints(turn: Turn, teamId: string) { return pointsOf(turn.evals[teamId]); }
+
+/* ───────────────────────── Pontuação rápida (sem escrever) ───────────────────────── */
+
+type Acertos = { titulo: boolean; artista: boolean; ano: boolean };
+const VAZIO: Acertos = { titulo: false, artista: false, ano: false };
+
+/**
+ * Ninguém precisa escrever: as equipes falam a resposta, o organizador marca o que acertaram
+ * e passa para a próxima. Cada item marcado vale 1 ponto (pontos sempre recalculados, sem duplicar).
+ */
+export function QuickScorePanel({ turn, match, onAvancar, nextLabel }: { turn: Turn; match: Match; onAvancar: () => void; nextLabel: string }) {
+  const inicial = () => Object.fromEntries(turn.teamIds.map((id) => {
+    const e = turn.evals[id];
+    return [id, e?.concluida ? { titulo: e.titulo, artista: e.artista, ano: e.ano } : { ...VAZIO }];
+  })) as Record<string, Acertos>;
+  const [marcas, setMarcas] = useState<Record<string, Acertos>>(inicial);
+  useEffect(() => { setMarcas(inicial()); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [turn.id]);
+
+  const alternar = (id: string, k: keyof Acertos) => setMarcas((m) => ({ ...m, [id]: { ...(m[id] ?? VAZIO), [k]: !(m[id] ?? VAZIO)[k] } }));
+  const definir = (id: string, v: boolean) => setMarcas((m) => ({ ...m, [id]: { titulo: v, artista: v, ano: v } }));
+  const pts = (a: Acertos | undefined) => (a?.titulo ? 1 : 0) + (a?.artista ? 1 : 0) + (a?.ano ? 1 : 0);
+
+  return (
+    <section className="card quick" data-testid="quick-panel">
+      <h3 className="section-title">⚡ Quanto cada equipe fez?</h3>
+      <p className="muted small" style={{ marginTop: 0 }}>As equipes falam a resposta em voz alta. Veja o gabarito, marque o que acertaram (1 ponto cada) e avance.</p>
+      <div className="quick__list">
+        {turn.teamIds.map((id) => {
+          const team = match.teams.find((t) => t.id === id);
+          if (!team) return null;
+          const a = marcas[id] ?? VAZIO;
+          const n = pts(a);
+          return (
+            <div key={id} className="quick__team" style={{ ['--team' as string]: team.cor }} data-testid={`quick-${team.nome}`}>
+              <div className="quick__head">
+                <TeamChip team={team} size="sm" />
+                <span className="quick__pts" data-testid="quick-points">{n} {n === 1 ? 'ponto' : 'pontos'}</span>
+              </div>
+              <div className="quick__checks">
+                <Check on={a.titulo} label="🎵 Música" onClick={() => alternar(id, 'titulo')} testId="quick-titulo" />
+                <Check on={a.artista} label="🎤 Artista" onClick={() => alternar(id, 'artista')} testId="quick-artista" />
+                <Check on={a.ano} label="📅 Ano" onClick={() => alternar(id, 'ano')} testId="quick-ano" />
+              </div>
+              <div className="quick__fast">
+                <button type="button" className="link-btn" onClick={() => definir(id, false)}>Zerar</button>
+                <button type="button" className="link-btn" onClick={() => definir(id, true)} data-testid="quick-tudo">Acertou tudo (3)</button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <button className="btn btn--primary btn--xl quick__go" data-testid="quick-go" onClick={() => {
+        matchActions.quickScore(turn.id, marcas);
+        onAvancar();
+      }}>✅ DAR OS PONTOS · {nextLabel}</button>
+    </section>
+  );
+}

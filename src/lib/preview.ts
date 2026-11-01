@@ -10,7 +10,7 @@
  * Para a TV vai apenas o endereço do áudio, que não contém título nem artista.
  */
 import type { Song } from '../types';
-import { normalize, splitArtists, textMatches } from './scoring';
+import { looseMatches as textMatches, normalize, splitArtists } from './scoring';
 
 let counter = 0;
 

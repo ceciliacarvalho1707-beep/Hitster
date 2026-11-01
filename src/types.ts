@@ -142,6 +142,8 @@ export interface Settings {
   mostrarAvisoSpotify: boolean;
   /** Mostra o estilo musical (categoria) da rodada. Desligado por padrão: é uma pista. */
   mostrarCategoria: boolean;
+  /** Modo rápido: ninguém escreve, o organizador só marca os acertos e passa. */
+  pontuacaoRapida: boolean;
 }
 
 export interface ArchivedMatch {

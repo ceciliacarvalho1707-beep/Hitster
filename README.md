@@ -85,6 +85,14 @@ Cada aparelho tem um papel e **lembra dele**: a TV abre sempre direto na tela da
 ### Dá para esconder o nome da música no Spotify?
 Não dentro do Spotify: o app sempre mostra título, artista e capa, e nenhum site consegue mudar isso. A solução prática é dividir as telas. A **TV** mostra o jogo sem spoiler, e o **celular do organizador** toca a música (direto ou por Spotify Connect numa caixa de som) longe da vista dos jogadores. O aviso antes de abrir o Spotify lembra isso.
 
+## ⚡ Dois jeitos de pontuar
+
+Na tela da rodada, escolha:
+- **✍️ Escrevendo os palpites**: as equipes escrevem (no celular do organizador, na TV ou no próprio celular) e o jogo corrige sozinho.
+- **⚡ Só dar os pontos**: ninguém escreve. As equipes falam a resposta, o organizador marca 🎵 Música / 🎤 Artista / 📅 Ano de cada equipe (1 ponto cada) e toca em **DAR OS PONTOS**, que já avança. A TV mostra "Falem a resposta em voz alta!".
+
+**Correção automática:** aceita letra faltando, sobrando ou trocada ("Anita" vale Anitta, "Shalow" vale Shallow), acentos, maiúsculas e espaços ("antihero" vale Anti-Hero). **Não** aceita palavras a mais, a menos ou trocadas ("Shallow Now" não vale Shallow). Palavras curtas toleram menos erros (até 2 letras: nenhum; 3–6: 1; 7+: 2). O organizador sempre pode corrigir à mão.
+
 ## 📺🎶 Música inteira na TV (Spotify Premium)
 
 A TV pode virar um aparelho do Spotify **sem mostrar o nome da música**:

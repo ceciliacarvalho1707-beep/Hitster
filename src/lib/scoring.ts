@@ -36,22 +36,55 @@ export function similarity(a: string, b: string): number {
   return max === 0 ? 1 : 1 - levenshtein(a, b) / max;
 }
 
+/** Quantas letras podem estar erradas numa palavra (faltando, sobrando ou trocada). */
+function wordTolerance(len: number): number {
+  return len <= 2 ? 0 : len <= 6 ? 1 : 2;
+}
+
+/** Duas palavras "iguais" aceitando erro de digitação proporcional ao tamanho. */
+function wordsMatch(g: string, a: string): boolean {
+  return g === a || levenshtein(g, a) <= wordTolerance(Math.max(g.length, a.length));
+}
+
+/** Variantes de uma resposta: sem o trecho entre parênteses e com ele ("Single Ladies (Put a Ring on It)"). */
+function answerVariants(ans: string): string[] {
+  const sem = normalize(ans);
+  const com = normalize(ans.replace(/[()[\]]/g, ' '));
+  return com && com !== sem ? [sem, com] : [sem];
+}
+
 /**
  * Compara um palpite com uma lista de respostas aceitas.
- * Aceita pequenos erros de digitação (similaridade ≥ 0,8) e, para nomes longos,
- * um palpite que contenha a resposta (ou vice-versa) com pelo menos 4 letras.
+ *  - Aceita erros de digitação: letra faltando, sobrando ou trocada (ex.: "Anita" → Anitta,
+ *    "Bohemian Rapsody" → Bohemian Rhapsody). Palavras curtas toleram menos erros.
+ *  - NÃO aceita palavras a mais, a menos ou trocadas (ex.: "Shallow Now" ≠ Shallow, "love" ≠ I Will Always Love You).
+ *  - Ignora acentos, maiúsculas, pontuação, artigos e espaços colados/separados ("antihero" = Anti-Hero).
  */
 export function textMatches(guess: string, accepted: string[]): boolean {
+  const g = normalize(guess);
+  if (!g) return false;
+  const gw = g.split(' ');
+  return accepted.some((ans) => answerVariants(ans).some((a) => {
+    if (!a) return false;
+    if (g === a) return true;
+    const aw = a.split(' ');
+    if (gw.length === aw.length) return gw.every((w, i) => wordsMatch(w, aw[i]));
+    // Quantidade de palavras diferente: só vale se a diferença for de espaço (ex.: "bumbum" × "bum bum"), com no máx. 1 letra errada.
+    const gc = g.replace(/ /g, ''), ac = a.replace(/ /g, '');
+    return gc.length >= 4 && levenshtein(gc, ac) <= (ac.length >= 6 ? 1 : 0);
+  }));
+}
+
+/** Comparação mais solta (aceita "contém"), usada só para achar a faixa certa nas prévias da Apple/Deezer. */
+export function looseMatches(guess: string, accepted: string[]): boolean {
   const g = normalize(guess);
   if (!g) return false;
   return accepted.some((ans) => {
     const a = normalize(ans);
     if (!a) return false;
-    if (g === a) return true;
-    if (similarity(g, a) >= 0.8) return true;
+    if (g === a || similarity(g, a) >= 0.8) return true;
     const shorter = g.length < a.length ? g : a;
     const longer = g.length < a.length ? a : g;
-    // "contém": só vale se o trecho for uma parte substancial do nome (evita "love" valer por "I Will Always Love You")
     return shorter.length >= 4 && shorter.length / longer.length >= 0.5 && (` ${longer} `).includes(` ${shorter} `);
   });
 }

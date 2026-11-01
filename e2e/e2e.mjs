@@ -272,6 +272,23 @@ try {
   check('14c', 'Celular de equipe não recebe a resposta antes da revelação', !norm(eqBody).includes(norm(song5.titulo)));
   await eq.close();
 
+  // Pontuação rápida: ninguém escreve, o organizador marca os acertos e avança
+  await page.getByRole('radio', { name: /Só dar os pontos/ }).click();
+  await page.waitForSelector('[data-testid=quick-panel]');
+  const semFormulario = (await page.locator('[data-testid=guess-titulo]').count()) === 0;
+  await page.locator('[data-testid="quick-Equipe Roxa"] [data-testid=quick-tudo]').click();
+  await page.locator('[data-testid="quick-Time do Caos"] [data-testid=quick-titulo]').click();
+  const ptsRoxa = await page.locator('[data-testid="quick-Equipe Roxa"] [data-testid=quick-points]').textContent();
+  await page.click('[data-testid=quick-go]');
+  await page.waitForFunction(() => JSON.parse(localStorage.getItem('hitster-party:v1')).match.cursor.round === 1, null, { timeout: 5000 });
+  const stQ = await state();
+  const evQ = stQ.match.rounds[0].turns[0].evals;
+  const byName = (n) => evQ[stQ.match.teams.find((t) => t.nome === n).id];
+  const pq = (e) => (e.titulo ? 1 : 0) + (e.artista ? 1 : 0) + (e.ano ? 1 : 0);
+  check('21', 'Modo "só dar os pontos": sem escrever, marca os acertos e avança', semFormulario && ptsRoxa.includes('3') && pq(byName('Equipe Roxa')) === 3 && pq(byName('Time do Caos')) === 1 && Object.values(evQ).every((e) => e.concluida), JSON.stringify(Object.values(evQ).map(pq)));
+  await page.screenshot({ path: join(shots, '24-pontuacao-rapida.png'), fullPage: true });
+  await page.getByRole('radio', { name: /Escrevendo os palpites/ }).click();
+
   // Admin: cadastrar música + importar JSON
   await page.goto(BASE + '#admin');
   await page.click('[data-testid=song-new]');

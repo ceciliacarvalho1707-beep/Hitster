@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { DEMO_SONGS } from '../data/demoSongs';
-import { autoEvaluate, computeScores, normalize, pointsOf, textMatches, yearMatches } from './scoring';
+import { autoEvaluate, computeScores, normalize, pointsOf, splitArtists, textMatches, yearMatches } from './scoring';
 import type { Match } from '../types';
 
 const song = (id: string) => DEMO_SONGS.find((s) => s.id === id)!;
@@ -15,6 +15,23 @@ describe('normalização e comparação de textos', () => {
   it('aceita pequenos erros de digitação', () => {
     expect(textMatches('Bohemian Rapsody', ['Bohemian Rhapsody'])).toBe(true);
     expect(textMatches('Aretha Franklim', ['Aretha Franklin'])).toBe(true);
+  });
+  it('aceita letra faltando, sobrando ou trocada', () => {
+    expect(textMatches('Anita', ['Anitta'])).toBe(true);
+    expect(textMatches('Shalow', ['Shallow'])).toBe(true);
+    expect(textMatches('Shalloww', ['Shallow'])).toBe(true);
+    expect(textMatches('Evidencas', ['Evidências'])).toBe(true);
+    expect(textMatches('Legiao Urbanna', ['Legião Urbana'])).toBe(true);
+    expect(textMatches('antihero', ['Anti-Hero'])).toBe(true);
+    expect(textMatches('Single Ladies Put a Ring on It', ['Single Ladies (Put a Ring on It)'])).toBe(true);
+    expect(textMatches('Single Ladies', ['Single Ladies (Put a Ring on It)'])).toBe(true);
+  });
+  it('não aceita palavras a mais, a menos ou trocadas', () => {
+    expect(textMatches('Shallow Now', ['Shallow'])).toBe(false);
+    expect(textMatches('Bohemian Rhapsody Now', ['Bohemian Rhapsody'])).toBe(false);
+    expect(textMatches('I Will Always Love Me', ['I Will Always Love You'])).toBe(false);
+    expect(textMatches('Bohemian', ['Bohemian Rhapsody'])).toBe(false);
+    expect(textMatches('Anitta Pop', ['Anitta'])).toBe(false);
   });
   it('não aceita palavras soltas nem respostas erradas', () => {
     expect(textMatches('love', ['I Will Always Love You'])).toBe(false);
@@ -86,5 +103,19 @@ describe('placar', () => {
     const m2 = { ...match, adjustments: [{ id: 'j', teamId: 'c', pontos: 2, motivo: 'versão alternativa', em: '' }] };
     expect(computeScores(m2).find((r) => r.team.id === 'c')!.total).toBe(4);
     expect(computeScores(m2).find((r) => r.team.id === 'c')!.total).toBe(4);
+  });
+});
+
+describe('correção com o banco inteiro', () => {
+  it('cada música aceita o próprio título e artista, e não confunde com o título de outra música', () => {
+    const titulos = DEMO_SONGS.map((s) => s.titulo);
+    const proprios = DEMO_SONGS.filter((s) => !textMatches(s.titulo, [s.titulo]) || !textMatches(s.artista, splitArtists(s.artista)));
+    expect(proprios.map((s) => s.titulo)).toEqual([]);
+    const confusoes: string[] = [];
+    for (const a of titulos) for (const b of titulos) {
+      if (a !== b && normalize(a) !== normalize(b) && textMatches(a, [b])) confusoes.push(`${a} → ${b}`);
+    }
+    // Única dupla que difere por uma letra só (pela regra, um erro de letra é aceito).
+    expect(confusoes.filter((c) => !/Flowers|Flores/.test(c))).toEqual([]);
   });
 });

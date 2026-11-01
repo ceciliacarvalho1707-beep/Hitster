@@ -26,6 +26,7 @@ const defaultSettings: Settings = {
   reduzirAnimacoes: false,
   mostrarAvisoSpotify: true,
   mostrarCategoria: false,
+  pontuacaoRapida: false,
 };
 
 function defaultTeams(): Team[] {
@@ -237,6 +238,25 @@ export const matchActions = {
       if (song) for (const id of t.teamIds) if (!evals[id]) evals[id] = autoEvaluate(t.guesses[id], song, m.config.tolerancia);
       return { ...t, revealed: true, evals };
     });
+  },
+
+  /** Pontuação rápida: grava os acertos de cada equipe e conclui o turno de uma vez. */
+  quickScore(turnId: string, scores: Record<string, { titulo: boolean; artista: boolean; ano: boolean }>) {
+    updateMatch((m) => ({
+      ...m,
+      rounds: m.rounds.map((r) => ({
+        ...r,
+        turns: r.turns.map((t) => {
+          if (t.id !== turnId) return t;
+          const evals = { ...t.evals };
+          for (const id of t.teamIds) {
+            const sc = scores[id] ?? { titulo: false, artista: false, ano: false };
+            evals[id] = { ...sc, concluida: true, manual: true };
+          }
+          return { ...t, revealed: true, evals };
+        }),
+      })),
+    }));
   },
 
   setPublicReveal(v: boolean) { updateCurrentTurn((t) => ({ ...t, publicReveal: v })); },
