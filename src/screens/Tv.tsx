@@ -46,9 +46,11 @@ function TvScreen() {
   const { state, carregando, kind } = usePublicState();
   useWakeLock(true);
   const sala = getDeviceConfig().sala;
-  const voltar = <button className="btn btn--ghost btn--sm" onClick={() => (getDeviceConfig().papel === 'tv' || sala ? switchDevice({ papel: undefined, sala: undefined }, 'home') : navigate('home'))}>← Sair da TV</button>;
+  const voltar = <button className="btn btn--ghost btn--sm" data-testid="tv-sair" onClick={() => (getDeviceConfig().papel === 'tv' || sala ? switchDevice({ papel: undefined, sala: undefined }, 'home') : navigate('home'))}>← Sair da TV</button>;
   const telaCheia = <FullscreenButton />;
-  const controles = <div className="row tv__ctrl">{voltar}{telaCheia}</div>;
+  // Sai do jogo atual e mostra o campo para digitar o código de OUTRA sala (continua como TV).
+  const trocar = sala ? <button className="btn btn--ghost btn--sm" onClick={() => switchDevice({ sala: undefined }, 'tv')} data-testid="tv-trocar">🔄 Entrar em outro jogo</button> : null;
+  const controles = <div className="row tv__ctrl">{voltar}{trocar}{telaCheia}</div>;
   const qrEquipes = sala && kind === 'sala' ? (
     <div className="tv__qr"><QrImage text={teamJoinUrl(sala)} size={150} /><span>📱 Equipes: apontem a câmera<br /><b>Sala {sala}</b></span></div>
   ) : null;

@@ -455,7 +455,13 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 /* ───────── TV ───────── */
 .tv { min-height: 100vh; padding: 24px clamp(16px, 4vw, 48px); display: flex; flex-direction: column; gap: 20px; }
 .tv--idle { align-items: center; justify-content: center; }
-.tv__top { display: flex; justify-content: space-between; align-items: center; }
+.tv__top {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+  /* fica sempre visível no topo, mesmo quando a tela da TV rola */
+  position: -webkit-sticky; position: sticky; top: 0; z-index: 35;
+  margin: -24px calc(-1 * clamp(16px, 4vw, 48px)) 0; padding: 12px clamp(16px, 4vw, 48px);
+  background: rgba(10, 8, 22, 0.92); border-bottom: 1px solid rgba(139, 92, 246, 0.25);
+}
 .tv__round { font-size: clamp(1.2rem, 3vw, 2rem); font-weight: 900; letter-spacing: 0.1em; }
 .tv__grid { display: grid; gap: 24px; grid-template-columns: 1fr; flex: 1; }
 @media (min-width: 1000px) { .tv__grid { grid-template-columns: 2fr 1fr; } }

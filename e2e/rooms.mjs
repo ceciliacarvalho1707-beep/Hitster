@@ -148,6 +148,18 @@ try {
   await tv.page.screenshot({ path: join(shots, '19-sala-tv.png') });
   await org.page.screenshot({ path: join(shots, '20-sala-organizador.png'), fullPage: true });
 
+  // TV sai do jogo e entra em outro (aqui, digitando de novo o mesmo código)
+  await tv.page.click('[data-testid=tv-trocar]');
+  await tv.page.waitForSelector('[data-testid=join-code]', { timeout: 25000 });
+  const pediuCodigo = tv.page.url().includes('#tv');
+  await tv.page.fill('[data-testid=join-code]', code);
+  await tv.page.click('[data-testid=join-ok]');
+  await tv.page.waitForSelector('[data-testid=tv-answer]', { timeout: 25000 });
+  check('7b', 'A TV sai do jogo atual e entra em outro pelo código', pediuCodigo);
+  await tv.page.click('[data-testid=tv-sair]');
+  await tv.page.waitForSelector('text=Nova partida', { timeout: 25000 });
+  check('7c', 'O botão "Sair da TV" leva ao início, mesmo no meio do jogo', !tv.page.url().includes('#tv'));
+
   // Organizador continua organizador ao reabrir
   await org.page.goto(BASE);
   check(8, 'O celular do organizador continua abrindo no início (papel de organizador)', !org.page.url().includes('#tv') && !org.page.url().includes('#equipe'));
