@@ -124,7 +124,7 @@ Limites do próprio Spotify: precisa de **Premium** e de um navegador com suport
 
 ## Banco de músicas
 
-O projeto vem com **381 músicas de exemplo** (marcadas como "exemplo"), 150 brasileiras e 231 internacionais, de 1917 a 2024, todas com letra, incluindo musicais e trilhas de filmes:
+O projeto vem com **503 músicas de exemplo** (marcadas como "exemplo"), 173 brasileiras e 330 internacionais (todas em português ou inglês), de 1917 a 2024, todas com letra, incluindo musicais e trilhas de filmes:
 - **58 com verificação detalhada** (`src/data/demoSongs.ts`): o link aponta para uma **faixa específica** encontrada em páginas públicas do Spotify cujo título e artista conferem; ano, autoria e curiosidade foram conferidos no verbete da Wikipédia indicado; anos legitimamente divergentes (composição × gravação, single × álbum) estão em `anosAceitos`.
 - **159 do banco ampliado** (`src/data/extraSongs.ts`): o link também foi conferido em páginas públicas do Spotify (título e intérprete). O ano segue o lançamento original conhecido, com anos alternativos quando há divergência. Aqui a fonte é uma busca na Wikipédia que leva ao verbete, e não há curiosidade cadastrada. Algumas faixas são gravações ao vivo, remasterizações ou coletâneas do próprio artista.
 
