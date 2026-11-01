@@ -46,11 +46,11 @@ describe('regras de musical e artistas', () => {
     expect(ev).toMatchObject({ titulo: true, artista: true, ano: true });
   });
   it('aceita um dos artistas de um crédito "feat."', () => {
-    const ev = autoEvaluate({ ano: '2017', titulo: 'despacito', artista: 'Luis Fonsi', enviadoEm: '' }, song('intl-despacito'), 0);
+    const ev = autoEvaluate({ ano: '2013', titulo: 'uptown funk', artista: 'Bruno Mars', enviadoEm: '' }, DEMO_SONGS.find((s) => s.titulo === 'Uptown Funk')!, 1);
     expect(ev).toMatchObject({ titulo: true, artista: true, ano: true });
   });
   it('aceita títulos alternativos cadastrados', () => {
-    expect(autoEvaluate({ ano: '', titulo: 'Volare', artista: '', enviadoEm: '' }, song('intl-nel-blu-dipinto-di-blu'), 1).titulo).toBe(true);
+    expect(autoEvaluate({ ano: '', titulo: 'Mas Que Nada', artista: '', enviadoEm: '' }, DEMO_SONGS.find((s) => s.titulo === 'Mas, Que Nada!')!, 1).titulo).toBe(true);
   });
 });
 

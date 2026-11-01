@@ -14,7 +14,6 @@ import { EXTRA_SONGS } from './extraSongs';
  * Mesmo assim, catálogos de streaming mudam: use "Verificar links" no painel do organizador
  * antes da festa. Para adicionar milhares de músicas, importe JSON/CSV pela área administrativa.
  */
-export const DEMO_BANK_VERSION = 3;
 
 type Base = Omit<Song, 'temLetra' | 'exemplo' | 'spotifyUrl'> & { spotify: string };
 
@@ -93,5 +92,19 @@ const MAIN_SONGS: Song[] = raw.map(({ spotify, ...s }) => ({
   exemplo: true,
 }));
 
-/** Banco completo de exemplo: 58 músicas com verificação detalhada + banco ampliado. */
-export const DEMO_SONGS: Song[] = [...MAIN_SONGS, ...EXTRA_SONGS];
+/** O jogo é em português/inglês: ficam só músicas cantadas (principalmente) nessas línguas. */
+export const idiomaDoJogo = (s: Song) => /^(Português|Inglês)/.test(s.idioma);
+
+/** Banco completo de exemplo: músicas com verificação detalhada + banco ampliado. */
+export const DEMO_SONGS: Song[] = [...MAIN_SONGS, ...EXTRA_SONGS].filter(idiomaDoJogo);
+
+/**
+ * "Versão" do banco, calculada sozinha a partir das músicas: muda sempre que o banco muda,
+ * e aí o app junta as músicas novas no aparelho de quem já jogava (antes era um número fixo esquecido).
+ */
+export const DEMO_BANK_VERSION: number = (() => {
+  let h = 2166136261;
+  for (const ch of DEMO_SONGS.map((x) => x.id).join('|')) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; }
+  return h;
+})();
+export const DEMO_IDS = new Set(DEMO_SONGS.map((x) => x.id));

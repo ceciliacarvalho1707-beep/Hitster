@@ -7,7 +7,7 @@
  *   por isso cliques repetidos ou correções não duplicam pontuação.
  */
 import { useSyncExternalStore } from 'react';
-import { DEMO_BANK_VERSION, DEMO_SONGS } from '../data/demoSongs';
+import { DEMO_BANK_VERSION, DEMO_IDS, DEMO_SONGS } from '../data/demoSongs';
 import { autoEvaluate } from '../lib/scoring';
 import { pickSong, randomId } from '../lib/selection';
 import type {
@@ -52,9 +52,12 @@ function load(): AppState {
       history: Array.isArray(parsed.history) ? parsed.history : [],
     };
     // Nova versão do banco de demonstração: adiciona exemplos novos sem apagar as músicas do organizador.
-    if ((parsed.bankVersion ?? 0) < DEMO_BANK_VERSION) {
-      const ids = new Set(state.songs.map((s) => s.id));
-      state.songs = [...state.songs, ...DEMO_SONGS.filter((s) => !ids.has(s.id))];
+    // Banco de exemplo mudou: junta as músicas novas e tira as de exemplo que saíram do banco
+    // (ex.: línguas fora do jogo). Músicas cadastradas pelo organizador nunca são apagadas.
+    if (parsed.bankVersion !== DEMO_BANK_VERSION) {
+      const mantidas = state.songs.filter((s) => !s.exemplo || DEMO_IDS.has(s.id));
+      const ids = new Set(mantidas.map((s) => s.id));
+      state.songs = [...mantidas, ...DEMO_SONGS.filter((s) => !ids.has(s.id))];
       state.bankVersion = DEMO_BANK_VERSION;
     }
     return state;
