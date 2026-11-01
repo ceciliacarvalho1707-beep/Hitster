@@ -235,7 +235,8 @@ export const matchActions = {
       if (!revealed) return { ...t, revealed: false };
       const song = songById(t.songId);
       const evals = { ...t.evals };
-      if (song) for (const id of t.teamIds) if (!evals[id]) evals[id] = autoEvaluate(t.guesses[id], song, m.config.tolerancia);
+      const outros = state.songs.filter((x) => x.id !== t.songId).map((x) => x.titulo);
+      if (song) for (const id of t.teamIds) if (!evals[id]) evals[id] = autoEvaluate(t.guesses[id], song, m.config.tolerancia, outros);
       return { ...t, revealed: true, evals };
     });
   },

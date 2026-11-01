@@ -113,9 +113,17 @@ describe('correção com o banco inteiro', () => {
     expect(proprios.map((s) => s.titulo)).toEqual([]);
     const confusoes: string[] = [];
     for (const a of titulos) for (const b of titulos) {
-      if (a !== b && normalize(a) !== normalize(b) && textMatches(a, [b])) confusoes.push(`${a} → ${b}`);
+      const outros = titulos.filter((t) => t !== b);
+      if (a !== b && normalize(a) !== normalize(b) && textMatches(a, [b], outros)) confusoes.push(`${a} → ${b}`);
     }
-    // Única dupla que difere por uma letra só (pela regra, um erro de letra é aceito).
-    expect(confusoes.filter((c) => !/Flowers|Flores/.test(c))).toEqual([]);
+    expect(confusoes).toEqual([]);
+  });
+  it('erro de digitação vale, mas o nome exato de outra música do banco não', () => {
+    const outros = ['Believe', 'Flores', 'Lose Yourself'];
+    expect(textMatches('Beliver', ['Believer'], outros)).toBe(true);
+    expect(textMatches('Believe', ['Believer'], outros)).toBe(false);
+    expect(textMatches('Flores', ['Flowers'], outros)).toBe(false);
+    expect(textMatches('Flowres', ['Flowers'], outros)).toBe(true);
+    expect(textMatches('Viva la Vida', ['Vira-Vira'])).toBe(false);
   });
 });

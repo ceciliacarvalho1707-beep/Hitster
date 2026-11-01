@@ -91,7 +91,7 @@ Na tela da rodada, escolha:
 - **✍️ Escrevendo os palpites**: as equipes escrevem (no celular do organizador, na TV ou no próprio celular) e o jogo corrige sozinho.
 - **⚡ Só dar os pontos**: ninguém escreve. As equipes falam a resposta, o organizador marca 🎵 Música / 🎤 Artista / 📅 Ano de cada equipe (1 ponto cada) e toca em **DAR OS PONTOS**, que já avança. A TV mostra "Falem a resposta em voz alta!".
 
-**Correção automática:** aceita letra faltando, sobrando ou trocada ("Anita" vale Anitta, "Shalow" vale Shallow), acentos, maiúsculas e espaços ("antihero" vale Anti-Hero). **Não** aceita palavras a mais, a menos ou trocadas ("Shallow Now" não vale Shallow). Palavras curtas toleram menos erros (até 2 letras: nenhum; 3–6: 1; 7+: 2). O organizador sempre pode corrigir à mão.
+**Correção automática:** aceita letra faltando, sobrando ou trocada ("Anita" vale Anitta, "Shalow" vale Shallow), acentos, maiúsculas e espaços ("antihero" vale Anti-Hero). **Não** aceita palavras a mais, a menos ou trocadas ("Shallow Now" não vale Shallow). Palavras curtas toleram menos erros (até 2 letras: nenhum; 3–6: 1; 7+: 2), há um limite total por nome, e escrever exatamente o nome de **outra** música do banco não vale ("Believe" não vale por "Believer"). Duas letras invertidas contam como um erro só. O organizador sempre pode corrigir à mão.
 
 ## 📺🎶 Música inteira na TV (Spotify Premium)
 
@@ -124,7 +124,7 @@ Limites do próprio Spotify: precisa de **Premium** e de um navegador com suport
 
 ## Banco de músicas
 
-O projeto vem com **304 músicas de exemplo** (marcadas como "exemplo"), 121 brasileiras e 183 internacionais, de 1917 a 2024, todas com letra, incluindo musicais e trilhas de filmes:
+O projeto vem com **381 músicas de exemplo** (marcadas como "exemplo"), 150 brasileiras e 231 internacionais, de 1917 a 2024, todas com letra, incluindo musicais e trilhas de filmes:
 - **58 com verificação detalhada** (`src/data/demoSongs.ts`): o link aponta para uma **faixa específica** encontrada em páginas públicas do Spotify cujo título e artista conferem; ano, autoria e curiosidade foram conferidos no verbete da Wikipédia indicado; anos legitimamente divergentes (composição × gravação, single × álbum) estão em `anosAceitos`.
 - **159 do banco ampliado** (`src/data/extraSongs.ts`): o link também foi conferido em páginas públicas do Spotify (título e intérprete). O ano segue o lançamento original conhecido, com anos alternativos quando há divergência. Aqui a fonte é uma busca na Wikipédia que leva ao verbete, e não há curiosidade cadastrada. Algumas faixas são gravações ao vivo, remasterizações ou coletâneas do próprio artista.
 

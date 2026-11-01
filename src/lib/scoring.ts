@@ -14,20 +14,21 @@ export function normalize(text: string): string {
     .trim();
 }
 
-/** Distância de Levenshtein (edições necessárias para transformar a em b). */
+/** Distância de edição (letra faltando, sobrando, trocada ou duas letras invertidas = 1 erro cada). */
 export function levenshtein(a: string, b: string): number {
   if (a === b) return 0;
   if (!a.length) return b.length;
   if (!b.length) return a.length;
-  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  const d: number[][] = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
   for (let i = 1; i <= a.length; i++) {
-    const cur = [i];
     for (let j = 1; j <= b.length; j++) {
-      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost);
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
     }
-    prev = cur;
   }
-  return prev[b.length];
+  return d[a.length][b.length];
 }
 
 /** Similaridade de 0 a 1. */
@@ -47,7 +48,16 @@ function wordsMatch(g: string, a: string): boolean {
 }
 
 /** Variantes de uma resposta: sem o trecho entre parênteses e com ele ("Single Ladies (Put a Ring on It)"). */
+const variantsCache = new Map<string, string[]>();
 function answerVariants(ans: string): string[] {
+  const hit = variantsCache.get(ans);
+  if (hit) return hit;
+  const r = computeVariants(ans);
+  if (variantsCache.size > 5000) variantsCache.clear();
+  variantsCache.set(ans, r);
+  return r;
+}
+function computeVariants(ans: string): string[] {
   const sem = normalize(ans);
   const com = normalize(ans.replace(/[()[\]]/g, ' '));
   return com && com !== sem ? [sem, com] : [sem];
@@ -60,19 +70,27 @@ function answerVariants(ans: string): string[] {
  *  - NÃO aceita palavras a mais, a menos ou trocadas (ex.: "Shallow Now" ≠ Shallow, "love" ≠ I Will Always Love You).
  *  - Ignora acentos, maiúsculas, pontuação, artigos e espaços colados/separados ("antihero" = Anti-Hero).
  */
-export function textMatches(guess: string, accepted: string[]): boolean {
+export function textMatches(guess: string, accepted: string[], outrosTitulos: string[] = []): boolean {
   const g = normalize(guess);
   if (!g) return false;
+  const variantes = accepted.flatMap(answerVariants).filter(Boolean);
+  if (variantes.includes(g)) return true;
+  // Escreveu exatamente o nome de OUTRA música do banco (ex.: "Believe" quando era "Believer"): não vale.
+  if (outrosTitulos.some((t) => answerVariants(t).includes(g))) return false;
   const gw = g.split(' ');
-  return accepted.some((ans) => answerVariants(ans).some((a) => {
-    if (!a) return false;
-    if (g === a) return true;
+  const gc = g.replace(/ /g, '');
+  return variantes.some((a) => {
     const aw = a.split(' ');
-    if (gw.length === aw.length) return gw.every((w, i) => wordsMatch(w, aw[i]));
+    const ac = a.replace(/ /g, '');
+    if (gw.length === aw.length) {
+      if (!gw.every((w, i) => wordsMatch(w, aw[i]))) return false;
+      // Limite total de erros no nome inteiro (evita "Viva la Vida" valer por "Vira-Vira").
+      const total = gw.reduce((n, w, i) => n + levenshtein(w, aw[i]), 0);
+      return total <= (ac.length <= 10 ? 1 : ac.length <= 20 ? 2 : 3);
+    }
     // Quantidade de palavras diferente: só vale se a diferença for de espaço (ex.: "bumbum" × "bum bum"), com no máx. 1 letra errada.
-    const gc = g.replace(/ /g, ''), ac = a.replace(/ /g, '');
     return gc.length >= 4 && levenshtein(gc, ac) <= (ac.length >= 6 ? 1 : 0);
-  }));
+  });
 }
 
 /** Comparação mais solta (aceita "contém"), usada só para achar a faixa certa nas prévias da Apple/Deezer. */
@@ -120,10 +138,11 @@ export function yearMatches(guess: string, song: Song, tolerancia: Tolerancia): 
 }
 
 /** Sugestão automática de correção. O organizador pode alterar cada item manualmente. */
-export function autoEvaluate(guess: Guess | undefined, song: Song, tolerancia: Tolerancia): Evaluation {
+/** `outrosTitulos`: títulos das outras músicas do banco (um palpite igual a um deles não vale). */
+export function autoEvaluate(guess: Guess | undefined, song: Song, tolerancia: Tolerancia, outrosTitulos: string[] = []): Evaluation {
   if (!guess) return { titulo: false, artista: false, ano: false, concluida: false };
   return {
-    titulo: textMatches(guess.titulo, acceptedTitles(song)),
+    titulo: textMatches(guess.titulo, acceptedTitles(song), outrosTitulos),
     artista: textMatches(guess.artista, acceptedArtists(song)),
     ano: yearMatches(guess.ano, song, tolerancia),
     concluida: false,
