@@ -9,16 +9,21 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:e2e": "node e2e/e2e.mjs"
+    "test:e2e": "node e2e/e2e.mjs && node e2e/rooms.mjs"
   },
   "dependencies": {
+    "mqtt": "^5.16.1",
+    "qrcode": "^1.5.4",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@types/qrcode": "^1.5.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^4.7.0",
+    "aedes": "^0.51.3",
+    "aedes-server-factory": "^0.2.1",
     "typescript": "~5.7.3",
     "vite": "^6.4.5",
     "vitest": "^3.2.7"

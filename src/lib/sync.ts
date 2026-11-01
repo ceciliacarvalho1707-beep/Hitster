@@ -33,6 +33,8 @@ export interface PublicState {
   resposta?: { titulo: string; artista: string; musical?: string; ano: number } | null;
   equipes?: PublicTeam[];
   placar?: PublicScore[];
+  /** Chave pública do organizador: as equipes criptografam os palpites com ela. */
+  chave?: JsonWebKey;
 }
 
 export interface RemoteGuess {
@@ -45,10 +47,13 @@ export interface RemoteGuess {
   aparelho: string;
 }
 
+import { DEFAULT_BROKER, getDeviceConfig, organizerPublicKey, organizerRoom, seal, unseal, viewingAsGuest, type Papel, type Sealed } from './room';
+
 type Unsub = () => void;
 
 export interface Transport {
-  kind: 'nuvem' | 'local';
+  /** nuvem = claude.ai · sala = internet com código de sala · local = mesmo navegador */
+  kind: 'nuvem' | 'sala' | 'local';
   publish(state: PublicState): Promise<void>;
   subscribePublic(cb: (s: PublicState | null) => void): Unsub;
   sendGuess(g: RemoteGuess): Promise<void>;
@@ -157,11 +162,96 @@ function cloudTransport(db: AnyDb, user: AnyUser | null): Transport {
   };
 }
 
+/* ───────────────────────── Transporte por sala (MQTT na internet) ───────────────────────── */
+
+/**
+ * Conecta aparelhos diferentes pela internet usando um servidor MQTT público.
+ * - Estado público: tópico `hitster-party/v1/<sala>/estado`, mensagem RETIDA (quem chega depois recebe na hora).
+ * - Palpites: tópico `.../palpites`, sempre criptografados com a chave pública do organizador.
+ * O servidor só vê o código da sala, o estado público (sem respostas) e palpites cifrados.
+ */
+function roomTransport(sala: string, broker: string, papel: Papel): Transport {
+  const base = `hitster-party/v1/${sala}`;
+  const T_ESTADO = `${base}/estado`;
+  const T_PALPITES = `${base}/palpites`;
+  let last: PublicState | null = null;
+  const pubSubs = new Set<(s: PublicState | null) => void>();
+  const guessSubs = new Set<(gs: RemoteGuess[]) => void>();
+  const guesses = new Map<string, RemoteGuess>();
+  let lastWritten = '';
+
+  const clientPromise = import('mqtt').then(({ default: mqtt }) => {
+    const client = mqtt.connect(broker, { clientId: `hp-${papel}-${Math.random().toString(36).slice(2, 10)}`, clean: true, reconnectPeriod: 3000, connectTimeout: 10000 });
+    client.on('error', () => undefined); // reconexão automática; o status aparece na tela
+    client.on('connect', () => {
+      client.subscribe(T_ESTADO, { qos: 1 });
+      if (papel === 'organizador') client.subscribe(T_PALPITES, { qos: 1 });
+    });
+    client.on('message', async (topic, payload) => {
+      try {
+        const msg = JSON.parse(payload.toString());
+        if (topic === T_ESTADO) { last = msg as PublicState; pubSubs.forEach((f) => f(last)); }
+        else if (topic === T_PALPITES && papel === 'organizador') {
+          const g = await unseal<RemoteGuess>(msg as Sealed);
+          if (g && g.turnId && g.teamId) { guesses.set(`${g.aparelho}:${g.teamId}`, g); const all = [...guesses.values()]; guessSubs.forEach((f) => f(all)); }
+        }
+      } catch { /* mensagem inválida: ignora */ }
+    });
+    return client;
+  });
+
+  return {
+    kind: 'sala',
+    async publish(state) {
+      const withKey: PublicState = papel === 'organizador' ? { ...state, chave: await organizerPublicKey() } : state;
+      const { atualizadoEm: _a, ...comparable } = withKey;
+      const key = JSON.stringify(comparable);
+      if (key === lastWritten) return;
+      lastWritten = key;
+      const client = await clientPromise;
+      client.publish(T_ESTADO, JSON.stringify(withKey), { qos: 1, retain: true });
+    },
+    subscribePublic(cb) { pubSubs.add(cb); if (last) cb(last); return () => { pubSubs.delete(cb); }; },
+    async sendGuess(g) {
+      if (!last?.chave) throw new Error('Ainda conectando à sala do organizador. Espere alguns segundos e tente de novo.');
+      const sealed = await seal(g, last.chave);
+      const client = await clientPromise;
+      await new Promise<void>((res, rej) => client.publish(T_PALPITES, JSON.stringify(sealed), { qos: 1 }, (err) => (err ? rej(new Error('Sem conexão com a sala. Confira a internet.')) : res())));
+    },
+    subscribeGuesses(cb) { guessSubs.add(cb); cb([...guesses.values()]); return () => { guessSubs.delete(cb); }; },
+  };
+}
+
+/** Junta transportes: publica em todos e ouve todos (o estado mais recente vence). */
+function combine(kind: Transport['kind'], parts: Transport[]): Transport {
+  return {
+    kind,
+    async publish(s) { await Promise.all(parts.map((p) => p.publish(s).catch(() => undefined))); },
+    subscribePublic(cb) {
+      let best: PublicState | null = null;
+      const uns = parts.map((p) => p.subscribePublic((s) => {
+        if (!s) { if (!best) cb(null); return; }
+        if (!best || s.atualizadoEm >= best.atualizadoEm || s.partidaId !== best.partidaId) { best = s; cb(s); }
+      }));
+      return () => uns.forEach((u) => u());
+    },
+    async sendGuess(g) {
+      const results = await Promise.allSettled(parts.map((p) => p.sendGuess(g)));
+      if (results.every((r) => r.status === 'rejected')) throw (results.find((r) => r.status === 'rejected') as PromiseRejectedResult).reason;
+    },
+    subscribeGuesses(cb) {
+      const byPart = parts.map(() => [] as RemoteGuess[]);
+      const uns = parts.map((p, i) => p.subscribeGuesses((gs) => { byPart[i] = gs; cb(byPart.flat()); }));
+      return () => uns.forEach((u) => u());
+    },
+  };
+}
+
 /* ───────────────────────── Escolha do transporte ───────────────────────── */
 
 let transportPromise: Promise<Transport> | null = null;
 
-/** Resolve uma vez: nuvem se o claude.ai oferecer `db`, senão local. */
+/** Resolve uma vez: nuvem no claude.ai; fora dele, sala na internet + mesmo navegador. */
 export function getTransport(): Promise<Transport> {
   if (transportPromise) return transportPromise;
   transportPromise = (async () => {
@@ -172,7 +262,18 @@ export function getTransport(): Promise<Transport> {
         if (db) return cloudTransport(db, user);
       } catch { /* cai para o modo local */ }
     }
+    // Fora do claude.ai: mesmo navegador (local) + sala na internet, se houver.
+    const cfg = getDeviceConfig();
+    const convidado = viewingAsGuest();
+    const papel: Papel = convidado ? (/equipe/.test(window.location.hash) ? 'equipe' : 'tv') : 'organizador';
+    const sala = convidado ? cfg.sala : organizerRoom();
+    if (sala && typeof window !== 'undefined' && window.isSecureContext !== false) {
+      return combine('sala', [localTransport(), roomTransport(sala, cfg.broker || DEFAULT_BROKER, papel)]);
+    }
     return localTransport();
   })();
   return transportPromise;
 }
+
+/** Esquece o transporte atual (ao trocar de sala ou de papel, a página é recarregada). */
+export function resetTransport() { transportPromise = null; }

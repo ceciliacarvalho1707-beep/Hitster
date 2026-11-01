@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useFeedback } from '../components/feedback';
 import { Segmented, Toggle, TopBar } from '../components/ui';
 import { SpotifyConnectCard } from '../components/spotify';
+import { switchDevice } from '../components/rooms';
+import { DEFAULT_BROKER, getDeviceConfig, newRoomCode, organizerRoom, setDeviceConfig, setOrganizerRoom } from '../lib/room';
 import { navigate } from '../router';
 import { hashPin, settingsActions, useAppState } from '../store/store';
 import type { Tolerancia } from '../types';
@@ -38,6 +40,8 @@ export function SettingsScreen() {
         </div>
       </section>
 
+      <DevicesSettings />
+
       <section className="card">
         <h2 className="card__title">✨ Aparência</h2>
         <Toggle checked={settings.reduzirAnimacoes} onChange={(v) => settingsActions.update({ reduzirAnimacoes: v })} label="Reduzir animações" />
@@ -69,5 +73,34 @@ export function SettingsScreen() {
         <p className="muted small">Os dados ficam salvos apenas neste navegador (localStorage).</p>
       </section>
     </main>
+  );
+}
+
+function DevicesSettings() {
+  const cfg = getDeviceConfig();
+  const { confirm, toast } = useFeedback();
+  const [broker, setBroker] = useState(cfg.broker ?? '');
+  const papelNome = cfg.papel === 'tv' ? 'Tela da TV' : cfg.papel === 'equipe' ? 'Celular de equipe' : 'Celular do organizador';
+  return (
+    <section className="card">
+      <h2 className="card__title">📡 Este aparelho</h2>
+      <p className="muted small">Papel: <b>{papelNome}</b> · Sala <b>{cfg.papel === 'tv' || cfg.papel === 'equipe' ? cfg.sala ?? '—' : organizerRoom()}</b></p>
+      <div className="row">
+        {(cfg.papel === 'tv' || cfg.papel === 'equipe') && <button className="btn btn--ghost btn--sm" onClick={() => switchDevice({ papel: undefined, sala: undefined }, 'home')}>Voltar a ser o organizador</button>}
+        {cfg.papel !== 'tv' && cfg.papel !== 'equipe' && (
+          <button className="btn btn--ghost btn--sm" onClick={async () => {
+            if (await confirm({ titulo: 'Criar um código novo?', mensagem: 'A TV e os celulares conectados ao código atual vão precisar digitar o novo código.', confirmar: 'Criar código novo' })) { setOrganizerRoom(newRoomCode()); window.location.reload(); }
+          }}>Gerar novo código de sala</button>
+        )}
+      </div>
+      <details className="small" style={{ marginTop: 10 }}>
+        <summary>Avançado: servidor de conexão</summary>
+        <p className="muted">A TV e os celulares se falam por um servidor MQTT público ({DEFAULT_BROKER}). Os palpites viajam criptografados. Para usar outro servidor (WebSocket seguro), informe o endereço abaixo, igual em todos os aparelhos.</p>
+        <form className="row" onSubmit={(e) => { e.preventDefault(); if (broker && !/^wss?:\/\//.test(broker)) { toast('O endereço precisa começar com wss://', 'erro'); return; } setDeviceConfig({ broker: broker || undefined }); toast('Servidor salvo. Reabrindo…'); setTimeout(() => window.location.reload(), 600); }}>
+          <input className="input" style={{ flex: 1, minWidth: 0 }} placeholder={DEFAULT_BROKER} value={broker} onChange={(e) => setBroker(e.target.value.trim())} aria-label="Servidor MQTT" />
+          <button className="btn btn--ghost btn--sm" type="submit">Salvar</button>
+        </form>
+      </details>
+    </section>
   );
 }

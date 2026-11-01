@@ -4,6 +4,8 @@ import { navigate } from '../router';
 import { useAppState } from '../store/store';
 import { useTransportKind } from '../components/sync';
 import { InstallCard } from '../components/install';
+import { ConnectDevicesCard } from '../components/rooms';
+import { setDeviceConfig } from '../lib/room';
 
 export function Home() {
   const match = useAppState((s) => s.match);
@@ -39,7 +41,7 @@ export function Home() {
         <h2 id="devices-title">Vai usar mais de um aparelho?</h2>
         <p className="muted small">Abra este mesmo jogo em cada aparelho e diga qual é o papel dele. Só o celular do organizador vê as respostas.</p>
         <div className="devices__grid">
-          <button className="device" onClick={() => navigate('jogo')}>
+          <button className="device" onClick={() => { setDeviceConfig({ papel: 'organizador' }); navigate('jogo'); }}>
             <span className="device__icon">📱</span><strong>Celular do organizador</strong><small>Toca a música, abre o gabarito e dá os pontos.</small>
           </button>
           <button className="device" onClick={() => navigate('tv')} data-testid="mode-tv">
@@ -49,7 +51,8 @@ export function Home() {
             <span className="device__icon">🙋</span><strong>Celular de equipe</strong><small>A equipe manda o palpite do próprio celular.</small>
           </button>
         </div>
-        <p className="muted small">{kind === 'nuvem' ? '🟢 Sincronização entre aparelhos ligada.' : kind === 'local' ? '🟡 Sincronização local: funciona entre abas e janelas deste navegador. Para aparelhos diferentes, use a versão publicada no claude.ai.' : ''}</p>
+        {kind === 'sala' && <ConnectDevicesCard />}
+        <p className="muted small">{kind === 'nuvem' ? '🟢 Sincronização entre aparelhos ligada.' : kind === 'sala' ? 'Cada aparelho lembra o papel escolhido: a TV abre sempre como TV, e o seu celular, como organizador.' : kind === 'local' ? '🟡 Sincronização só entre abas e janelas deste navegador.' : ''}</p>
       </section>
 
       <div className="home__footer">

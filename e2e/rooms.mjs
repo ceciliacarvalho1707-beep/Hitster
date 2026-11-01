@@ -1,0 +1,100 @@
+/**
+ * Teste de vários aparelhos: organizador, TV e celular de equipe em navegadores SEPARADOS
+ * (cada um com a própria memória), conectados por um servidor MQTT local que imita o público.
+ * Uso: npm run build && node e2e/rooms.mjs
+ */
+import { spawn } from 'node:child_process';
+import { createRequire } from 'node:module';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const require = createRequire(import.meta.url);
+const { chromium } = require('playwright');
+const aedesMod = require('aedes');
+const { createServer } = require('aedes-server-factory');
+const mqtt = require('mqtt');
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const shots = join(root, 'e2e', 'screenshots');
+const PORT = 4331, MQ = 4401, BASE = `http://localhost:${PORT}/`;
+const results = [];
+const check = (n, d, ok, x = '') => { results.push(ok); console.log(`${ok ? '✅' : '❌'} ${n}. ${d}${x ? ` — ${x}` : ''}`); };
+
+const aedes = typeof aedesMod.createBroker === 'function' ? await aedesMod.createBroker() : aedesMod();
+const mqServer = createServer(aedes, { ws: true });
+await new Promise((r) => mqServer.listen(MQ, r));
+const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], { cwd: root, stdio: 'pipe', detached: true });
+await new Promise((res) => server.stdout.on('data', (d) => String(d).includes(String(PORT)) && res()));
+
+// "Espião": tudo o que passa pelo servidor nos palpites
+const spy = mqtt.connect(`ws://localhost:${MQ}`); const sniffed = [];
+await new Promise((r) => spy.on('connect', r)); spy.subscribe('hitster-party/v1/#'); spy.on('message', (t, p) => { if (process.env.DEBUG) console.log('MQ', t, String(p).slice(0, 80)); if (t.endsWith('/palpites')) sniffed.push(String(p)); });
+
+const browser = await chromium.launch();
+const device = async (w, h) => {
+  const ctx = await browser.newContext({ viewport: { width: w, height: h } });
+  await ctx.addInitScript((mq) => { const k = 'hitster-party:aparelho-config'; const c = JSON.parse(localStorage.getItem(k) || '{}'); if (!c.broker) { c.broker = mq; localStorage.setItem(k, JSON.stringify(c)); } }, `ws://localhost:${MQ}`);
+  const page = await ctx.newPage(); const errs = []; page.on('pageerror', (e) => errs.push(e.message));
+  return { ctx, page, errs };
+};
+try {
+  const org = await device(390, 844), tv = await device(1366, 768), eq = await device(390, 844);
+
+  // Organizador cria a partida (modo simultâneo, 2 equipes)
+  await org.page.goto(BASE + '#nova');
+  await org.page.getByRole('radio', { name: /Resposta simultânea/ }).click();
+  await org.page.click('[data-testid=btn-iniciar]');
+  await org.page.waitForSelector('[data-testid=room-code]');
+  const code = (await org.page.textContent('[data-testid=room-code]')).replace(/\s/g, '');
+  const song = await org.page.evaluate(() => { const s = JSON.parse(localStorage.getItem('hitster-party:v1')); const t = s.match.rounds[0].turns[0]; return s.songs.find((x) => x.id === t.songId); });
+  check(1, 'Organizador mostra o código da sala e o QR code', /^[A-Z2-9]{6}$/.test(code) && (await org.page.locator('.connect .qr').count()) === 1, code);
+
+  // TV: digita o código e escolhe "abrir sempre como TV"
+  await tv.page.goto(BASE + '#tv');
+  await tv.page.fill('[data-testid=join-code]', code.toLowerCase());
+  await tv.page.click('[data-testid=join-ok]');
+  await tv.page.waitForSelector('text=TODAS AS EQUIPES RESPONDEM', { timeout: 25000 });
+  const tvText = (await tv.page.textContent('body')).toLowerCase();
+  check(2, 'TV em outro aparelho recebe a rodada pela sala (sem a resposta)', tvText.includes('rodada 1') && !tvText.includes(song.titulo.toLowerCase()));
+
+  // Reabrir a TV pelo início: deve ir direto para a tela da TV
+  await tv.page.goto(BASE);
+  await tv.page.waitForSelector('text=TODAS AS EQUIPES RESPONDEM', { timeout: 25000 });
+  check(3, 'A TV lembra o papel: abrindo o app, vai direto para a tela da TV', tv.page.url().endsWith('#tv'));
+
+  // Celular de equipe entra pelo link do QR code
+  await eq.page.goto(`${BASE}#equipe?sala=${code}`);
+  await eq.page.waitForSelector('[data-testid=pick-team]', { timeout: 25000 });
+  await eq.page.locator('[data-testid=pick-team]').nth(1).click();
+  await eq.page.fill('[data-testid=eq-ano]', '1999');
+  await eq.page.fill('[data-testid=eq-titulo]', 'Palpite Ultra Secreto');
+  await eq.page.fill('[data-testid=eq-artista]', 'Banda Misteriosa');
+  await eq.page.click('[data-testid=eq-enviar]');
+  await org.page.waitForFunction(() => document.body.textContent.includes('1 de 2 equipes'), null, { timeout: 25000 });
+  const g = await org.page.evaluate(() => { const s = JSON.parse(localStorage.getItem('hitster-party:v1')); return Object.values(s.match.rounds[0].turns[0].guesses)[0]; });
+  check(4, 'Palpite do celular de equipe chega ao organizador em outro aparelho', g?.titulo === 'Palpite Ultra Secreto');
+  check(5, 'No caminho, o palpite vai criptografado (o servidor não consegue ler)', sniffed.length > 0 && sniffed.every((m) => !m.includes('Ultra Secreto') && !m.includes('Misteriosa')));
+  await tv.page.waitForSelector('text=✔ respondeu', { timeout: 25000 });
+  const tvAfter = await tv.page.textContent('body');
+  check(6, 'A TV mostra quem respondeu, mas não o palpite', !tvAfter.includes('Ultra Secreto'));
+  await eq.page.screenshot({ path: join(shots, '18-sala-equipe.png') });
+
+  // Organizador revela e libera para a TV
+  await org.page.click('[data-testid=secret-toggle]');
+  await org.page.click('[data-testid=confirm-ok]'); // ainda falta 1 equipe: confirma a revelação
+  await org.page.click('[data-testid=public-reveal]');
+  await tv.page.waitForSelector('[data-testid=tv-answer]', { timeout: 25000 });
+  check(7, 'Resposta aparece na TV só quando o organizador libera', (await tv.page.textContent('[data-testid=tv-answer]')).includes(song.titulo));
+  await tv.page.screenshot({ path: join(shots, '19-sala-tv.png') });
+  await org.page.screenshot({ path: join(shots, '20-sala-organizador.png'), fullPage: true });
+
+  // Organizador continua organizador ao reabrir
+  await org.page.goto(BASE);
+  check(8, 'O celular do organizador continua abrindo no início (papel de organizador)', !org.page.url().includes('#tv') && !org.page.url().includes('#equipe'));
+  const errs = [...org.errs, ...tv.errs, ...eq.errs];
+  check('JS', 'Nenhum erro de JavaScript nos três aparelhos', errs.length === 0, errs.join(' | '));
+} finally {
+  await browser.close(); spy.end(true); mqServer.close(); aedes.close?.();
+  try { process.kill(-server.pid); } catch { server.kill(); }
+}
+console.log(`\n${results.filter(Boolean).length}/${results.length} verificações aprovadas.`);
+process.exit(results.every(Boolean) ? 0 : 1);

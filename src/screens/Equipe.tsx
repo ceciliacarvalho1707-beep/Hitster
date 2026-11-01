@@ -5,6 +5,8 @@ import { Equalizer, Logo, Vinyl } from '../components/ui';
 import { deviceId, getTransport } from '../lib/sync';
 import { navigate } from '../router';
 import { PublicBoard } from './Tv';
+import { JoinRoomForm, switchDevice } from '../components/rooms';
+import { getDeviceConfig, roomFromUrl } from '../lib/room';
 
 const TEAM_KEY = 'hitster-party:minha-equipe';
 const SENT_KEY = 'hitster-party:enviado';
@@ -35,15 +37,25 @@ export function Equipe() {
   const travado = !!state?.gabaritoAberto;
 
   useEffect(() => { setForm({ ano: '', titulo: '', artista: '' }); }, [turnId]);
+  // Entrou pelo QR code / link com ?sala=: conecta direto nessa sala.
+  useEffect(() => {
+    const fromUrl = roomFromUrl();
+    if (fromUrl && fromUrl !== getDeviceConfig().sala) switchDevice({ papel: 'equipe', sala: fromUrl }, 'equipe');
+  }, []);
+  const sala = getDeviceConfig().sala;
 
-  const sair = <button className="btn btn--ghost btn--sm" onClick={() => navigate('home')}>← Início</button>;
+  const sair = <button className="btn btn--ghost btn--sm" onClick={() => (sala || getDeviceConfig().papel ? switchDevice({ papel: undefined, sala: undefined }, 'home') : navigate('home'))}>← Sair</button>;
+
+  if (!state && !sala && kind !== 'nuvem' && !carregando) {
+    return <main className="page equipe"><div className="row">{sair}</div><JoinRoomForm papel="equipe" /></main>;
+  }
 
   if (!state || state.status === 'sem_partida') {
     return (
       <main className="page equipe">
         <div className="row">{sair}</div>
         <div className="empty"><Vinyl /><h2>{carregando ? 'Conectando…' : 'A partida ainda não começou'}</h2>
-          <p className="muted">{kind === 'nuvem' ? 'Assim que o organizador começar, esta tela mostra as equipes.' : 'Modo local: este celular só acompanha o jogo se estiver no mesmo navegador do organizador. Para usar celulares separados, abra a versão publicada no claude.ai.'}</p>
+          <p className="muted">{kind === 'local' ? 'Este celular só acompanha o jogo se estiver no mesmo navegador do organizador. Para celulares separados, entre com o código da sala.' : `Conectado${sala ? ` à sala ${sala}` : ''}. Assim que o organizador começar, esta tela mostra as equipes.`}</p>
         </div>
       </main>
     );

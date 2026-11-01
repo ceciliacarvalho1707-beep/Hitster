@@ -59,19 +59,26 @@ Os pontos nunca são somados de forma incremental. O placar é sempre recalculad
 
 ## Vários aparelhos: TV, celular do organizador e celulares das equipes
 
-Na tela inicial, em "Vai usar mais de um aparelho?", cada aparelho escolhe o seu papel:
+Cada aparelho tem um papel e **lembra dele**: a TV abre sempre direto na tela da TV, e o celular do organizador, no jogo.
 
 | Aparelho | O que mostra | Vê as respostas? |
 |---|---|---|
-| 📱 **Celular do organizador** | O jogo completo: botão do Spotify, gabarito, avaliação e placar | Sim, só ele |
-| 📺 **Tela da TV** (`#tv`) | Rodada, de quem é a vez, categoria, quem já respondeu e placar | Não. A resposta só aparece quando o organizador toca em "Mostrar a resposta também na tela da TV" |
-| 🙋 **Celular de equipe** (`#equipe`) | A equipe escolhe o próprio nome e manda o palpite | Não. Também não vê os palpites das outras equipes |
+| 📱 **Celular do organizador** | O jogo completo: Spotify, gabarito, avaliação e placar | Sim, só ele |
+| 📺 **Tela da TV** | Rodada, de quem é a vez, quem já respondeu, placar e o QR code para as equipes | Só quando o organizador libera |
+| 🙋 **Celular de equipe** | A equipe manda o palpite do próprio celular | Não, nem os palpites das outras equipes |
 
-O celular do organizador é a única fonte da verdade. Ele guarda o banco e o gabarito e publica para os outros aparelhos apenas um **estado público**, sem título, artista nem ano. Os palpites enviados pelos celulares chegam ao organizador e só aparecem na avaliação, depois de revelado o gabarito.
+**Como conectar (na festa):**
+1. No celular do organizador, o código da sala aparece em **📡 Conectar TV e celulares** (na tela do jogo e na tela inicial).
+2. **TV:** abra o app nela (navegador da Smart TV, notebook ligado na TV ou tablet) → **Tela da TV** → digite o código. Deixe marcado "Abrir sempre como TV". Nas próximas vezes ela abre sozinha como TV, já conectada.
+3. **Equipes:** apontem a câmera do celular para o QR code que aparece na TV. O celular entra direto na sala.
+4. Para um aparelho deixar de ser TV ou equipe: botão **Sair** da própria tela, ou *Configurações → Este aparelho*.
 
-**Como a sincronização funciona** (`src/lib/sync.ts`):
-- **Versão publicada no claude.ai:** usa o banco de dados da página (capacidade `db`). Funciona entre aparelhos diferentes, desde que cada aparelho abra o link logado numa conta Claude com acesso à página. Celulares de equipe precisam de acesso de *Contribuidor* para enviar palpites. Regras de acesso: só o dono escreve o estado público (`sala`), e cada pessoa escreve apenas o próprio palpite (`palpites/{self}`), que só o dono e editores leem.
-- **Rodando localmente (`npm run dev`):** a sincronização acontece entre abas e janelas do **mesmo navegador**. Exemplo: um notebook ligado na TV com uma janela em "Tela da TV" e outra com o organizador. Para aparelhos diferentes sem o claude.ai, seria preciso um backend de tempo real. A interface `Transport` em `sync.ts` já separa essa camada.
+**Como funciona por dentro** (`src/lib/sync.ts` e `src/lib/room.ts`):
+- O celular do organizador é a única fonte da verdade. Ele publica para os outros só um **estado público**, sem título, artista nem ano até você liberar.
+- Fora do claude.ai, os aparelhos se falam por um servidor MQTT público (`wss://broker.hivemq.com:8884/mqtt`, trocável em *Configurações → Este aparelho → Avançado*), usando o código da sala. Abas do mesmo navegador também sincronizam entre si.
+- Os **palpites viajam criptografados** (AES-GCM + RSA-OAEP) com a chave pública do organizador. Nem o servidor, nem a TV, nem as outras equipes conseguem lê-los.
+- No link do claude.ai, a sincronização usa o banco de dados da própria página.
+- Testes: `node e2e/rooms.mjs` simula três aparelhos separados num servidor MQTT local. O servidor público em si não foi testado daqui, porque o ambiente de desenvolvimento não tem acesso a ele.
 
 ### Dá para esconder o nome da música no Spotify?
 Não dentro do Spotify: o app sempre mostra título, artista e capa, e nenhum site consegue mudar isso. A solução prática é dividir as telas. A **TV** mostra o jogo sem spoiler, e o **celular do organizador** toca a música (direto ou por Spotify Connect numa caixa de som) longe da vista dos jogadores. O aviso antes de abrir o Spotify lembra isso.

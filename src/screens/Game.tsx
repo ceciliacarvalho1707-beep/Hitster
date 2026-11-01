@@ -5,6 +5,7 @@ import { useTransportKind } from '../components/sync';
 import { PickSongModal, PlayOnDevice, useSpotifyAuth } from '../components/spotify';
 import { useState } from 'react';
 import { useWakeLock } from '../lib/app';
+import { ConnectDevicesCard } from '../components/rooms';
 import { navigate } from '../router';
 import { currentRound, currentTurn, hasNextTeam, isLastRound, matchActions, songById, turnComplete, useAppState } from '../store/store';
 
@@ -134,10 +135,16 @@ export function Game() {
               <button className="btn btn--ghost btn--sm" onClick={() => navigate('historico')}>Histórico</button>
             </div>
           </section>
+          {kind !== 'nuvem' && (
+            <section className="card">
+              <h3 className="section-title">📡 Conectar TV e celulares</h3>
+              <ConnectDevicesCard compact />
+            </section>
+          )}
           <section className="card">
             <h3 className="section-title">🎛️ Controle</h3>
             <div className="stack">
-              <p className="muted small" style={{ margin: 0 }}>{kind === 'nuvem' ? '🟢 TV e celulares de equipe sincronizados.' : '🟡 Sincronização só neste navegador.'} Para usar a TV, abra este jogo nela e toque em “Tela da TV”.</p>
+              {kind === 'nuvem' ? <p className="muted small" style={{ margin: 0 }}>🟢 TV e celulares de equipe sincronizados. Para usar a TV, abra este jogo nela e toque em “Tela da TV”.</p> : null}
               <button className="btn btn--ghost btn--sm" onClick={async () => {
                 const ok = await confirm({ titulo: 'Encerrar partida?', mensagem: 'A partida será finalizada e enviada ao histórico. Você verá a classificação final.', confirmar: 'Encerrar', perigo: true });
                 if (ok) { matchActions.finish(); navigate('vitoria'); }

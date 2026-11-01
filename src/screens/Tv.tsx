@@ -3,6 +3,8 @@ import { DIF_LABEL, Equalizer, Logo, Vinyl } from '../components/ui';
 import type { PublicScore } from '../lib/sync';
 import { navigate } from '../router';
 import { useWakeLock } from '../lib/app';
+import { JoinRoomForm, QrImage, switchDevice } from '../components/rooms';
+import { getDeviceConfig, teamJoinUrl } from '../lib/room';
 import type { Dificuldade } from '../types';
 
 export function PublicBoard({ placar, compact }: { placar: PublicScore[]; compact?: boolean }) {
@@ -33,7 +35,15 @@ export function PublicBoard({ placar, compact }: { placar: PublicScore[]; compac
 export function Tv() {
   const { state, carregando, kind } = usePublicState();
   useWakeLock(true);
-  const voltar = <button className="btn btn--ghost btn--sm" onClick={() => navigate('home')}>← Sair da TV</button>;
+  const sala = getDeviceConfig().sala;
+  const voltar = <button className="btn btn--ghost btn--sm" onClick={() => (getDeviceConfig().papel === 'tv' || sala ? switchDevice({ papel: undefined, sala: undefined }, 'home') : navigate('home'))}>← Sair da TV</button>;
+  const qrEquipes = sala && kind === 'sala' ? (
+    <div className="tv__qr"><QrImage text={teamJoinUrl(sala)} size={150} /><span>📱 Equipes: apontem a câmera<br /><b>Sala {sala}</b></span></div>
+  ) : null;
+
+  if (!state && !sala && kind !== 'nuvem' && !carregando) {
+    return <main className="page tv-join" data-testid="tv"><div className="row">{voltar}</div><Logo size="sm" /><JoinRoomForm papel="tv" /></main>;
+  }
 
   if (!state || state.status === 'sem_partida') {
     return (
@@ -41,10 +51,11 @@ export function Tv() {
         <Logo size="lg" />
         <p className="tv__msg">{carregando ? 'Conectando…' : 'Esperando o organizador começar a partida'} <Equalizer /></p>
         <p className="muted center tv__hint">
-          {kind === 'nuvem'
-            ? 'Esta tela atualiza sozinha assim que o celular do organizador iniciar o jogo.'
-            : 'Modo local: abra o jogo do organizador neste mesmo navegador (outra aba ou janela) para esta tela acompanhar.'}
+          {kind === 'local'
+            ? 'Modo local: abra o jogo do organizador neste mesmo navegador (outra aba ou janela) para esta tela acompanhar.'
+            : 'Esta tela atualiza sozinha assim que o celular do organizador iniciar o jogo.'}
         </p>
+        {qrEquipes}
         {voltar}
       </main>
     );
@@ -93,7 +104,7 @@ export function Tv() {
             </div>
           ) : <p className="tv__msg">{state.gabaritoAberto ? '🔐 O organizador está conferindo as respostas…' : '🎧 Ouçam com atenção!'}</p>}
         </section>
-        <aside className="tv__board"><h2>Placar</h2><PublicBoard placar={state.placar ?? []} compact /></aside>
+        <aside className="tv__board"><h2>Placar</h2><PublicBoard placar={state.placar ?? []} compact />{qrEquipes}</aside>
       </div>
     </main>
   );
