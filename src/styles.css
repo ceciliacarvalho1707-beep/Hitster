@@ -578,7 +578,7 @@ textarea.input, .field textarea { min-height: auto; resize: vertical; }
 .tvsp-code { font-family: ui-monospace, monospace; font-size: 1.25em; letter-spacing: .08em; color: var(--blue, #38bdf8); }
 .tvsp-play { margin-top: 4px; }
 .tvsp-tv {
-  position: fixed; left: 16px; bottom: 16px; z-index: 40; max-width: min(520px, calc(100vw - 32px));
+  position: fixed; right: 16px; bottom: 16px; z-index: 40; max-width: min(400px, calc(100vw - 32px));
   padding: 10px 14px; border-radius: 14px; font-size: 15px;
   background: rgba(15, 12, 30, .88); border: 1px solid rgba(139, 92, 246, .45); color: #e9e6ff;
   pointer-events: none; opacity: .92;

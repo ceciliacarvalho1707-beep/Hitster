@@ -4,7 +4,7 @@ import { navigate } from '../router';
 import { useWakeLock } from '../lib/app';
 import { TvAudio } from '../components/preview';
 import { TvSpotifyPlayer } from '../components/tvSpotify';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useFeedback } from '../components/feedback';
 import { deviceId, getTransport, type PublicScore, type PublicState, type PublicTeam } from '../lib/sync';
 import { JoinRoomForm, QrImage, switchDevice } from '../components/rooms';
@@ -47,9 +47,7 @@ function TvScreen() {
   useWakeLock(true);
   const sala = getDeviceConfig().sala;
   const voltar = <button className="btn btn--ghost btn--sm" onClick={() => (getDeviceConfig().papel === 'tv' || sala ? switchDevice({ papel: undefined, sala: undefined }, 'home') : navigate('home'))}>← Sair da TV</button>;
-  const telaCheia = document.fullscreenEnabled && !document.fullscreenElement
-    ? <button className="btn btn--ghost btn--sm" onClick={() => document.documentElement.requestFullscreen().catch(() => undefined)} data-testid="tv-fullscreen">⛶ Tela cheia</button>
-    : null;
+  const telaCheia = <FullscreenButton />;
   const controles = <div className="row tv__ctrl">{voltar}{telaCheia}</div>;
   const qrEquipes = sala && kind === 'sala' ? (
     <div className="tv__qr"><QrImage text={teamJoinUrl(sala)} size={150} /><span>📱 Equipes: apontem a câmera<br /><b>Sala {sala}</b></span></div>
@@ -173,4 +171,34 @@ function TvGuess({ state, equipes }: { state: PublicState; equipes: PublicTeam[]
       </div>
     </form>
   );
+}
+
+/* Tela cheia: navegadores de TV antigos usam os nomes com "webkit". */
+type FsDoc = Document & { webkitFullscreenElement?: Element | null; webkitFullscreenEnabled?: boolean; webkitExitFullscreen?: () => void };
+type FsEl = HTMLElement & { webkitRequestFullscreen?: () => void };
+const fsDoc = () => document as FsDoc;
+const isFullscreen = () => !!(fsDoc().fullscreenElement || fsDoc().webkitFullscreenElement);
+
+/** Botão que alterna: "Tela cheia" ↔ "Sair da tela cheia". */
+function FullscreenButton() {
+  const [cheia, setCheia] = useState(isFullscreen);
+  useEffect(() => {
+    const on = () => setCheia(isFullscreen());
+    document.addEventListener('fullscreenchange', on);
+    document.addEventListener('webkitfullscreenchange', on);
+    return () => { document.removeEventListener('fullscreenchange', on); document.removeEventListener('webkitfullscreenchange', on); };
+  }, []);
+  if (!(fsDoc().fullscreenEnabled || fsDoc().webkitFullscreenEnabled)) return null;
+  const alternar = () => {
+    const d = fsDoc();
+    if (isFullscreen()) {
+      if (d.exitFullscreen) d.exitFullscreen().catch(() => undefined); else d.webkitExitFullscreen?.();
+    } else {
+      const el = document.documentElement as FsEl;
+      if (el.requestFullscreen) el.requestFullscreen().catch(() => undefined); else el.webkitRequestFullscreen?.();
+    }
+  };
+  return cheia
+    ? <button className="btn btn--ghost btn--sm" onClick={alternar} data-testid="tv-fullscreen-exit">✕ Sair da tela cheia</button>
+    : <button className="btn btn--ghost btn--sm" onClick={alternar} data-testid="tv-fullscreen">⛶ Tela cheia</button>;
 }
