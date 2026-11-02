@@ -13146,6 +13146,164 @@ const raw: Base[] = [
   "fontes": [
    "https://pt.wikipedia.org/w/index.php?search=%C3%89%20uma%20Partida%20de%20Futebol%20Skank"
   ]
+ },
+ {
+  "id": "int-opening-up-elenco-origina",
+  "titulo": "Opening Up",
+  "artista": "Elenco original de Waitress",
+  "ano": 2016,
+  "musical": "Waitress",
+  "alternativas": {
+   "artista": [
+    "Sara Bareilles",
+    "Jessie Mueller"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "0Blojh3eznTkOiIJSDKb6W",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Opening%20Up%20Elenco%20original%20de%20Waitress"
+  ]
+ },
+ {
+  "id": "int-what-baking-can-do-elenco-origina",
+  "titulo": "What Baking Can Do",
+  "artista": "Elenco original de Waitress",
+  "ano": 2016,
+  "musical": "Waitress",
+  "alternativas": {
+   "artista": [
+    "Sara Bareilles",
+    "Jessie Mueller"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "0h77yfaXxrLMLz31uNDigN",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=What%20Baking%20Can%20Do%20Elenco%20original%20de%20Waitress"
+  ]
+ },
+ {
+  "id": "int-when-he-sees-me-elenco-origina",
+  "titulo": "When He Sees Me",
+  "artista": "Elenco original de Waitress",
+  "ano": 2016,
+  "musical": "Waitress",
+  "alternativas": {
+   "artista": [
+    "Sara Bareilles",
+    "Jessie Mueller",
+    "Kimiko Glenn"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "4tG0cdbL7v4pQ8RWOqLDHx",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=When%20He%20Sees%20Me%20Elenco%20original%20de%20Waitress"
+  ]
+ },
+ {
+  "id": "int-never-ever-getting-rid-o-elenco-origina",
+  "titulo": "Never Ever Getting Rid of Me",
+  "artista": "Elenco original de Waitress",
+  "ano": 2016,
+  "musical": "Waitress",
+  "alternativas": {
+   "artista": [
+    "Sara Bareilles",
+    "Jessie Mueller",
+    "Christopher Fitzgerald"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "1CZgbcEZEhHH28HcBFvQIW",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Never%20Ever%20Getting%20Rid%20of%20Me%20Elenco%20original%20de%20Waitress"
+  ]
+ },
+ {
+  "id": "int-bad-idea-elenco-origina",
+  "titulo": "Bad Idea",
+  "artista": "Elenco original de Waitress",
+  "ano": 2016,
+  "musical": "Waitress",
+  "alternativas": {
+   "artista": [
+    "Sara Bareilles",
+    "Jessie Mueller"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "0eaFGIJGHgwKGDcVwHnc7t",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Bad%20Idea%20Elenco%20original%20de%20Waitress"
+  ]
+ },
+ {
+  "id": "int-everything-changes-elenco-origina",
+  "titulo": "Everything Changes",
+  "artista": "Elenco original de Waitress",
+  "ano": 2016,
+  "musical": "Waitress",
+  "alternativas": {
+   "artista": [
+    "Sara Bareilles",
+    "Jessie Mueller"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "6nUhDYgFdSWWIWnN0Mwq9G",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Everything%20Changes%20Elenco%20original%20de%20Waitress"
+  ]
+ },
+ {
+  "id": "int-i-didn-t-plan-it-keala-settle",
+  "titulo": "I Didn't Plan It",
+  "artista": "Keala Settle",
+  "ano": 2016,
+  "musical": "Waitress",
+  "alternativas": {
+   "titulo": [
+    "I Didnt Plan It"
+   ],
+   "artista": [
+    "Sara Bareilles"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "2HhPYh9wefr3DkFKWFLeV7",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=I%20Didn%27t%20Plan%20It%20Keala%20Settle"
+  ]
  }
 ];
 
