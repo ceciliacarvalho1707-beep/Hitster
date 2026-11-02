@@ -8582,6 +8582,819 @@ const raw: Base[] = [
   "fontes": [
    "https://pt.wikipedia.org/w/index.php?search=Beija%20Eu%20Marisa%20Monte"
   ]
+ },
+ {
+  "id": "int-debut-katseye",
+  "titulo": "Debut",
+  "artista": "KATSEYE",
+  "ano": 2024,
+  "alternativas": {
+   "artista": [
+    "Katseye",
+    "Kats Eye"
+   ]
+  },
+  "pais": "Estados Unidos / Coreia do Sul",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "K-pop / Pop",
+  "dificuldade": "media",
+  "spotify": "58AZXyKRlsMBMcrRjpJpVG",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Debut%20KATSEYE"
+  ]
+ },
+ {
+  "id": "int-touch-katseye",
+  "titulo": "Touch",
+  "artista": "KATSEYE",
+  "ano": 2024,
+  "alternativas": {
+   "artista": [
+    "Katseye",
+    "Kats Eye"
+   ]
+  },
+  "pais": "Estados Unidos / Coreia do Sul",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "6aJn7Cst74cj4lNIiPRgav",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Touch%20KATSEYE"
+  ]
+ },
+ {
+  "id": "int-gnarly-katseye",
+  "titulo": "Gnarly",
+  "artista": "KATSEYE",
+  "ano": 2025,
+  "alternativas": {
+   "artista": [
+    "Katseye",
+    "Kats Eye"
+   ]
+  },
+  "pais": "Estados Unidos / Coreia do Sul",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "794MnAJvd8c84vWQxdFLAN",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Gnarly%20KATSEYE"
+  ]
+ },
+ {
+  "id": "int-gabriela-katseye",
+  "titulo": "Gabriela",
+  "artista": "KATSEYE",
+  "ano": 2025,
+  "alternativas": {
+   "artista": [
+    "Katseye",
+    "Kats Eye"
+   ]
+  },
+  "pais": "Estados Unidos / Coreia do Sul",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "1xOqGUkyxGQRdCvGpvWKmL",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Gabriela%20KATSEYE"
+  ]
+ },
+ {
+  "id": "int-gameboy-katseye",
+  "titulo": "Gameboy",
+  "artista": "KATSEYE",
+  "ano": 2025,
+  "alternativas": {
+   "titulo": [
+    "Game Boy"
+   ],
+   "artista": [
+    "Katseye",
+    "Kats Eye"
+   ]
+  },
+  "pais": "Estados Unidos / Coreia do Sul",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "2HMvIK2S3oC6OABl2YXAx1",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Gameboy%20KATSEYE"
+  ]
+ },
+ {
+  "id": "br-julieta-kamaitachi",
+  "titulo": "Julieta",
+  "artista": "Kamaitachi",
+  "ano": 2021,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rap",
+  "dificuldade": "media",
+  "spotify": "6QlotyGlpPfEX4eGsvbhCh",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Julieta%20Kamaitachi"
+  ]
+ },
+ {
+  "id": "br-lana-kamaitachi",
+  "titulo": "Lana",
+  "artista": "Kamaitachi",
+  "ano": 2020,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rap",
+  "dificuldade": "dificil",
+  "spotify": "6njzueGON26Kj3dy0wQUxs",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Lana%20Kamaitachi"
+  ]
+ },
+ {
+  "id": "br-morgana-kamaitachi",
+  "titulo": "Morgana",
+  "artista": "Kamaitachi",
+  "ano": 2019,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rap",
+  "dificuldade": "dificil",
+  "spotify": "1vVSHlIG32FEqQjZd61oQP",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Morgana%20Kamaitachi"
+  ]
+ },
+ {
+  "id": "br-o-sol-e-a-lua-kamaitachi",
+  "titulo": "O Sol e a Lua",
+  "artista": "Kamaitachi",
+  "ano": 2022,
+  "alternativas": {
+   "titulo": [
+    "Sol e a Lua"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rap",
+  "dificuldade": "media",
+  "spotify": "2Nv6y9yuUqgQYnExL5m7xe",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=O%20Sol%20e%20a%20Lua%20Kamaitachi"
+  ]
+ },
+ {
+  "id": "br-6balas-kamaitachi",
+  "titulo": "6Balas",
+  "artista": "Kamaitachi",
+  "ano": 2017,
+  "alternativas": {
+   "titulo": [
+    "6 Balas",
+    "Seis Balas"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rap",
+  "dificuldade": "dificil",
+  "spotify": "7nVyMXlRNPxMfhPpX0p61o",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=6Balas%20Kamaitachi"
+  ]
+ },
+ {
+  "id": "br-noiva-cadaver-kamaitachi",
+  "titulo": "Noiva Cadáver",
+  "artista": "Kamaitachi",
+  "ano": 2017,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rap",
+  "dificuldade": "dificil",
+  "spotify": "2XmobHgSSC4Ojh6vbeJ9Ya",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Noiva%20Cad%C3%A1ver%20Kamaitachi"
+  ]
+ },
+ {
+  "id": "br-cabelos-arco-iris-kamaitachi",
+  "titulo": "Cabelos Arco-Íris",
+  "artista": "Kamaitachi",
+  "ano": 2017,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rap",
+  "dificuldade": "muito_dificil",
+  "spotify": "5WmLDUVPPpHEfxlfFtYzuY",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Cabelos%20Arco-%C3%8Dris%20Kamaitachi"
+  ]
+ },
+ {
+  "id": "int-just-a-man-jorge-rivera-h",
+  "titulo": "Just a Man",
+  "artista": "Jorge Rivera-Herrans",
+  "ano": 2022,
+  "anosAceitos": [
+   2022,
+   2024
+  ],
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "757cx0iJx1pcwLv4lnX39B",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Just%20a%20Man%20Jorge%20Rivera-Herrans"
+  ]
+ },
+ {
+  "id": "int-warrior-of-the-mind-jorge-rivera-h",
+  "titulo": "Warrior of the Mind",
+  "artista": "Jorge Rivera-Herrans e Teagan Earley",
+  "ano": 2022,
+  "anosAceitos": [
+   2022,
+   2024
+  ],
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "5vXTArFpG0hB1fdlVsf28f",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Warrior%20of%20the%20Mind%20Jorge%20Rivera-Herrans%20e%20Teagan%20Earley"
+  ]
+ },
+ {
+  "id": "int-ruthlessness-steven-rodrigu",
+  "titulo": "Ruthlessness",
+  "artista": "Steven Rodriguez Jr. e Jorge Rivera-Herrans",
+  "ano": 2023,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "5w4DNXyuAZhUO4y3erBg9G",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ruthlessness%20Steven%20Rodriguez%20Jr.%20e%20Jorge%20Rivera-Herrans"
+  ]
+ },
+ {
+  "id": "int-done-for-talya-sindel-e",
+  "titulo": "Done For",
+  "artista": "Talya Sindel e Jorge Rivera-Herrans",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "3MfTo3Q0ZCrhCsQJZ8u6iZ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Done%20For%20Talya%20Sindel%20e%20Jorge%20Rivera-Herrans"
+  ]
+ },
+ {
+  "id": "int-monster-jorge-rivera-h",
+  "titulo": "Monster",
+  "artista": "Jorge Rivera-Herrans",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "2uakf4oX6yCvlcHrCunap0",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Monster%20Jorge%20Rivera-Herrans"
+  ]
+ },
+ {
+  "id": "int-thunder-bringer-luke-holt-e-jo",
+  "titulo": "Thunder Bringer",
+  "artista": "Luke Holt e Jorge Rivera-Herrans",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "70tUQzrtuWnshYEV0DXD5U",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Thunder%20Bringer%20Luke%20Holt%20e%20Jorge%20Rivera-Herrans"
+  ]
+ },
+ {
+  "id": "int-god-games-jorge-rivera-h",
+  "titulo": "God Games",
+  "artista": "Jorge Rivera-Herrans e elenco de EPIC",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "2nTbWfwXlp9gK5u205Pcm1",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=God%20Games%20Jorge%20Rivera-Herrans%20e%20elenco%20de%20EPIC"
+  ]
+ },
+ {
+  "id": "int-would-you-fall-in-love-w-jorge-rivera-h",
+  "titulo": "Would You Fall in Love with Me Again",
+  "artista": "Jorge Rivera-Herrans e Anna Lea",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "3iYeXCdD3d0zlex2v0CpVt",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Would%20You%20Fall%20in%20Love%20with%20Me%20Again%20Jorge%20Rivera-Herrans%20e%20Anna%20Lea"
+  ]
+ },
+ {
+  "id": "int-alexander-hamilton-elenco-origina",
+  "titulo": "Alexander Hamilton",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "artista": [
+    "Lin-Manuel Miranda"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Hip-hop",
+  "dificuldade": "dificil",
+  "spotify": "4TTV7EcfroSLWzXRY6gLv6",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Alexander%20Hamilton%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-satisfied-elenco-origina",
+  "titulo": "Satisfied",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "artista": [
+    "Lin-Manuel Miranda",
+    "Renée Elise Goldsberry"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Hip-hop",
+  "dificuldade": "dificil",
+  "spotify": "3dP0pLbg9OfVwssDjp9aT0",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Satisfied%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-the-room-where-it-happen-elenco-origina",
+  "titulo": "The Room Where It Happens",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "titulo": [
+    "Room Where It Happens"
+   ],
+   "artista": [
+    "Lin-Manuel Miranda",
+    "Leslie Odom Jr."
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "2TK2KSrzXD6W01qjXVjNGh",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Room%20Where%20It%20Happens%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-you-ll-be-back-elenco-origina",
+  "titulo": "You'll Be Back",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "artista": [
+    "Lin-Manuel Miranda",
+    "Jonathan Groff"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "6OG1S805gIrH5nAQbEOPY3",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=You%27ll%20Be%20Back%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-helpless-elenco-origina",
+  "titulo": "Helpless",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "artista": [
+    "Lin-Manuel Miranda",
+    "Phillipa Soo"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / R&B",
+  "dificuldade": "dificil",
+  "spotify": "54Sc7mZQ1RM03STpk4SfaA",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Helpless%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-wait-for-it-elenco-origina",
+  "titulo": "Wait for It",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "artista": [
+    "Lin-Manuel Miranda",
+    "Leslie Odom Jr."
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "7EqpEBPOohgk7NnKvBGFWo",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Wait%20for%20It%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-the-schuyler-sisters-elenco-origina",
+  "titulo": "The Schuyler Sisters",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "titulo": [
+    "Schuyler Sisters"
+   ],
+   "artista": [
+    "Lin-Manuel Miranda"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "71X7bPDljJHrmEGYCe7kQ8",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Schuyler%20Sisters%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-non-stop-elenco-origina",
+  "titulo": "Non-Stop",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "titulo": [
+    "Non Stop"
+   ],
+   "artista": [
+    "Lin-Manuel Miranda"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "7qfoq1JFKBUEIvhqOHzuqX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Non-Stop%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-candy-store-elenco-origina",
+  "titulo": "Candy Store",
+  "artista": "Elenco original de Heathers",
+  "ano": 2014,
+  "musical": "Heathers",
+  "alternativas": {
+   "artista": [
+    "Heathers the Musical"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "13Soih2NRLeDx8Unbr22mx",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Candy%20Store%20Elenco%20original%20de%20Heathers"
+  ]
+ },
+ {
+  "id": "int-dead-girl-walking-elenco-origina",
+  "titulo": "Dead Girl Walking",
+  "artista": "Elenco original de Heathers",
+  "ano": 2014,
+  "musical": "Heathers",
+  "alternativas": {
+   "artista": [
+    "Heathers the Musical",
+    "Barrett Wilbert Weed"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "5L5N8YOsBxdzR9h9sudBgG",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dead%20Girl%20Walking%20Elenco%20original%20de%20Heathers"
+  ]
+ },
+ {
+  "id": "int-seventeen-elenco-origina",
+  "titulo": "Seventeen",
+  "artista": "Elenco original de Heathers",
+  "ano": 2014,
+  "musical": "Heathers",
+  "alternativas": {
+   "artista": [
+    "Heathers the Musical"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "2p0FjrYZlNhEejQOLXHP2n",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Seventeen%20Elenco%20original%20de%20Heathers"
+  ]
+ },
+ {
+  "id": "int-meant-to-be-yours-elenco-origina",
+  "titulo": "Meant to Be Yours",
+  "artista": "Elenco original de Heathers",
+  "ano": 2014,
+  "musical": "Heathers",
+  "alternativas": {
+   "artista": [
+    "Heathers the Musical"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "6YYeBYEpkiR84eCDNPBDoF",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Meant%20to%20Be%20Yours%20Elenco%20original%20de%20Heathers"
+  ]
+ },
+ {
+  "id": "int-my-dead-gay-son-elenco-origina",
+  "titulo": "My Dead Gay Son",
+  "artista": "Elenco original de Heathers",
+  "ano": 2014,
+  "musical": "Heathers",
+  "alternativas": {
+   "artista": [
+    "Heathers the Musical"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "5zkR2vfAGuzLeOL7MNKYvk",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=My%20Dead%20Gay%20Son%20Elenco%20original%20de%20Heathers"
+  ]
+ },
+ {
+  "id": "int-wait-for-me-elenco-origina",
+  "titulo": "Wait for Me",
+  "artista": "Elenco original de Hadestown",
+  "ano": 2019,
+  "musical": "Hadestown",
+  "alternativas": {
+   "artista": [
+    "Anaïs Mitchell"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Folk",
+  "dificuldade": "muito_dificil",
+  "spotify": "1dARoUpgYHvx33Qp8dawsZ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Wait%20for%20Me%20Elenco%20original%20de%20Hadestown"
+  ]
+ },
+ {
+  "id": "int-don-t-lose-ur-head-elenco-de-six",
+  "titulo": "Don't Lose Ur Head",
+  "artista": "Elenco de SIX",
+  "ano": 2018,
+  "musical": "SIX",
+  "alternativas": {
+   "titulo": [
+    "Don't Lose Your Head"
+   ],
+   "artista": [
+    "Six the Musical"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Pop",
+  "dificuldade": "dificil",
+  "spotify": "6sUQqRmOcRyAG5M3EWXzr3",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Don%27t%20Lose%20Ur%20Head%20Elenco%20de%20SIX"
+  ]
+ },
+ {
+  "id": "int-waving-through-a-window-ben-platt",
+  "titulo": "Waving Through a Window",
+  "artista": "Ben Platt",
+  "ano": 2017,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "musical": "Dear Evan Hansen",
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "0gMW8XpPFPjoApDii5Tj1u",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Waving%20Through%20a%20Window%20Ben%20Platt"
+  ]
+ },
+ {
+  "id": "int-you-will-be-found-elenco-origina",
+  "titulo": "You Will Be Found",
+  "artista": "Elenco original de Dear Evan Hansen",
+  "ano": 2017,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "musical": "Dear Evan Hansen",
+  "alternativas": {
+   "artista": [
+    "Ben Platt"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "1H7Zqkq54andtaSSnLRrfp",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=You%20Will%20Be%20Found%20Elenco%20original%20de%20Dear%20Evan%20Hansen"
+  ]
+ },
+ {
+  "id": "int-she-used-to-be-mine-jessie-mueller",
+  "titulo": "She Used to Be Mine",
+  "artista": "Jessie Mueller",
+  "ano": 2016,
+  "musical": "Waitress",
+  "alternativas": {
+   "artista": [
+    "Sara Bareilles"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "7CBrUf50mf2IqcRZla38by",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=She%20Used%20to%20Be%20Mine%20Jessie%20Mueller"
+  ]
  }
 ];
 
