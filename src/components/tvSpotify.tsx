@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { extractTrackId } from '../lib/spotify';
 import * as sp from '../lib/spotifyApi';
 import {
-  keyCodeMatches, loadSdk, waitTvPlaying, onTvChange, pairTv, pairedCode, pauseOnTv, playOnTv, publishTvInfo, startOrganizerLink,
+  keyCodeMatches, loadSdk, waitTvPlaying, aparelhosVisiveis, TV_DEVICE_NAME, onTvChange, pairTv, pairedCode, pauseOnTv, playOnTv, publishTvInfo, startOrganizerLink,
   subscribeTvToken, tvCode, tvInfo, unpairTv, type SdkPlayer, type TvInfo, type TvToken,
 } from '../lib/tvSpotify';
 import { matchActions } from '../store/store';
@@ -83,6 +83,13 @@ export function TvSpotifyCard() {
     <div className="card tvsp" id="tvsp-card" data-testid="tvsp-card">
       <h3 style={{ margin: 0 }}>📺🎶 Música inteira na TV</h3>
       {corpo}
+      {ligada && connected && <button className="link-btn" data-testid="tvsp-diag" onClick={async () => {
+        try {
+          const l = await aparelhosVisiveis();
+          const temTv = l.some((n) => n.startsWith(TV_DEVICE_NAME));
+          toast(l.length ? `O Spotify enxerga: ${l.join(', ')}.${temTv ? '' : ' A TV não está na lista: recarregue a TV e aperte “Ativar som do Spotify”.'}` : 'O Spotify não enxerga nenhum aparelho agora. Recarregue a TV e aperte “Ativar som do Spotify”.', temTv ? 'ok' : 'erro');
+        } catch (e) { toast((e as Error).message, 'erro'); }
+      }}>🔎 Ver aparelhos que o Spotify enxerga</button>}
       {ligada && <button className="btn btn--ghost btn--sm" onClick={async () => { await unpairTv(); toast('Acesso da TV ao Spotify cortado.'); }}>Desligar a TV do Spotify</button>}
     </div>
   );
@@ -166,7 +173,7 @@ export function TvSpotifyPlayer() {
     publicar('conectando');
     loadSdk().then((Spotify) => {
       if (player.current) return;
-      const p = new Spotify.Player({ name: 'HITSTER PARTY · TV', getOAuthToken: (cb) => cb(tokRef.current?.token ?? ''), volume: 0.9 });
+      const p = new Spotify.Player({ name: TV_DEVICE_NAME, getOAuthToken: (cb) => cb(tokRef.current?.token ?? ''), volume: 0.9 });
       player.current = p;
       p.addListener('ready', (d) => { setErro(''); deviceRef.current = d?.device_id; publicar('pronta'); });
       // O navegador bloqueou o som automático: precisa de um clique na TV.

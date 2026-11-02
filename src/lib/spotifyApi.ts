@@ -300,6 +300,11 @@ export async function playOnDevice(trackId: string, deviceId?: string): Promise<
   await api(`/me/player/play${q}`, { method: 'PUT', body: JSON.stringify({ uris: [`spotify:track:${trackId}`] }) });
 }
 
+/** Passa a reprodução da conta para o aparelho (ajuda o Spotify a "acordar" um player de navegador). */
+export async function transferPlayback(deviceId: string, play = false): Promise<void> {
+  await api('/me/player', { method: 'PUT', body: JSON.stringify({ device_ids: [deviceId], play }) });
+}
+
 export async function pausePlayback(deviceId?: string): Promise<void> {
   const q = deviceId ? `?device_id=${encodeURIComponent(deviceId)}` : '';
   await api(`/me/player/pause${q}`, { method: 'PUT' });

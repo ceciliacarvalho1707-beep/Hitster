@@ -100,11 +100,39 @@ export async function unpairTv() {
 }
 
 /** Toca a faixa inteira no Spotify da TV. */
+export const TV_DEVICE_NAME = 'HITSTER PARTY · TV';
+const MSG_TV_INVISIVEL = 'O Spotify não está enxergando a TV como aparelho. Na TV, recarregue a página e aperte “Ativar som do Spotify”; espere aparecer “Spotify pronto” e toque de novo aqui. Se continuar, o navegador desta TV não consegue rodar o player do Spotify: use o trecho de 30 s ou AirPlay/Bluetooth.';
+const espera = (ms: number) => new Promise((r) => setTimeout(r, ms));
+const eh404 = (e: unknown) => e instanceof sp.SpotifyError && e.status === 404;
+
 export async function playOnTv(trackId: string) {
   const i = info;
   if (!i?.deviceId || i.status !== 'pronta') throw new Error('A TV ainda não está pronta para tocar pelo Spotify.');
   await sendToken();
-  await sp.playOnDevice(trackId, i.deviceId);
+  try {
+    await sp.playOnDevice(trackId, i.deviceId);
+    return;
+  } catch (e) {
+    if (!eh404(e)) throw e;
+  }
+  // 404 = o Spotify não achou o aparelho por esse código (a TV recarregou, ou o player ainda não "acordou").
+  // Procura a TV pelo nome na lista de aparelhos da conta, transfere a reprodução para ela e tenta de novo.
+  const lista = await sp.devices().catch(() => [] as sp.SpDevice[]);
+  const tv = lista.find((d) => d.id === i.deviceId) ?? lista.find((d) => d.name === TV_DEVICE_NAME);
+  if (!tv) throw new Error(MSG_TV_INVISIVEL);
+  await sp.transferPlayback(tv.id).catch(() => undefined);
+  await espera(1200);
+  try {
+    await sp.playOnDevice(trackId, tv.id);
+  } catch (e) {
+    if (eh404(e)) throw new Error(MSG_TV_INVISIVEL);
+    throw e;
+  }
+}
+
+/** Nomes dos aparelhos que o Spotify enxerga nesta conta (para diagnóstico). */
+export async function aparelhosVisiveis(): Promise<string[]> {
+  return (await sp.devices()).map((d) => `${d.name}${d.is_active ? ' (ativo)' : ''}`);
 }
 
 /** Espera a TV confirmar que começou a tocar. Retorna 'ok', o problema informado pela TV, ou 'silencio'. */

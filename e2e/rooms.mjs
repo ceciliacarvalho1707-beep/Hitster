@@ -109,13 +109,23 @@ try {
   // Música inteira na TV (Spotify simulado): parear a TV, liberar o acesso criptografado e tocar
   const trackId = song.spotifyUrl.split('/track/')[1].split(/[?#]/)[0];
   const plays = [];
+  let modo = 'toca'; // toca | falha | 404
+  const transfers = [];
   await org.ctx.route(/api\.spotify\.com/, (route) => {
     const r = route.request();
     if (r.method() === 'PUT' && r.url().includes('/me/player/play')) {
+      if (modo === '404' && r.url().includes('device_id=tv-device-123')) {
+        route.fulfill({ status: 404, contentType: 'application/json', body: JSON.stringify({ error: { status: 404, message: 'Device not found' } }) });
+        return;
+      }
       plays.push({ url: r.url(), body: r.postData() });
-      // o "Spotify" da TV começa a tocar (1ª vez) ou falha (2ª vez, como num navegador de TV sem suporte)
-      const n = plays.length;
-      setTimeout(() => tv.page.evaluate((n) => n === 1 ? window.__player.l.player_state_changed({ paused: false }) : window.__player.l.playback_error({ message: 'Failed to play' }), n).catch(() => undefined), 300);
+      const acao = modo === 'falha' ? 'falha' : 'toca';
+      setTimeout(() => tv.page.evaluate((a) => a === 'toca' ? window.__player.l.player_state_changed({ paused: false }) : window.__player.l.playback_error({ message: 'Failed to play' }), acao).catch(() => undefined), 300);
+    } else if (r.method() === 'GET' && r.url().includes('/me/player/devices')) {
+      route.fulfill({ contentType: 'application/json', body: JSON.stringify({ devices: [{ id: 'tv-device-NOVO', name: 'HITSTER PARTY · TV', type: 'Computer', is_active: false }] }) });
+      return;
+    } else if (r.method() === 'PUT' && /\/me\/player(\?|$)/.test(r.url())) {
+      transfers.push(r.postData());
     }
     route.fulfill({ status: 204, body: '' });
   });
@@ -145,11 +155,20 @@ try {
   check('6f', 'Música inteira toca no Spotify da TV (a faixa da rodada) sem mostrar o nome', plays.length === 1 && plays[0].url.includes('device_id=tv-device-123') && plays[0].body.includes(`spotify:track:${trackId}`) && tvSp.includes('spotify pronto') && !tvSp.includes(song.titulo.toLowerCase()), JSON.stringify(plays));
   await tv.page.screenshot({ path: join(shots, '22-tv-spotify.png') });
   check('6g', 'O celular confirma que a TV começou a tocar de verdade', (await tv.page.textContent('[data-testid=tvsp-tv]')).includes('tocando'));
+  modo = 'falha';
   await org.page.click('[data-testid=tvsp-play]');
   await tv.page.waitForSelector('[data-testid=tvsp-tv-problema]', { timeout: 15000 });
   await org.page.waitForSelector('[data-testid=tvsp-problema]', { timeout: 15000 });
   check('6h', 'Se a TV não consegue tocar, a TV e o celular avisam (em vez de ficar em silêncio)', (await org.page.textContent('[data-testid=tvsp-problema]')).includes('não conseguiu tocá-la'));
 
+
+  // Spotify responde "não encontrado" (404) para o código antigo da TV: o jogo acha a TV pelo nome e tenta de novo
+  modo = '404';
+  const antes = plays.length;
+  await org.page.click('[data-testid=tvsp-play]');
+  for (let k = 0; k < 50 && plays.length === antes; k++) await org.page.waitForTimeout(200);
+  const ultimo = plays[plays.length - 1];
+  check('6i', 'Se o Spotify não acha a TV pelo código (erro 404), o jogo procura a TV pelo nome e toca nela', plays.length === antes + 1 && ultimo.url.includes('device_id=tv-device-NOVO') && transfers.some((t) => t.includes('tv-device-NOVO')), JSON.stringify({ ultimo, transfers }));
   await org.page.screenshot({ path: join(shots, '23-org-spotify-tv.png'), fullPage: true });
 
   // Organizador revela e libera para a TV
