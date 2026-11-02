@@ -86,14 +86,34 @@ try {
     const cb = new URL(route.request().url()).searchParams.get('callback');
     route.fulfill({ contentType: 'text/javascript', body: `${cb}({"results":[{"trackName":${esc(song.titulo)},"artistName":${esc(song.artista)},"previewUrl":"https://audio-ssl.itunes.apple.com/teste/trecho.wav"}]})` });
   });
-  const wav = (() => { const n = 8000, b = Buffer.alloc(44 + n); b.write('RIFF', 0); b.writeUInt32LE(36 + n, 4); b.write('WAVEfmt ', 8); b.writeUInt32LE(16, 16); b.writeUInt16LE(1, 20); b.writeUInt16LE(1, 22); b.writeUInt32LE(8000, 24); b.writeUInt32LE(8000, 28); b.writeUInt16LE(1, 32); b.writeUInt16LE(8, 34); b.write('data', 36); b.writeUInt32LE(n, 40); b.fill(128, 44); return b; })();
+  const wav = (() => { const n = 8000 * 20, b = Buffer.alloc(44 + n); b.write('RIFF', 0); b.writeUInt32LE(36 + n, 4); b.write('WAVEfmt ', 8); b.writeUInt32LE(16, 16); b.writeUInt16LE(1, 20); b.writeUInt16LE(1, 22); b.writeUInt32LE(8000, 24); b.writeUInt32LE(8000, 28); b.writeUInt16LE(1, 32); b.writeUInt16LE(8, 34); b.write('data', 36); b.writeUInt32LE(n, 40); b.fill(128, 44); return b; })();
   await tv.ctx.route(/audio-ssl\.itunes\.apple\.com/, (route) => route.fulfill({ contentType: 'audio/wav', body: wav }));
   await org.page.click('[data-testid=play-tv]');
   await tv.page.waitForFunction(() => document.querySelector('[data-testid=tv-audio]')?.dataset.tocando === 'sim' || !!document.querySelector('[data-testid=tv-ativar-som]'), null, { timeout: 25000 });
-  if (await tv.page.locator('[data-testid=tv-ativar-som]').count()) await tv.page.click('[data-testid=tv-ativar-som]');
+  // como uma pessoa com o controle: aperta "Ativar som" enquanto ele aparecer, até a TV tocar de verdade
+  for (let k = 0; k < 20; k++) {
+    if ((await tv.page.getAttribute('[data-testid=tv-audio]', 'data-tocando')) === 'sim') break;
+    if (await tv.page.locator('[data-testid=tv-ativar-som]').count()) await tv.page.click('[data-testid=tv-ativar-som]').catch(() => undefined);
+    await tv.page.waitForTimeout(400);
+  }
   await tv.page.waitForFunction(() => document.querySelector('[data-testid=tv-audio]')?.dataset.tocando === 'sim', null, { timeout: 25000 });
   const tvSom = (await tv.page.textContent('body')).toLowerCase();
   check('6b', 'A música toca na TV (trecho) sem mostrar o nome', tvSom.includes('tocando') && !tvSom.includes(song.titulo.toLowerCase()));
+
+  // Pausar o trecho na TV e continuar do mesmo ponto
+  await tv.page.waitForFunction(() => parseFloat(document.querySelector('[data-testid=tv-audio]')?.dataset.pos || '0') > 1, null, { timeout: 15000 });
+  await org.page.click('[data-testid=play-tv]'); // pausa
+  await tv.page.waitForFunction(() => document.querySelector('[data-testid=tv-audio]')?.dataset.tocando === 'pausado', null, { timeout: 15000 });
+  const posPausa = parseFloat(await tv.page.getAttribute('[data-testid=tv-audio]', 'data-pos'));
+  const rotulo = await org.page.textContent('[data-testid=play-tv]');
+  await org.page.click('[data-testid=play-tv]'); // continua
+  await tv.page.waitForFunction(() => document.querySelector('[data-testid=tv-audio]')?.dataset.tocando === 'sim', null, { timeout: 15000 });
+  await tv.page.waitForFunction((p) => parseFloat(document.querySelector('[data-testid=tv-audio]')?.dataset.pos || '0') > p + 0.3, posPausa, { timeout: 15000 }).catch(() => undefined);
+  await org.page.click('[data-testid=play-tv]'); // pausa de novo para medir
+  await tv.page.waitForFunction(() => document.querySelector('[data-testid=tv-audio]')?.dataset.tocando === 'pausado', null, { timeout: 15000 });
+  const posDepois = parseFloat(await tv.page.getAttribute('[data-testid=tv-audio]', 'data-pos'));
+  check('6b2', 'Trecho na TV: pausa e continua do mesmo ponto (não volta ao início)', posPausa > 0.5 && rotulo.includes('CONTINUAR') && posDepois > posPausa, `pausou em ${posPausa}s, depois ${posDepois}s`);
+  await org.page.click('[data-testid=tv-parar]');
 
   // Palpite digitado na própria TV (equipe que ainda não respondeu)
   await tv.page.click('[data-testid=tv-guess-open]');
@@ -110,7 +130,7 @@ try {
   const trackId = song.spotifyUrl.split('/track/')[1].split(/[?#]/)[0];
   const plays = [];
   let modo = 'toca'; // toca | falha | 404
-  const transfers = [];
+  const transfers = [], controles = [];
   await org.ctx.route(/api\.spotify\.com/, (route) => {
     const r = route.request();
     if (r.method() === 'PUT' && r.url().includes('/me/player/play')) {
@@ -118,12 +138,15 @@ try {
         route.fulfill({ status: 404, contentType: 'application/json', body: JSON.stringify({ error: { status: 404, message: 'Device not found' } }) });
         return;
       }
+      if (!r.postData()) { controles.push('resume:' + r.url()); route.fulfill({ status: 204, body: '' }); return; }
       plays.push({ url: r.url(), body: r.postData() });
       const acao = modo === 'falha' ? 'falha' : 'toca';
       setTimeout(() => tv.page.evaluate((a) => a === 'toca' ? window.__player.l.player_state_changed({ paused: false }) : window.__player.l.playback_error({ message: 'Failed to play' }), acao).catch(() => undefined), 300);
     } else if (r.method() === 'GET' && r.url().includes('/me/player/devices')) {
       route.fulfill({ contentType: 'application/json', body: JSON.stringify({ devices: [{ id: 'tv-device-NOVO', name: 'HITSTER PARTY · TV', type: 'Computer', is_active: false }] }) });
       return;
+    } else if (r.method() === 'PUT' && r.url().includes('/me/player/pause')) {
+      controles.push('pause');
     } else if (r.method() === 'PUT' && /\/me\/player(\?|$)/.test(r.url())) {
       transfers.push(r.postData());
     }
@@ -169,6 +192,14 @@ try {
   for (let k = 0; k < 50 && plays.length === antes; k++) await org.page.waitForTimeout(200);
   const ultimo = plays[plays.length - 1];
   check('6i', 'Se o Spotify não acha a TV pelo código (erro 404), o jogo procura a TV pelo nome e toca nela', plays.length === antes + 1 && ultimo.url.includes('device_id=tv-device-NOVO') && transfers.some((t) => t.includes('tv-device-NOVO')), JSON.stringify({ ultimo, transfers }));
+  // Música inteira: pausar e continuar do mesmo ponto (Spotify retoma sem mandar a faixa de novo)
+  await org.page.click('[data-testid=tvsp-pause]');
+  for (let k = 0; k < 50 && !controles.includes('pause'); k++) await org.page.waitForTimeout(100);
+  await org.page.waitForFunction(() => { const b = document.querySelector('[data-testid=tvsp-pause]'); return b && !b.disabled && b.textContent.includes('Continuar'); }, null, { timeout: 15000 });
+  const rotuloSp = await org.page.textContent('[data-testid=tvsp-pause]');
+  await org.page.click('[data-testid=tvsp-pause]');
+  for (let k = 0; k < 50 && !controles.some((c) => c.startsWith('resume:')); k++) await org.page.waitForTimeout(100);
+  check('6j', 'Música inteira na TV: pausa e continua do mesmo ponto', controles.includes('pause') && rotuloSp.includes('Continuar') && controles.some((c) => c.startsWith('resume:') && c.includes('device_id=')), JSON.stringify(controles));
   await org.page.screenshot({ path: join(shots, '23-org-spotify-tv.png'), fullPage: true });
 
   // Organizador revela e libera para a TV

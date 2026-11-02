@@ -64,6 +64,7 @@ export async function startOrganizerLink(): Promise<void> {
   t.channel(CH_INFO).subscribe((d) => {
     const v = d as TvInfo;
     if (!v || typeof v.codigo !== 'string' || !v.pub) return;
+    if (v.deviceId && v.deviceId !== info?.deviceId) aparelhoAtual = null; // a TV recarregou: vale o código novo
     info = v; infoRecebidaEm = Date.now(); emit();
     void sendToken();
   });
@@ -105,25 +106,37 @@ const MSG_TV_INVISIVEL = 'O Spotify não está enxergando a TV como aparelho. Na
 const espera = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const eh404 = (e: unknown) => e instanceof sp.SpotifyError && e.status === 404;
 
+/** Último código de aparelho que funcionou (pode mudar se a TV recarregar). */
+let aparelhoAtual: string | null = null;
+const aparelhoTv = () => aparelhoAtual ?? info?.deviceId ?? null;
+
+/** Acha a TV na lista de aparelhos do Spotify (pelo código ou pelo nome) e "acorda" ela. */
+async function reencontrarTv(): Promise<string> {
+  const lista = await sp.devices().catch(() => [] as sp.SpDevice[]);
+  const tv = lista.find((d) => d.id === info?.deviceId) ?? lista.find((d) => d.name === TV_DEVICE_NAME);
+  if (!tv) throw new Error(MSG_TV_INVISIVEL);
+  await sp.transferPlayback(tv.id).catch(() => undefined);
+  await espera(1200);
+  aparelhoAtual = tv.id;
+  return tv.id;
+}
+
 export async function playOnTv(trackId: string) {
   const i = info;
   if (!i?.deviceId || i.status !== 'pronta') throw new Error('A TV ainda não está pronta para tocar pelo Spotify.');
   await sendToken();
   try {
     await sp.playOnDevice(trackId, i.deviceId);
+    aparelhoAtual = i.deviceId;
     return;
   } catch (e) {
     if (!eh404(e)) throw e;
   }
   // 404 = o Spotify não achou o aparelho por esse código (a TV recarregou, ou o player ainda não "acordou").
   // Procura a TV pelo nome na lista de aparelhos da conta, transfere a reprodução para ela e tenta de novo.
-  const lista = await sp.devices().catch(() => [] as sp.SpDevice[]);
-  const tv = lista.find((d) => d.id === i.deviceId) ?? lista.find((d) => d.name === TV_DEVICE_NAME);
-  if (!tv) throw new Error(MSG_TV_INVISIVEL);
-  await sp.transferPlayback(tv.id).catch(() => undefined);
-  await espera(1200);
+  const id = await reencontrarTv();
   try {
-    await sp.playOnDevice(trackId, tv.id);
+    await sp.playOnDevice(trackId, id);
   } catch (e) {
     if (eh404(e)) throw new Error(MSG_TV_INVISIVEL);
     throw e;
@@ -152,7 +165,16 @@ export function waitTvPlaying(ms = 8000): Promise<'ok' | 'silencio' | { problema
   });
 }
 export async function pauseOnTv() {
-  if (info?.deviceId) await sp.pausePlayback(info.deviceId);
+  const id = aparelhoTv();
+  if (!id) return;
+  try { await sp.pausePlayback(id); } catch (e) { if (!eh404(e)) throw e; await sp.pausePlayback(await reencontrarTv()); }
+}
+/** Continua a música inteira na TV do mesmo ponto em que foi pausada. */
+export async function resumeOnTv() {
+  const id = aparelhoTv();
+  if (!id) throw new Error('A TV não está conectada ao Spotify.');
+  await sendToken();
+  try { await sp.resumePlayback(id); } catch (e) { if (!eh404(e)) throw e; await sp.resumePlayback(await reencontrarTv()); }
 }
 
 /* ───────────────────────── Lado da TV ───────────────────────── */

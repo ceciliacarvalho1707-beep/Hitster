@@ -305,6 +305,12 @@ export async function transferPlayback(deviceId: string, play = false): Promise<
   await api('/me/player', { method: 'PUT', body: JSON.stringify({ device_ids: [deviceId], play }) });
 }
 
+/** Continua de onde parou (sem mandar faixa: o Spotify retoma a mesma música no mesmo ponto). */
+export async function resumePlayback(deviceId?: string): Promise<void> {
+  const q = deviceId ? `?device_id=${encodeURIComponent(deviceId)}` : '';
+  await api(`/me/player/play${q}`, { method: 'PUT' });
+}
+
 export async function pausePlayback(deviceId?: string): Promise<void> {
   const q = deviceId ? `?device_id=${encodeURIComponent(deviceId)}` : '';
   await api(`/me/player/pause${q}`, { method: 'PUT' });

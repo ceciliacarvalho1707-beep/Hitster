@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { extractTrackId } from '../lib/spotify';
 import * as sp from '../lib/spotifyApi';
 import {
-  keyCodeMatches, loadSdk, waitTvPlaying, aparelhosVisiveis, TV_DEVICE_NAME, onTvChange, pairTv, pairedCode, pauseOnTv, playOnTv, publishTvInfo, startOrganizerLink,
+  keyCodeMatches, loadSdk, waitTvPlaying, aparelhosVisiveis, TV_DEVICE_NAME, onTvChange, pairTv, pairedCode, pauseOnTv, playOnTv, resumeOnTv, publishTvInfo, startOrganizerLink,
   subscribeTvToken, tvCode, tvInfo, unpairTv, type SdkPlayer, type TvInfo, type TvToken,
 } from '../lib/tvSpotify';
 import { matchActions } from '../store/store';
@@ -100,27 +100,32 @@ export function TvFullSongButton({ song, turn }: { song: Song; turn: Turn }) {
   const { pronta } = useTvSpotify();
   const { toast } = useFeedback();
   const [busy, setBusy] = useState(false);
-  const [tocando, setTocando] = useState(false);
-  useEffect(() => { setTocando(false); }, [turn.id]);
+  const [estado, setEstado] = useState<'parado' | 'tocando' | 'pausado'>('parado');
+  useEffect(() => { setEstado('parado'); }, [turn.id]);
   const trackId = extractTrackId(song.spotifyUrl);
   if (!pronta || !trackId) return null;
+  const parar30s = () => { if (turn.som && (turn.som.acao === 'tocar' || turn.som.acao === 'continuar')) matchActions.setSom(null, 'parar'); };
   return (
     <div className="preview tvsp-play">
       <button className="btn btn--tv" disabled={busy} data-testid="tvsp-play" onClick={async () => {
         setBusy(true);
         try {
-          if (turn.som?.acao === 'tocar') matchActions.setSom(null, 'parar');
-          await playOnTv(trackId); setTocando(true);
+          parar30s();
+          await playOnTv(trackId); setEstado('tocando');
           toast('Mandei tocar na TV… conferindo 📺');
           const r = await waitTvPlaying();
           if (r === 'ok') toast('Música inteira tocando na TV 📺🎶');
           else if (r === 'silencio') toast('A TV recebeu a música mas não confirmou que começou. Se estiver sem som, aperte “Ativar som do Spotify” na TV e toque de novo. Se continuar, o navegador da TV não toca o Spotify: use o trecho de 30 s.', 'erro');
           else toast(r.problema, 'erro');
         } catch (e) { toast((e as Error).message, 'erro'); } finally { setBusy(false); }
-      }}>{busy ? 'Conectando…' : tocando ? '↺ TOCAR DE NOVO NA TV' : '📺 MÚSICA INTEIRA NA TV'}</button>
-      <button className="btn btn--ghost" disabled={busy || !tocando} data-testid="tvsp-pause" onClick={async () => {
-        try { await pauseOnTv(); setTocando(false); } catch (e) { toast((e as Error).message, 'erro'); }
-      }}>⏸ Pausar na TV</button>
+      }}>{busy ? 'Conectando…' : estado === 'parado' ? '📺 MÚSICA INTEIRA NA TV' : '↺ DO COMEÇO NA TV'}</button>
+      <button className="btn btn--ghost" disabled={busy || estado === 'parado'} data-testid="tvsp-pause" onClick={async () => {
+        setBusy(true);
+        try {
+          if (estado === 'tocando') { await pauseOnTv(); setEstado('pausado'); }
+          else { parar30s(); await resumeOnTv(); setEstado('tocando'); }
+        } catch (e) { toast((e as Error).message, 'erro'); } finally { setBusy(false); }
+      }}>{estado === 'pausado' ? '▶ Continuar na TV' : '⏸ Pausar na TV'}</button>
     </div>
   );
 }

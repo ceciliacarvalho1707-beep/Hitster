@@ -129,7 +129,8 @@ function updateCurrentTurn(fn: (t: Turn, m: Match) => Turn) {
 function makeTurn(m: Match, teamIds: string[]): { turn: Turn; match: Match } | null {
   const lastId = m.usedSongIds[m.usedSongIds.length - 1];
   const last = state.songs.find((s) => s.id === lastId);
-  const res = pickSong(state.songs, { idioma: m.config.idioma, dificuldade: m.config.dificuldade, usedIds: m.usedSongIds, lastArtist: last?.artista });
+  const recentYears = m.usedSongIds.slice(-2).reverse().map((id) => state.songs.find((s) => s.id === id)?.ano).filter((a): a is number => typeof a === 'number');
+  const res = pickSong(state.songs, { idioma: m.config.idioma, dificuldade: m.config.dificuldade, usedIds: m.usedSongIds, lastArtist: last?.artista, recentYears });
   if (!res.song) return null;
   const turn: Turn = { id: randomId('turn_'), songId: res.song.id, teamIds, guesses: {}, evals: {}, revealed: false, publicReveal: false };
   return { turn, match: { ...m, usedSongIds: [...m.usedSongIds, res.song.id], avisoRepeticao: m.avisoRepeticao || res.repetida } };
@@ -266,7 +267,7 @@ export const matchActions = {
   setPublicReveal(v: boolean) { updateCurrentTurn((t) => ({ ...t, publicReveal: v })); },
 
   /** Manda a TV tocar (ou parar) o trecho da música do turno atual. */
-  setSom(url: string | null, acao: 'tocar' | 'parar') {
+  setSom(url: string | null, acao: 'tocar' | 'parar' | 'pausar' | 'continuar') {
     updateCurrentTurn((t) => ({ ...t, som: url ? { url, acao, em: new Date().toISOString() } : t.som ? { ...t.som, acao: 'parar', em: new Date().toISOString() } : undefined }));
   },
 

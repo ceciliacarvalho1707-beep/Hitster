@@ -38,24 +38,48 @@ export interface PickResult {
   dificuldadeRelaxada: boolean;
 }
 
+/** Época de uma música para equilibrar o sorteio (tudo antes de 1960 vira uma época só). */
+export function eraOf(ano: number): number {
+  return ano < 1960 ? 1950 : Math.floor(ano / 10) * 10;
+}
+
+/** Escolhe um índice com probabilidade proporcional ao peso. */
+function weightedIndex(weights: number[]): number {
+  const ints = weights.map((w) => Math.max(0, Math.round(w * 1000)));
+  const total = ints.reduce((a, b) => a + b, 0);
+  if (total <= 0) return randomInt(weights.length);
+  let r = randomInt(total);
+  for (let i = 0; i < ints.length; i++) { if (r < ints[i]) return i; r -= ints[i]; }
+  return ints.length - 1;
+}
+
 /**
- * Sorteia a próxima música.
- *  - Sorteio uniforme entre as candidatas (sem ciclos fixos, sem alternância por país/época/gênero).
- *  - Evita repetir músicas já usadas na partida enquanto houver opções.
- *  - Evita apenas que o MESMO artista toque duas vezes seguidas, se houver alternativa.
- *  - Se a dificuldade escolhida acabar, usa outras dificuldades do mesmo idioma antes de repetir.
+ * Sorteia a próxima música, equilibrando as épocas.
+ *  1. Separa as candidatas por época (anos 60, 70, 80… e "até 1959").
+ *  2. Sorteia a ÉPOCA com peso proporcional à raiz do nº de músicas: épocas com poucas músicas
+ *     aparecem bem mais do que num sorteio simples, sem se esgotarem logo.
+ *  3. Evita a mesma época da rodada anterior (se houver outra) e dá menos chance à de duas rodadas atrás.
+ *  4. Sorteia a música dentro da época, sem repetir músicas da partida e evitando o mesmo artista em seguida.
+ *  Se a dificuldade escolhida acabar, usa outras dificuldades do mesmo idioma antes de repetir.
  */
 export function pickSong(
   songs: Song[],
-  opts: { idioma: FiltroIdioma; dificuldade: DificuldadeConfig; usedIds: string[]; lastArtist?: string },
+  opts: { idioma: FiltroIdioma; dificuldade: DificuldadeConfig; usedIds: string[]; lastArtist?: string; recentYears?: number[] },
 ): PickResult {
   const used = new Set(opts.usedIds);
+  const recent = (opts.recentYears ?? []).map(eraOf); // [mais recente, anterior]
   const tryPick = (pool: Song[]) => {
     const fresh = pool.filter((s) => !used.has(s.id));
     if (!fresh.length) return null;
     const varied = opts.lastArtist ? fresh.filter((s) => s.artista !== opts.lastArtist) : fresh;
     const candidates = varied.length ? varied : fresh;
-    return candidates[randomInt(candidates.length)];
+    const byEra = new Map<number, Song[]>();
+    for (const s of candidates) { const e = eraOf(s.ano); byEra.set(e, [...(byEra.get(e) ?? []), s]); }
+    let eras = [...byEra.keys()];
+    if (eras.length > 1 && recent[0] !== undefined) eras = eras.filter((e) => e !== recent[0]);
+    const weights = eras.map((e) => Math.sqrt(byEra.get(e)!.length) * (e === recent[1] ? 0.5 : 1));
+    const list = byEra.get(eras[weightedIndex(weights)])!;
+    return list[randomInt(list.length)];
   };
 
   const strict = filterPool(songs, opts.idioma, opts.dificuldade);

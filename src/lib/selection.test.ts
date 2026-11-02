@@ -54,3 +54,25 @@ describe('banco de demonstração', () => {
     expect(decadas.size).toBeGreaterThanOrEqual(10);
   });
 });
+
+describe('equilíbrio entre épocas', () => {
+  it('nunca repete a mesma época em rodadas seguidas e dá espaço às épocas com poucas músicas', async () => {
+    const { eraOf } = await import('./selection');
+    let seguidas = 0, total = 0, antigas = 0;
+    for (let p = 0; p < 300; p++) {
+      const used: string[] = []; let prev: number | null = null; let last: string | undefined;
+      for (let r = 0; r < 20; r++) {
+        const recentYears = used.slice(-2).reverse().map((id) => DEMO_SONGS.find((x) => x.id === id)!.ano);
+        const s = pickSong(DEMO_SONGS, { idioma: 'todas', dificuldade: 'aleatoria', usedIds: used, lastArtist: last, recentYears }).song!;
+        used.push(s.id); last = s.artista;
+        const e = eraOf(s.ano);
+        if (prev === e) seguidas++;
+        if (e <= 1960) antigas++;
+        prev = e; total++;
+      }
+    }
+    expect(seguidas).toBe(0);
+    // até 1969 é ~11% do banco; com o equilíbrio deve passar de 14% das rodadas
+    expect(antigas / total).toBeGreaterThan(0.14);
+  });
+});

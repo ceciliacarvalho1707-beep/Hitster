@@ -88,7 +88,7 @@ export interface Turn {
   /** Organizador autorizou exibir a resposta na tela de TV. */
   publicReveal: boolean;
   /** Comando de som para a TV: tocar/parar o trecho de 30 s (o endereço não revela a música). */
-  som?: { url: string; acao: 'tocar' | 'parar'; em: string };
+  som?: { url: string; acao: 'tocar' | 'parar' | 'pausar' | 'continuar'; em: string };
 }
 
 export interface Round {

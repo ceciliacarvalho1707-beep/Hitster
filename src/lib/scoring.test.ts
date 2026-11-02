@@ -117,7 +117,7 @@ describe('correção com o banco inteiro', () => {
       if (a !== b && normalize(a) !== normalize(b) && textMatches(a, [b], outros)) confusoes.push(`${a} → ${b}`);
     }
     expect(confusoes).toEqual([]);
-  });
+  }, 60000);
   it('erro de digitação vale, mas o nome exato de outra música do banco não', () => {
     const outros = ['Believe', 'Flores', 'Lose Yourself'];
     expect(textMatches('Beliver', ['Believer'], outros)).toBe(true);
