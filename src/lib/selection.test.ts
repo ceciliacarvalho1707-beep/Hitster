@@ -56,7 +56,7 @@ describe('banco de demonstração', () => {
 });
 
 describe('equilíbrio entre épocas', () => {
-  it('nunca repete a mesma época em rodadas seguidas e dá espaço às épocas com poucas músicas', async () => {
+  it('a mesma época pode repetir em seguida, mas menos que num sorteio simples, e as épocas com poucas músicas aparecem mais', async () => {
     const { eraOf } = await import('./selection');
     let seguidas = 0, total = 0, antigas = 0;
     for (let p = 0; p < 300; p++) {
@@ -71,7 +71,8 @@ describe('equilíbrio entre épocas', () => {
         prev = e; total++;
       }
     }
-    expect(seguidas).toBe(0);
+    expect(seguidas).toBeGreaterThan(0); // pode acontecer
+    expect(seguidas / total).toBeLessThan(0.11); // sorteio simples dava ~14%
     // até 1969 é ~11% do banco; com o equilíbrio deve passar de 14% das rodadas
     expect(antigas / total).toBeGreaterThan(0.14);
   });

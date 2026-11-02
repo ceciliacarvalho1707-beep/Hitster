@@ -58,7 +58,7 @@ function weightedIndex(weights: number[]): number {
  *  1. Separa as candidatas por época (anos 60, 70, 80… e "até 1959").
  *  2. Sorteia a ÉPOCA com peso proporcional à raiz do nº de músicas: épocas com poucas músicas
  *     aparecem bem mais do que num sorteio simples, sem se esgotarem logo.
- *  3. Evita a mesma época da rodada anterior (se houver outra) e dá menos chance à de duas rodadas atrás.
+ *  3. A mesma época da rodada anterior pode sair de novo (é aleatório), mas com metade da chance.
  *  4. Sorteia a música dentro da época, sem repetir músicas da partida e evitando o mesmo artista em seguida.
  *  Se a dificuldade escolhida acabar, usa outras dificuldades do mesmo idioma antes de repetir.
  */
@@ -75,9 +75,9 @@ export function pickSong(
     const candidates = varied.length ? varied : fresh;
     const byEra = new Map<number, Song[]>();
     for (const s of candidates) { const e = eraOf(s.ano); byEra.set(e, [...(byEra.get(e) ?? []), s]); }
-    let eras = [...byEra.keys()];
-    if (eras.length > 1 && recent[0] !== undefined) eras = eras.filter((e) => e !== recent[0]);
-    const weights = eras.map((e) => Math.sqrt(byEra.get(e)!.length) * (e === recent[1] ? 0.5 : 1));
+    const eras = [...byEra.keys()];
+    // A mesma época PODE repetir (é aleatório), só fica um pouco menos provável logo em seguida.
+    const weights = eras.map((e) => Math.sqrt(byEra.get(e)!.length) * (e === recent[0] ? 0.5 : 1));
     const list = byEra.get(eras[weightedIndex(weights)])!;
     return list[randomInt(list.length)];
   };
