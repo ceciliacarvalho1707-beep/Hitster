@@ -21572,6 +21572,1644 @@ const raw: Base[] = [
   "fontes": [
    "https://en.wikipedia.org/w/index.php?search=Nothing%20But%20a%20Song%20Tiago%20Iorc"
   ]
+ },
+ {
+  "id": "int-champagne-supernova-oasis",
+  "titulo": "Champagne Supernova",
+  "artista": "Oasis",
+  "ano": 1995,
+  "anosAceitos": [
+   1995,
+   1996
+  ],
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Britpop",
+  "dificuldade": "media",
+  "spotify": "6EMynpZ10GVcwVqiLZj6Ye",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Champagne%20Supernova%20Oasis"
+  ]
+ },
+ {
+  "id": "int-stop-crying-your-heart-o-oasis",
+  "titulo": "Stop Crying Your Heart Out",
+  "artista": "Oasis",
+  "ano": 2002,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Britpop",
+  "dificuldade": "media",
+  "spotify": "0SlpFHdk4UHBDzCEoXzy14",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Stop%20Crying%20Your%20Heart%20Out%20Oasis"
+  ]
+ },
+ {
+  "id": "int-stand-by-me-oasis",
+  "titulo": "Stand By Me",
+  "artista": "Oasis",
+  "ano": 1997,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Britpop",
+  "dificuldade": "dificil",
+  "spotify": "5WTPhYmwwojFP73O7p3Izi",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Stand%20By%20Me%20Oasis"
+  ]
+ },
+ {
+  "id": "int-supersonic-oasis",
+  "titulo": "Supersonic",
+  "artista": "Oasis",
+  "ano": 1994,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Britpop",
+  "dificuldade": "dificil",
+  "spotify": "4jJfa4mO5JjV9Tz2aAxE2M",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Supersonic%20Oasis"
+  ]
+ },
+ {
+  "id": "int-slide-away-oasis",
+  "titulo": "Slide Away",
+  "artista": "Oasis",
+  "ano": 1994,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Britpop",
+  "dificuldade": "muito_dificil",
+  "spotify": "1AvavliFQoc2l0ZCCWa5VG",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Slide%20Away%20Oasis"
+  ]
+ },
+ {
+  "id": "int-she-s-electric-oasis",
+  "titulo": "She's Electric",
+  "artista": "Oasis",
+  "ano": 1995,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Britpop",
+  "dificuldade": "dificil",
+  "spotify": "60QLLec3yKDwloXCyummPy",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=She%27s%20Electric%20Oasis"
+  ]
+ },
+ {
+  "id": "int-if-i-ain-t-got-you-alicia-keys",
+  "titulo": "If I Ain't Got You",
+  "artista": "Alicia Keys",
+  "ano": 2004,
+  "anosAceitos": [
+   2003,
+   2004
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "facil",
+  "spotify": "3XVBdLihbNbxUwZosxcGuJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=If%20I%20Ain%27t%20Got%20You%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-un-thinkable-i-m-ready-alicia-keys",
+  "titulo": "Un-thinkable (I'm Ready)",
+  "artista": "Alicia Keys",
+  "ano": 2010,
+  "anosAceitos": [
+   2009,
+   2010
+  ],
+  "alternativas": {
+   "titulo": [
+    "Unthinkable"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "dificil",
+  "spotify": "4JOP8ELK6AaeySe7sKe996",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Un-thinkable%20%28I%27m%20Ready%29%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-girl-on-fire-alicia-keys",
+  "titulo": "Girl on Fire",
+  "artista": "Alicia Keys",
+  "ano": 2012,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "4esOae7i4rqTbAu9o5Pxco",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Girl%20on%20Fire%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-no-one-alicia-keys",
+  "titulo": "No One",
+  "artista": "Alicia Keys",
+  "ano": 2007,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "facil",
+  "spotify": "6IwKcFdiRQZOWeYNhUiWIv",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=No%20One%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-fallin-alicia-keys",
+  "titulo": "Fallin'",
+  "artista": "Alicia Keys",
+  "ano": 2001,
+  "alternativas": {
+   "titulo": [
+    "Fallin",
+    "Falling"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "media",
+  "spotify": "0KQx6HOpJueiSkztcS0r7D",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Fallin%27%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-empire-state-of-mind-par-alicia-keys",
+  "titulo": "Empire State of Mind (Part II) Broken Down",
+  "artista": "Alicia Keys",
+  "ano": 2009,
+  "anosAceitos": [
+   2009,
+   2010
+  ],
+  "alternativas": {
+   "titulo": [
+    "Empire State of Mind Part II",
+    "Empire State of Mind"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "media",
+  "spotify": "5sra5UY6sD658OabHL3QtI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Empire%20State%20of%20Mind%20%28Part%20II%29%20Broken%20Down%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-try-sleeping-with-a-brok-alicia-keys",
+  "titulo": "Try Sleeping with a Broken Heart",
+  "artista": "Alicia Keys",
+  "ano": 2009,
+  "anosAceitos": [
+   2009,
+   2010
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "muito_dificil",
+  "spotify": "1yK9LISg5uBOOW5bT2Wm0i",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Try%20Sleeping%20with%20a%20Broken%20Heart%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-you-don-t-know-my-name-alicia-keys",
+  "titulo": "You Don't Know My Name",
+  "artista": "Alicia Keys",
+  "ano": 2003,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "dificil",
+  "spotify": "6LGwYMXXgURfaequXipzHx",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=You%20Don%27t%20Know%20My%20Name%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-a-woman-s-worth-alicia-keys",
+  "titulo": "A Woman's Worth",
+  "artista": "Alicia Keys",
+  "ano": 2001,
+  "anosAceitos": [
+   2001,
+   2002
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "muito_dificil",
+  "spotify": "0rimetBQIYXE3uMCbuXBUa",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=A%20Woman%27s%20Worth%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-like-you-ll-never-see-me-alicia-keys",
+  "titulo": "Like You'll Never See Me Again",
+  "artista": "Alicia Keys",
+  "ano": 2007,
+  "anosAceitos": [
+   2007,
+   2008
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "muito_dificil",
+  "spotify": "3JHDtmFdX9kdx9wz0md98U",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Like%20You%27ll%20Never%20See%20Me%20Again%20Alicia%20Keys"
+  ]
+ },
+ {
+  "id": "int-unstoppable-sia",
+  "titulo": "Unstoppable",
+  "artista": "Sia",
+  "ano": 2016,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "1yvMUkIOTeUNtNWlWRgANS",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Unstoppable%20Sia"
+  ]
+ },
+ {
+  "id": "int-snowman-sia",
+  "titulo": "Snowman",
+  "artista": "Sia",
+  "ano": 2017,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "7uoFMmxln0GPXQ0AcCBXRq",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Snowman%20Sia"
+  ]
+ },
+ {
+  "id": "int-elastic-heart-sia",
+  "titulo": "Elastic Heart",
+  "artista": "Sia",
+  "ano": 2014,
+  "anosAceitos": [
+   2013,
+   2014,
+   2015
+  ],
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "5S9lfZu1YF8xKkgSsqL2Bd",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Elastic%20Heart%20Sia"
+  ]
+ },
+ {
+  "id": "int-the-greatest-sia",
+  "titulo": "The Greatest",
+  "artista": "Sia",
+  "ano": 2016,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "6bLopGnirdrilrpdVB6Um1",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Greatest%20Sia"
+  ]
+ },
+ {
+  "id": "int-dusk-till-dawn-zayn",
+  "titulo": "Dusk Till Dawn",
+  "artista": "ZAYN",
+  "ano": 2017,
+  "alternativas": {
+   "artista": [
+    "Zayn",
+    "Sia"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "3e7sxremeOE3wTySiOhGiP",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dusk%20Till%20Dawn%20ZAYN"
+  ]
+ },
+ {
+  "id": "int-thunderclouds-lsd",
+  "titulo": "Thunderclouds",
+  "artista": "LSD",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "Sia",
+    "Diplo",
+    "Labrinth"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "dificil",
+  "spotify": "4lJNen4SMTIJMahALc3DcB",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Thunderclouds%20LSD"
+  ]
+ },
+ {
+  "id": "int-wild-ones-flo-rida",
+  "titulo": "Wild Ones",
+  "artista": "Flo Rida",
+  "ano": 2011,
+  "anosAceitos": [
+   2011,
+   2012
+  ],
+  "alternativas": {
+   "artista": [
+    "Sia"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "1NpW5kyvO4XrNJ3rnfcNy3",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Wild%20Ones%20Flo%20Rida"
+  ]
+ },
+ {
+  "id": "int-genius-lsd",
+  "titulo": "Genius",
+  "artista": "LSD",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "Sia",
+    "Diplo",
+    "Labrinth"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "4xigPf2sigSPmuFH3qCelB",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Genius%20LSD"
+  ]
+ },
+ {
+  "id": "br-maior-abandonado-barao-vermelho",
+  "titulo": "Maior Abandonado",
+  "artista": "Barão Vermelho",
+  "ano": 1984,
+  "alternativas": {
+   "artista": [
+    "Barao Vermelho"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "30VpfIcLiuLYN3HHjrpWJ7",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Maior%20Abandonado%20Bar%C3%A3o%20Vermelho"
+  ]
+ },
+ {
+  "id": "br-puro-extase-barao-vermelho",
+  "titulo": "Puro Êxtase",
+  "artista": "Barão Vermelho",
+  "ano": 1998,
+  "alternativas": {
+   "titulo": [
+    "Puro Extase"
+   ],
+   "artista": [
+    "Barao Vermelho"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "02xdIcsc8bUsihI8uHTX7w",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Puro%20%C3%8Axtase%20Bar%C3%A3o%20Vermelho"
+  ]
+ },
+ {
+  "id": "br-por-voce-barao-vermelho",
+  "titulo": "Por Você",
+  "artista": "Barão Vermelho",
+  "ano": 1998,
+  "anosAceitos": [
+   1998,
+   1999
+  ],
+  "alternativas": {
+   "titulo": [
+    "Por Voce"
+   ],
+   "artista": [
+    "Barao Vermelho"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "facil",
+  "spotify": "1QIJI0OuJS3XbSGEb6Y1ki",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Por%20Voc%C3%AA%20Bar%C3%A3o%20Vermelho"
+  ]
+ },
+ {
+  "id": "br-por-que-a-gente-e-assim-barao-vermelho",
+  "titulo": "Por Que a Gente é Assim?",
+  "artista": "Barão Vermelho",
+  "ano": 1984,
+  "alternativas": {
+   "titulo": [
+    "Por Que a Gente e Assim"
+   ],
+   "artista": [
+    "Barao Vermelho"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "1PGIOBS3PCxqXhezIo5PLZ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Por%20Que%20a%20Gente%20%C3%A9%20Assim%3F%20Bar%C3%A3o%20Vermelho"
+  ]
+ },
+ {
+  "id": "br-amor-meu-grande-amor-barao-vermelho",
+  "titulo": "Amor Meu Grande Amor",
+  "artista": "Barão Vermelho",
+  "ano": 1996,
+  "alternativas": {
+   "artista": [
+    "Barao Vermelho"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "5PtogtsJUoNPnw4V5LKhPD",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Amor%20Meu%20Grande%20Amor%20Bar%C3%A3o%20Vermelho"
+  ]
+ },
+ {
+  "id": "int-nobody-gets-me-sza",
+  "titulo": "Nobody Gets Me",
+  "artista": "SZA",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "dificil",
+  "spotify": "5Y35SjAfXjjG0sFQ3KOxmm",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Nobody%20Gets%20Me%20SZA"
+  ]
+ },
+ {
+  "id": "int-saturn-sza",
+  "titulo": "Saturn",
+  "artista": "SZA",
+  "ano": 2024,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "media",
+  "spotify": "1bjeWoagtHmUKputLVyDxQ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Saturn%20SZA"
+  ]
+ },
+ {
+  "id": "int-the-weekend-sza",
+  "titulo": "The Weekend",
+  "artista": "SZA",
+  "ano": 2017,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "media",
+  "spotify": "6gU9OKjOE7ghfEd55oRO57",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Weekend%20SZA"
+  ]
+ },
+ {
+  "id": "int-broken-clocks-sza",
+  "titulo": "Broken Clocks",
+  "artista": "SZA",
+  "ano": 2017,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "dificil",
+  "spotify": "2fXwCWkh6YG5zU1IyvQrbs",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Broken%20Clocks%20SZA"
+  ]
+ },
+ {
+  "id": "int-open-arms-sza",
+  "titulo": "Open Arms",
+  "artista": "SZA",
+  "ano": 2022,
+  "alternativas": {
+   "artista": [
+    "Travis Scott"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "dificil",
+  "spotify": "6koKhrBBcExADvWuOgceNZ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Open%20Arms%20SZA"
+  ]
+ },
+ {
+  "id": "int-low-sza",
+  "titulo": "Low",
+  "artista": "SZA",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "muito_dificil",
+  "spotify": "2GAhgAjOhEmItWLfgisyOn",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Low%20SZA"
+  ]
+ },
+ {
+  "id": "int-normal-girl-sza",
+  "titulo": "Normal Girl",
+  "artista": "SZA",
+  "ano": 2017,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "muito_dificil",
+  "spotify": "5fQBa4wkmq28xpSLOQ202K",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Normal%20Girl%20SZA"
+  ]
+ },
+ {
+  "id": "int-love-galore-sza",
+  "titulo": "Love Galore",
+  "artista": "SZA",
+  "ano": 2017,
+  "alternativas": {
+   "artista": [
+    "Travis Scott"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "dificil",
+  "spotify": "0q75NwOoFiARAVp4EXU4Bs",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Love%20Galore%20SZA"
+  ]
+ },
+ {
+  "id": "int-30-for-30-sza",
+  "titulo": "30 For 30",
+  "artista": "SZA",
+  "ano": 2024,
+  "alternativas": {
+   "titulo": [
+    "30 for 30"
+   ],
+   "artista": [
+    "Kendrick Lamar"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "dificil",
+  "spotify": "3aSWXU6owkZeVhh94XxEWO",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=30%20For%2030%20SZA"
+  ]
+ },
+ {
+  "id": "int-green-green-grass-george-ezra",
+  "titulo": "Green Green Grass",
+  "artista": "George Ezra",
+  "ano": 2022,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "4N5s8lPTsjI9EGP7K4SXzB",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Green%20Green%20Grass%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-blame-it-on-me-george-ezra",
+  "titulo": "Blame It on Me",
+  "artista": "George Ezra",
+  "ano": 2014,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "2vzMWO0T008m86yDnXwkII",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Blame%20It%20on%20Me%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-hold-my-girl-george-ezra",
+  "titulo": "Hold My Girl",
+  "artista": "George Ezra",
+  "ano": 2018,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "dificil",
+  "spotify": "42bbDWZ8WmXTH7PkYAlGLu",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Hold%20My%20Girl%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-paradise-george-ezra",
+  "titulo": "Paradise",
+  "artista": "George Ezra",
+  "ano": 2018,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "38zwkK6TtTjIW9tpYBfZ3D",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Paradise%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-all-my-love-george-ezra",
+  "titulo": "All My Love",
+  "artista": "George Ezra",
+  "ano": 2018,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "22GUd9JOxhSidGguHxf3Nu",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=All%20My%20Love%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-gold-rush-kid-george-ezra",
+  "titulo": "Gold Rush Kid",
+  "artista": "George Ezra",
+  "ano": 2022,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "2wmrHfBFcCCYVdrlrUrJw3",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Gold%20Rush%20Kid%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-barcelona-george-ezra",
+  "titulo": "Barcelona",
+  "artista": "George Ezra",
+  "ano": 2014,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "dificil",
+  "spotify": "3ieLey98V9mIIh3W9gBlPF",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Barcelona%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-anyone-for-you-tiger-lil-george-ezra",
+  "titulo": "Anyone For You (Tiger Lily)",
+  "artista": "George Ezra",
+  "ano": 2022,
+  "alternativas": {
+   "titulo": [
+    "Anyone for You"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "44JSreJxvgl3CxLo5MoQL0",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Anyone%20For%20You%20%28Tiger%20Lily%29%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-pretty-shining-people-george-ezra",
+  "titulo": "Pretty Shining People",
+  "artista": "George Ezra",
+  "ano": 2018,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "2JVwsN6viHjR9t5pCPQ4Br",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Pretty%20Shining%20People%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-cassy-o-george-ezra",
+  "titulo": "Cassy O'",
+  "artista": "George Ezra",
+  "ano": 2014,
+  "alternativas": {
+   "titulo": [
+    "Cassy O"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "0KlUnDYTACNGFPFIUa3eZd",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cassy%20O%27%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-listen-to-the-man-george-ezra",
+  "titulo": "Listen to the Man",
+  "artista": "George Ezra",
+  "ano": 2014,
+  "anosAceitos": [
+   2014,
+   2015
+  ],
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "dificil",
+  "spotify": "5B0ibk0qk9ees6wvlzMsZe",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Listen%20to%20the%20Man%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-dance-all-over-me-george-ezra",
+  "titulo": "Dance All Over Me",
+  "artista": "George Ezra",
+  "ano": 2022,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "4gIDvFHsqRsniD9JngIVCL",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dance%20All%20Over%20Me%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-leaving-it-up-to-you-george-ezra",
+  "titulo": "Leaving It Up to You",
+  "artista": "George Ezra",
+  "ano": 2014,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "2PAQygVRwdmwzY955cn2FS",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Leaving%20It%20Up%20to%20You%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-iris-the-goo-goo-do",
+  "titulo": "Iris",
+  "artista": "The Goo Goo Dolls",
+  "ano": 1998,
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "facil",
+  "spotify": "6Qyc6fS4DsZjB2mRW9DsQs",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Iris%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-name-the-goo-goo-do",
+  "titulo": "Name",
+  "artista": "The Goo Goo Dolls",
+  "ano": 1995,
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "1G8jae4jD8mwkXdodqHsBM",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Name%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-slide-the-goo-goo-do",
+  "titulo": "Slide",
+  "artista": "The Goo Goo Dolls",
+  "ano": 1998,
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "0nnwn7LWHCAu09jfuH1xTA",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Slide%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-broadway-the-goo-goo-do",
+  "titulo": "Broadway",
+  "artista": "The Goo Goo Dolls",
+  "ano": 1999,
+  "anosAceitos": [
+   1998,
+   1999
+  ],
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "0RZuCBV900eNA2FXCQ3uUM",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Broadway%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-black-balloon-the-goo-goo-do",
+  "titulo": "Black Balloon",
+  "artista": "The Goo Goo Dolls",
+  "ano": 1999,
+  "anosAceitos": [
+   1998,
+   1999
+  ],
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "5zmaypMaWb21FUGBxbw8hT",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Black%20Balloon%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-long-way-down-the-goo-goo-do",
+  "titulo": "Long Way Down",
+  "artista": "The Goo Goo Dolls",
+  "ano": 1995,
+  "anosAceitos": [
+   1995,
+   1996
+  ],
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "1J307YEKcn9pH7QT5fXTLt",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Long%20Way%20Down%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-all-that-you-are-the-goo-goo-do",
+  "titulo": "All That You Are",
+  "artista": "The Goo Goo Dolls",
+  "ano": 2011,
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "6jbhDgHa0ACUGyOfbFvbZb",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=All%20That%20You%20Are%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-better-days-the-goo-goo-do",
+  "titulo": "Better Days",
+  "artista": "The Goo Goo Dolls",
+  "ano": 2005,
+  "anosAceitos": [
+   2005,
+   2006
+  ],
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "2hiB8QxWic092OablwpoVC",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Better%20Days%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-naked-the-goo-goo-do",
+  "titulo": "Naked",
+  "artista": "The Goo Goo Dolls",
+  "ano": 1995,
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "4fNnmXMX9Ov6tkasF6Cueq",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Naked%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-sympathy-the-goo-goo-do",
+  "titulo": "Sympathy",
+  "artista": "The Goo Goo Dolls",
+  "ano": 2002,
+  "anosAceitos": [
+   2002,
+   2003
+  ],
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "5fIrBv7PrI2MBcktQOcmpI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Sympathy%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-here-is-gone-the-goo-goo-do",
+  "titulo": "Here Is Gone",
+  "artista": "The Goo Goo Dolls",
+  "ano": 2002,
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "4KqTGPPmXowMPEoShSVOta",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Here%20Is%20Gone%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-stay-with-you-the-goo-goo-do",
+  "titulo": "Stay with You",
+  "artista": "The Goo Goo Dolls",
+  "ano": 2006,
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "3yJ2eboERY4HroE22RG7c2",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Stay%20with%20You%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "int-let-love-in-the-goo-goo-do",
+  "titulo": "Let Love In",
+  "artista": "The Goo Goo Dolls",
+  "ano": 2006,
+  "alternativas": {
+   "artista": [
+    "Goo Goo Dolls"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "1wt8PzNPhWi5o0voZjzhMs",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Let%20Love%20In%20The%20Goo%20Goo%20Dolls"
+  ]
+ },
+ {
+  "id": "br-totalmente-seu-marisa-monte",
+  "titulo": "Totalmente Seu",
+  "artista": "Marisa Monte",
+  "ano": 2021,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "1Tel6xhUjFLlPJ8z0j45bs",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Totalmente%20Seu%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-era-obvio-marisa-monte",
+  "titulo": "Era Óbvio",
+  "artista": "Marisa Monte",
+  "ano": 2011,
+  "alternativas": {
+   "titulo": [
+    "Era Obvio"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "038DECyhINSHF4b0fWkuoE",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Era%20%C3%93bvio%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-depois-marisa-monte",
+  "titulo": "Depois",
+  "artista": "Marisa Monte",
+  "ano": 2011,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "2yeI0FRWd1sqGpHEUc5DFm",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Depois%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-pelo-tempo-que-durar-marisa-monte",
+  "titulo": "Pelo Tempo Que Durar",
+  "artista": "Marisa Monte",
+  "ano": 2006,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "5sJJQxIfys0imGd4WhILm8",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Pelo%20Tempo%20Que%20Durar%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-infinito-particular-marisa-monte",
+  "titulo": "Infinito Particular",
+  "artista": "Marisa Monte",
+  "ano": 2006,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "7ufO0ROFQ6BwSMPx5LuW4e",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Infinito%20Particular%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-vilarejo-marisa-monte",
+  "titulo": "Vilarejo",
+  "artista": "Marisa Monte",
+  "ano": 2006,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "4qvUtYRNwmFzfJ2loWkQCH",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Vilarejo%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-nao-va-embora-marisa-monte",
+  "titulo": "Não Vá Embora",
+  "artista": "Marisa Monte",
+  "ano": 2000,
+  "alternativas": {
+   "titulo": [
+    "Nao Va Embora"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "7o5VPajBu55TxEjCQs05uw",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=N%C3%A3o%20V%C3%A1%20Embora%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-ainda-lembro-marisa-monte",
+  "titulo": "Ainda Lembro",
+  "artista": "Marisa Monte",
+  "ano": 1991,
+  "alternativas": {
+   "artista": [
+    "Ed Motta"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "6lNJX51MnEY2BB9EHBL3XP",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Ainda%20Lembro%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-na-estrada-marisa-monte",
+  "titulo": "Na Estrada",
+  "artista": "Marisa Monte",
+  "ano": 1994,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "56CE8SdkpSl9OKbF14FALz",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Na%20Estrada%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-eu-sei-na-mira-marisa-monte",
+  "titulo": "Eu Sei (Na Mira)",
+  "artista": "Marisa Monte",
+  "ano": 1991,
+  "alternativas": {
+   "titulo": [
+    "Eu Sei"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "muito_dificil",
+  "spotify": "6amL0iCFvigjfOy1ZCrb7H",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Eu%20Sei%20%28Na%20Mira%29%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-danca-da-solidao-marisa-monte",
+  "titulo": "Dança da Solidão",
+  "artista": "Marisa Monte",
+  "ano": 1994,
+  "alternativas": {
+   "titulo": [
+    "Danca da Solidao"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "5FhXVV2tcydQL3FQmXnaEZ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Dan%C3%A7a%20da%20Solid%C3%A3o%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "br-o-que-me-importa-marisa-monte",
+  "titulo": "O Que Me Importa",
+  "artista": "Marisa Monte",
+  "ano": 2000,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "0wjlJ3GCJPCuIV15g2WnaC",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=O%20Que%20Me%20Importa%20Marisa%20Monte"
+  ]
+ },
+ {
+  "id": "int-drive-by-train",
+  "titulo": "Drive By",
+  "artista": "Train",
+  "ano": 2012,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "0KAiuUOrLTIkzkpfpn9jb9",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Drive%20By%20Train"
+  ]
+ },
+ {
+  "id": "int-50-ways-to-say-goodbye-train",
+  "titulo": "50 Ways to Say Goodbye",
+  "artista": "Train",
+  "ano": 2012,
+  "alternativas": {
+   "titulo": [
+    "Fifty Ways to Say Goodbye"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "dificil",
+  "spotify": "2NniAhAtkRACaMeYt48xlD",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=50%20Ways%20to%20Say%20Goodbye%20Train"
+  ]
+ },
+ {
+  "id": "int-meet-virginia-train",
+  "titulo": "Meet Virginia",
+  "artista": "Train",
+  "ano": 1999,
+  "anosAceitos": [
+   1999,
+   2000
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "4ocbH5ZJqajZIpUrqRUoue",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Meet%20Virginia%20Train"
+  ]
+ },
+ {
+  "id": "int-runaway-train-soul-asylum",
+  "titulo": "Runaway Train",
+  "artista": "Soul Asylum",
+  "ano": 1993,
+  "anosAceitos": [
+   1992,
+   1993
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "3TW48DvQ7ChwY1Yy1tkMaP",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Runaway%20Train%20Soul%20Asylum"
+  ]
+ },
+ {
+  "id": "int-love-train-the-o-jays",
+  "titulo": "Love Train",
+  "artista": "The O'Jays",
+  "ano": 1972,
+  "anosAceitos": [
+   1972,
+   1973
+  ],
+  "alternativas": {
+   "artista": [
+    "O'Jays"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul",
+  "dificuldade": "media",
+  "spotify": "28285KFbyCq8sJofn58qlD",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Love%20Train%20The%20O%27Jays"
+  ]
+ },
+ {
+  "id": "int-crazy-train-ozzy-osbourne",
+  "titulo": "Crazy Train",
+  "artista": "Ozzy Osbourne",
+  "ano": 1980,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Heavy metal",
+  "dificuldade": "media",
+  "spotify": "7ACxUo21jtTHzy7ZEV56vU",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Crazy%20Train%20Ozzy%20Osbourne"
+  ]
+ },
+ {
+  "id": "br-terra-de-gigantes-engenheiros-do",
+  "titulo": "Terra de Gigantes",
+  "artista": "Engenheiros do Hawaii",
+  "ano": 1987,
+  "alternativas": {
+   "artista": [
+    "Engenheiros"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "1ikL8Lemlm3N58ahyLxIvP",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Terra%20de%20Gigantes%20Engenheiros%20do%20Hawaii"
+  ]
+ },
+ {
+  "id": "br-era-um-garoto-que-como-e-engenheiros-do",
+  "titulo": "Era um Garoto, Que Como Eu, Amava os Beatles e os Rolling Stones",
+  "artista": "Engenheiros do Hawaii",
+  "ano": 1990,
+  "alternativas": {
+   "titulo": [
+    "Era um Garoto"
+   ],
+   "artista": [
+    "Engenheiros"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "5HDlh6UhT3AMQs935wE1qr",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Era%20um%20Garoto%2C%20Que%20Como%20Eu%2C%20Amava%20os%20Beatles%20e%20os%20Rolling%20Stones%20Engenheiros%20do%20Hawaii"
+  ]
+ },
+ {
+  "id": "br-somos-quem-podemos-ser-engenheiros-do",
+  "titulo": "Somos Quem Podemos Ser",
+  "artista": "Engenheiros do Hawaii",
+  "ano": 1988,
+  "alternativas": {
+   "artista": [
+    "Engenheiros"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "5PozhmwZXtIEsaWFwRzYFV",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Somos%20Quem%20Podemos%20Ser%20Engenheiros%20do%20Hawaii"
+  ]
+ },
+ {
+  "id": "br-a-promessa-engenheiros-do",
+  "titulo": "A Promessa",
+  "artista": "Engenheiros do Hawaii",
+  "ano": 1995,
+  "alternativas": {
+   "artista": [
+    "Engenheiros"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "3EcGwBI98aYXpS6BVzoU9n",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=A%20Promessa%20Engenheiros%20do%20Hawaii"
+  ]
+ },
+ {
+  "id": "br-perfeita-simetria-engenheiros-do",
+  "titulo": "Perfeita Simetria",
+  "artista": "Engenheiros do Hawaii",
+  "ano": 1990,
+  "alternativas": {
+   "artista": [
+    "Engenheiros"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "1kVNAGNtioCh6mB980WLFH",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Perfeita%20Simetria%20Engenheiros%20do%20Hawaii"
+  ]
+ },
+ {
+  "id": "br-toda-forma-de-poder-engenheiros-do",
+  "titulo": "Toda Forma de Poder",
+  "artista": "Engenheiros do Hawaii",
+  "ano": 1986,
+  "alternativas": {
+   "artista": [
+    "Engenheiros"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "0FcYoRbrZ9eR2bc5nw6feN",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Toda%20Forma%20de%20Poder%20Engenheiros%20do%20Hawaii"
+  ]
  }
 ];
 
