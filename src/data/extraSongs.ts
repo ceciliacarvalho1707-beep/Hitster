@@ -9395,6 +9395,3757 @@ const raw: Base[] = [
   "fontes": [
    "https://en.wikipedia.org/w/index.php?search=She%20Used%20to%20Be%20Mine%20Jessie%20Mueller"
   ]
+ },
+ {
+  "id": "int-hold-them-down-jorge-rivera-h",
+  "titulo": "Hold Them Down",
+  "artista": "Jorge Rivera-Herrans e Ayron Alexander",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "3lIgiul24q1uwE8l928s0w",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Hold%20Them%20Down%20Jorge%20Rivera-Herrans%20e%20Ayron%20Alexander"
+  ]
+ },
+ {
+  "id": "int-no-longer-you-jorge-rivera-h",
+  "titulo": "No Longer You",
+  "artista": "Jorge Rivera-Herrans e Mason Olshavsky",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "7Gxf7hWyHaQjCTXtqOkNNV",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=No%20Longer%20You%20Jorge%20Rivera-Herrans%20e%20Mason%20Olshavsky"
+  ]
+ },
+ {
+  "id": "int-the-challenge-jorge-rivera-h",
+  "titulo": "The Challenge",
+  "artista": "Jorge Rivera-Herrans e Anna Lea",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ],
+   "titulo": [
+    "Challenge"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "2MfEPa673rIPzBUdwfqd0P",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Challenge%20Jorge%20Rivera-Herrans%20e%20Anna%20Lea"
+  ]
+ },
+ {
+  "id": "int-love-in-paradise-jorge-rivera-h",
+  "titulo": "Love in Paradise",
+  "artista": "Jorge Rivera-Herrans e elenco de EPIC",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "3Hp8GJDsH3E7fumfAACH2k",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Love%20in%20Paradise%20Jorge%20Rivera-Herrans%20e%20elenco%20de%20EPIC"
+  ]
+ },
+ {
+  "id": "int-suffering-jorge-rivera-h",
+  "titulo": "Suffering",
+  "artista": "Jorge Rivera-Herrans e Anna Lea",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "21oMo9u8Nca3FugaVXFGvu",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Suffering%20Jorge%20Rivera-Herrans%20e%20Anna%20Lea"
+  ]
+ },
+ {
+  "id": "int-keep-your-friends-close-jorge-rivera-h",
+  "titulo": "Keep Your Friends Close",
+  "artista": "Jorge Rivera-Herrans e elenco de EPIC",
+  "ano": 2023,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "11u4Q89CWq1R3RKpiIFDz2",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Keep%20Your%20Friends%20Close%20Jorge%20Rivera-Herrans%20e%20elenco%20de%20EPIC"
+  ]
+ },
+ {
+  "id": "int-odysseus-jorge-rivera-h",
+  "titulo": "Odysseus",
+  "artista": "Jorge Rivera-Herrans e elenco de EPIC",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "6hmUgrhqDofXdvwvSOWNj5",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Odysseus%20Jorge%20Rivera-Herrans%20e%20elenco%20de%20EPIC"
+  ]
+ },
+ {
+  "id": "int-dangerous-jorge-rivera-h",
+  "titulo": "Dangerous",
+  "artista": "Jorge Rivera-Herrans e TROY",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "2sxpbOUUSzRrms8vSZwxvo",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dangerous%20Jorge%20Rivera-Herrans%20e%20TROY"
+  ]
+ },
+ {
+  "id": "int-wouldn-t-you-like-jorge-rivera-h",
+  "titulo": "Wouldn't You Like",
+  "artista": "Jorge Rivera-Herrans e TROY",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "1P6qJ2YZjVlsxO8JMiYUqw",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Wouldn%27t%20You%20Like%20Jorge%20Rivera-Herrans%20e%20TROY"
+  ]
+ },
+ {
+  "id": "int-open-arms-jorge-rivera-h",
+  "titulo": "Open Arms",
+  "artista": "Jorge Rivera-Herrans e Steven Dookie",
+  "ano": 2022,
+  "anosAceitos": [
+   2022,
+   2024
+  ],
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "21gmvAVeqXiSUbvJPesXsL",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Open%20Arms%20Jorge%20Rivera-Herrans%20e%20Steven%20Dookie"
+  ]
+ },
+ {
+  "id": "int-legendary-jorge-rivera-h",
+  "titulo": "Legendary",
+  "artista": "Jorge Rivera-Herrans e Miguel Veloso",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "7pM9Mn8WdnjNjYEoMW93Nt",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Legendary%20Jorge%20Rivera-Herrans%20e%20Miguel%20Veloso"
+  ]
+ },
+ {
+  "id": "int-the-underworld-jorge-rivera-h",
+  "titulo": "The Underworld",
+  "artista": "Jorge Rivera-Herrans e elenco de EPIC",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ],
+   "titulo": [
+    "Underworld"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "0GTzR6GgyRIF9nIyMDV0ke",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Underworld%20Jorge%20Rivera-Herrans%20e%20elenco%20de%20EPIC"
+  ]
+ },
+ {
+  "id": "int-there-are-other-ways-jorge-rivera-h",
+  "titulo": "There Are Other Ways",
+  "artista": "Jorge Rivera-Herrans e Talya Sindel",
+  "ano": 2024,
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "6PpryYK6MtdDWoeGs67f39",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=There%20Are%20Other%20Ways%20Jorge%20Rivera-Herrans%20e%20Talya%20Sindel"
+  ]
+ },
+ {
+  "id": "int-full-speed-ahead-jorge-rivera-h",
+  "titulo": "Full Speed Ahead",
+  "artista": "Jorge Rivera-Herrans e elenco de EPIC",
+  "ano": 2022,
+  "anosAceitos": [
+   2022,
+   2024
+  ],
+  "musical": "EPIC: The Musical",
+  "alternativas": {
+   "artista": [
+    "EPIC",
+    "Epic the Musical",
+    "Jorge Rivera-Herrans"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "3MNNWGsJPBHtaf1SiHQQdz",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Full%20Speed%20Ahead%20Jorge%20Rivera-Herrans%20e%20elenco%20de%20EPIC"
+  ]
+ },
+ {
+  "id": "int-ex-wives-elenco-de-six",
+  "titulo": "Ex-Wives",
+  "artista": "Elenco de SIX",
+  "ano": 2018,
+  "musical": "SIX",
+  "alternativas": {
+   "titulo": [
+    "Ex Wives"
+   ],
+   "artista": [
+    "Six the Musical"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Pop",
+  "dificuldade": "dificil",
+  "spotify": "03GBiorLGTk7T4IScIl4jj",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ex-Wives%20Elenco%20de%20SIX"
+  ]
+ },
+ {
+  "id": "int-no-way-elenco-de-six",
+  "titulo": "No Way",
+  "artista": "Elenco de SIX",
+  "ano": 2018,
+  "musical": "SIX",
+  "alternativas": {
+   "artista": [
+    "Six the Musical"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "2ldBp6eNIE4wk8C3j0bz8n",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=No%20Way%20Elenco%20de%20SIX"
+  ]
+ },
+ {
+  "id": "int-heart-of-stone-elenco-de-six",
+  "titulo": "Heart of Stone",
+  "artista": "Elenco de SIX",
+  "ano": 2018,
+  "musical": "SIX",
+  "alternativas": {
+   "artista": [
+    "Six the Musical"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "3akeuMy9bqJbqDlfYevbwN",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Heart%20of%20Stone%20Elenco%20de%20SIX"
+  ]
+ },
+ {
+  "id": "int-meet-the-plastics-elenco-origina",
+  "titulo": "Meet the Plastics",
+  "artista": "Elenco original de Mean Girls",
+  "ano": 2018,
+  "musical": "Mean Girls",
+  "alternativas": {
+   "artista": [
+    "Meninas Malvadas"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "4QNuz0m2QCn2Yw1sCUNIS2",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Meet%20the%20Plastics%20Elenco%20original%20de%20Mean%20Girls"
+  ]
+ },
+ {
+  "id": "int-revenge-party-elenco-origina",
+  "titulo": "Revenge Party",
+  "artista": "Elenco original de Mean Girls",
+  "ano": 2018,
+  "musical": "Mean Girls",
+  "alternativas": {
+   "artista": [
+    "Meninas Malvadas"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "6uUE5S0ZYveiVxl05XIH7G",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Revenge%20Party%20Elenco%20original%20de%20Mean%20Girls"
+  ]
+ },
+ {
+  "id": "int-dead-mom-elenco-origina",
+  "titulo": "Dead Mom",
+  "artista": "Elenco original de Beetlejuice",
+  "ano": 2019,
+  "musical": "Beetlejuice",
+  "alternativas": {
+   "artista": [
+    "Sophia Anne Caruso"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "7fRt5HCt4KgLlH45wFQCho",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dead%20Mom%20Elenco%20original%20de%20Beetlejuice"
+  ]
+ },
+ {
+  "id": "int-way-down-hadestown-elenco-origina",
+  "titulo": "Way Down Hadestown",
+  "artista": "Elenco original de Hadestown",
+  "ano": 2019,
+  "musical": "Hadestown",
+  "alternativas": {
+   "artista": [
+    "Anaïs Mitchell"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Folk",
+  "dificuldade": "muito_dificil",
+  "spotify": "5fnl0Tyeh4r5gPANdaVu61",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Way%20Down%20Hadestown%20Elenco%20original%20de%20Hadestown"
+  ]
+ },
+ {
+  "id": "int-why-we-build-the-wall-elenco-origina",
+  "titulo": "Why We Build the Wall",
+  "artista": "Elenco original de Hadestown",
+  "ano": 2019,
+  "musical": "Hadestown",
+  "alternativas": {
+   "artista": [
+    "Anaïs Mitchell",
+    "Patrick Page"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Folk",
+  "dificuldade": "muito_dificil",
+  "spotify": "68oU2YXg4kwPpertTUFrC6",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Why%20We%20Build%20the%20Wall%20Elenco%20original%20de%20Hadestown"
+  ]
+ },
+ {
+  "id": "int-burn-elenco-origina",
+  "titulo": "Burn",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "artista": [
+    "Lin-Manuel Miranda",
+    "Phillipa Soo"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "dificil",
+  "spotify": "4B3qvzOMzLQXLeYgPsG3KA",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Burn%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-it-s-quiet-uptown-elenco-origina",
+  "titulo": "It's Quiet Uptown",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "artista": [
+    "Lin-Manuel Miranda"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "40LYL1Z6xgCn5cBybo5K0D",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=It%27s%20Quiet%20Uptown%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-guns-and-ships-elenco-origina",
+  "titulo": "Guns and Ships",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "titulo": [
+    "Guns & Ships"
+   ],
+   "artista": [
+    "Lin-Manuel Miranda",
+    "Daveed Diggs"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Hip-hop",
+  "dificuldade": "dificil",
+  "spotify": "7m9XR7FquXLP1FewdAcNS9",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Guns%20and%20Ships%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-the-story-of-tonight-elenco-origina",
+  "titulo": "The Story of Tonight",
+  "artista": "Elenco original de Hamilton",
+  "ano": 2015,
+  "musical": "Hamilton",
+  "alternativas": {
+   "titulo": [
+    "Story of Tonight"
+   ],
+   "artista": [
+    "Lin-Manuel Miranda"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "0NJWhm3hUwIZSy5s0TGJ8q",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Story%20of%20Tonight%20Elenco%20original%20de%20Hamilton"
+  ]
+ },
+ {
+  "id": "int-a-million-dreams-ziv-zaifman-hu",
+  "titulo": "A Million Dreams",
+  "artista": "Ziv Zaifman, Hugh Jackman e Michelle Williams",
+  "ano": 2017,
+  "musical": "O Rei do Show",
+  "alternativas": {
+   "artista": [
+    "The Greatest Showman",
+    "Hugh Jackman"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Pop",
+  "dificuldade": "media",
+  "spotify": "0RoA7ObU6phWpqhlC9zH4Z",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=A%20Million%20Dreams%20Ziv%20Zaifman%2C%20Hugh%20Jackman%20e%20Michelle%20Williams"
+  ]
+ },
+ {
+  "id": "int-never-enough-loren-allred",
+  "titulo": "Never Enough",
+  "artista": "Loren Allred",
+  "ano": 2017,
+  "musical": "O Rei do Show",
+  "alternativas": {
+   "artista": [
+    "The Greatest Showman"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical / Pop",
+  "dificuldade": "media",
+  "spotify": "0Gl5s8IhMmQE5YQwM8Qx1J",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Never%20Enough%20Loren%20Allred"
+  ]
+ },
+ {
+  "id": "int-for-forever-ben-platt",
+  "titulo": "For Forever",
+  "artista": "Ben Platt",
+  "ano": 2017,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "musical": "Dear Evan Hansen",
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "0ZWW07BD8W85lUbgx2sn7E",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=For%20Forever%20Ben%20Platt"
+  ]
+ },
+ {
+  "id": "int-la-vie-boheme-elenco-do-film",
+  "titulo": "La Vie Bohème",
+  "artista": "Elenco do filme Rent",
+  "ano": 2005,
+  "anosAceitos": [
+   1996,
+   2005
+  ],
+  "musical": "Rent",
+  "alternativas": {
+   "titulo": [
+    "La Vie Boheme"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Musical",
+  "dificuldade": "muito_dificil",
+  "spotify": "24nJkTk9cSrVFOthgYdjzr",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=La%20Vie%20Boh%C3%A8me%20Elenco%20do%20filme%20Rent"
+  ]
+ },
+ {
+  "id": "int-hound-dog-elvis-presley",
+  "titulo": "Hound Dog",
+  "artista": "Elvis Presley",
+  "ano": 1956,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock and roll",
+  "dificuldade": "media",
+  "spotify": "64Ny7djQ6rNJspquof2KoX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Hound%20Dog%20Elvis%20Presley"
+  ]
+ },
+ {
+  "id": "int-can-t-help-falling-in-lo-elvis-presley",
+  "titulo": "Can't Help Falling in Love",
+  "artista": "Elvis Presley",
+  "ano": 1961,
+  "alternativas": {
+   "titulo": [
+    "Cant Help Falling in Love"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "facil",
+  "spotify": "44AyOl4qVkzS48vBsbNXaC",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Can%27t%20Help%20Falling%20in%20Love%20Elvis%20Presley"
+  ]
+ },
+ {
+  "id": "int-suspicious-minds-elvis-presley",
+  "titulo": "Suspicious Minds",
+  "artista": "Elvis Presley",
+  "ano": 1969,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock / Soul",
+  "dificuldade": "media",
+  "spotify": "1H5IfYyIIAlgDX8zguUzns",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Suspicious%20Minds%20Elvis%20Presley"
+  ]
+ },
+ {
+  "id": "int-love-me-tender-elvis-presley",
+  "titulo": "Love Me Tender",
+  "artista": "Elvis Presley",
+  "ano": 1956,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Balada",
+  "dificuldade": "media",
+  "spotify": "7iBBcw61QVJxI3NDzlpX2E",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Love%20Me%20Tender%20Elvis%20Presley"
+  ]
+ },
+ {
+  "id": "int-you-make-me-feel-like-a--aretha-frankli",
+  "titulo": "(You Make Me Feel Like) A Natural Woman",
+  "artista": "Aretha Franklin",
+  "ano": 1967,
+  "alternativas": {
+   "titulo": [
+    "A Natural Woman",
+    "Natural Woman"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul",
+  "dificuldade": "dificil",
+  "spotify": "5K09WxKdlkroDyEVyOSySy",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=%28You%20Make%20Me%20Feel%20Like%29%20A%20Natural%20Woman%20Aretha%20Franklin"
+  ]
+ },
+ {
+  "id": "int-happy-together-the-turtles",
+  "titulo": "Happy Together",
+  "artista": "The Turtles",
+  "ano": 1967,
+  "alternativas": {
+   "artista": [
+    "Turtles"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "1JO1xLtVc8mWhIoE3YaCL0",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Happy%20Together%20The%20Turtles"
+  ]
+ },
+ {
+  "id": "int-light-my-fire-the-doors",
+  "titulo": "Light My Fire",
+  "artista": "The Doors",
+  "ano": 1967,
+  "alternativas": {
+   "artista": [
+    "Doors"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock psicodélico",
+  "dificuldade": "media",
+  "spotify": "5uvosCdMlFdTXhoazkTI5R",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Light%20My%20Fire%20The%20Doors"
+  ]
+ },
+ {
+  "id": "int-landslide-fleetwood-mac",
+  "titulo": "Landslide",
+  "artista": "Fleetwood Mac",
+  "ano": 1975,
+  "pais": "Reino Unido / Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soft rock",
+  "dificuldade": "media",
+  "spotify": "5ihS6UUlyQAfmp48eSkxuQ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Landslide%20Fleetwood%20Mac"
+  ]
+ },
+ {
+  "id": "int-whole-lotta-love-led-zeppelin",
+  "titulo": "Whole Lotta Love",
+  "artista": "Led Zeppelin",
+  "ano": 1969,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hard rock",
+  "dificuldade": "media",
+  "spotify": "0hCB0YR03f6AmQaHbwWDe8",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Whole%20Lotta%20Love%20Led%20Zeppelin"
+  ]
+ },
+ {
+  "id": "int-piano-man-billy-joel",
+  "titulo": "Piano Man",
+  "artista": "Billy Joel",
+  "ano": 1973,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soft rock",
+  "dificuldade": "media",
+  "spotify": "70C4NyhjD5OZUMzvWZ3njJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Piano%20Man%20Billy%20Joel"
+  ]
+ },
+ {
+  "id": "int-uptown-girl-billy-joel",
+  "titulo": "Uptown Girl",
+  "artista": "Billy Joel",
+  "ano": 1983,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "5zA8vzDGqPl2AzZkEYQGKh",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Uptown%20Girl%20Billy%20Joel"
+  ]
+ },
+ {
+  "id": "int-fantasy-mariah-carey",
+  "titulo": "Fantasy",
+  "artista": "Mariah Carey",
+  "ano": 1995,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / R&B",
+  "dificuldade": "media",
+  "spotify": "6xkryXuiZU360Lngd4sx13",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Fantasy%20Mariah%20Carey"
+  ]
+ },
+ {
+  "id": "int-so-what-p-nk",
+  "titulo": "So What",
+  "artista": "P!nk",
+  "ano": 2008,
+  "alternativas": {
+   "artista": [
+    "Pink"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "0JiY190vktuhSGN6aqJdrt",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=So%20What%20P%21nk"
+  ]
+ },
+ {
+  "id": "int-just-like-a-pill-p-nk",
+  "titulo": "Just Like a Pill",
+  "artista": "P!nk",
+  "ano": 2002,
+  "alternativas": {
+   "artista": [
+    "Pink"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "1BpV8IGf4XsRRJf4Xuui9q",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Just%20Like%20a%20Pill%20P%21nk"
+  ]
+ },
+ {
+  "id": "int-paint-the-town-red-doja-cat",
+  "titulo": "Paint the Town Red",
+  "artista": "Doja Cat",
+  "ano": 2023,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hip-hop / Pop",
+  "dificuldade": "facil",
+  "spotify": "2IGMVunIBsBLtEQyoI1Mu7",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Paint%20the%20Town%20Red%20Doja%20Cat"
+  ]
+ },
+ {
+  "id": "int-snooze-sza",
+  "titulo": "Snooze",
+  "artista": "SZA",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "media",
+  "spotify": "4iZ4pt7kvcaH6Yo8UoZ4s2",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Snooze%20SZA"
+  ]
+ },
+ {
+  "id": "int-beautiful-things-benson-boone",
+  "titulo": "Beautiful Things",
+  "artista": "Benson Boone",
+  "ano": 2024,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "6tNQ70jh4OwmPGpYy6R2o9",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Beautiful%20Things%20Benson%20Boone"
+  ]
+ },
+ {
+  "id": "int-lose-control-teddy-swims",
+  "titulo": "Lose Control",
+  "artista": "Teddy Swims",
+  "ano": 2023,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul / Pop",
+  "dificuldade": "media",
+  "spotify": "6usohdchdzW9oML7VC4Uhk",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Lose%20Control%20Teddy%20Swims"
+  ]
+ },
+ {
+  "id": "int-greedy-tate-mcrae",
+  "titulo": "greedy",
+  "artista": "Tate McRae",
+  "ano": 2023,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "3rUGC1vUpkDG9CZFHMur1t",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=greedy%20Tate%20McRae"
+  ]
+ },
+ {
+  "id": "int-old-town-road-lil-nas-x",
+  "titulo": "Old Town Road",
+  "artista": "Lil Nas X",
+  "ano": 2019,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Country rap",
+  "dificuldade": "facil",
+  "spotify": "0F7FA14euOIX8KcbEturGH",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Old%20Town%20Road%20Lil%20Nas%20X"
+  ]
+ },
+ {
+  "id": "int-montero-call-me-by-your--lil-nas-x",
+  "titulo": "MONTERO (Call Me by Your Name)",
+  "artista": "Lil Nas X",
+  "ano": 2021,
+  "alternativas": {
+   "titulo": [
+    "Montero",
+    "Call Me by Your Name"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Hip-hop",
+  "dificuldade": "media",
+  "spotify": "67BtfxlNbhBmCDR2L2l8qd",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=MONTERO%20%28Call%20Me%20by%20Your%20Name%29%20Lil%20Nas%20X"
+  ]
+ },
+ {
+  "id": "int-stay-the-kid-laroi",
+  "titulo": "STAY",
+  "artista": "The Kid LAROI e Justin Bieber",
+  "ano": 2021,
+  "alternativas": {
+   "artista": [
+    "The Kid LAROI",
+    "Kid Laroi"
+   ]
+  },
+  "pais": "Austrália / Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "5HCyWlXZPP0y6Gqq8TgA20",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=STAY%20The%20Kid%20LAROI%20e%20Justin%20Bieber"
+  ]
+ },
+ {
+  "id": "int-diana-paul-anka",
+  "titulo": "Diana",
+  "artista": "Paul Anka",
+  "ano": 1957,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "dificil",
+  "spotify": "4chlGZQX5uPYpRLp3NezmX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Diana%20Paul%20Anka"
+  ]
+ },
+ {
+  "id": "int-bye-bye-love-the-everly-bro",
+  "titulo": "Bye Bye Love",
+  "artista": "The Everly Brothers",
+  "ano": 1957,
+  "alternativas": {
+   "artista": [
+    "Everly Brothers"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock and roll",
+  "dificuldade": "dificil",
+  "spotify": "6oRHRkQigTzJ3KwpO3XOV6",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Bye%20Bye%20Love%20The%20Everly%20Brothers"
+  ]
+ },
+ {
+  "id": "int-be-my-baby-the-ronettes",
+  "titulo": "Be My Baby",
+  "artista": "The Ronettes",
+  "ano": 1963,
+  "alternativas": {
+   "artista": [
+    "Ronettes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Doo-wop",
+  "dificuldade": "media",
+  "spotify": "2G2YzndIA6jeWFPBXhUjh5",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Be%20My%20Baby%20The%20Ronettes"
+  ]
+ },
+ {
+  "id": "int-georgia-on-my-mind-ray-charles",
+  "titulo": "Georgia on My Mind",
+  "artista": "Ray Charles",
+  "ano": 1960,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul / Jazz",
+  "dificuldade": "media",
+  "spotify": "1L2AbN6QPkNMG4sWZH7fRq",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Georgia%20on%20My%20Mind%20Ray%20Charles"
+  ]
+ },
+ {
+  "id": "int-hit-the-road-jack-ray-charles",
+  "titulo": "Hit the Road Jack",
+  "artista": "Ray Charles",
+  "ano": 1961,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "facil",
+  "spotify": "1GHzX0BcT6SNC2LxQbeKCp",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Hit%20the%20Road%20Jack%20Ray%20Charles"
+  ]
+ },
+ {
+  "id": "int-sittin-on-the-dock-of-th-otis-redding",
+  "titulo": "(Sittin' On) The Dock of the Bay",
+  "artista": "Otis Redding",
+  "ano": 1968,
+  "alternativas": {
+   "titulo": [
+    "The Dock of the Bay",
+    "Dock of the Bay",
+    "Sittin on the Dock of the Bay"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul",
+  "dificuldade": "dificil",
+  "spotify": "3zBhihYUHBmGd2bcQIobrF",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=%28Sittin%27%20On%29%20The%20Dock%20of%20the%20Bay%20Otis%20Redding"
+  ]
+ },
+ {
+  "id": "int-mr-tambourine-man-the-byrds",
+  "titulo": "Mr. Tambourine Man",
+  "artista": "The Byrds",
+  "ano": 1965,
+  "alternativas": {
+   "titulo": [
+    "Mister Tambourine Man"
+   ],
+   "artista": [
+    "Byrds"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Folk rock",
+  "dificuldade": "dificil",
+  "spotify": "2HCaIYjkvWSZzaSKUoOh3d",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Mr.%20Tambourine%20Man%20The%20Byrds"
+  ]
+ },
+ {
+  "id": "int-son-of-a-preacher-man-dusty-springfi",
+  "titulo": "Son of a Preacher Man",
+  "artista": "Dusty Springfield",
+  "ano": 1968,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul / Pop",
+  "dificuldade": "media",
+  "spotify": "7odHgoLFi3GQ90E9PeraI3",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Son%20of%20a%20Preacher%20Man%20Dusty%20Springfield"
+  ]
+ },
+ {
+  "id": "int-these-boots-are-made-for-nancy-sinatra",
+  "titulo": "These Boots Are Made for Walkin'",
+  "artista": "Nancy Sinatra",
+  "ano": 1966,
+  "anosAceitos": [
+   1965,
+   1966
+  ],
+  "alternativas": {
+   "titulo": [
+    "These Boots Are Made for Walking"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "2PneNdtypG6XcgmWmGd9FI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=These%20Boots%20Are%20Made%20for%20Walkin%27%20Nancy%20Sinatra"
+  ]
+ },
+ {
+  "id": "int-oh-pretty-woman-roy-orbison",
+  "titulo": "Oh, Pretty Woman",
+  "artista": "Roy Orbison",
+  "ano": 1964,
+  "alternativas": {
+   "titulo": [
+    "Pretty Woman"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock and roll",
+  "dificuldade": "facil",
+  "spotify": "52HAHV1j93s5B8GoTNI7DJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Oh%2C%20Pretty%20Woman%20Roy%20Orbison"
+  ]
+ },
+ {
+  "id": "int-jolene-dolly-parton",
+  "titulo": "Jolene",
+  "artista": "Dolly Parton",
+  "ano": 1973,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Country",
+  "dificuldade": "facil",
+  "spotify": "2SpEHTbUuebeLkgs9QB7Ue",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Jolene%20Dolly%20Parton"
+  ]
+ },
+ {
+  "id": "int-9-to-5-dolly-parton",
+  "titulo": "9 to 5",
+  "artista": "Dolly Parton",
+  "ano": 1980,
+  "alternativas": {
+   "titulo": [
+    "Nine to Five"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Country pop",
+  "dificuldade": "media",
+  "spotify": "4w3tQBXhn5345eUXDGBWZG",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=9%20to%205%20Dolly%20Parton"
+  ]
+ },
+ {
+  "id": "int-take-me-home-country-roa-john-denver",
+  "titulo": "Take Me Home, Country Roads",
+  "artista": "John Denver",
+  "ano": 1971,
+  "alternativas": {
+   "titulo": [
+    "Country Roads",
+    "Take Me Home Country Roads"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Country / Folk",
+  "dificuldade": "facil",
+  "spotify": "1QbOvACeYanja5pbnJbAmk",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Take%20Me%20Home%2C%20Country%20Roads%20John%20Denver"
+  ]
+ },
+ {
+  "id": "int-let-s-stay-together-al-green",
+  "titulo": "Let's Stay Together",
+  "artista": "Al Green",
+  "ano": 1971,
+  "alternativas": {
+   "titulo": [
+    "Lets Stay Together"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul",
+  "dificuldade": "dificil",
+  "spotify": "63xdwScd1Ai1GigAwQxE8y",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Let%27s%20Stay%20Together%20Al%20Green"
+  ]
+ },
+ {
+  "id": "int-lean-on-me-bill-withers",
+  "titulo": "Lean on Me",
+  "artista": "Bill Withers",
+  "ano": 1972,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul",
+  "dificuldade": "media",
+  "spotify": "5zCJvrT3C7cIfHsR5iG95l",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Lean%20on%20Me%20Bill%20Withers"
+  ]
+ },
+ {
+  "id": "int-ain-t-no-sunshine-bill-withers",
+  "titulo": "Ain't No Sunshine",
+  "artista": "Bill Withers",
+  "ano": 1971,
+  "alternativas": {
+   "titulo": [
+    "Aint No Sunshine"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul",
+  "dificuldade": "media",
+  "spotify": "1k1Bqnv2R0uJXQN4u6LKYt",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ain%27t%20No%20Sunshine%20Bill%20Withers"
+  ]
+ },
+ {
+  "id": "int-more-than-a-feeling-boston",
+  "titulo": "More Than a Feeling",
+  "artista": "Boston",
+  "ano": 1976,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "1QEEqeFIZktqIpPI4jSVSF",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=More%20Than%20a%20Feeling%20Boston"
+  ]
+ },
+ {
+  "id": "int-walk-this-way-run-dmc-e-aero",
+  "titulo": "Walk This Way",
+  "artista": "Run-DMC e Aerosmith",
+  "ano": 1986,
+  "alternativas": {
+   "artista": [
+    "Run-DMC",
+    "Run DMC",
+    "Aerosmith"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hip-hop / Rock",
+  "dificuldade": "media",
+  "spotify": "6qUEOWqOzu1rLPUPQ1ECpx",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Walk%20This%20Way%20Run-DMC%20e%20Aerosmith"
+  ]
+ },
+ {
+  "id": "int-rhiannon-fleetwood-mac",
+  "titulo": "Rhiannon",
+  "artista": "Fleetwood Mac",
+  "ano": 1975,
+  "pais": "Reino Unido / Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soft rock",
+  "dificuldade": "dificil",
+  "spotify": "05oETzWbd4SI33qK2gbJfR",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Rhiannon%20Fleetwood%20Mac"
+  ]
+ },
+ {
+  "id": "int-you-re-so-vain-carly-simon",
+  "titulo": "You're So Vain",
+  "artista": "Carly Simon",
+  "ano": 1972,
+  "alternativas": {
+   "titulo": [
+    "Youre So Vain"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soft rock",
+  "dificuldade": "dificil",
+  "spotify": "2DnJjbjNTV9Nd5NOa1KGba",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=You%27re%20So%20Vain%20Carly%20Simon"
+  ]
+ },
+ {
+  "id": "int-baker-street-gerry-rafferty",
+  "titulo": "Baker Street",
+  "artista": "Gerry Rafferty",
+  "ano": 1978,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soft rock",
+  "dificuldade": "dificil",
+  "spotify": "5gOd6zDC8vhlYjqbQdJVWP",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Baker%20Street%20Gerry%20Rafferty"
+  ]
+ },
+ {
+  "id": "int-footloose-kenny-loggins",
+  "titulo": "Footloose",
+  "artista": "Kenny Loggins",
+  "ano": 1984,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "6W2VbtvMrDXm5vYeB7amkO",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Footloose%20Kenny%20Loggins"
+  ]
+ },
+ {
+  "id": "int-danger-zone-kenny-loggins",
+  "titulo": "Danger Zone",
+  "artista": "Kenny Loggins",
+  "ano": 1986,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "34x6hEJgGAOQvmlMql5Ige",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Danger%20Zone%20Kenny%20Loggins"
+  ]
+ },
+ {
+  "id": "int-papa-don-t-preach-madonna",
+  "titulo": "Papa Don't Preach",
+  "artista": "Madonna",
+  "ano": 1986,
+  "alternativas": {
+   "titulo": [
+    "Papa Dont Preach"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "6A8OnjnpShshNpcqWtZRjr",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Papa%20Don%27t%20Preach%20Madonna"
+  ]
+ },
+ {
+  "id": "int-greatest-love-of-all-whitney-housto",
+  "titulo": "Greatest Love of All",
+  "artista": "Whitney Houston",
+  "ano": 1985,
+  "anosAceitos": [
+   1985,
+   1986
+  ],
+  "alternativas": {
+   "titulo": [
+    "The Greatest Love of All"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "media",
+  "spotify": "6yJxCltgtmGxIgKOS6ndnu",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Greatest%20Love%20of%20All%20Whitney%20Houston"
+  ]
+ },
+ {
+  "id": "int-walk-like-an-egyptian-the-bangles",
+  "titulo": "Walk Like an Egyptian",
+  "artista": "The Bangles",
+  "ano": 1986,
+  "alternativas": {
+   "artista": [
+    "Bangles"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "1Jwc3ODLQxtbnS8M9TflSP",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Walk%20Like%20an%20Egyptian%20The%20Bangles"
+  ]
+ },
+ {
+  "id": "int-manic-monday-the-bangles",
+  "titulo": "Manic Monday",
+  "artista": "The Bangles",
+  "ano": 1986,
+  "alternativas": {
+   "artista": [
+    "Bangles"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "dificil",
+  "spotify": "00vYs0qZA40Z8AAaN7xmMO",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Manic%20Monday%20The%20Bangles"
+  ]
+ },
+ {
+  "id": "int-kiss-prince",
+  "titulo": "Kiss",
+  "artista": "Prince",
+  "ano": 1986,
+  "alternativas": {
+   "artista": [
+    "Prince and The Revolution"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Funk / Pop",
+  "dificuldade": "media",
+  "spotify": "62LJFaYihsdVrrkgUOJC05",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Kiss%20Prince"
+  ]
+ },
+ {
+  "id": "int-here-comes-the-rain-agai-eurythmics",
+  "titulo": "Here Comes the Rain Again",
+  "artista": "Eurythmics",
+  "ano": 1984,
+  "anosAceitos": [
+   1983,
+   1984
+  ],
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Synthpop",
+  "dificuldade": "dificil",
+  "spotify": "78RIER8V6EhrqVPOBi2GYa",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Here%20Comes%20the%20Rain%20Again%20Eurythmics"
+  ]
+ },
+ {
+  "id": "int-just-can-t-get-enough-depeche-mode",
+  "titulo": "Just Can't Get Enough",
+  "artista": "Depeche Mode",
+  "ano": 1981,
+  "alternativas": {
+   "titulo": [
+    "Just Cant Get Enough"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Synthpop",
+  "dificuldade": "media",
+  "spotify": "0qi4b1l0eT3jpzeNHeFXDT",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Just%20Can%27t%20Get%20Enough%20Depeche%20Mode"
+  ]
+ },
+ {
+  "id": "int-enjoy-the-silence-depeche-mode",
+  "titulo": "Enjoy the Silence",
+  "artista": "Depeche Mode",
+  "ano": 1990,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Synthpop",
+  "dificuldade": "media",
+  "spotify": "6WK9dVrRABMkUXFLNlgWFh",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Enjoy%20the%20Silence%20Depeche%20Mode"
+  ]
+ },
+ {
+  "id": "int-ironic-alanis-morisse",
+  "titulo": "Ironic",
+  "artista": "Alanis Morissette",
+  "ano": 1995,
+  "anosAceitos": [
+   1995,
+   1996
+  ],
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock alternativo",
+  "dificuldade": "media",
+  "spotify": "4oGTdOClZUxcM2H3UmXlwL",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ironic%20Alanis%20Morissette"
+  ]
+ },
+ {
+  "id": "int-you-oughta-know-alanis-morisse",
+  "titulo": "You Oughta Know",
+  "artista": "Alanis Morissette",
+  "ano": 1995,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock alternativo",
+  "dificuldade": "dificil",
+  "spotify": "0Dw9z44gXhplDh5HCWZIxP",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=You%20Oughta%20Know%20Alanis%20Morissette"
+  ]
+ },
+ {
+  "id": "int-truly-madly-deeply-savage-garden",
+  "titulo": "Truly Madly Deeply",
+  "artista": "Savage Garden",
+  "ano": 1997,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "media",
+  "spotify": "013AWvizllIUEC2FOBzOnh",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Truly%20Madly%20Deeply%20Savage%20Garden"
+  ]
+ },
+ {
+  "id": "int-vision-of-love-mariah-carey",
+  "titulo": "Vision of Love",
+  "artista": "Mariah Carey",
+  "ano": 1990,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / R&B",
+  "dificuldade": "dificil",
+  "spotify": "0gLQ6jhJsyYfl7PrD1RZ7X",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Vision%20of%20Love%20Mariah%20Carey"
+  ]
+ },
+ {
+  "id": "int-always-be-my-baby-mariah-carey",
+  "titulo": "Always Be My Baby",
+  "artista": "Mariah Carey",
+  "ano": 1996,
+  "anosAceitos": [
+   1995,
+   1996
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / R&B",
+  "dificuldade": "media",
+  "spotify": "2aBxt229cbLDOvtL7Xbb9x",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Always%20Be%20My%20Baby%20Mariah%20Carey"
+  ]
+ },
+ {
+  "id": "int-pumped-up-kicks-foster-the-peo",
+  "titulo": "Pumped Up Kicks",
+  "artista": "Foster the People",
+  "ano": 2010,
+  "anosAceitos": [
+   2010,
+   2011
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "media",
+  "spotify": "7w87IxuO7BDcJ3YUqCyMTT",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Pumped%20Up%20Kicks%20Foster%20the%20People"
+  ]
+ },
+ {
+  "id": "int-riptide-vance-joy",
+  "titulo": "Riptide",
+  "artista": "Vance Joy",
+  "ano": 2013,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie folk",
+  "dificuldade": "media",
+  "spotify": "7yq4Qj7cqayVTp3FF9CWbm",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Riptide%20Vance%20Joy"
+  ]
+ },
+ {
+  "id": "int-dance-monkey-tones-and-i",
+  "titulo": "Dance Monkey",
+  "artista": "Tones and I",
+  "ano": 2019,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "2XU0oxnq2qxCpomAAuJY8K",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dance%20Monkey%20Tones%20and%20I"
+  ]
+ },
+ {
+  "id": "int-industry-baby-lil-nas-x-e-ja",
+  "titulo": "INDUSTRY BABY",
+  "artista": "Lil Nas X e Jack Harlow",
+  "ano": 2021,
+  "alternativas": {
+   "artista": [
+    "Lil Nas X"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hip-hop",
+  "dificuldade": "facil",
+  "spotify": "27NovPIUIRrOZoCHxABJwK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=INDUSTRY%20BABY%20Lil%20Nas%20X%20e%20Jack%20Harlow"
+  ]
+ },
+ {
+  "id": "int-abcdefu-gayle",
+  "titulo": "abcdefu",
+  "artista": "GAYLE",
+  "ano": 2021,
+  "alternativas": {
+   "titulo": [
+    "abc de fu"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop punk",
+  "dificuldade": "facil",
+  "spotify": "5TrB6o3iQMaW9NueIlJjKG",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=abcdefu%20GAYLE"
+  ]
+ },
+ {
+  "id": "int-about-damn-time-lizzo",
+  "titulo": "About Damn Time",
+  "artista": "Lizzo",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Funk",
+  "dificuldade": "media",
+  "spotify": "4a3D8glGZxhlJfOs1Czc3c",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=About%20Damn%20Time%20Lizzo"
+  ]
+ },
+ {
+  "id": "int-too-sweet-hozier",
+  "titulo": "Too Sweet",
+  "artista": "Hozier",
+  "ano": 2024,
+  "pais": "Irlanda",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Soul",
+  "dificuldade": "media",
+  "spotify": "4IadxL6BUymXlh8RCJJu7T",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Too%20Sweet%20Hozier"
+  ]
+ },
+ {
+  "id": "int-a-bar-song-tipsy-shaboozey",
+  "titulo": "A Bar Song (Tipsy)",
+  "artista": "Shaboozey",
+  "ano": 2024,
+  "alternativas": {
+   "titulo": [
+    "A Bar Song",
+    "Tipsy"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Country",
+  "dificuldade": "media",
+  "spotify": "2FQrifJ1N335Ljm3TjTVVf",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=A%20Bar%20Song%20%28Tipsy%29%20Shaboozey"
+  ]
+ },
+ {
+  "id": "int-stargazing-myles-smith",
+  "titulo": "Stargazing",
+  "artista": "Myles Smith",
+  "ano": 2024,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Folk",
+  "dificuldade": "media",
+  "spotify": "3Vr3zh0r7ALn8VLqCiRR10",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Stargazing%20Myles%20Smith"
+  ]
+ },
+ {
+  "id": "br-pintura-intima-kid-abelha",
+  "titulo": "Pintura Íntima",
+  "artista": "Kid Abelha",
+  "ano": 1984,
+  "alternativas": {
+   "titulo": [
+    "Pintura Intima"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "16aXhrG9n9fUTHvNWEk0oV",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Pintura%20%C3%8Dntima%20Kid%20Abelha"
+  ]
+ },
+ {
+  "id": "br-como-eu-quero-kid-abelha",
+  "titulo": "Como Eu Quero",
+  "artista": "Kid Abelha",
+  "ano": 1984,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "4aZ3Q0c3BJtj59wHXZAk8e",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Como%20Eu%20Quero%20Kid%20Abelha"
+  ]
+ },
+ {
+  "id": "br-fixacao-kid-abelha",
+  "titulo": "Fixação",
+  "artista": "Kid Abelha",
+  "ano": 1984,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "dificil",
+  "spotify": "63Ugh7fCzAtsn09ESEKQBh",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Fixa%C3%A7%C3%A3o%20Kid%20Abelha"
+  ]
+ },
+ {
+  "id": "br-vou-deixar-skank",
+  "titulo": "Vou Deixar",
+  "artista": "Skank",
+  "ano": 2003,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "facil",
+  "spotify": "5t6QgW9guk6MRptJJWgsFY",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Vou%20Deixar%20Skank"
+  ]
+ },
+ {
+  "id": "br-esquadros-adriana-calcan",
+  "titulo": "Esquadros",
+  "artista": "Adriana Calcanhotto",
+  "ano": 1992,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "0Dqd8e4lCG1EYPmyzzR53I",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Esquadros%20Adriana%20Calcanhotto"
+  ]
+ },
+ {
+  "id": "br-todo-mundo-vai-sofrer-marilia-mendon",
+  "titulo": "Todo Mundo Vai Sofrer",
+  "artista": "Marília Mendonça",
+  "ano": 2019,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "facil",
+  "spotify": "4E6RdcCWMiHTu7zy1VTNDo",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Todo%20Mundo%20Vai%20Sofrer%20Mar%C3%ADlia%20Mendon%C3%A7a"
+  ]
+ },
+ {
+  "id": "br-notificacao-preferida-ze-neto-cristi",
+  "titulo": "Notificação Preferida",
+  "artista": "Zé Neto & Cristiano",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "Zé Neto e Cristiano"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "facil",
+  "spotify": "3tA0vALUwrzkTgHcm9j6oJ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Notifica%C3%A7%C3%A3o%20Preferida%20Z%C3%A9%20Neto%20%26%20Cristiano"
+  ]
+ },
+ {
+  "id": "br-largado-as-tracas-ze-neto-cristi",
+  "titulo": "Largado às Traças",
+  "artista": "Zé Neto & Cristiano",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018
+  ],
+  "alternativas": {
+   "titulo": [
+    "Largado as Tracas"
+   ],
+   "artista": [
+    "Zé Neto e Cristiano"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "371Up3WP7OqJNFPf0BiyUe",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Largado%20%C3%A0s%20Tra%C3%A7as%20Z%C3%A9%20Neto%20%26%20Cristiano"
+  ]
+ },
+ {
+  "id": "br-os-anjos-cantam-jorge-mateus",
+  "titulo": "Os Anjos Cantam",
+  "artista": "Jorge & Mateus",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "6ccKu0LwJzOhLAxBwP2PTk",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Os%20Anjos%20Cantam%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-pipoco-ana-castela-me",
+  "titulo": "Pipoco",
+  "artista": "Ana Castela, Melody e DJ Chris no Beat",
+  "ano": 2022,
+  "alternativas": {
+   "artista": [
+    "Ana Castela"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Agronejo / Funk",
+  "dificuldade": "facil",
+  "spotify": "7AwVSKaQxpidrtYBerkHKk",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Pipoco%20Ana%20Castela%2C%20Melody%20e%20DJ%20Chris%20no%20Beat"
+  ]
+ },
+ {
+  "id": "br-rainha-da-favela-ludmilla",
+  "titulo": "Rainha da Favela",
+  "artista": "Ludmilla",
+  "ano": 2020,
+  "alternativas": {
+   "artista": [
+    "Ludmila"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Funk",
+  "dificuldade": "facil",
+  "spotify": "3vu864xi5Xis9VfOsJpmXu",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Rainha%20da%20Favela%20Ludmilla"
+  ]
+ },
+ {
+  "id": "br-cheguei-ludmilla",
+  "titulo": "Cheguei",
+  "artista": "Ludmilla",
+  "ano": 2016,
+  "alternativas": {
+   "artista": [
+    "Ludmila"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Funk",
+  "dificuldade": "media",
+  "spotify": "6cbZb9mVAc5s8HtwklLoI0",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Cheguei%20Ludmilla"
+  ]
+ },
+ {
+  "id": "br-chico-luisa-sonza",
+  "titulo": "Chico",
+  "artista": "Luísa Sonza",
+  "ano": 2023,
+  "alternativas": {
+   "artista": [
+    "Luisa Sonza"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "43eRVwfXFkY3kXN4K47gNT",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Chico%20Lu%C3%ADsa%20Sonza"
+  ]
+ },
+ {
+  "id": "br-e-tarde-demais-raca-negra",
+  "titulo": "É Tarde Demais",
+  "artista": "Raça Negra",
+  "ano": 1995,
+  "anosAceitos": [
+   1994,
+   1995
+  ],
+  "alternativas": {
+   "titulo": [
+    "E Tarde Demais"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "4tILvSk9XcdCBzjyzhsuze",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=%C3%89%20Tarde%20Demais%20Ra%C3%A7a%20Negra"
+  ]
+ },
+ {
+  "id": "br-telegrama-zeca-baleiro",
+  "titulo": "Telegrama",
+  "artista": "Zeca Baleiro",
+  "ano": 1999,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "0MeqLDxoK38jwkcWKDiPHu",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Telegrama%20Zeca%20Baleiro"
+  ]
+ },
+ {
+  "id": "br-te-esperando-luan-santana",
+  "titulo": "Te Esperando",
+  "artista": "Luan Santana",
+  "ano": 2013,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "facil",
+  "spotify": "0Fciu3fBg7fmWKeDboQpQV",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Te%20Esperando%20Luan%20Santana"
+  ]
+ },
+ {
+  "id": "br-amei-te-ver-tiago-iorc",
+  "titulo": "Amei Te Ver",
+  "artista": "Tiago Iorc",
+  "ano": 2016,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop / MPB",
+  "dificuldade": "media",
+  "spotify": "4owo0j5bw45IqiHxsTzcd6",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Amei%20Te%20Ver%20Tiago%20Iorc"
+  ]
+ },
+ {
+  "id": "br-mulheres-martinho-da-vi",
+  "titulo": "Mulheres",
+  "artista": "Martinho da Vila",
+  "ano": 1995,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Samba",
+  "dificuldade": "media",
+  "spotify": "3zojdqaC355UzSAWWj1bgj",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Mulheres%20Martinho%20da%20Vila"
+  ]
+ },
+ {
+  "id": "br-disritmia-martinho-da-vi",
+  "titulo": "Disritmia",
+  "artista": "Martinho da Vila",
+  "ano": 1974,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Samba",
+  "dificuldade": "dificil",
+  "spotify": "7fs6csqE3EltCrESv6cn0J",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Disritmia%20Martinho%20da%20Vila"
+  ]
+ },
+ {
+  "id": "br-vou-festejar-beth-carvalho",
+  "titulo": "Vou Festejar",
+  "artista": "Beth Carvalho",
+  "ano": 1978,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Samba",
+  "dificuldade": "media",
+  "spotify": "54JLlb23AnzXErLRSNVIUn",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Vou%20Festejar%20Beth%20Carvalho"
+  ]
+ },
+ {
+  "id": "br-o-bebado-e-a-equilibrist-elis-regina",
+  "titulo": "O Bêbado e a Equilibrista",
+  "artista": "Elis Regina",
+  "ano": 1979,
+  "alternativas": {
+   "titulo": [
+    "O Bebado e a Equilibrista"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "3eVyDZXJPJzUKkyWP6eLyc",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=O%20B%C3%AAbado%20e%20a%20Equilibrista%20Elis%20Regina"
+  ]
+ },
+ {
+  "id": "br-dona-roupa-nova",
+  "titulo": "Dona",
+  "artista": "Roupa Nova",
+  "ano": 1985,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "4Bd8jSFBXHC1K7JAKW9Ojm",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Dona%20Roupa%20Nova"
+  ]
+ },
+ {
+  "id": "br-voce-nao-me-ensinou-a-te-caetano-veloso",
+  "titulo": "Você Não Me Ensinou a Te Esquecer",
+  "artista": "Caetano Veloso",
+  "ano": 2003,
+  "alternativas": {
+   "titulo": [
+    "Voce Nao Me Ensinou a Te Esquecer"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "3qMwz690Aw4gQ2ZHEa0XMZ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Voc%C3%AA%20N%C3%A3o%20Me%20Ensinou%20a%20Te%20Esquecer%20Caetano%20Veloso"
+  ]
+ },
+ {
+  "id": "br-sitio-do-pica-pau-amarel-gilberto-gil",
+  "titulo": "Sítio do Pica-Pau Amarelo",
+  "artista": "Gilberto Gil",
+  "ano": 1977,
+  "alternativas": {
+   "titulo": [
+    "Sitio do Picapau Amarelo"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "17hIHkVF9ajRlADW3JbUvV",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=S%C3%ADtio%20do%20Pica-Pau%20Amarelo%20Gilberto%20Gil"
+  ]
+ },
+ {
+  "id": "int-because-of-you-kelly-clarkson",
+  "titulo": "Because of You",
+  "artista": "Kelly Clarkson",
+  "ano": 2004,
+  "anosAceitos": [
+   2004,
+   2005
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "3f3omU8n47Mqyab5nCaGyT",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Because%20of%20You%20Kelly%20Clarkson"
+  ]
+ },
+ {
+  "id": "int-cuff-it-beyonce",
+  "titulo": "CUFF IT",
+  "artista": "Beyoncé",
+  "ano": 2022,
+  "alternativas": {
+   "artista": [
+    "Beyonce"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Disco / R&B",
+  "dificuldade": "media",
+  "spotify": "1xzi1Jcr7mEi9K2RfzLOqS",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=CUFF%20IT%20Beyonc%C3%A9"
+  ]
+ },
+ {
+  "id": "int-gimme-more-britney-spears",
+  "titulo": "Gimme More",
+  "artista": "Britney Spears",
+  "ano": 2007,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Eletrônica",
+  "dificuldade": "media",
+  "spotify": "6ic8OlLUNEATToEFU3xmaH",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Gimme%20More%20Britney%20Spears"
+  ]
+ },
+ {
+  "id": "int-larger-than-life-backstreet-boy",
+  "titulo": "Larger than Life",
+  "artista": "Backstreet Boys",
+  "ano": 1999,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "6sbXGUn9V9ZaLwLdOfpKRE",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Larger%20than%20Life%20Backstreet%20Boys"
+  ]
+ },
+ {
+  "id": "int-show-me-the-meaning-of-b-backstreet-boy",
+  "titulo": "Show Me the Meaning of Being Lonely",
+  "artista": "Backstreet Boys",
+  "ano": 1999,
+  "anosAceitos": [
+   1999,
+   2000
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "media",
+  "spotify": "3BsaRV5QIulYz2lV9WWa8T",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Show%20Me%20the%20Meaning%20of%20Being%20Lonely%20Backstreet%20Boys"
+  ]
+ },
+ {
+  "id": "int-shape-of-my-heart-backstreet-boy",
+  "titulo": "Shape of My Heart",
+  "artista": "Backstreet Boys",
+  "ano": 2000,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "media",
+  "spotify": "35o9a4iAfLl5jRmqMX9c1D",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Shape%20of%20My%20Heart%20Backstreet%20Boys"
+  ]
+ },
+ {
+  "id": "int-faint-linkin-park",
+  "titulo": "Faint",
+  "artista": "Linkin Park",
+  "ano": 2003,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Nu metal",
+  "dificuldade": "media",
+  "spotify": "4Yf5bqU3NK4kNOypcrLYwU",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Faint%20Linkin%20Park"
+  ]
+ },
+ {
+  "id": "int-semi-charmed-life-third-eye-blin",
+  "titulo": "Semi-Charmed Life",
+  "artista": "Third Eye Blind",
+  "ano": 1997,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock alternativo",
+  "dificuldade": "dificil",
+  "spotify": "42et6fnHCw1HIPSrdPprMl",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Semi-Charmed%20Life%20Third%20Eye%20Blind"
+  ]
+ },
+ {
+  "id": "int-how-you-remind-me-nickelback",
+  "titulo": "How You Remind Me",
+  "artista": "Nickelback",
+  "ano": 2001,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Post-grunge",
+  "dificuldade": "media",
+  "spotify": "0gmbgwZ8iqyMPmXefof8Yf",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=How%20You%20Remind%20Me%20Nickelback"
+  ]
+ },
+ {
+  "id": "int-one-kiss-calvin-harris",
+  "titulo": "One Kiss",
+  "artista": "Calvin Harris e Dua Lipa",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "Calvin Harris",
+    "Dua Lipa"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "House / Pop",
+  "dificuldade": "facil",
+  "spotify": "7ef4DlsgrMEH11cDZd32M6",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=One%20Kiss%20Calvin%20Harris%20e%20Dua%20Lipa"
+  ]
+ },
+ {
+  "id": "int-the-a-team-ed-sheeran",
+  "titulo": "The A Team",
+  "artista": "Ed Sheeran",
+  "ano": 2011,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Folk pop",
+  "dificuldade": "media",
+  "spotify": "1VdZ0vKfR5jneCmWIUAMxK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20A%20Team%20Ed%20Sheeran"
+  ]
+ },
+ {
+  "id": "int-golden-hour-jvke",
+  "titulo": "golden hour",
+  "artista": "JVKE",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "4yNk9iz9WVJikRFle3XEvn",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=golden%20hour%20JVKE"
+  ]
+ },
+ {
+  "id": "int-strangers-kenya-grace",
+  "titulo": "Strangers",
+  "artista": "Kenya Grace",
+  "ano": 2023,
+  "pais": "Reino Unido / África do Sul",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Drum and bass / Pop",
+  "dificuldade": "dificil",
+  "spotify": "5mjYQaktjmjcMKcUIcqz4s",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Strangers%20Kenya%20Grace"
+  ]
+ },
+ {
+  "id": "int-water-tyla",
+  "titulo": "Water",
+  "artista": "Tyla",
+  "ano": 2023,
+  "pais": "África do Sul",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Amapiano / Pop",
+  "dificuldade": "media",
+  "spotify": "5aIVCx5tnk0ntmdiinnYvw",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Water%20Tyla"
+  ]
+ },
+ {
+  "id": "int-lovin-on-me-jack-harlow",
+  "titulo": "Lovin On Me",
+  "artista": "Jack Harlow",
+  "ano": 2023,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hip-hop",
+  "dificuldade": "media",
+  "spotify": "4xhsWYTOGcal8zt0J161CU",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Lovin%20On%20Me%20Jack%20Harlow"
+  ]
+ },
+ {
+  "id": "int-first-class-jack-harlow",
+  "titulo": "First Class",
+  "artista": "Jack Harlow",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hip-hop",
+  "dificuldade": "media",
+  "spotify": "0wHFktze2PHC5jDt3B17DC",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=First%20Class%20Jack%20Harlow"
+  ]
+ },
+ {
+  "id": "int-ain-t-no-rest-for-the-wi-cage-the-eleph",
+  "titulo": "Ain't No Rest for the Wicked",
+  "artista": "Cage the Elephant",
+  "ano": 2008,
+  "alternativas": {
+   "titulo": [
+    "Aint No Rest for the Wicked"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock alternativo",
+  "dificuldade": "dificil",
+  "spotify": "3Pzh926pXggbMe2ZpXyMV7",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ain%27t%20No%20Rest%20for%20the%20Wicked%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-mr-blue-sky-electric-light",
+  "titulo": "Mr. Blue Sky",
+  "artista": "Electric Light Orchestra",
+  "ano": 1977,
+  "anosAceitos": [
+   1977,
+   1978
+  ],
+  "alternativas": {
+   "titulo": [
+    "Mister Blue Sky"
+   ],
+   "artista": [
+    "ELO"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock sinfônico",
+  "dificuldade": "media",
+  "spotify": "2RlgNHKcydI9sayD2Df2xp",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Mr.%20Blue%20Sky%20Electric%20Light%20Orchestra"
+  ]
+ },
+ {
+  "id": "int-budapest-george-ezra",
+  "titulo": "Budapest",
+  "artista": "George Ezra",
+  "ano": 2014,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Folk pop",
+  "dificuldade": "media",
+  "spotify": "2ixsaeFioXJmMgkkbd4uj1",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Budapest%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-shotgun-george-ezra",
+  "titulo": "Shotgun",
+  "artista": "George Ezra",
+  "ano": 2018,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "4ofwffwvvnbSkrMSCKQDaC",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Shotgun%20George%20Ezra"
+  ]
+ },
+ {
+  "id": "int-train-wreck-james-arthur",
+  "titulo": "Train Wreck",
+  "artista": "James Arthur",
+  "ano": 2016,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "dificil",
+  "spotify": "55Am8neGJkdj2ADaM3aw5H",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Train%20Wreck%20James%20Arthur"
+  ]
+ },
+ {
+  "id": "int-say-you-won-t-let-go-james-arthur",
+  "titulo": "Say You Won't Let Go",
+  "artista": "James Arthur",
+  "ano": 2016,
+  "alternativas": {
+   "titulo": [
+    "Say You Wont Let Go"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "media",
+  "spotify": "5uCax9HTNlzGybIStD3vDh",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Say%20You%20Won%27t%20Let%20Go%20James%20Arthur"
+  ]
+ },
+ {
+  "id": "int-home-edward-sharpe",
+  "titulo": "Home",
+  "artista": "Edward Sharpe & The Magnetic Zeros",
+  "ano": 2009,
+  "alternativas": {
+   "artista": [
+    "Edward Sharpe and the Magnetic Zeros"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie folk",
+  "dificuldade": "dificil",
+  "spotify": "2x1jP9BexWtOKudvuUHbaD",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Home%20Edward%20Sharpe%20%26%20The%20Magnetic%20Zeros"
+  ]
+ },
+ {
+  "id": "int-ride-twenty-one-pil",
+  "titulo": "Ride",
+  "artista": "Twenty One Pilots",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "21 Pilots"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "media",
+  "spotify": "2Z8WuEywRWYTKe1NybPQEW",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ride%20Twenty%20One%20Pilots"
+  ]
+ },
+ {
+  "id": "int-heathens-twenty-one-pil",
+  "titulo": "Heathens",
+  "artista": "Twenty One Pilots",
+  "ano": 2016,
+  "alternativas": {
+   "artista": [
+    "21 Pilots"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "media",
+  "spotify": "6i0V12jOa3mr6uu4WYhUBr",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Heathens%20Twenty%20One%20Pilots"
+  ]
+ },
+ {
+  "id": "int-sweater-weather-the-neighbourh",
+  "titulo": "Sweater Weather",
+  "artista": "The Neighbourhood",
+  "ano": 2012,
+  "anosAceitos": [
+   2012,
+   2013
+  ],
+  "alternativas": {
+   "artista": [
+    "Neighbourhood",
+    "The Neighborhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "2QjOHCTQ1Jl3zawyYOpxh6",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Sweater%20Weather%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-i-bet-you-look-good-on-t-arctic-monkeys",
+  "titulo": "I Bet You Look Good on the Dancefloor",
+  "artista": "Arctic Monkeys",
+  "ano": 2005,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "3DQVgcqaP3iSMbaKsd57l5",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=I%20Bet%20You%20Look%20Good%20on%20the%20Dancefloor%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-feel-good-inc-gorillaz",
+  "titulo": "Feel Good Inc.",
+  "artista": "Gorillaz",
+  "ano": 2005,
+  "alternativas": {
+   "titulo": [
+    "Feel Good Inc"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock alternativo / Hip-hop",
+  "dificuldade": "media",
+  "spotify": "0d28khcov6AiegSCpG5TuT",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Feel%20Good%20Inc.%20Gorillaz"
+  ]
+ },
+ {
+  "id": "int-clint-eastwood-gorillaz",
+  "titulo": "Clint Eastwood",
+  "artista": "Gorillaz",
+  "ano": 2001,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hip-hop / Trip-hop",
+  "dificuldade": "media",
+  "spotify": "7yMiX7n9SBvadzox8T5jzT",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Clint%20Eastwood%20Gorillaz"
+  ]
+ },
+ {
+  "id": "br-girl-from-rio-anitta",
+  "titulo": "Girl From Rio",
+  "artista": "Anitta",
+  "ano": 2021,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "2plRom0urixt6BE8t7kOhQ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Girl%20From%20Rio%20Anitta"
+  ]
+ },
+ {
+  "id": "br-por-supuesto-marina-sena",
+  "titulo": "Por Supuesto",
+  "artista": "Marina Sena",
+  "ano": 2021,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop / MPB",
+  "dificuldade": "media",
+  "spotify": "6FKfZNVgfSS2IBxiAqwSCr",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Por%20Supuesto%20Marina%20Sena"
+  ]
+ },
+ {
+  "id": "br-se-djavan",
+  "titulo": "Se...",
+  "artista": "Djavan",
+  "ano": 1992,
+  "alternativas": {
+   "titulo": [
+    "Se"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "media",
+  "spotify": "0PgsB53yhlKs8D19LgYU4i",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Se...%20Djavan"
+  ]
+ },
+ {
+  "id": "br-w-brasil-chama-o-sindico-jorge-ben-jor",
+  "titulo": "W/Brasil (Chama o Síndico)",
+  "artista": "Jorge Ben Jor",
+  "ano": 1990,
+  "alternativas": {
+   "titulo": [
+    "W Brasil",
+    "Chama o Síndico",
+    "W/Brasil"
+   ],
+   "artista": [
+    "Jorge Ben"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Samba-rock",
+  "dificuldade": "media",
+  "spotify": "2qCombkjuqWREOT8xvSflG",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=W/Brasil%20%28Chama%20o%20S%C3%ADndico%29%20Jorge%20Ben%20Jor"
+  ]
+ },
+ {
+  "id": "br-avohai-ze-ramalho",
+  "titulo": "Avôhai",
+  "artista": "Zé Ramalho",
+  "ano": 1978,
+  "anosAceitos": [
+   1977,
+   1978
+  ],
+  "alternativas": {
+   "titulo": [
+    "Avohai"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "MPB",
+  "dificuldade": "dificil",
+  "spotify": "0UelKR8fyxzJRjSm1A9AJk",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Av%C3%B4hai%20Z%C3%A9%20Ramalho"
+  ]
+ },
+ {
+  "id": "br-louras-geladas-rpm",
+  "titulo": "Louras Geladas",
+  "artista": "RPM",
+  "ano": 1985,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "2zfkReKDo2ubvp49fIbkiJ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Louras%20Geladas%20RPM"
+  ]
+ },
+ {
+  "id": "br-envelheco-na-cidade-ira",
+  "titulo": "Envelheço na Cidade",
+  "artista": "Ira!",
+  "ano": 1986,
+  "alternativas": {
+   "titulo": [
+    "Envelheco na Cidade"
+   ],
+   "artista": [
+    "Ira"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "dificil",
+  "spotify": "4AwNUVU4h3QmUMHIbzurRa",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Envelhe%C3%A7o%20na%20Cidade%20Ira%21"
+  ]
+ },
+ {
+  "id": "br-a-estrada-cidade-negra",
+  "titulo": "A Estrada",
+  "artista": "Cidade Negra",
+  "ano": 1998,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Reggae",
+  "dificuldade": "media",
+  "spotify": "3bS1srVDOOqGYCKcnzYwfs",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=A%20Estrada%20Cidade%20Negra"
+  ]
+ },
+ {
+  "id": "br-facil-jota-quest",
+  "titulo": "Fácil",
+  "artista": "Jota Quest",
+  "ano": 1998,
+  "alternativas": {
+   "titulo": [
+    "Facil"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "5rhijzoJmc7ZdnEgBS58Wh",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=F%C3%A1cil%20Jota%20Quest"
+  ]
+ },
+ {
+  "id": "br-dias-melhores-jota-quest",
+  "titulo": "Dias Melhores",
+  "artista": "Jota Quest",
+  "ano": 2000,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "facil",
+  "spotify": "6mpiOoEcus2zYIl9qdHVyG",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Dias%20Melhores%20Jota%20Quest"
+  ]
+ },
+ {
+  "id": "br-mascara-pitty",
+  "titulo": "Máscara",
+  "artista": "Pitty",
+  "ano": 2003,
+  "alternativas": {
+   "titulo": [
+    "Mascara"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "2Y0R8ey56JBZj6Au3HenCq",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=M%C3%A1scara%20Pitty"
+  ]
+ },
+ {
+  "id": "br-camarote-wesley-safadao",
+  "titulo": "Camarote",
+  "artista": "Wesley Safadão",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "Wesley Safadao"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Forró",
+  "dificuldade": "facil",
+  "spotify": "5Kk43IykGmtOxZ5CDzOlEU",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Camarote%20Wesley%20Safad%C3%A3o"
+  ]
+ },
+ {
+  "id": "int-something-just-like-this-the-chainsmoke",
+  "titulo": "Something Just Like This",
+  "artista": "The Chainsmokers e Coldplay",
+  "ano": 2017,
+  "alternativas": {
+   "artista": [
+    "The Chainsmokers",
+    "Chainsmokers",
+    "Coldplay"
+   ]
+  },
+  "pais": "Estados Unidos / Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "EDM / Pop",
+  "dificuldade": "facil",
+  "spotify": "1dNIEtp7AY3oDAKCGg2XkH",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Something%20Just%20Like%20This%20The%20Chainsmokers%20e%20Coldplay"
+  ]
+ },
+ {
+  "id": "int-don-t-let-me-down-the-chainsmoke",
+  "titulo": "Don't Let Me Down",
+  "artista": "The Chainsmokers e Daya",
+  "ano": 2016,
+  "alternativas": {
+   "titulo": [
+    "Dont Let Me Down"
+   ],
+   "artista": [
+    "The Chainsmokers",
+    "Chainsmokers"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "EDM / Pop",
+  "dificuldade": "media",
+  "spotify": "1i1fxkWeaMmKEB4T7zqbzK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Don%27t%20Let%20Me%20Down%20The%20Chainsmokers%20e%20Daya"
+  ]
+ },
+ {
+  "id": "int-savage-love-jawsh-685-e-ja",
+  "titulo": "Savage Love",
+  "artista": "Jawsh 685 e Jason Derulo",
+  "ano": 2020,
+  "alternativas": {
+   "artista": [
+    "Jason Derulo",
+    "Jawsh 685"
+   ]
+  },
+  "pais": "Nova Zelândia / Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "1xQ6trAsedVPCdbtDAmk0c",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Savage%20Love%20Jawsh%20685%20e%20Jason%20Derulo"
+  ]
+ },
+ {
+  "id": "int-woman-doja-cat",
+  "titulo": "Woman",
+  "artista": "Doja Cat",
+  "ano": 2021,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / R&B",
+  "dificuldade": "media",
+  "spotify": "6Uj1ctrBOjOas8xZXGqKk4",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Woman%20Doja%20Cat"
+  ]
+ },
+ {
+  "id": "int-kiss-me-more-doja-cat-e-sza",
+  "titulo": "Kiss Me More",
+  "artista": "Doja Cat e SZA",
+  "ano": 2021,
+  "alternativas": {
+   "artista": [
+    "Doja Cat"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Disco",
+  "dificuldade": "facil",
+  "spotify": "3DarAbFujv6eYNliUTyqtz",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Kiss%20Me%20More%20Doja%20Cat%20e%20SZA"
+  ]
+ },
+ {
+  "id": "int-good-days-sza",
+  "titulo": "Good Days",
+  "artista": "SZA",
+  "ano": 2020,
+  "anosAceitos": [
+   2020,
+   2022
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "media",
+  "spotify": "4PMqSO5qyjpvzhlLI5GnID",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Good%20Days%20SZA"
+  ]
+ },
+ {
+  "id": "int-late-night-talking-harry-styles",
+  "titulo": "Late Night Talking",
+  "artista": "Harry Styles",
+  "ano": 2022,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "1qEmFfgcLObUfQm0j1W2CK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Late%20Night%20Talking%20Harry%20Styles"
+  ]
+ },
+ {
+  "id": "int-malibu-miley-cyrus",
+  "titulo": "Malibu",
+  "artista": "Miley Cyrus",
+  "ano": 2017,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "1UZOjK1BwmwWU14Erba9CZ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Malibu%20Miley%20Cyrus"
+  ]
+ },
+ {
+  "id": "int-drunk-in-love-beyonce-e-jay",
+  "titulo": "Drunk in Love",
+  "artista": "Beyoncé e JAY-Z",
+  "ano": 2013,
+  "alternativas": {
+   "artista": [
+    "Beyonce",
+    "Beyoncé",
+    "Jay-Z"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "media",
+  "spotify": "6jG2YzhxptolDzLHTGLt7S",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Drunk%20in%20Love%20Beyonc%C3%A9%20e%20JAY-Z"
+  ]
+ },
+ {
+  "id": "int-circus-britney-spears",
+  "titulo": "Circus",
+  "artista": "Britney Spears",
+  "ano": 2008,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "7jk7gqyEonmVVYahZN5zhW",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Circus%20Britney%20Spears"
+  ]
+ },
+ {
+  "id": "int-lucky-britney-spears",
+  "titulo": "Lucky",
+  "artista": "Britney Spears",
+  "ano": 2000,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "2TTYIwTM2iLC1YOyHuhRMt",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Lucky%20Britney%20Spears"
+  ]
+ },
+ {
+  "id": "int-dirrty-christina-agui",
+  "titulo": "Dirrty",
+  "artista": "Christina Aguilera e Redman",
+  "ano": 2002,
+  "alternativas": {
+   "titulo": [
+    "Dirty"
+   ],
+   "artista": [
+    "Christina Aguilera"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Hip-hop",
+  "dificuldade": "media",
+  "spotify": "59ZTxQo8rBycIXPLUIKvE2",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dirrty%20Christina%20Aguilera%20e%20Redman"
+  ]
+ },
+ {
+  "id": "int-breakaway-kelly-clarkson",
+  "titulo": "Breakaway",
+  "artista": "Kelly Clarkson",
+  "ano": 2004,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "61Qhe2mHSLhUE04QeK4lkD",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Breakaway%20Kelly%20Clarkson"
+  ]
+ },
+ {
+  "id": "int-i-m-every-woman-whitney-housto",
+  "titulo": "I'm Every Woman",
+  "artista": "Whitney Houston",
+  "ano": 1992,
+  "anosAceitos": [
+   1992,
+   1993
+  ],
+  "alternativas": {
+   "titulo": [
+    "Im Every Woman"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B / Dance",
+  "dificuldade": "media",
+  "spotify": "2eHj0klWkwRQuIrNlPpCPa",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=I%27m%20Every%20Woman%20Whitney%20Houston"
+  ]
+ },
+ {
+  "id": "int-one-moment-in-time-whitney-housto",
+  "titulo": "One Moment in Time",
+  "artista": "Whitney Houston",
+  "ano": 1988,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "dificil",
+  "spotify": "6d30d0YLOCD36t9Jrdcy0S",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=One%20Moment%20in%20Time%20Whitney%20Houston"
+  ]
+ },
+ {
+  "id": "int-without-you-mariah-carey",
+  "titulo": "Without You",
+  "artista": "Mariah Carey",
+  "ano": 1993,
+  "anosAceitos": [
+   1993,
+   1994
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "media",
+  "spotify": "0pkIJFV6mviH9dmBYsFwTM",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Without%20You%20Mariah%20Carey"
+  ]
+ },
+ {
+  "id": "int-because-you-loved-me-celine-dion",
+  "titulo": "Because You Loved Me",
+  "artista": "Céline Dion",
+  "ano": 1996,
+  "alternativas": {
+   "artista": [
+    "Celine Dion"
+   ]
+  },
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / Balada",
+  "dificuldade": "media",
+  "spotify": "28UMiBhn383n9S7GL4tsxD",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Because%20You%20Loved%20Me%20C%C3%A9line%20Dion"
+  ]
+ },
+ {
+  "id": "int-any-way-you-want-it-journey",
+  "titulo": "Any Way You Want It",
+  "artista": "Journey",
+  "ano": 1980,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "71SvEDmsOwIWw1IozsZoMA",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Any%20Way%20You%20Want%20It%20Journey"
+  ]
+ },
+ {
+  "id": "int-we-didn-t-start-the-fire-billy-joel",
+  "titulo": "We Didn't Start the Fire",
+  "artista": "Billy Joel",
+  "ano": 1989,
+  "alternativas": {
+   "titulo": [
+    "We Didnt Start the Fire"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "3Cx4yrFaX8CeHwBMReOWXI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=We%20Didn%27t%20Start%20the%20Fire%20Billy%20Joel"
+  ]
+ },
+ {
+  "id": "int-true-colors-cyndi-lauper",
+  "titulo": "True Colors",
+  "artista": "Cyndi Lauper",
+  "ano": 1986,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "2A6yzRGMgSQCUapR2ptm6A",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=True%20Colors%20Cyndi%20Lauper"
+  ]
+ },
+ {
+  "id": "int-born-to-run-bruce-springst",
+  "titulo": "Born to Run",
+  "artista": "Bruce Springsteen",
+  "ano": 1975,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock",
+  "dificuldade": "media",
+  "spotify": "6hTcuIQa0sxrrByu9wTD7s",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Born%20to%20Run%20Bruce%20Springsteen"
+  ]
+ },
+ {
+  "id": "int-let-s-groove-earth-wind-fir",
+  "titulo": "Let's Groove",
+  "artista": "Earth, Wind & Fire",
+  "ano": 1981,
+  "alternativas": {
+   "titulo": [
+    "Lets Groove"
+   ],
+   "artista": [
+    "Earth Wind and Fire"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Funk / Disco",
+  "dificuldade": "media",
+  "spotify": "3koCCeSaVUyrRo3N2gHrd8",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Let%27s%20Groove%20Earth%2C%20Wind%20%26%20Fire"
+  ]
+ },
+ {
+  "id": "int-cecilia-simon-garfunke",
+  "titulo": "Cecilia",
+  "artista": "Simon & Garfunkel",
+  "ano": 1970,
+  "alternativas": {
+   "artista": [
+    "Simon and Garfunkel"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Folk rock",
+  "dificuldade": "media",
+  "spotify": "6QhXQOpyYvbpdbyjgAqKdY",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cecilia%20Simon%20%26%20Garfunkel"
+  ]
+ },
+ {
+  "id": "int-everywhere-fleetwood-mac",
+  "titulo": "Everywhere",
+  "artista": "Fleetwood Mac",
+  "ano": 1987,
+  "anosAceitos": [
+   1987,
+   1988
+  ],
+  "pais": "Reino Unido / Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soft rock",
+  "dificuldade": "media",
+  "spotify": "1prZ0pr6XoRCxcrC3MCL0M",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Everywhere%20Fleetwood%20Mac"
+  ]
+ },
+ {
+  "id": "int-immigrant-song-led-zeppelin",
+  "titulo": "Immigrant Song",
+  "artista": "Led Zeppelin",
+  "ano": 1970,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Hard rock",
+  "dificuldade": "media",
+  "spotify": "78lgmZwycJ3nzsdgmPPGNx",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Immigrant%20Song%20Led%20Zeppelin"
+  ]
+ },
+ {
+  "id": "int-think-aretha-frankli",
+  "titulo": "Think",
+  "artista": "Aretha Franklin",
+  "ano": 1968,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Soul",
+  "dificuldade": "media",
+  "spotify": "4yQw7FR9lcvL6RHtegbJBh",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Think%20Aretha%20Franklin"
+  ]
+ },
+ {
+  "id": "int-somewhere-i-belong-linkin-park",
+  "titulo": "Somewhere I Belong",
+  "artista": "Linkin Park",
+  "ano": 2003,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Nu metal",
+  "dificuldade": "media",
+  "spotify": "3agtg0x11wPvLIWkYR39nZ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Somewhere%20I%20Belong%20Linkin%20Park"
+  ]
+ },
+ {
+  "id": "int-crawling-linkin-park",
+  "titulo": "Crawling",
+  "artista": "Linkin Park",
+  "ano": 2000,
+  "anosAceitos": [
+   2000,
+   2001
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Nu metal",
+  "dificuldade": "media",
+  "spotify": "57BrRMwf9LrcmuOsyGilwr",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Crawling%20Linkin%20Park"
+  ]
+ },
+ {
+  "id": "int-21-guns-green-day",
+  "titulo": "21 Guns",
+  "artista": "Green Day",
+  "ano": 2009,
+  "alternativas": {
+   "titulo": [
+    "Twenty One Guns"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock alternativo",
+  "dificuldade": "media",
+  "spotify": "64yrDBpcdwEdNY9loyEGbX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=21%20Guns%20Green%20Day"
+  ]
+ },
+ {
+  "id": "int-holiday-green-day",
+  "titulo": "Holiday",
+  "artista": "Green Day",
+  "ano": 2005,
+  "anosAceitos": [
+   2004,
+   2005
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Punk rock",
+  "dificuldade": "media",
+  "spotify": "4VgEM12OeaN3GyBV487Me7",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Holiday%20Green%20Day"
+  ]
+ },
+ {
+  "id": "int-dani-california-red-hot-chili",
+  "titulo": "Dani California",
+  "artista": "Red Hot Chili Peppers",
+  "ano": 2006,
+  "alternativas": {
+   "artista": [
+    "RHCP",
+    "Red Hot"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Rock alternativo",
+  "dificuldade": "media",
+  "spotify": "10Nmj3JCNoMeBQ87uw5j8k",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dani%20California%20Red%20Hot%20Chili%20Peppers"
+  ]
+ },
+ {
+  "id": "int-adventure-of-a-lifetime-coldplay",
+  "titulo": "Adventure of a Lifetime",
+  "artista": "Coldplay",
+  "ano": 2015,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "69uxyAqqPIsUyTO8txoP2M",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Adventure%20of%20a%20Lifetime%20Coldplay"
+  ]
+ },
+ {
+  "id": "int-shivers-ed-sheeran",
+  "titulo": "Shivers",
+  "artista": "Ed Sheeran",
+  "ano": 2021,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "facil",
+  "spotify": "50nfwKoDiSYg8zOCREWAm5",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Shivers%20Ed%20Sheeran"
+  ]
+ },
+ {
+  "id": "int-idgaf-dua-lipa",
+  "titulo": "IDGAF",
+  "artista": "Dua Lipa",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018
+  ],
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "76cy1WJvNGJTj78UqeA5zr",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=IDGAF%20Dua%20Lipa"
+  ]
+ },
+ {
+  "id": "int-training-season-dua-lipa",
+  "titulo": "Training Season",
+  "artista": "Dua Lipa",
+  "ano": 2024,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "6Qb7YsAqH4wWFUMbGsCpap",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Training%20Season%20Dua%20Lipa"
+  ]
+ },
+ {
+  "id": "int-talking-to-the-moon-bruno-mars",
+  "titulo": "Talking to the Moon",
+  "artista": "Bruno Mars",
+  "ano": 2010,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop / R&B",
+  "dificuldade": "media",
+  "spotify": "161DnLWsx1i3u1JT05lzqU",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Talking%20to%20the%20Moon%20Bruno%20Mars"
+  ]
+ },
+ {
+  "id": "int-that-s-what-i-like-bruno-mars",
+  "titulo": "That's What I Like",
+  "artista": "Bruno Mars",
+  "ano": 2016,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "alternativas": {
+   "titulo": [
+    "Thats What I Like"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B / Funk",
+  "dificuldade": "facil",
+  "spotify": "0KKkJNfGyhkQ5aFogxQAPU",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=That%27s%20What%20I%20Like%20Bruno%20Mars"
+  ]
+ },
+ {
+  "id": "br-jackie-tequila-skank",
+  "titulo": "Jackie Tequila",
+  "artista": "Skank",
+  "ano": 1993,
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "4vylvWmzkARLasyWiAMo2I",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Jackie%20Tequila%20Skank"
+  ]
+ },
+ {
+  "id": "br-e-uma-partida-de-futebol-skank",
+  "titulo": "É uma Partida de Futebol",
+  "artista": "Skank",
+  "ano": 1996,
+  "alternativas": {
+   "titulo": [
+    "E uma Partida de Futebol",
+    "Uma Partida de Futebol"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop rock",
+  "dificuldade": "media",
+  "spotify": "3MQcMZgLbTJHe6YdwrIYx9",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=%C3%89%20uma%20Partida%20de%20Futebol%20Skank"
+  ]
  }
 ];
 
