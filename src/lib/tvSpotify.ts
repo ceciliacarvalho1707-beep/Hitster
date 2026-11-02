@@ -121,24 +121,37 @@ async function reencontrarTv(): Promise<string> {
   return tv.id;
 }
 
+const ehRestricao = (e: unknown) => e instanceof sp.SpotifyError && e.status === 403 && /restriction/i.test(e.raw);
+const MSG_RESTRICAO = 'O Spotify recusou tocar na TV (“Restriction violated”), mesmo depois de ativar a TV como aparelho. Na TV, recarregue a página e aperte “Ativar som do Spotify”, espere “Spotify pronto” e tente de novo. Se continuar, o navegador desta TV não consegue tocar o Spotify: use o trecho de 30 s ou AirPlay/Bluetooth.';
+
 export async function playOnTv(trackId: string) {
   const i = info;
   if (!i?.deviceId || i.status !== 'pronta') throw new Error('A TV ainda não está pronta para tocar pelo Spotify.');
   await sendToken();
+  const tentar = (id: string) => sp.playOnDevice(trackId, id).then(() => { aparelhoAtual = id; });
   try {
-    await sp.playOnDevice(trackId, i.deviceId);
-    aparelhoAtual = i.deviceId;
+    await tentar(aparelhoTv() ?? i.deviceId);
     return;
   } catch (e) {
-    if (!eh404(e)) throw e;
+    if (!eh404(e) && !ehRestricao(e)) throw e;
   }
-  // 404 = o Spotify não achou o aparelho por esse código (a TV recarregou, ou o player ainda não "acordou").
-  // Procura a TV pelo nome na lista de aparelhos da conta, transfere a reprodução para ela e tenta de novo.
+  // 1) A faixa está disponível na conta? (músicas antigas às vezes não estão no país da conta)
+  if ((await sp.trackPlayable(trackId)) === false) {
+    throw new Error('Essa música não está disponível no Spotify da sua conta (país/licença). Toque em “Sortear outra” ou use o trecho de 30 s.');
+  }
+  // 2) "Acorda" a TV como aparelho ativo (transferindo a reprodução para ela) e tenta de novo.
+  //    404 = código antigo (a TV recarregou); 403 "Restriction violated" = aparelho ainda não ativo.
   const id = await reencontrarTv();
   try {
-    await sp.playOnDevice(trackId, id);
+    await tentar(id);
   } catch (e) {
     if (eh404(e)) throw new Error(MSG_TV_INVISIVEL);
+    if (ehRestricao(e)) {
+      // 3) Última tentativa: transfere já tocando e então manda a faixa.
+      await sp.transferPlayback(id, true).catch(() => undefined);
+      await espera(1500);
+      try { await tentar(id); return; } catch (e2) { if (ehRestricao(e2) || eh404(e2)) throw new Error(MSG_RESTRICAO); throw e2; }
+    }
     throw e;
   }
 }
@@ -167,14 +180,21 @@ export function waitTvPlaying(ms = 8000): Promise<'ok' | 'silencio' | { problema
 export async function pauseOnTv() {
   const id = aparelhoTv();
   if (!id) return;
-  try { await sp.pausePlayback(id); } catch (e) { if (!eh404(e)) throw e; await sp.pausePlayback(await reencontrarTv()); }
+  try { await sp.pausePlayback(id); } catch (e) {
+    if (ehRestricao(e)) return; // já estava pausada
+    if (!eh404(e)) throw e;
+    await sp.pausePlayback(await reencontrarTv());
+  }
 }
 /** Continua a música inteira na TV do mesmo ponto em que foi pausada. */
 export async function resumeOnTv() {
   const id = aparelhoTv();
   if (!id) throw new Error('A TV não está conectada ao Spotify.');
   await sendToken();
-  try { await sp.resumePlayback(id); } catch (e) { if (!eh404(e)) throw e; await sp.resumePlayback(await reencontrarTv()); }
+  try { await sp.resumePlayback(id); } catch (e) {
+    if (!eh404(e) && !ehRestricao(e)) throw e;
+    await sp.resumePlayback(await reencontrarTv());
+  }
 }
 
 /* ───────────────────────── Lado da TV ───────────────────────── */

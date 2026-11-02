@@ -131,6 +131,7 @@ try {
   const plays = [];
   let modo = 'toca'; // toca | falha | 404
   const transfers = [], controles = [];
+  let restricoes = 0, tocavel = true;
   await org.ctx.route(/api\.spotify\.com/, (route) => {
     const r = route.request();
     if (r.method() === 'PUT' && r.url().includes('/me/player/play')) {
@@ -138,10 +139,18 @@ try {
         route.fulfill({ status: 404, contentType: 'application/json', body: JSON.stringify({ error: { status: 404, message: 'Device not found' } }) });
         return;
       }
+      if (r.postData() && restricoes > 0) {
+        restricoes--;
+        route.fulfill({ status: 403, contentType: 'application/json', body: JSON.stringify({ error: { status: 403, message: 'Player command failed: Restriction violated', reason: 'UNKNOWN' } }) });
+        return;
+      }
       if (!r.postData()) { controles.push('resume:' + r.url()); route.fulfill({ status: 204, body: '' }); return; }
       plays.push({ url: r.url(), body: r.postData() });
       const acao = modo === 'falha' ? 'falha' : 'toca';
       setTimeout(() => tv.page.evaluate((a) => a === 'toca' ? window.__player.l.player_state_changed({ paused: false }) : window.__player.l.playback_error({ message: 'Failed to play' }), acao).catch(() => undefined), 300);
+    } else if (r.method() === 'GET' && r.url().includes('/v1/tracks/')) {
+      route.fulfill({ contentType: 'application/json', body: JSON.stringify({ id: trackId, name: 'x', is_playable: tocavel }) });
+      return;
     } else if (r.method() === 'GET' && r.url().includes('/me/player/devices')) {
       route.fulfill({ contentType: 'application/json', body: JSON.stringify({ devices: [{ id: 'tv-device-NOVO', name: 'HITSTER PARTY · TV', type: 'Computer', is_active: false }] }) });
       return;
@@ -201,6 +210,20 @@ try {
   for (let k = 0; k < 50 && !controles.some((c) => c.startsWith('resume:')); k++) await org.page.waitForTimeout(100);
   check('6j', 'Música inteira na TV: pausa e continua do mesmo ponto', controles.includes('pause') && rotuloSp.includes('Continuar') && controles.some((c) => c.startsWith('resume:') && c.includes('device_id=')), JSON.stringify(controles));
   await org.page.screenshot({ path: join(shots, '23-org-spotify-tv.png'), fullPage: true });
+  // Spotify responde 403 "Restriction violated": o jogo ativa a TV como aparelho e tenta de novo
+  modo = 'toca'; restricoes = 1;
+  const antes403 = plays.length, transfAntes = transfers.length;
+  await org.page.click('[data-testid=tvsp-play]');
+  for (let k = 0; k < 60 && plays.length === antes403; k++) await org.page.waitForTimeout(200);
+  check('6k', 'Se o Spotify recusa (403 Restriction violated), o jogo ativa a TV e toca na segunda tentativa', plays.length === antes403 + 1 && transfers.length > transfAntes && restricoes === 0, JSON.stringify({ n: plays.length - antes403, transfers }));
+  // Faixa indisponível na conta: avisa para sortear outra
+  restricoes = 1; tocavel = false;
+  await org.page.waitForFunction(() => { const b = document.querySelector('[data-testid=tvsp-play]'); return b && !b.disabled; }, null, { timeout: 15000 });
+  await org.page.click('[data-testid=tvsp-play]');
+  let indisp = false;
+  for (let k = 0; k < 60 && !indisp; k++) { await org.page.waitForTimeout(200); indisp = (await org.page.textContent('body')).includes('não está disponível no Spotify da sua conta'); }
+  check('6l', 'Se a música não está disponível na conta, o jogo avisa para sortear outra', indisp);
+  restricoes = 0; tocavel = true;
 
   // Organizador revela e libera para a TV
   await org.page.click('[data-testid=secret-toggle]');

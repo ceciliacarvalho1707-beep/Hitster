@@ -153,7 +153,8 @@ export async function accessToken(): Promise<{ token: string; expiresAt: number 
 export function canStream(a = loadAuth()): boolean { return (a.scope ?? '').split(' ').includes('streaming'); }
 
 export class SpotifyError extends Error {
-  constructor(message: string, public status: number) { super(message); }
+  /** Mensagem original do Spotify (ex.: "Player command failed: Restriction violated"). */
+  constructor(message: string, public status: number, public raw = '') { super(message); }
 }
 
 async function api<T>(path: string, init: RequestInit = {}): Promise<T> {
@@ -168,11 +169,12 @@ async function api<T>(path: string, init: RequestInit = {}): Promise<T> {
     const msg = data?.error?.message ?? `HTTP ${res.status}`;
     const human =
       res.status === 401 ? 'A conexão com o Spotify expirou. Conecte de novo.'
+      : res.status === 403 && /restriction/i.test(msg) ? 'O Spotify recusou o comando nesse aparelho agora (“Restriction violated”).'
       : res.status === 403 ? `O Spotify negou o acesso (${msg}). No modo de desenvolvimento, a conta dona do app precisa ser Premium e a sua conta precisa estar autorizada no painel do app.`
       : res.status === 404 ? 'Não encontrado no Spotify (pode ser uma playlist privada de outra pessoa ou um aparelho desligado).'
       : res.status === 429 ? 'Muitas consultas seguidas ao Spotify. Espere alguns segundos.'
       : `Erro do Spotify: ${msg}`;
-    throw new SpotifyError(human, res.status);
+    throw new SpotifyError(human, res.status, msg);
   }
   return data as T;
 }
@@ -181,7 +183,7 @@ async function api<T>(path: string, init: RequestInit = {}): Promise<T> {
 
 interface SpArtist { id: string; name: string }
 export interface SpTrack {
-  id: string; name: string; type?: string; is_local?: boolean;
+  id: string; name: string; type?: string; is_local?: boolean; is_playable?: boolean;
   artists: SpArtist[];
   album: { name: string; release_date?: string; album_type?: string; images?: { url: string }[]; external_urls?: { spotify?: string } };
   external_urls?: { spotify?: string };
@@ -229,6 +231,14 @@ export async function searchTracks(q: string, offset = 0): Promise<{ items: SpTr
 
 export async function getTrack(id: string): Promise<SpTrack> {
   return api<SpTrack>(`/tracks/${encodeURIComponent(id)}`);
+}
+
+/** A faixa pode tocar na conta conectada? (market=from_token usa o país da conta). null = não deu para saber. */
+export async function trackPlayable(id: string): Promise<boolean | null> {
+  try {
+    const t = await api<SpTrack>(`/tracks/${encodeURIComponent(id)}?market=from_token`);
+    return t.is_playable ?? null;
+  } catch { return null; }
 }
 
 export interface SpPlaylist { id: string; name: string; owner?: { display_name?: string }; items?: { total?: number }; tracks?: { total?: number } }
