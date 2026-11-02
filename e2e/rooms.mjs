@@ -131,7 +131,7 @@ try {
   const plays = [];
   let modo = 'toca'; // toca | falha | 404
   const transfers = [], controles = [];
-  let restricoes = 0, tocavel = true;
+  let restricoes = 0, tocavel = true, alternativa = null;
   await org.ctx.route(/api\.spotify\.com/, (route) => {
     const r = route.request();
     if (r.method() === 'PUT' && r.url().includes('/me/player/play')) {
@@ -148,6 +148,10 @@ try {
       plays.push({ url: r.url(), body: r.postData() });
       const acao = modo === 'falha' ? 'falha' : 'toca';
       setTimeout(() => tv.page.evaluate((a) => a === 'toca' ? window.__player.l.player_state_changed({ paused: false }) : window.__player.l.playback_error({ message: 'Failed to play' }), acao).catch(() => undefined), 300);
+    } else if (r.method() === 'GET' && r.url().includes('/v1/search')) {
+      const items = alternativa ? [{ id: alternativa, name: song.titulo + ' - Remastered', is_playable: true, artists: [{ name: song.artista.split(/,| feat\.| & /)[0].trim() }], album: { name: 'x' } }] : [];
+      route.fulfill({ contentType: 'application/json', body: JSON.stringify({ tracks: { items, total: items.length } }) });
+      return;
     } else if (r.method() === 'GET' && r.url().includes('/v1/tracks/')) {
       route.fulfill({ contentType: 'application/json', body: JSON.stringify({ id: trackId, name: 'x', is_playable: tocavel }) });
       return;
@@ -223,7 +227,14 @@ try {
   let indisp = false;
   for (let k = 0; k < 60 && !indisp; k++) { await org.page.waitForTimeout(200); indisp = (await org.page.textContent('body')).includes('não está disponível no Spotify da sua conta'); }
   check('6l', 'Se a música não está disponível na conta, o jogo avisa para sortear outra', indisp);
-  restricoes = 0; tocavel = true;
+  // Faixa bloqueada no país da conta, mas existe outra versão da mesma música: toca essa
+  restricoes = 0; alternativa = 'ALTVERSAO0000000000000A';
+  const antesAlt = plays.length;
+  await org.page.waitForFunction(() => { const b = document.querySelector('[data-testid=tvsp-play]'); return b && !b.disabled; }, null, { timeout: 15000 });
+  await org.page.click('[data-testid=tvsp-play]');
+  for (let k = 0; k < 60 && plays.length === antesAlt; k++) await org.page.waitForTimeout(200);
+  check('6m', 'Se a faixa está bloqueada na conta, o jogo toca outra versão da mesma música', plays.length === antesAlt + 1 && plays[plays.length - 1].body.includes('spotify:track:ALTVERSAO0000000000000A'), JSON.stringify(plays.slice(antesAlt)));
+  restricoes = 0; tocavel = true; alternativa = null;
 
   // Organizador revela e libera para a TV
   await org.page.click('[data-testid=secret-toggle]');

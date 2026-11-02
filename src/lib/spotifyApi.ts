@@ -12,6 +12,7 @@
  * Tudo aqui é chamado só no aparelho do organizador. Nada é enviado à TV ou às equipes.
  */
 import type { Dificuldade, Origem, Song } from '../types';
+import { normalize, splitArtists } from './scoring';
 
 const AUTH_URL = 'https://accounts.spotify.com/authorize';
 const TOKEN_URL = 'https://accounts.spotify.com/api/token';
@@ -239,6 +240,30 @@ export async function trackPlayable(id: string): Promise<boolean | null> {
     const t = await api<SpTrack>(`/tracks/${encodeURIComponent(id)}?market=from_token`);
     return t.is_playable ?? null;
   } catch { return null; }
+}
+
+/**
+ * Outra versão da MESMA música que toque na conta conectada (ex.: a faixa do banco é de um álbum
+ * que não está liberado no Brasil, mas a mesma gravação existe em outro álbum/coletânea).
+ * Só aceita faixas com o mesmo nome e o mesmo artista. null = não achou.
+ */
+export async function playableVersion(titulo: string, artista: string): Promise<string | null> {
+  const n = (x: string) => normalize(cleanTitle(x));
+  const alvo = normalize(titulo);
+  const art = splitArtists(artista).map(normalize).filter(Boolean);
+  const buscas = [`track:${titulo} artist:${splitArtists(artista)[0] ?? artista}`, `${titulo} ${artista}`];
+  for (const q of buscas) {
+    let items: SpTrack[] = [];
+    try {
+      const data = await api<{ tracks: { items: SpTrack[] } }>(`/search?${new URLSearchParams({ q, type: 'track', limit: '10', market: 'from_token' })}`);
+      items = data.tracks.items.filter(Boolean);
+    } catch { continue; }
+    const ok = items.find((t) => t.is_playable !== false
+      && (n(t.name) === alvo || n(t.name).startsWith(alvo + ' ') || alvo.startsWith(n(t.name) + ' '))
+      && t.artists.some((a) => art.some((x) => normalize(a.name) === x || normalize(a.name).includes(x) || x.includes(normalize(a.name)))));
+    if (ok) return ok.id;
+  }
+  return null;
 }
 
 export interface SpPlaylist { id: string; name: string; owner?: { display_name?: string }; items?: { total?: number }; tracks?: { total?: number } }

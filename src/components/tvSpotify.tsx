@@ -111,7 +111,7 @@ export function TvFullSongButton({ song, turn }: { song: Song; turn: Turn }) {
         setBusy(true);
         try {
           parar30s();
-          await playOnTv(trackId); setEstado('tocando');
+          await playOnTv(trackId, { titulo: song.titulo, artista: song.artista }); setEstado('tocando');
           toast('Mandei tocar na TV… conferindo 📺');
           const r = await waitTvPlaying();
           if (r === 'ok') toast('Música inteira tocando na TV 📺🎶');

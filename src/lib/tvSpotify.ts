@@ -124,20 +124,38 @@ async function reencontrarTv(): Promise<string> {
 const ehRestricao = (e: unknown) => e instanceof sp.SpotifyError && e.status === 403 && /restriction/i.test(e.raw);
 const MSG_RESTRICAO = 'O Spotify recusou tocar na TV (“Restriction violated”), mesmo depois de ativar a TV como aparelho. Na TV, recarregue a página e aperte “Ativar som do Spotify”, espere “Spotify pronto” e tente de novo. Se continuar, o navegador desta TV não consegue tocar o Spotify: use o trecho de 30 s ou AirPlay/Bluetooth.';
 
-export async function playOnTv(trackId: string) {
+const MSG_INDISPONIVEL = 'Essa música não está disponível no Spotify da sua conta (país/licença) e não achei outra versão dela. Toque em “Sortear outra” ou use o trecho de 30 s.';
+/** Faixa do banco → faixa que realmente toca nesta conta (cache por partida). */
+const versoes = new Map<string, string>();
+
+/** Descobre qual faixa tocar: a do banco, ou outra versão da mesma música se a do banco não está liberada na conta. */
+async function faixaTocavel(trackId: string, musica?: { titulo: string; artista: string }): Promise<string> {
+  const salvo = versoes.get(trackId);
+  if (salvo) return salvo;
+  const pode = await sp.trackPlayable(trackId);
+  let escolhida = trackId;
+  if (pode === false) {
+    const alt = musica ? await sp.playableVersion(musica.titulo, musica.artista) : null;
+    if (!alt) throw new Error(MSG_INDISPONIVEL);
+    escolhida = alt;
+  }
+  if (escolhida !== trackId) versoes.set(trackId, escolhida);
+  return escolhida;
+}
+
+export async function playOnTv(trackIdBanco: string, musica?: { titulo: string; artista: string }) {
   const i = info;
   if (!i?.deviceId || i.status !== 'pronta') throw new Error('A TV ainda não está pronta para tocar pelo Spotify.');
   await sendToken();
+  // 1) A faixa está liberada na conta? Se não, usa outra versão da mesma música (mesmo nome e artista).
+  //    Tocar uma faixa bloqueada no país da conta é o que faz o Spotify responder "Restriction violated".
+  const trackId = await faixaTocavel(trackIdBanco, musica);
   const tentar = (id: string) => sp.playOnDevice(trackId, id).then(() => { aparelhoAtual = id; });
   try {
     await tentar(aparelhoTv() ?? i.deviceId);
     return;
   } catch (e) {
     if (!eh404(e) && !ehRestricao(e)) throw e;
-  }
-  // 1) A faixa está disponível na conta? (músicas antigas às vezes não estão no país da conta)
-  if ((await sp.trackPlayable(trackId)) === false) {
-    throw new Error('Essa música não está disponível no Spotify da sua conta (país/licença). Toque em “Sortear outra” ou use o trecho de 30 s.');
   }
   // 2) "Acorda" a TV como aparelho ativo (transferindo a reprodução para ela) e tenta de novo.
   //    404 = código antigo (a TV recarregou); 403 "Restriction violated" = aparelho ainda não ativo.
