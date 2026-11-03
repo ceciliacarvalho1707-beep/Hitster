@@ -23210,6 +23210,1399 @@ const raw: Base[] = [
   "fontes": [
    "https://pt.wikipedia.org/w/index.php?search=Toda%20Forma%20de%20Poder%20Engenheiros%20do%20Hawaii"
   ]
+ },
+ {
+  "id": "int-hayloft-mother-mother",
+  "titulo": "Hayloft",
+  "artista": "Mother Mother",
+  "ano": 2008,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "2kKkl59fY6Cic1CmhvSEZK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Hayloft%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-verbatim-mother-mother",
+  "titulo": "Verbatim",
+  "artista": "Mother Mother",
+  "ano": 2007,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "4IA6pgGRmqfxWGAfyZ8cgR",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Verbatim%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-burning-pile-mother-mother",
+  "titulo": "Burning Pile",
+  "artista": "Mother Mother",
+  "ano": 2008,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "5ZpAU5f4jxj6i9XoKK0RaI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Burning%20Pile%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-body-mother-mother",
+  "titulo": "Body",
+  "artista": "Mother Mother",
+  "ano": 2008,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "2zXbLJiS5099aDVyTHIDU4",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Body%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-hayloft-ii-mother-mother",
+  "titulo": "Hayloft II",
+  "artista": "Mother Mother",
+  "ano": 2024,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0kYMwaQWABTkFff8AZjmYI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Hayloft%20II%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-problems-mother-mother",
+  "titulo": "Problems",
+  "artista": "Mother Mother",
+  "ano": 2011,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "32XPs7Frm2dQRI4BraStaX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Problems%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-oh-ana-mother-mother",
+  "titulo": "Oh Ana",
+  "artista": "Mother Mother",
+  "ano": 2007,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "1HOhw9h6IpSVpFPS6OzUu4",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Oh%20Ana%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-wrecking-ball-mother-mother",
+  "titulo": "Wrecking Ball",
+  "artista": "Mother Mother",
+  "ano": 2008,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "007JQyyu6DrGza9XX6scAN",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Wrecking%20Ball%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-ghosting-mother-mother",
+  "titulo": "Ghosting",
+  "artista": "Mother Mother",
+  "ano": 2008,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "0SyDN2bmZtpM5Kr0y1DE6G",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ghosting%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-arms-tonite-mother-mother",
+  "titulo": "Arms Tonite",
+  "artista": "Mother Mother",
+  "ano": 2008,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "5plW0IS6XNNFFvLCH15edI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Arms%20Tonite%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-bit-by-bit-mother-mother",
+  "titulo": "Bit By Bit",
+  "artista": "Mother Mother",
+  "ano": 2012,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "2IQUJbXBXdH4X1dhjYcUsy",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Bit%20By%20Bit%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-o-my-heart-mother-mother",
+  "titulo": "O My Heart",
+  "artista": "Mother Mother",
+  "ano": 2008,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "15geVctY3jvUuDkEAaQPdV",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=O%20My%20Heart%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-infinitesimal-mother-mother",
+  "titulo": "Infinitesimal",
+  "artista": "Mother Mother",
+  "ano": 2012,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "2gKVxosyfUfgP1ZgSk09q0",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Infinitesimal%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-oleander-mother-mother",
+  "titulo": "Oleander",
+  "artista": "Mother Mother",
+  "ano": 2011,
+  "pais": "Canadá",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "3hNy5TMbsmBVv4MmV2hdy7",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Oleander%20Mother%20Mother"
+  ]
+ },
+ {
+  "id": "int-reflections-the-neighbourh",
+  "titulo": "Reflections",
+  "artista": "The Neighbourhood",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "2xql0pid3EUwW38AsywxhV",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Reflections%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-daddy-issues-the-neighbourh",
+  "titulo": "Daddy Issues",
+  "artista": "The Neighbourhood",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "5E30LdtzQTGqRvNd7l6kG5",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Daddy%20Issues%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-softcore-the-neighbourh",
+  "titulo": "Softcore",
+  "artista": "The Neighbourhood",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "2K7xn816oNHJZ0aVqdQsha",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Softcore%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-baby-came-home-2-valenti-the-neighbourh",
+  "titulo": "Baby Came Home 2 / Valentines",
+  "artista": "The Neighbourhood",
+  "ano": 2015,
+  "alternativas": {
+   "titulo": [
+    "Baby Came Home 2",
+    "Valentines"
+   ],
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "40gvh6jP5qxMJuMmF9lG9A",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Baby%20Came%20Home%202%20/%20Valentines%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-the-beach-the-neighbourh",
+  "titulo": "The Beach",
+  "artista": "The Neighbourhood",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "2u0CelO5c81XS7z3dGpHbS",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Beach%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-nervous-the-neighbourh",
+  "titulo": "Nervous",
+  "artista": "The Neighbourhood",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "113xf7t4qNM7038YJvauik",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Nervous%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-you-get-me-so-high-the-neighbourh",
+  "titulo": "You Get Me So High",
+  "artista": "The Neighbourhood",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "7zwn1eykZtZ5LODrf7c0tS",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=You%20Get%20Me%20So%20High%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-cry-baby-the-neighbourh",
+  "titulo": "Cry Baby",
+  "artista": "The Neighbourhood",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0EfsDEYaSjGYd66Pr881nq",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cry%20Baby%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-a-little-death-the-neighbourh",
+  "titulo": "A Little Death",
+  "artista": "The Neighbourhood",
+  "ano": 2013,
+  "anosAceitos": [
+   2012,
+   2013
+  ],
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0Ot6e3wYVQQ1Us9PM977jE",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=A%20Little%20Death%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-pretty-boy-the-neighbourh",
+  "titulo": "Pretty Boy",
+  "artista": "The Neighbourhood",
+  "ano": 2020,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "7IL8PSVwLOJxqYne6azxQv",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Pretty%20Boy%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-afraid-the-neighbourh",
+  "titulo": "Afraid",
+  "artista": "The Neighbourhood",
+  "ano": 2013,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "7brQHA2CgQpcMBiOlfiXYb",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Afraid%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-w-d-y-w-f-m-the-neighbourh",
+  "titulo": "W.D.Y.W.F.M?",
+  "artista": "The Neighbourhood",
+  "ano": 2013,
+  "alternativas": {
+   "titulo": [
+    "WDYWFM"
+   ],
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "3vooOYHU0Fi3ViCG7Ozh0Y",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=W.D.Y.W.F.M%3F%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-void-the-neighbourh",
+  "titulo": "Void",
+  "artista": "The Neighbourhood",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "2wXioTynVwrEWYRv6R6vEj",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Void%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-unfair-the-neighbourh",
+  "titulo": "Unfair",
+  "artista": "The Neighbourhood",
+  "ano": 2014,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "0xD23i0X1WjqMSYIxRfO80",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Unfair%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-cigarette-daydreams-cage-the-eleph",
+  "titulo": "Cigarette Daydreams",
+  "artista": "Cage the Elephant",
+  "ano": 2013,
+  "anosAceitos": [
+   2013,
+   2014
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "2tznHmp70DxMyr2XhWLOW0",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cigarette%20Daydreams%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-come-a-little-closer-cage-the-eleph",
+  "titulo": "Come a Little Closer",
+  "artista": "Cage the Elephant",
+  "ano": 2013,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "4sebUbjqbcgDSwG6PbSGI0",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Come%20a%20Little%20Closer%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-shake-me-down-cage-the-eleph",
+  "titulo": "Shake Me Down",
+  "artista": "Cage the Elephant",
+  "ano": 2011,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "1Hb1IJ9bBCa6wo3fRtexnJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Shake%20Me%20Down%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-trouble-cage-the-eleph",
+  "titulo": "Trouble",
+  "artista": "Cage the Elephant",
+  "ano": 2015,
+  "anosAceitos": [
+   2015,
+   2016
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "5n0CTysih20NYdT2S0Wpe8",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Trouble%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-social-cues-cage-the-eleph",
+  "titulo": "Social Cues",
+  "artista": "Cage the Elephant",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "1KuVdyg8d6NlRhbpHxg5UF",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Social%20Cues%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-in-one-ear-cage-the-eleph",
+  "titulo": "In One Ear",
+  "artista": "Cage the Elephant",
+  "ano": 2008,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "2VRJIIzbhhOGaxAhwCMfZX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=In%20One%20Ear%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-back-against-the-wall-cage-the-eleph",
+  "titulo": "Back Against the Wall",
+  "artista": "Cage the Elephant",
+  "ano": 2008,
+  "anosAceitos": [
+   2008,
+   2009
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "0vz64VTiPPBpcmla0QvAI9",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Back%20Against%20the%20Wall%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-take-it-or-leave-it-cage-the-eleph",
+  "titulo": "Take It or Leave It",
+  "artista": "Cage the Elephant",
+  "ano": 2013,
+  "anosAceitos": [
+   2013,
+   2014
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "43O3Iu8mDJy10i6k8SVRXX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Take%20It%20or%20Leave%20It%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-cold-cold-cold-cage-the-eleph",
+  "titulo": "Cold Cold Cold",
+  "artista": "Cage the Elephant",
+  "ano": 2015,
+  "anosAceitos": [
+   2015,
+   2016
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "1Q3t9fWvHUXKsMmpD2XpUu",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cold%20Cold%20Cold%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-black-madonna-cage-the-eleph",
+  "titulo": "Black Madonna",
+  "artista": "Cage the Elephant",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "4Y6GIje3GErVRIq1Ff5BJq",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Black%20Madonna%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-aberdeen-cage-the-eleph",
+  "titulo": "Aberdeen",
+  "artista": "Cage the Elephant",
+  "ano": 2011,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "3L8sfv4Fb8pONhiMA4nAKJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Aberdeen%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-rainbow-cage-the-eleph",
+  "titulo": "Rainbow",
+  "artista": "Cage the Elephant",
+  "ano": 2024,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "6buQeGlk47QiPVoPObaZ7x",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Rainbow%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-telescope-cage-the-eleph",
+  "titulo": "Telescope",
+  "artista": "Cage the Elephant",
+  "ano": 2013,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "0tkBOcK7oRVXQJY97zzSvr",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Telescope%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-ready-to-let-go-cage-the-eleph",
+  "titulo": "Ready to Let Go",
+  "artista": "Cage the Elephant",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "4UyAtnwhaKv7EG1BdkBYRI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ready%20to%20Let%20Go%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-spiderhead-cage-the-eleph",
+  "titulo": "Spiderhead",
+  "artista": "Cage the Elephant",
+  "ano": 2013,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "5r5Lj2MkgwQJz6TaBdL865",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Spiderhead%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-mess-around-cage-the-eleph",
+  "titulo": "Mess Around",
+  "artista": "Cage the Elephant",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0X0Lz7LwpiIWcdGqVWaxXD",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Mess%20Around%20Cage%20the%20Elephant"
+  ]
+ },
+ {
+  "id": "int-swim-chase-atlantic",
+  "titulo": "Swim",
+  "artista": "Chase Atlantic",
+  "ano": 2017,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "media",
+  "spotify": "3M0lSi5WW79CXQamgSBIjx",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Swim%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-friends-chase-atlantic",
+  "titulo": "Friends",
+  "artista": "Chase Atlantic",
+  "ano": 2017,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "dificil",
+  "spotify": "7uDUb37h7Xdhza1eWMkoJv",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Friends%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-into-it-chase-atlantic",
+  "titulo": "Into It",
+  "artista": "Chase Atlantic",
+  "ano": 2017,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "dificil",
+  "spotify": "4HwDCXsMBC7SUdp2WT4MZP",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Into%20It%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-consume-chase-atlantic",
+  "titulo": "Consume",
+  "artista": "Chase Atlantic",
+  "ano": 2017,
+  "alternativas": {
+   "artista": [
+    "Goon Des Garcons"
+   ]
+  },
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "dificil",
+  "spotify": "0X2bh8NVQ8svDQIn2AdCbW",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Consume%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-slow-down-chase-atlantic",
+  "titulo": "Slow Down",
+  "artista": "Chase Atlantic",
+  "ano": 2016,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "dificil",
+  "spotify": "2VyaGJJI8dOiv36F8vHZIL",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Slow%20Down%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-meddle-about-chase-atlantic",
+  "titulo": "Meddle About",
+  "artista": "Chase Atlantic",
+  "ano": 2015,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "5fVl28RgREvxVtGSf9OsbK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Meddle%20About%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-moonlight-chase-atlantic",
+  "titulo": "Moonlight",
+  "artista": "Chase Atlantic",
+  "ano": 2016,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "dificil",
+  "spotify": "0laLzrH5PsoA7HpGw2vCVh",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Moonlight%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-the-walls-chase-atlantic",
+  "titulo": "The Walls",
+  "artista": "Chase Atlantic",
+  "ano": 2017,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "5pXui9rkf5W90DgZobuDiK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Walls%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-paradise-chase-atlantic",
+  "titulo": "Paradise",
+  "artista": "Chase Atlantic",
+  "ano": 2016,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "6xRiL9BVkWfZryQJmdHTmv",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Paradise%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-heaven-and-back-chase-atlantic",
+  "titulo": "HEAVEN AND BACK",
+  "artista": "Chase Atlantic",
+  "ano": 2019,
+  "alternativas": {
+   "titulo": [
+    "Heaven and Back"
+   ]
+  },
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "1JdQibdvxgcrB8Rv1KFndw",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=HEAVEN%20AND%20BACK%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-her-chase-atlantic",
+  "titulo": "HER",
+  "artista": "Chase Atlantic",
+  "ano": 2019,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "28jyMOvRd82hQp95Z9ftXw",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=HER%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-okay-chase-atlantic",
+  "titulo": "Okay",
+  "artista": "Chase Atlantic",
+  "ano": 2017,
+  "pais": "Austrália",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "492PZFHvGTm3RZZYeeUVWT",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Okay%20Chase%20Atlantic"
+  ]
+ },
+ {
+  "id": "int-cigarettes-out-the-windo-tv-girl",
+  "titulo": "Cigarettes out the Window",
+  "artista": "TV Girl",
+  "ano": 2016,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "media",
+  "spotify": "6QeYSvYqYUsfBzsApbjDHO",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cigarettes%20out%20the%20Window%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-not-allowed-tv-girl",
+  "titulo": "Not Allowed",
+  "artista": "TV Girl",
+  "ano": 2016,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "media",
+  "spotify": "3IznIgmXtrUaoPWpQTy5jB",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Not%20Allowed%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-lovers-rock-tv-girl",
+  "titulo": "Lovers Rock",
+  "artista": "TV Girl",
+  "ano": 2014,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "media",
+  "spotify": "6dBUzqjtbnIa1TwYbyw5CM",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Lovers%20Rock%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-loving-machine-tv-girl",
+  "titulo": "Loving Machine",
+  "artista": "TV Girl",
+  "ano": 2016,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "dificil",
+  "spotify": "7JEzAlwHhCD2M1cYE6BeqJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Loving%20Machine%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-taking-what-s-not-yours-tv-girl",
+  "titulo": "Taking What's Not Yours",
+  "artista": "TV Girl",
+  "ano": 2016,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "dificil",
+  "spotify": "53mChDyESfwn9Dz8poHRf6",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Taking%20What%27s%20Not%20Yours%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-blue-hair-tv-girl",
+  "titulo": "Blue Hair",
+  "artista": "TV Girl",
+  "ano": 2018,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "dificil",
+  "spotify": "39sDitIeCMrVX2QyXHY46t",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Blue%20Hair%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-the-blonde-tv-girl",
+  "titulo": "The Blonde",
+  "artista": "TV Girl",
+  "ano": 2014,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "dificil",
+  "spotify": "72cGBEqu7RitIOoACXYjfR",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Blonde%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-louise-tv-girl",
+  "titulo": "Louise",
+  "artista": "TV Girl",
+  "ano": 2014,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "263KsGZODTZouh3RFGNaLX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Louise%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-hate-yourself-tv-girl",
+  "titulo": "Hate Yourself",
+  "artista": "TV Girl",
+  "ano": 2014,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "7ijyGfG4NxMBobHgvu4lIM",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Hate%20Yourself%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-for-you-tv-girl",
+  "titulo": "For You",
+  "artista": "TV Girl",
+  "ano": 2016,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "4KHnHCB3KVJeQRHt9PM8uz",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=For%20You%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-birds-dont-sing-tv-girl",
+  "titulo": "Birds Dont Sing",
+  "artista": "TV Girl",
+  "ano": 2014,
+  "alternativas": {
+   "titulo": [
+    "Birds Don't Sing"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "21LkHnuxPxVrOZ5gCaG7aM",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Birds%20Dont%20Sing%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-song-about-me-tv-girl",
+  "titulo": "Song About Me",
+  "artista": "TV Girl",
+  "ano": 2016,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "5ExWCOYjZbMEZCIdlfH2dO",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Song%20About%20Me%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-pretty-boy-tv-girl",
+  "titulo": "Pretty Boy",
+  "artista": "TV Girl",
+  "ano": 2018,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "2vVXZKnEIU5j0yVDGQX46l",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Pretty%20Boy%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-safeword-tv-girl",
+  "titulo": "Safeword",
+  "artista": "TV Girl",
+  "ano": 2016,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "muito_dificil",
+  "spotify": "2c4Est3dxGfn834VReid5d",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Safeword%20TV%20Girl"
+  ]
+ },
+ {
+  "id": "int-we-fell-in-love-in-octob-girl-in-red",
+  "titulo": "we fell in love in october",
+  "artista": "girl in red",
+  "ano": 2018,
+  "pais": "Noruega",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie pop",
+  "dificuldade": "media",
+  "spotify": "6IPwKM3fUUzlElbvKw2sKl",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=we%20fell%20in%20love%20in%20october%20girl%20in%20red"
+  ]
+ },
+ {
+  "id": "int-mardy-bum-arctic-monkeys",
+  "titulo": "Mardy Bum",
+  "artista": "Arctic Monkeys",
+  "ano": 2006,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "2fyIS6GXMgUcSv4oejx63f",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Mardy%20Bum%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-crying-lightning-arctic-monkeys",
+  "titulo": "Crying Lightning",
+  "artista": "Arctic Monkeys",
+  "ano": 2009,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "6wVWJl64yoTzU27EI8ep20",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Crying%20Lightning%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-cornerstone-arctic-monkeys",
+  "titulo": "Cornerstone",
+  "artista": "Arctic Monkeys",
+  "ano": 2009,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "5bsnLiT00hG37qd8p2jdVl",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cornerstone%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-four-out-of-five-arctic-monkeys",
+  "titulo": "Four Out of Five",
+  "artista": "Arctic Monkeys",
+  "ano": 2018,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "5Z5nbOXhsSbySVC7WUc6y9",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Four%20Out%20of%20Five%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-suck-it-and-see-arctic-monkeys",
+  "titulo": "Suck It and See",
+  "artista": "Arctic Monkeys",
+  "ano": 2011,
+  "anosAceitos": [
+   2011,
+   2012
+  ],
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0LxeKwg9t7HOnyfv4bTALT",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Suck%20It%20and%20See%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-there-d-better-be-a-mirr-arctic-monkeys",
+  "titulo": "There'd Better Be a Mirrorball",
+  "artista": "Arctic Monkeys",
+  "ano": 2022,
+  "alternativas": {
+   "titulo": [
+    "Thered Better Be a Mirrorball"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "1zx6GSqLYI2ynzAHnPRKBR",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=There%27d%20Better%20Be%20a%20Mirrorball%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-tranquility-base-hotel-c-arctic-monkeys",
+  "titulo": "Tranquility Base Hotel & Casino",
+  "artista": "Arctic Monkeys",
+  "ano": 2018,
+  "alternativas": {
+   "titulo": [
+    "Tranquility Base Hotel and Casino"
+   ]
+  },
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "2URDbWGmPz3vhagl25p8OC",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Tranquility%20Base%20Hotel%20%26%20Casino%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-body-paint-arctic-monkeys",
+  "titulo": "Body Paint",
+  "artista": "Arctic Monkeys",
+  "ano": 2022,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "42GuKw49pPxNAkIhWGwgFs",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Body%20Paint%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-a-certain-romance-arctic-monkeys",
+  "titulo": "A Certain Romance",
+  "artista": "Arctic Monkeys",
+  "ano": 2006,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0eDQj41kzBhMKQIkTt6OJR",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=A%20Certain%20Romance%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-do-me-a-favour-arctic-monkeys",
+  "titulo": "Do Me a Favour",
+  "artista": "Arctic Monkeys",
+  "ano": 2007,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "13NCxLOlvQ4Tnexgfp03Gs",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Do%20Me%20a%20Favour%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-leave-before-the-lights--arctic-monkeys",
+  "titulo": "Leave Before the Lights Come On",
+  "artista": "Arctic Monkeys",
+  "ano": 2006,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "4Du0BRUJvKybzxcRplp7HF",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Leave%20Before%20the%20Lights%20Come%20On%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-fake-tales-of-san-franci-arctic-monkeys",
+  "titulo": "Fake Tales of San Francisco",
+  "artista": "Arctic Monkeys",
+  "ano": 2006,
+  "anosAceitos": [
+   2005,
+   2006
+  ],
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "7BuzJmV2h6eBbSDdRaDY7C",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Fake%20Tales%20of%20San%20Francisco%20Arctic%20Monkeys"
+  ]
  }
 ];
 
