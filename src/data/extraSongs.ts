@@ -24603,6 +24603,2326 @@ const raw: Base[] = [
   "fontes": [
    "https://en.wikipedia.org/w/index.php?search=Fake%20Tales%20of%20San%20Francisco%20Arctic%20Monkeys"
   ]
+ },
+ {
+  "id": "br-sou-o-cara-pra-voce-thiaguinho",
+  "titulo": "Sou o Cara pra Você",
+  "artista": "Thiaguinho",
+  "ano": 2012,
+  "anosAceitos": [
+   2012,
+   2013
+  ],
+  "alternativas": {
+   "titulo": [
+    "Sou o Cara pra Voce"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "5jtXdNL8pSAHOevp7QTQV5",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Sou%20o%20Cara%20pra%20Voc%C3%AA%20Thiaguinho"
+  ]
+ },
+ {
+  "id": "br-ousadia-alegria-thiaguinho",
+  "titulo": "Ousadia & Alegria",
+  "artista": "Thiaguinho",
+  "ano": 2012,
+  "anosAceitos": [
+   2012,
+   2013
+  ],
+  "alternativas": {
+   "titulo": [
+    "Ousadia e Alegria"
+   ],
+   "artista": [
+    "Neymar"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "facil",
+  "spotify": "1lSDZa3ZGnwx0YHd04seut",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Ousadia%20%26%20Alegria%20Thiaguinho"
+  ]
+ },
+ {
+  "id": "br-buque-de-flores-thiaguinho",
+  "titulo": "Buquê de Flores",
+  "artista": "Thiaguinho",
+  "ano": 2012,
+  "anosAceitos": [
+   2012,
+   2013
+  ],
+  "alternativas": {
+   "titulo": [
+    "Buque de Flores"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "5LlvjBngx8DvuApwPdYUbF",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Buqu%C3%AA%20de%20Flores%20Thiaguinho"
+  ]
+ },
+ {
+  "id": "br-ainda-bem-thiaguinho",
+  "titulo": "Ainda Bem",
+  "artista": "Thiaguinho",
+  "ano": 2012,
+  "anosAceitos": [
+   2012,
+   2013
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "dificil",
+  "spotify": "48FcnAViqTZV90DSsZx2UY",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Ainda%20Bem%20Thiaguinho"
+  ]
+ },
+ {
+  "id": "br-ponto-fraco-thiaguinho",
+  "titulo": "Ponto Fraco",
+  "artista": "Thiaguinho",
+  "ano": 2014,
+  "anosAceitos": [
+   2014,
+   2015
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "0KkZFQSvZrTL1zU3cX8Z7e",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Ponto%20Fraco%20Thiaguinho"
+  ]
+ },
+ {
+  "id": "br-ta-vendo-aquela-lua-exaltasamba",
+  "titulo": "Tá Vendo Aquela Lua",
+  "artista": "Exaltasamba",
+  "ano": 2010,
+  "anosAceitos": [
+   2010,
+   2011
+  ],
+  "alternativas": {
+   "titulo": [
+    "Ta Vendo Aquela Lua"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "facil",
+  "spotify": "6DjKWVAqXUvMaAzO4U4CIo",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=T%C3%A1%20Vendo%20Aquela%20Lua%20Exaltasamba"
+  ]
+ },
+ {
+  "id": "br-ate-voce-voltar-henrique-julia",
+  "titulo": "Até Você Voltar",
+  "artista": "Henrique & Juliano",
+  "ano": 2014,
+  "anosAceitos": [
+   2014,
+   2015
+  ],
+  "alternativas": {
+   "titulo": [
+    "Ate Voce Voltar"
+   ],
+   "artista": [
+    "Henrique e Juliano"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "4ksSf8cL3VlUvQSkFcRHy3",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=At%C3%A9%20Voc%C3%AA%20Voltar%20Henrique%20%26%20Juliano"
+  ]
+ },
+ {
+  "id": "br-p-do-pecado-grupo-menos-e",
+  "titulo": "P do Pecado",
+  "artista": "Grupo Menos É Mais",
+  "ano": 2023,
+  "alternativas": {
+   "artista": [
+    "Menos é Mais",
+    "Simone Mendes"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "7EknynLJTt9YMm1HL37s5D",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=P%20do%20Pecado%20Grupo%20Menos%20%C3%89%20Mais"
+  ]
+ },
+ {
+  "id": "br-pela-ultima-vez-grupo-menos-e",
+  "titulo": "Pela Última Vez",
+  "artista": "Grupo Menos É Mais",
+  "ano": 2023,
+  "alternativas": {
+   "titulo": [
+    "Pela Ultima Vez"
+   ],
+   "artista": [
+    "Menos é Mais",
+    "Nattan"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "4bxyHku6rNffRealVxu30p",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Pela%20%C3%9Altima%20Vez%20Grupo%20Menos%20%C3%89%20Mais"
+  ]
+ },
+ {
+  "id": "br-coracao-partido-corazon--grupo-menos-e",
+  "titulo": "Coração Partido (Corazón Partío)",
+  "artista": "Grupo Menos É Mais",
+  "ano": 2021,
+  "anosAceitos": [
+   2020,
+   2021,
+   2022
+  ],
+  "alternativas": {
+   "titulo": [
+    "Coração Partido",
+    "Coracao Partido"
+   ],
+   "artista": [
+    "Menos é Mais"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "1YlfGwNizEKy299l1PVggn",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Cora%C3%A7%C3%A3o%20Partido%20%28Coraz%C3%B3n%20Part%C3%ADo%29%20Grupo%20Menos%20%C3%89%20Mais"
+  ]
+ },
+ {
+  "id": "br-lapada-dela-grupo-menos-e",
+  "titulo": "Lapada Dela",
+  "artista": "Grupo Menos É Mais",
+  "ano": 2021,
+  "anosAceitos": [
+   2021,
+   2022
+  ],
+  "alternativas": {
+   "artista": [
+    "Menos é Mais",
+    "Matheus Fernandes"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "dificil",
+  "spotify": "4f0aDk7HX37SfzerfznYlr",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Lapada%20Dela%20Grupo%20Menos%20%C3%89%20Mais"
+  ]
+ },
+ {
+  "id": "br-1-metro-e-65-sorriso-maroto",
+  "titulo": "1 Metro e 65",
+  "artista": "Sorriso Maroto",
+  "ano": 2006,
+  "anosAceitos": [
+   2005,
+   2006,
+   2007
+  ],
+  "alternativas": {
+   "titulo": [
+    "Um Metro e Sessenta e Cinco"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "2yhtzzLeMc3t0LgtlZMgS8",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=1%20Metro%20e%2065%20Sorriso%20Maroto"
+  ]
+ },
+ {
+  "id": "br-lua-de-mel-sorriso-maroto",
+  "titulo": "Lua de Mel",
+  "artista": "Sorriso Maroto",
+  "ano": 2006,
+  "anosAceitos": [
+   2005,
+   2006,
+   2007
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "dificil",
+  "spotify": "19M38Fav2W72NSRdelF9ER",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Lua%20de%20Mel%20Sorriso%20Maroto"
+  ]
+ },
+ {
+  "id": "br-ta-bom-aham-sorriso-maroto",
+  "titulo": "Tá Bom, Aham",
+  "artista": "Sorriso Maroto",
+  "ano": 2016,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "alternativas": {
+   "titulo": [
+    "Ta Bom Aham"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "dificil",
+  "spotify": "5vMVoATz4nfaWVxKJeLv7U",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=T%C3%A1%20Bom%2C%20Aham%20Sorriso%20Maroto"
+  ]
+ },
+ {
+  "id": "br-guerra-fria-sorriso-maroto",
+  "titulo": "Guerra Fria",
+  "artista": "Sorriso Maroto",
+  "ano": 2016,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "alternativas": {
+   "artista": [
+    "Jorge & Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "dificil",
+  "spotify": "2mMEgpTGcj584fg5zXl8dQ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Guerra%20Fria%20Sorriso%20Maroto"
+  ]
+ },
+ {
+  "id": "br-nocaute-jorge-mateus",
+  "titulo": "Nocaute",
+  "artista": "Jorge & Mateus",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "2NnSYdNhqye00il4nRB4tj",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Nocaute%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-calma-jorge-mateus",
+  "titulo": "Calma",
+  "artista": "Jorge & Mateus",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "dificil",
+  "spotify": "7evftBiobEwWOwfxiTnnKc",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Calma%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-e-amor-jorge-mateus",
+  "titulo": "É Amor",
+  "artista": "Jorge & Mateus",
+  "ano": 2015,
+  "alternativas": {
+   "titulo": [
+    "E Amor"
+   ],
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "dificil",
+  "spotify": "4CWRKwYu8WTrEBng1JsiIO",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=%C3%89%20Amor%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-logo-eu-jorge-mateus",
+  "titulo": "Logo Eu",
+  "artista": "Jorge & Mateus",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "2655xYZ347fG2N6OjkoMQ8",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Logo%20Eu%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-pra-sempre-com-voce-jorge-mateus",
+  "titulo": "Pra Sempre Com Você",
+  "artista": "Jorge & Mateus",
+  "ano": 2016,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "alternativas": {
+   "titulo": [
+    "Pra Sempre Com Voce"
+   ],
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "dificil",
+  "spotify": "2KGv51jgAz8OTjNPyRryfq",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Pra%20Sempre%20Com%20Voc%C3%AA%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-paredes-jorge-mateus",
+  "titulo": "Paredes",
+  "artista": "Jorge & Mateus",
+  "ano": 2016,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "dificil",
+  "spotify": "2GfxgssRHvY1azHtaRqKoK",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Paredes%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-louca-de-saudade-jorge-mateus",
+  "titulo": "Louca de Saudade",
+  "artista": "Jorge & Mateus",
+  "ano": 2016,
+  "anosAceitos": [
+   2016,
+   2017
+  ],
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "dificil",
+  "spotify": "2InJDvDcA4RXEeA9njdibl",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Louca%20de%20Saudade%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-duas-metades-jorge-mateus",
+  "titulo": "Duas Metades",
+  "artista": "Jorge & Mateus",
+  "ano": 2014,
+  "anosAceitos": [
+   2013,
+   2014
+  ],
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "3UStHHOyFXetR5621bKJBz",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Duas%20Metades%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-seu-astral-jorge-mateus",
+  "titulo": "Seu Astral",
+  "artista": "Jorge & Mateus",
+  "ano": 2014,
+  "anosAceitos": [
+   2013,
+   2014
+  ],
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "2TE9rkhJYDctxgzak0AnSb",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Seu%20Astral%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-propaganda-jorge-mateus",
+  "titulo": "Propaganda",
+  "artista": "Jorge & Mateus",
+  "ano": 2018,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "alternativas": {
+   "artista": [
+    "Jorge e Mateus"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "74n5d5M21JnC4WJ6gdkggK",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Propaganda%20Jorge%20%26%20Mateus"
+  ]
+ },
+ {
+  "id": "br-ate-que-durou-pericles",
+  "titulo": "Até Que Durou",
+  "artista": "Péricles",
+  "ano": 2014,
+  "anosAceitos": [
+   2013,
+   2014
+  ],
+  "alternativas": {
+   "titulo": [
+    "Ate Que Durou"
+   ],
+   "artista": [
+    "Pericles"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "4wbvJBqwJmk7u215lUk1GR",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=At%C3%A9%20Que%20Durou%20P%C3%A9ricles"
+  ]
+ },
+ {
+  "id": "br-melhor-eu-ir-pericles",
+  "titulo": "Melhor Eu Ir",
+  "artista": "Péricles",
+  "ano": 2015,
+  "anosAceitos": [
+   2014,
+   2015
+  ],
+  "alternativas": {
+   "artista": [
+    "Pericles"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "5d45BOkZaOnusIg9OBGjBC",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Melhor%20Eu%20Ir%20P%C3%A9ricles"
+  ]
+ },
+ {
+  "id": "br-balada-gusttavo-lima",
+  "titulo": "Balada",
+  "artista": "Gusttavo Lima",
+  "ano": 2011,
+  "anosAceitos": [
+   2011,
+   2012
+  ],
+  "alternativas": {
+   "titulo": [
+    "Balada Boa",
+    "Tchê Tcherere Tchê Tchê"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "facil",
+  "spotify": "561KH32varxPqqwIY4gA7z",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Balada%20Gusttavo%20Lima"
+  ]
+ },
+ {
+  "id": "br-eu-nao-iria-gusttavo-lima",
+  "titulo": "Eu Não Iria",
+  "artista": "Gusttavo Lima",
+  "ano": 2018,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "alternativas": {
+   "titulo": [
+    "Eu Nao Iria"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "dificil",
+  "spotify": "3Q38lT2XBC1ePl2Qs9zvOM",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Eu%20N%C3%A3o%20Iria%20Gusttavo%20Lima"
+  ]
+ },
+ {
+  "id": "br-sujeito-gusttavo-lima",
+  "titulo": "Sujeito",
+  "artista": "Gusttavo Lima",
+  "ano": 2018,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "dificil",
+  "spotify": "1CwyRAon1uO8TarUHrXZyP",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Sujeito%20Gusttavo%20Lima"
+  ]
+ },
+ {
+  "id": "br-cem-mil-gusttavo-lima",
+  "titulo": "Cem Mil",
+  "artista": "Gusttavo Lima",
+  "ano": 2018,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "alternativas": {
+   "titulo": [
+    "100 Mil"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "5pCyG634N2cC2aPgO5Oepf",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Cem%20Mil%20Gusttavo%20Lima"
+  ]
+ },
+ {
+  "id": "br-na-hora-de-amar-gusttavo-lima",
+  "titulo": "Na Hora de Amar",
+  "artista": "Gusttavo Lima",
+  "ano": 2018,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "dificil",
+  "spotify": "5WWiWnRnJQksXlKwMuBGND",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Na%20Hora%20de%20Amar%20Gusttavo%20Lima"
+  ]
+ },
+ {
+  "id": "br-termina-comigo-antes-gusttavo-lima",
+  "titulo": "Termina Comigo Antes",
+  "artista": "Gusttavo Lima",
+  "ano": 2019,
+  "anosAceitos": [
+   2019,
+   2020
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "1K8AtBJXcdq5mywMnZuARP",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Termina%20Comigo%20Antes%20Gusttavo%20Lima"
+  ]
+ },
+ {
+  "id": "br-apelido-carinhoso-gusttavo-lima",
+  "titulo": "Apelido Carinhoso",
+  "artista": "Gusttavo Lima",
+  "ano": 2018,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "5xYsacjSZrSYJQDacIs0tq",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Apelido%20Carinhoso%20Gusttavo%20Lima"
+  ]
+ },
+ {
+  "id": "int-are-you-bored-yet-wallows",
+  "titulo": "Are You Bored Yet?",
+  "artista": "Wallows",
+  "ano": 2019,
+  "alternativas": {
+   "artista": [
+    "Clairo"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "57RA3JGafJm5zRtKJiKPIm",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Are%20You%20Bored%20Yet%3F%20Wallows"
+  ]
+ },
+ {
+  "id": "int-calling-after-me-wallows",
+  "titulo": "Calling After Me",
+  "artista": "Wallows",
+  "ano": 2024,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "6YVajR33kCWLhWpMVD8AGD",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Calling%20After%20Me%20Wallows"
+  ]
+ },
+ {
+  "id": "int-remember-when-wallows",
+  "titulo": "Remember When",
+  "artista": "Wallows",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "5naar7XewEOAjOywIp6Jjq",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Remember%20When%20Wallows"
+  ]
+ },
+ {
+  "id": "int-these-days-wallows",
+  "titulo": "These Days",
+  "artista": "Wallows",
+  "ano": 2018,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "4gZDCOFuLCxCRWNhSEcOtJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=These%20Days%20Wallows"
+  ]
+ },
+ {
+  "id": "int-it-s-only-right-wallows",
+  "titulo": "It's Only Right",
+  "artista": "Wallows",
+  "ano": 2018,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "49shtsiVxakpVGxSltpgjX",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=It%27s%20Only%20Right%20Wallows"
+  ]
+ },
+ {
+  "id": "int-pleaser-wallows",
+  "titulo": "Pleaser",
+  "artista": "Wallows",
+  "ano": 2018,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "11zf7m4vw9Ze7cer9Nyhk1",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Pleaser%20Wallows"
+  ]
+ },
+ {
+  "id": "int-bad-dream-wallows",
+  "titulo": "Bad Dream",
+  "artista": "Wallows",
+  "ano": 2024,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "7GXcuBE3Aiu8gUJjX8PSlV",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Bad%20Dream%20Wallows"
+  ]
+ },
+ {
+  "id": "int-ground-wallows",
+  "titulo": "Ground",
+  "artista": "Wallows",
+  "ano": 2018,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "2N977oXVcbzWqT4m3U698h",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ground%20Wallows"
+  ]
+ },
+ {
+  "id": "int-pictures-of-girls-wallows",
+  "titulo": "Pictures of Girls",
+  "artista": "Wallows",
+  "ano": 2018,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "415dK4glwDO7fXxYg3np8B",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Pictures%20of%20Girls%20Wallows"
+  ]
+ },
+ {
+  "id": "int-your-apartment-wallows",
+  "titulo": "Your Apartment",
+  "artista": "Wallows",
+  "ano": 2024,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "2go1eoJbYJafnVjhIumuP8",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Your%20Apartment%20Wallows"
+  ]
+ },
+ {
+  "id": "int-only-friend-wallows",
+  "titulo": "Only Friend",
+  "artista": "Wallows",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "5q6Ue2SuMhMBxFPDP2VWXm",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Only%20Friend%20Wallows"
+  ]
+ },
+ {
+  "id": "int-at-the-end-of-the-day-wallows",
+  "titulo": "At the End of the Day",
+  "artista": "Wallows",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "7xdKRHvX5OXoRyfPQ8w2mU",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=At%20the%20End%20of%20the%20Day%20Wallows"
+  ]
+ },
+ {
+  "id": "int-dollhouse-melanie-martin",
+  "titulo": "Dollhouse",
+  "artista": "Melanie Martinez",
+  "ano": 2014,
+  "anosAceitos": [
+   2014,
+   2015
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "media",
+  "spotify": "6wNeKPXF0RDKyvfKfri5hf",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dollhouse%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-mrs-potato-head-melanie-martin",
+  "titulo": "Mrs. Potato Head",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "media",
+  "spotify": "3K1tdhoeE6koNnWgAxEK9Y",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Mrs.%20Potato%20Head%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-sippy-cup-melanie-martin",
+  "titulo": "Sippy Cup",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "media",
+  "spotify": "2e4jB31WcGsxKL1ByqdZCq",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Sippy%20Cup%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-cry-baby-melanie-martin",
+  "titulo": "Cry Baby",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "media",
+  "spotify": "052vSBPxqdmYRDlkSPiavc",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cry%20Baby%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-training-wheels-melanie-martin",
+  "titulo": "Training Wheels",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "dificil",
+  "spotify": "3EGW6TGGbdk6Ys1Y3HU3lj",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Training%20Wheels%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-pity-party-melanie-martin",
+  "titulo": "Pity Party",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "media",
+  "spotify": "3fo6DYGktjENCiagUeU9yH",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Pity%20Party%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-play-date-melanie-martin",
+  "titulo": "Play Date",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "media",
+  "spotify": "4DpNNXFMMxQEKl7r0ykkWA",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Play%20Date%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-mad-hatter-melanie-martin",
+  "titulo": "Mad Hatter",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "dificil",
+  "spotify": "5gWtkdgdyt5bZt9i6n3Kqd",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Mad%20Hatter%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-soap-melanie-martin",
+  "titulo": "Soap",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "dificil",
+  "spotify": "03f7xZmt2wHCIDJBFPK8G4",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Soap%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-pacify-her-melanie-martin",
+  "titulo": "Pacify Her",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "dificil",
+  "spotify": "360Wr96ywrCQq4kTAJ8Pq6",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Pacify%20Her%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-tag-you-re-it-melanie-martin",
+  "titulo": "Tag, You're It",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "alternativas": {
+   "titulo": [
+    "Tag You're It"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "dificil",
+  "spotify": "3u1FiuSpfsgVnekEMXgMwJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Tag%2C%20You%27re%20It%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-cake-melanie-martin",
+  "titulo": "Cake",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "5H3TCfiw0CQTX1XU7A9TXM",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Cake%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-carousel-melanie-martin",
+  "titulo": "Carousel",
+  "artista": "Melanie Martinez",
+  "ano": 2014,
+  "anosAceitos": [
+   2014,
+   2015
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "dificil",
+  "spotify": "5nHTLEJ10zaqdnKqLriah4",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Carousel%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-alphabet-boy-melanie-martin",
+  "titulo": "Alphabet Boy",
+  "artista": "Melanie Martinez",
+  "ano": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "3NDPcoeno6oasqi6Hs75Ax",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Alphabet%20Boy%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-teacher-s-pet-melanie-martin",
+  "titulo": "Teacher's Pet",
+  "artista": "Melanie Martinez",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "dificil",
+  "spotify": "5o5akY9xnEk6lpMkD8RwD9",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Teacher%27s%20Pet%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-high-school-sweethearts-melanie-martin",
+  "titulo": "High School Sweethearts",
+  "artista": "Melanie Martinez",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "7FwWRSAlhfyhbvybdfDUCe",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=High%20School%20Sweethearts%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-lunchbox-friends-melanie-martin",
+  "titulo": "Lunchbox Friends",
+  "artista": "Melanie Martinez",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "6viCrMdt8zgjOygIuJMC5X",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Lunchbox%20Friends%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-class-fight-melanie-martin",
+  "titulo": "Class Fight",
+  "artista": "Melanie Martinez",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "37pf8jSeCGlzgQPIfVHO6X",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Class%20Fight%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "int-orange-juice-melanie-martin",
+  "titulo": "Orange Juice",
+  "artista": "Melanie Martinez",
+  "ano": 2019,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Pop alternativo",
+  "dificuldade": "muito_dificil",
+  "spotify": "1NekIhcxQF8H8JXOarAUTt",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Orange%20Juice%20Melanie%20Martinez"
+  ]
+ },
+ {
+  "id": "br-pirata-e-tesouro-ferrugem",
+  "titulo": "Pirata e Tesouro",
+  "artista": "Ferrugem",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "facil",
+  "spotify": "3Cabw7y9EoR68v7dBS76HQ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Pirata%20e%20Tesouro%20Ferrugem"
+  ]
+ },
+ {
+  "id": "br-pra-voce-acreditar-ferrugem",
+  "titulo": "Pra Você Acreditar",
+  "artista": "Ferrugem",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018,
+   2019
+  ],
+  "alternativas": {
+   "titulo": [
+    "Pra Voce Acreditar"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "5KNi9XFap48ry4puG7rvqv",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Pra%20Voc%C3%AA%20Acreditar%20Ferrugem"
+  ]
+ },
+ {
+  "id": "br-sinto-sua-falta-ferrugem",
+  "titulo": "Sinto Sua Falta",
+  "artista": "Ferrugem",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "3eWHUE5D5R19q7BvOX7NSJ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Sinto%20Sua%20Falta%20Ferrugem"
+  ]
+ },
+ {
+  "id": "br-minha-namorada-ferrugem",
+  "titulo": "Minha Namorada",
+  "artista": "Ferrugem",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "3ZzyOu6skjfcHIj78NOoMF",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Minha%20Namorada%20Ferrugem"
+  ]
+ },
+ {
+  "id": "br-eu-juro-ferrugem",
+  "titulo": "Eu Juro",
+  "artista": "Ferrugem",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "dificil",
+  "spotify": "2Anuj522V4Og18PAPPFAyH",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Eu%20Juro%20Ferrugem"
+  ]
+ },
+ {
+  "id": "br-eu-sou-feliz-assim-ferrugem",
+  "titulo": "Eu Sou Feliz Assim",
+  "artista": "Ferrugem",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "dificil",
+  "spotify": "6YxjDb6r7avB44QlJLDuM7",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Eu%20Sou%20Feliz%20Assim%20Ferrugem"
+  ]
+ },
+ {
+  "id": "br-paciencia-ferrugem",
+  "titulo": "Paciência",
+  "artista": "Ferrugem",
+  "ano": 2018,
+  "anosAceitos": [
+   2017,
+   2018,
+   2019
+  ],
+  "alternativas": {
+   "titulo": [
+    "Paciencia"
+   ],
+   "artista": [
+    "Ludmilla"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "dificil",
+  "spotify": "3jHsNUej99xBE7TX3fg1xD",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Paci%C3%AAncia%20Ferrugem"
+  ]
+ },
+ {
+  "id": "br-boiadeira-ana-castela",
+  "titulo": "Boiadeira",
+  "artista": "Ana Castela",
+  "ano": 2022,
+  "anosAceitos": [
+   2021,
+   2022
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "facil",
+  "spotify": "0FumGgq1uaL2gujszVUwIg",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Boiadeira%20Ana%20Castela"
+  ]
+ },
+ {
+  "id": "br-nosso-quadro-agroplay",
+  "titulo": "Nosso Quadro",
+  "artista": "AgroPlay",
+  "ano": 2023,
+  "anosAceitos": [
+   2022,
+   2023
+  ],
+  "alternativas": {
+   "artista": [
+    "Ana Castela"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "1bzRhnrWU1l1u4Bby9ZbfQ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Nosso%20Quadro%20AgroPlay"
+  ]
+ },
+ {
+  "id": "br-solteiro-forcado-ana-castela",
+  "titulo": "Solteiro Forçado",
+  "artista": "Ana Castela",
+  "ano": 2023,
+  "anosAceitos": [
+   2022,
+   2023
+  ],
+  "alternativas": {
+   "titulo": [
+    "Solteiro Forcado"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Sertanejo",
+  "dificuldade": "media",
+  "spotify": "4Z2i41GDQyu3KRpBavEnyR",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Solteiro%20For%C3%A7ado%20Ana%20Castela"
+  ]
+ },
+ {
+  "id": "br-deixa-lagum",
+  "titulo": "Deixa",
+  "artista": "Lagum",
+  "ano": 2020,
+  "anosAceitos": [
+   2019,
+   2020
+  ],
+  "alternativas": {
+   "artista": [
+    "Ana Gabriela"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "3fLqmaO4vvZpFZSZy52VMp",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Deixa%20Lagum"
+  ]
+ },
+ {
+  "id": "br-oi-lagum",
+  "titulo": "Oi",
+  "artista": "Lagum",
+  "ano": 2019,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "78kar2tZk7655xZMibzXO3",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Oi%20Lagum"
+  ]
+ },
+ {
+  "id": "br-detesto-despedidas-lagum",
+  "titulo": "Detesto Despedidas",
+  "artista": "Lagum",
+  "ano": 2019,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop",
+  "dificuldade": "media",
+  "spotify": "4ow47hEGWz7eKykRH3npQP",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Detesto%20Despedidas%20Lagum"
+  ]
+ },
+ {
+  "id": "br-chegou-de-manso-lagum",
+  "titulo": "Chegou de Manso",
+  "artista": "Lagum",
+  "ano": 2019,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop",
+  "dificuldade": "dificil",
+  "spotify": "1IvzSi70o3AcovlW7mVDSC",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Chegou%20de%20Manso%20Lagum"
+  ]
+ },
+ {
+  "id": "br-reggae-bom-lagum",
+  "titulo": "Reggae Bom",
+  "artista": "Lagum",
+  "ano": 2019,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop",
+  "dificuldade": "dificil",
+  "spotify": "6BfpjrOHrbe7K1z9uDI2yG",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Reggae%20Bom%20Lagum"
+  ]
+ },
+ {
+  "id": "br-andar-sozinho-lagum",
+  "titulo": "Andar Sozinho",
+  "artista": "Lagum",
+  "ano": 2019,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "alternativas": {
+   "artista": [
+    "Jão"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pop",
+  "dificuldade": "dificil",
+  "spotify": "1UGYO1Ruzfccbn36qmn2qT",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Andar%20Sozinho%20Lagum"
+  ]
+ },
+ {
+  "id": "int-the-adults-are-talking-the-strokes",
+  "titulo": "The Adults Are Talking",
+  "artista": "The Strokes",
+  "ano": 2020,
+  "anosAceitos": [
+   2019,
+   2020
+  ],
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "5ruzrDWcT0vuJIOMW7gMnW",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=The%20Adults%20Are%20Talking%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-someday-the-strokes",
+  "titulo": "Someday",
+  "artista": "The Strokes",
+  "ano": 2001,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "7hm4HTk9encxT0LYC0J6oI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Someday%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-reptilia-the-strokes",
+  "titulo": "Reptilia",
+  "artista": "The Strokes",
+  "ano": 2003,
+  "anosAceitos": [
+   2003,
+   2004
+  ],
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "facil",
+  "spotify": "57Xjny5yNzAcsxnusKmAfA",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Reptilia%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-selfless-the-strokes",
+  "titulo": "Selfless",
+  "artista": "The Strokes",
+  "ano": 2020,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "2t0wwvR15fc3K1ey8OiOaN",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Selfless%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-hard-to-explain-the-strokes",
+  "titulo": "Hard to Explain",
+  "artista": "The Strokes",
+  "ano": 2001,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0OM9ri37LIbPc9hffwsyb1",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Hard%20to%20Explain%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-ode-to-the-mets-the-strokes",
+  "titulo": "Ode to the Mets",
+  "artista": "The Strokes",
+  "ano": 2020,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "1BLOVHYYlH4JUHQGcpt75R",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Ode%20to%20the%20Mets%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-is-this-it-the-strokes",
+  "titulo": "Is This It",
+  "artista": "The Strokes",
+  "ano": 2001,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0jBE7Fn78EAvmIs3dCd6GO",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Is%20This%20It%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-under-cover-of-darkness-the-strokes",
+  "titulo": "Under Cover of Darkness",
+  "artista": "The Strokes",
+  "ano": 2011,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "6u0x5ad9ewHvs3z6u9Oe3c",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Under%20Cover%20of%20Darkness%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-you-only-live-once-the-strokes",
+  "titulo": "You Only Live Once",
+  "artista": "The Strokes",
+  "ano": 2006,
+  "anosAceitos": [
+   2005,
+   2006
+  ],
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "media",
+  "spotify": "4fPBB44eDH71YohayI4eKV",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=You%20Only%20Live%20Once%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-why-are-sundays-so-depre-the-strokes",
+  "titulo": "Why Are Sundays So Depressing",
+  "artista": "The Strokes",
+  "ano": 2020,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "1aOxOpH4AkGAd8OMrKjyNY",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Why%20Are%20Sundays%20So%20Depressing%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-at-the-door-the-strokes",
+  "titulo": "At the Door",
+  "artista": "The Strokes",
+  "ano": 2020,
+  "anosAceitos": [
+   2019,
+   2020
+  ],
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "7lu6YLrlB1MU7HW8DJSuPa",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=At%20the%20Door%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-brooklyn-bridge-to-choru-the-strokes",
+  "titulo": "Brooklyn Bridge to Chorus",
+  "artista": "The Strokes",
+  "ano": 2020,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "2mDYYGaGd9uXKkK2YhDA3i",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Brooklyn%20Bridge%20to%20Chorus%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-what-ever-happened-the-strokes",
+  "titulo": "What Ever Happened?",
+  "artista": "The Strokes",
+  "ano": 2003,
+  "alternativas": {
+   "titulo": [
+    "Whatever Happened"
+   ],
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "78Gzxi27GuNHTfkn2BylG4",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=What%20Ever%20Happened%3F%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-12-51-the-strokes",
+  "titulo": "12:51",
+  "artista": "The Strokes",
+  "ano": 2003,
+  "alternativas": {
+   "titulo": [
+    "1251"
+   ],
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "6Yu1OL8I0D4vjOzYdsXYGK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=12%3A51%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-machu-picchu-the-strokes",
+  "titulo": "Machu Picchu",
+  "artista": "The Strokes",
+  "ano": 2011,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "6mVD1SfTvlFAPVi7txFL5H",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Machu%20Picchu%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "int-call-it-fate-call-it-kar-the-strokes",
+  "titulo": "Call It Fate, Call It Karma",
+  "artista": "The Strokes",
+  "ano": 2013,
+  "alternativas": {
+   "artista": [
+    "Strokes"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "3Y4rUyw7XBCK6hGHCOt6rp",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Call%20It%20Fate%2C%20Call%20It%20Karma%20The%20Strokes"
+  ]
+ },
+ {
+  "id": "br-refem-dilsinho",
+  "titulo": "Refém",
+  "artista": "Dilsinho",
+  "ano": 2017,
+  "anosAceitos": [
+   2016,
+   2017,
+   2018
+  ],
+  "alternativas": {
+   "titulo": [
+    "Refem"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "4muZ1PUxmss4cVmYnpLrvs",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=Ref%C3%A9m%20Dilsinho"
+  ]
+ },
+ {
+  "id": "br-pessimo-negocio-dilsinho",
+  "titulo": "Péssimo Negócio",
+  "artista": "Dilsinho",
+  "ano": 2017,
+  "anosAceitos": [
+   2017,
+   2018
+  ],
+  "alternativas": {
+   "titulo": [
+    "Pessimo Negocio"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "5MMrkwK6AgNAsgHVdC7daZ",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=P%C3%A9ssimo%20Neg%C3%B3cio%20Dilsinho"
+  ]
+ },
+ {
+  "id": "br-12-horas-dilsinho",
+  "titulo": "12 Horas",
+  "artista": "Dilsinho",
+  "ano": 2018,
+  "anosAceitos": [
+   2018,
+   2019
+  ],
+  "alternativas": {
+   "titulo": [
+    "Doze Horas"
+   ]
+  },
+  "pais": "Brasil",
+  "idioma": "Português",
+  "origem": "br",
+  "genero": "Pagode",
+  "dificuldade": "media",
+  "spotify": "7B826fTyDa3DkjnKpOgXFo",
+  "fontes": [
+   "https://pt.wikipedia.org/w/index.php?search=12%20Horas%20Dilsinho"
+  ]
+ },
+ {
+  "id": "int-bad-habit-steve-lacy",
+  "titulo": "Bad Habit",
+  "artista": "Steve Lacy",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "facil",
+  "spotify": "0v48YjFjwEuDRdIKlq6iqK",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Bad%20Habit%20Steve%20Lacy"
+  ]
+ },
+ {
+  "id": "int-dark-red-steve-lacy",
+  "titulo": "Dark Red",
+  "artista": "Steve Lacy",
+  "ano": 2017,
+  "anosAceitos": [
+   2017,
+   2020
+  ],
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "media",
+  "spotify": "3EaJDYHA0KnX88JvDhL9oa",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dark%20Red%20Steve%20Lacy"
+  ]
+ },
+ {
+  "id": "int-static-steve-lacy",
+  "titulo": "Static",
+  "artista": "Steve Lacy",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "muito_dificil",
+  "spotify": "4OmfWzukSVD140NiAIEjem",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Static%20Steve%20Lacy"
+  ]
+ },
+ {
+  "id": "int-helmet-steve-lacy",
+  "titulo": "Helmet",
+  "artista": "Steve Lacy",
+  "ano": 2022,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "R&B",
+  "dificuldade": "muito_dificil",
+  "spotify": "0DmkBOGgEWMbUJlL6VwwF2",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Helmet%20Steve%20Lacy"
+  ]
+ },
+ {
+  "id": "int-stargazing-the-neighbourh",
+  "titulo": "Stargazing",
+  "artista": "The Neighbourhood",
+  "ano": 2021,
+  "anosAceitos": [
+   2020,
+   2021
+  ],
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0VF7YLIxSQKyNiFL3X6MmN",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Stargazing%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-wires-the-neighbourh",
+  "titulo": "Wires",
+  "artista": "The Neighbourhood",
+  "ano": 2013,
+  "anosAceitos": [
+   2012,
+   2013
+  ],
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "5v8aEcHcaJIGYpfVVPtJjI",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Wires%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-scary-love-the-neighbourh",
+  "titulo": "Scary Love",
+  "artista": "The Neighbourhood",
+  "ano": 2018,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "6TA5aymvVrtiPVbuAwmPIc",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Scary%20Love%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-r-i-p-2-my-youth-the-neighbourh",
+  "titulo": "R.I.P. 2 My Youth",
+  "artista": "The Neighbourhood",
+  "ano": 2015,
+  "alternativas": {
+   "titulo": [
+    "RIP 2 My Youth",
+    "RIP to My Youth"
+   ],
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "07VBqWH6NG8L2ad3l84UKk",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=R.I.P.%202%20My%20Youth%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-prey-the-neighbourh",
+  "titulo": "Prey",
+  "artista": "The Neighbourhood",
+  "ano": 2015,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "38kjFXYgPvtuXCPbHPMGte",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Prey%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-lost-in-translation-the-neighbourh",
+  "titulo": "Lost in Translation",
+  "artista": "The Neighbourhood",
+  "ano": 2020,
+  "alternativas": {
+   "artista": [
+    "The Neighborhood",
+    "Neighbourhood"
+   ]
+  },
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "5TUZhrb8UaaA76NhzZax2Z",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Lost%20in%20Translation%20The%20Neighbourhood"
+  ]
+ },
+ {
+  "id": "int-dancing-shoes-arctic-monkeys",
+  "titulo": "Dancing Shoes",
+  "artista": "Arctic Monkeys",
+  "ano": 2006,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0hAMkY2kwdXPPDfQ1e3BmJ",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Dancing%20Shoes%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-riot-van-arctic-monkeys",
+  "titulo": "Riot Van",
+  "artista": "Arctic Monkeys",
+  "ano": 2006,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "4wMR4fRKMTyUJG6VAsmccv",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Riot%20Van%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-piledriver-waltz-arctic-monkeys",
+  "titulo": "Piledriver Waltz",
+  "artista": "Arctic Monkeys",
+  "ano": 2011,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "4Ai0ANRDYwx6mCD4Uty1WS",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Piledriver%20Waltz%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-only-ones-who-know-arctic-monkeys",
+  "titulo": "Only Ones Who Know",
+  "artista": "Arctic Monkeys",
+  "ano": 2007,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "muito_dificil",
+  "spotify": "7ABWRukVQcXrIrDKDx5Gek",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Only%20Ones%20Who%20Know%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-love-is-a-laserquest-arctic-monkeys",
+  "titulo": "Love Is a Laserquest",
+  "artista": "Arctic Monkeys",
+  "ano": 2011,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "0S6CXA5LpRDX6b4akgrOot",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Love%20Is%20a%20Laserquest%20Arctic%20Monkeys"
+  ]
+ },
+ {
+  "id": "int-mad-sounds-arctic-monkeys",
+  "titulo": "Mad Sounds",
+  "artista": "Arctic Monkeys",
+  "ano": 2013,
+  "pais": "Reino Unido",
+  "idioma": "Inglês",
+  "origem": "intl",
+  "genero": "Indie rock",
+  "dificuldade": "dificil",
+  "spotify": "75n7mraeMycQOl2sDGYaTe",
+  "fontes": [
+   "https://en.wikipedia.org/w/index.php?search=Mad%20Sounds%20Arctic%20Monkeys"
+  ]
  }
 ];
 

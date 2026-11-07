@@ -73,7 +73,8 @@ describe('equilíbrio entre épocas', () => {
     }
     expect(seguidas).toBeGreaterThan(0); // pode acontecer
     expect(seguidas / total).toBeLessThan(0.11); // sorteio simples dava ~14%
-    // até 1969 é ~11% do banco; com o equilíbrio deve passar de 14% das rodadas
-    expect(antigas / total).toBeGreaterThan(0.14);
+    // com o equilíbrio, as músicas até 1969 aparecem bem mais que a fatia delas no banco
+    const fatiaAntigas = DEMO_SONGS.filter((x) => eraOf(x.ano) <= 1960).length / DEMO_SONGS.length;
+    expect(antigas / total).toBeGreaterThan(fatiaAntigas * 1.5);
   });
 });
